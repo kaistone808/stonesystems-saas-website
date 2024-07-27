@@ -1,0 +1,91 @@
+'use client';
+
+import { Carousel } from '@mantine/carousel';
+import Autoplay from 'embla-carousel-autoplay';
+import { useMediaQuery } from '@mantine/hooks';
+import { Title, rem, Container, Image, useMantineTheme } from '@mantine/core';
+import classes from './PartnersSection.module.css';
+import { useRef } from 'react';
+
+const data = [
+  {
+    imageSrc: '/images/partners/localfalcon.png',
+  },
+  {
+    imageSrc: '/images/partners/meta.svg.png',
+  },
+  {
+    imageSrc: '/images/partners/godaddy.png',
+  },
+  {
+    imageSrc: '/images/partners/chatgpt.png',
+  },
+  {
+    imageSrc: '/images/partners/gmb.webp',
+  },
+  {
+    imageSrc: '/images/partners/canva.svg.png',
+  },
+  {
+    imageSrc: '/images/partners/ahrefs.png',
+  },
+  {
+    imageSrc: '/images/partners/googleanalytics.png',
+  },
+  {
+    imageSrc: '/images/partners/mailgun.png',
+  },
+  {
+    imageSrc: '/images/partners/semrush.png',
+  },
+  {
+    imageSrc: '/images/partners/twilio.png',
+  },
+  {
+    imageSrc: '/images/partners/zapier.svg.png',
+  },
+  {
+    imageSrc: '/images/partners/googlesearch.png',
+  },
+  {
+    imageSrc: '/images/partners/keywordseverywhere.jpeg',
+  },
+  {
+    imageSrc: '/images/partners/leadconnector.png',
+  },
+];
+
+export function PartnersSection() {
+  const autoplay = useRef(Autoplay({ delay: 4000 }));
+  const theme = useMantineTheme();
+  const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
+  const slides = data.map((item) => (
+    <Carousel.Slide className={classes.slide}>
+      <Image className={classes.image} src={item.imageSrc} alt="Panda" />
+    </Carousel.Slide>
+  ));
+
+  return (
+    <>
+      <Container size="lg">
+        <Title className={classes.mainTitle}>We partner with these services</Title>
+        <div className={classes.card}>
+          <Container size="lg">
+            <Carousel
+              slideSize={{ base: '100%', sm: '20%' }}
+              slideGap={{ base: rem(2), sm: 'xl' }}
+              align="start"
+              loop
+              dragFree
+              slidesToScroll={mobile ? 1 : 5}
+              plugins={[autoplay.current]}
+              withControls={false}
+            >
+              {slides}
+            </Carousel>
+          </Container>
+        </div>
+      </Container>
+    </>
+  );
+}

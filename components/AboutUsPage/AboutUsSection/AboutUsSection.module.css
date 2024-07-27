@@ -1,0 +1,36 @@
+.outer {
+  background-color: lightgray;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.title {
+  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+  font-family:
+    Greycliff CF,
+    var(--mantine-font-family);
+  font-size: rem(44px);
+  line-height: 1.2;
+  font-weight: 900;
+
+  @media (max-width: $mantine-breakpoint-xs) {
+    font-size: rem(28px);
+  }
+}
+
+.description {
+  font-family: var(--mantine-font-family);
+  font-size: rem(21px);
+  line-height: 1.5;
+  color: var(--mantine-color-black);
+  margin-bottom: var(--mantine-spacing-lg);
+}
+
+.normalText {
+  font-size: 15px;
+}
+
+.largeText {
+  font-size: 48px;
+  line-height: 1.2;
+}

@@ -1,0 +1,70 @@
+.outer {
+  background-color: lightgray;
+}
+
+.inner {
+  background-color: lightgray;
+  padding: 3rem;
+  border-radius: 10px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-size: cover;
+    background-position: center;
+    padding: 0 0 1rem 0;
+  }
+  
+  .tradeName {
+    text-align: center;
+    font-family:
+      Greycliff CF,
+      sans-serif;
+    font-weight: 900;
+    color: var(--mantine-color-black);
+    line-height: 1.2;
+    font-size: rem(28px);
+    margin: var(--mantine-spacing-xs) auto 0 auto;
+  }
+
+  .mainTitle {
+    color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+    font-family:
+      Greycliff CF,
+      var(--mantine-font-family);
+    font-size: rem(52px);
+    line-height: 1.2;
+    font-weight: 900;
+    text-align: center;
+    margin: 2rem 0 1rem 0;
+  
+    @media (max-width: $mantine-breakpoint-xs) {
+      font-size: rem(28px);
+    }
+  }
+
+  .description{
+    font-family: var(--mantine-font-family);
+    font-size: rem(21px);
+    line-height: 1.5;
+    color: var(--mantine-color-black);
+    margin-bottom: var(--mantine-spacing-lg);
+  }
+
+  .image{
+    width: 50px;
+    height: 50px;
+    margin: auto;
+  }
+
+  .contactBox{
+    padding-right: 2rem;
+    border-right: 1px solid black;
+    margin-right: 2rem;
+    &:last-of-type{
+      border: none;
+    }
+  }
