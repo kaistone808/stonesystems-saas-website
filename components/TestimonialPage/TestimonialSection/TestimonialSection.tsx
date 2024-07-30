@@ -5,9 +5,7 @@ import {
   Paper,
   Text,
   Title,
-  Button,
   useMantineTheme,
-  rem,
   Container,
   SimpleGrid,
   AspectRatio,
@@ -15,16 +13,18 @@ import {
 import classes from './TestimonialSection.module.css';
 
 interface CardProps {
+  testimonial: string;
+  videoSrc: string;
   personName: string;
   companyName: string;
 }
 
-function Card({ personName, companyName }: CardProps) {
+function Card({ personName, companyName, testimonial, videoSrc }: CardProps) {
   return (
-    <Paper shadow="md" radius="md" className={classes.card}>
+    <Paper shadow="md" my={'calc(var(--space-40)/2)'} radius="md">
       <AspectRatio ratio={10 / 11} className={classes.video}>
         <iframe
-          src={`https://www.youtube.com/embed/9bZkp7q19f0`}
+          src={videoSrc}
           title="YouTube video player"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -32,6 +32,7 @@ function Card({ personName, companyName }: CardProps) {
         />
       </AspectRatio>
       <div>
+        <Text className={classes.testimonial}>{testimonial}</Text>
         <Text className={classes.personName} size="xs">
           {personName}
         </Text>
@@ -43,26 +44,86 @@ function Card({ personName, companyName }: CardProps) {
 
 const data = [
   {
+    testimonial:
+      '"lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."',
+    videoSrc: 'https://www.youtube.com/embed/9bZkp7q19f0',
     personName: 'John',
     companyName: 'John Construction LLC',
   },
   {
+    testimonial:
+      '"lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."',
+    videoSrc: 'https://www.youtube.com/embed/9bZkp7q19f0',
     personName: 'John',
     companyName: 'John Construction LLC',
   },
   {
+    testimonial:
+      '"lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."',
+    videoSrc: 'https://www.youtube.com/embed/9bZkp7q19f0',
     personName: 'John',
     companyName: 'John Construction LLC',
   },
   {
+    testimonial:
+      '"lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."',
+    videoSrc: 'https://www.youtube.com/embed/9bZkp7q19f0',
     personName: 'John',
     companyName: 'John Construction LLC',
   },
   {
+    testimonial:
+      '"lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."',
+    videoSrc: 'https://www.youtube.com/embed/9bZkp7q19f0',
     personName: 'John',
     companyName: 'John Construction LLC',
   },
   {
+    testimonial:
+      '"lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."',
+    videoSrc: 'https://www.youtube.com/embed/9bZkp7q19f0',
+    personName: 'John',
+    companyName: 'John Construction LLC',
+  },
+  {
+    testimonial:
+      '"lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."',
+    videoSrc: 'https://www.youtube.com/embed/9bZkp7q19f0',
+    personName: 'John',
+    companyName: 'John Construction LLC',
+  },
+  {
+    testimonial:
+      '"lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."',
+    videoSrc: 'https://www.youtube.com/embed/9bZkp7q19f0',
+    personName: 'John',
+    companyName: 'John Construction LLC',
+  },
+  {
+    testimonial:
+      '"lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."',
+    videoSrc: 'https://www.youtube.com/embed/9bZkp7q19f0',
+    personName: 'John',
+    companyName: 'John Construction LLC',
+  },
+  {
+    testimonial:
+      '"lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."',
+    videoSrc: 'https://www.youtube.com/embed/9bZkp7q19f0',
+    personName: 'John',
+    companyName: 'John Construction LLC',
+  },
+  {
+    testimonial:
+      '"lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."',
+    videoSrc: 'https://www.youtube.com/embed/9bZkp7q19f0',
+    personName: 'John',
+    companyName: 'John Construction LLC',
+  },
+  {
+    testimonial:
+      '"lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."',
+    videoSrc: 'https://www.youtube.com/embed/9bZkp7q19f0',
     personName: 'John',
     companyName: 'John Construction LLC',
   },

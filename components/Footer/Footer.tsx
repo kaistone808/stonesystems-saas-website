@@ -1,7 +1,12 @@
 'use client';
 
 import { Text, Container, ActionIcon, Group, rem } from '@mantine/core';
-import { IconBrandTwitter, IconBrandYoutube, IconBrandInstagram, IconBrandFacebook } from '@tabler/icons-react';
+import {
+  IconBrandTwitter,
+  IconBrandYoutube,
+  IconBrandInstagram,
+  IconBrandFacebook,
+} from '@tabler/icons-react';
 import { MantineLogo } from '@mantinex/mantine-logo';
 import classes from './Footer.module.css';
 
@@ -65,7 +70,7 @@ export function Footer() {
 
   return (
     <footer className={classes.footer}>
-      <Container className={classes.inner}>
+      <Container size={'lg'} className={classes.inner}>
         <div className={classes.logo}>
           <MantineLogo size={30} />
           <Text size="xs" c="dimmed" className={classes.description}>
@@ -74,7 +79,7 @@ export function Footer() {
         </div>
         <div className={classes.groups}>{groups}</div>
       </Container>
-      <Container className={classes.afterFooter}>
+      <Container size='lg' className={classes.afterFooter}>
         <Text c="dimmed" size="sm">
           © 2023 Stone Systems All rights reserved.
         </Text>

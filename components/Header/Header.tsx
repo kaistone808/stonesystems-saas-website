@@ -37,6 +37,7 @@ import {
   IconNotebook,
   IconTimeline,
   IconUsers,
+  IconDeviceDesktop,
 } from '@tabler/icons-react';
 import classes from './Header.module.css';
 
@@ -53,22 +54,22 @@ const mockdata = [
   },
   {
     icon: IconReport,
-    title: 'Automated Lead Follow Up',
+    title: 'Automated SMS Lead Follow Up',
     description: 'Automatically follow up with leads via text',
   },
   {
     icon: IconStarFilled,
-    title: '5 Star Only Review',
+    title: '5-Star Magic Funnel',
     description: 'Get more 5 star reviews and prevent bad ones',
   },
   {
     icon: IconSearch,
-    title: 'Bi-Weekly Blog Postss',
+    title: 'Blog Posts',
     description: 'Keep your audience engaged',
   },
   {
     icon: IconSpeakerphone,
-    title: 'VoiceSearch',
+    title: 'Voice Search',
     description: 'Get found on voice search',
   },
   {
@@ -124,9 +125,8 @@ export function Header() {
   return (
     <Box>
       <header className={classes.header}>
-        <Group justify="space-between" h="100%">
+        <Group justify="space-between" w="75em" h="100%">
           <MantineLogo size={30} />
-
           <Group h="100%" gap={0} visibleFrom="sm">
             <HoverCard width={900} position="bottom" radius="md" shadow="md" withinPortal>
               <HoverCard.Target>
@@ -200,6 +200,24 @@ export function Header() {
                         </Text>
                         <Text className={classes.subLinkDescription} c="dimmed">
                           {'Discover how we work'}
+                        </Text>
+                      </div>
+                    </Group>
+                  </UnstyledButton>
+                  <UnstyledButton pt={'md'} pb={'md'} className={classes.subLink}>
+                    <Group wrap="nowrap" align="center">
+                      <ThemeIcon size={52} variant="default" radius="md" bd={'none'} bg={'#F1F1F1'}>
+                        <IconDeviceDesktop
+                          style={{ width: rem(32), height: rem(32) }}
+                          color={'#000000'}
+                        />
+                      </ThemeIcon>
+                      <div>
+                        <Text className={classes.subLinkTitle} fw={500}>
+                          {'Our Work'}
+                        </Text>
+                        <Text className={classes.subLinkDescription} c="dimmed">
+                          {'See some of our previous work'}
                         </Text>
                       </div>
                     </Group>
@@ -326,8 +344,18 @@ export function Header() {
           </Group>
 
           <Group visibleFrom="sm">
-            <Button variant="default">Log in</Button>
-            <Button>Get started</Button>
+            <Button
+              className={classes.button}
+              size="lg"
+              variant="default"
+              bg={'transparent'}
+              bd={'none'}
+            >
+              Log In
+            </Button>
+            <Button className={classes.button} size="lg" bg='var(--yellow)' color='var(--gray)'>
+              Get Started
+            </Button>
           </Group>
 
           <Burger opened={drawerOpened} onClick={toggleDrawer} hiddenFrom="sm" />

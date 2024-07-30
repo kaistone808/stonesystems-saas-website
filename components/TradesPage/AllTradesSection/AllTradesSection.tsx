@@ -25,76 +25,274 @@ function Card({ tradeName }: CardProps) {
 
 const data = [
   {
-    tradeName: 'Carpenter',
+    tradeName: 'Additions & Remodeling',
   },
   {
-    tradeName: 'Carpenter',
+    tradeName: 'Air Conditioning    ',
   },
   {
-    tradeName: 'Carpenter',
+    tradeName: 'Appliances',
   },
   {
-    tradeName: 'Carpenter',
+    tradeName: 'Appraiser',
   },
   {
-    tradeName: 'Carpenter',
+    tradeName: 'Architects & Engineers    ',
   },
   {
-    tradeName: 'Carpenter',
+    tradeName: 'Art & Mirror Mounting ',
   },
   {
-    tradeName: 'Carpenter',
+    tradeName: 'Audio/Visual & Computers',
   },
   {
-    tradeName: 'Carpenter',
+    tradeName: 'Awnings',
   },
   {
-    tradeName: 'Carpenter',
+    tradeName: 'Brick & Stone    ',
   },
   {
-    tradeName: 'Carpenter',
+    tradeName: 'Cabinets    ',
   },
   {
-    tradeName: 'Carpenter',
+    tradeName: 'Carpenters',
   },
   {
-    tradeName: 'Carpenter',
+    tradeName: 'Carpet & Upholstery Cleaning    ',
   },
   {
-    tradeName: 'Carpenter',
+    tradeName: 'Ceilings',
   },
   {
-    tradeName: 'Carpenter',
+    tradeName: 'Central Vacuum    ',
   },
   {
-    tradeName: 'Carpenter',
+    tradeName: 'Cleaning & Maid Services    ',
   },
   {
-    tradeName: 'Carpenter',
+    tradeName: 'Commercial Contractors',
   },
   {
-    tradeName: 'Carpenter',
+    tradeName: 'Concrete',
   },
   {
-    tradeName: 'Carpenter',
+    tradeName: 'Construction',
   },
   {
-    tradeName: 'Carpenter',
+    tradeName: 'Countertops',
   },
   {
-    tradeName: 'Carpenter',
+    tradeName: 'Decks',
   },
   {
-    tradeName: 'Carpenter',
+    tradeName: 'Demolition Service    ',
   },
   {
-    tradeName: 'Carpenter',
+    tradeName: 'Designers & Decorators    ',
   },
   {
-    tradeName: 'Carpenter',
+    tradeName: 'Disability Services    ',
   },
   {
-    tradeName: 'Carpenter',
+    tradeName: 'Disaster Recovery Services    ',
+  },
+  {
+    tradeName: 'Docks',
+  },
+  {
+    tradeName: 'Doors  ',
+  },
+  {
+    tradeName: 'Drywall & Plaster',
+  },
+  {
+    tradeName: 'Electrical',
+  },
+  {
+    tradeName: 'Excavation   ',
+  },
+  {
+    tradeName: 'Fans',
+  },
+  {
+    tradeName: 'Fences',
+  },
+  {
+    tradeName: 'Fireplace & Wood Stoves    ',
+  },
+  {
+    tradeName: 'Sports Equipment Assembly    ',
+  },
+  {
+    tradeName: 'Flooring & Carpet    ',
+  },
+  {
+    tradeName: 'Foundations',
+  },
+  {
+    tradeName: 'Fountains & Ponds    ',
+  },
+  {
+    tradeName: 'Furniture Assembly    ',
+  },
+  {
+    tradeName: 'Furniture Repair & Refinish    ',
+  },
+  {
+    tradeName: 'Garage & Garage Doors    ',
+  },
+  {
+    tradeName: 'General Contractors',
+  },
+  {
+    tradeName: 'Glass & Mirrors    ',
+  },
+  {
+    tradeName: 'Gutters',
+  },
+  {
+    tradeName: 'Handyman Services',
+  },
+  {
+    tradeName: 'Heating & Furnace Systems',
+  },
+  {
+    tradeName: 'Home Inspection    ',
+  },
+  {
+    tradeName: 'Home Maintenance    ',
+  },
+  {
+    tradeName: 'Home Services   ',
+  },
+  {
+    tradeName: 'Hot Tubs, Spas & Saunas   ',
+  },
+  {
+    tradeName: 'Household Help',
+  },
+  {
+    tradeName: 'HVAC    ',
+  },
+  {
+    tradeName: 'Insulation',
+  },
+  {
+    tradeName: 'Landscaping',
+  },
+  {
+    tradeName: 'Lawn & Garden Care    ',
+  },
+  {
+    tradeName: 'Lifting & Moving Heavy Items',
+  },
+  {
+    tradeName: 'Locksmith',
+  },
+  {
+    tradeName: 'Metal Fabrication',
+  },
+  {
+    tradeName: 'Mold & Asbestos Services  ',
+  },
+  {
+    tradeName: 'Moving  ',
+  },
+  {
+    tradeName: 'New Home Builders',
+  },
+  {
+    tradeName: 'Organizers    ',
+  },
+  {
+    tradeName: 'Outdoor Playgrounds',
+  },
+  {
+    tradeName: 'Packing & Unpacking Services   ',
+  },
+  {
+    tradeName: 'Painting  ',
+  },
+  {
+    tradeName: 'Paving',
+  },
+  {
+    tradeName: 'Permit Services',
+  },
+  {
+    tradeName: 'Pest Control',
+  },
+  {
+    tradeName: 'Plumbing',
+  },
+  {
+    tradeName: 'Powdercoating',
+  },
+  {
+    tradeName: 'Remodeling',
+  },
+  {
+    tradeName: 'Roofing  ',
+  },
+  {
+    tradeName: 'Sandblasting Service  ',
+  },
+  {
+    tradeName: 'Septic Tanks & Wells  ',
+  },
+  {
+    tradeName: 'Sheds & Enclosures',
+  },
+  {
+    tradeName: 'Siding ',
+  },
+  {
+    tradeName: 'Sign Making Service',
+  },
+  {
+    tradeName: 'Skylights',
+  },
+  {
+    tradeName: 'Snow Removal Service',
+  },
+  {
+    tradeName: 'Solar',
+  },
+  {
+    tradeName: 'Stained Glass',
+  },
+  {
+    tradeName: 'Swimming Pools    ',
+  },
+  {
+    tradeName: 'Tennis or Game Court   ',
+  },
+  {
+    tradeName: 'Tile  ',
+  },
+  {
+    tradeName: 'Tree Service',
+  },
+  {
+    tradeName: 'Wall Coverings   ',
+  },
+  {
+    tradeName: 'Waste Material Removal  ',
+  },
+  {
+    tradeName: 'Water Treatment System  ',
+  },
+  {
+    tradeName: 'Waterproofing   ',
+  },
+  {
+    tradeName: 'Window Coverings',
+  },
+  {
+    tradeName: 'Windows   ',
+  },
+  {
+    tradeName: 'Yard & Garden Work',
   },
 ];
 

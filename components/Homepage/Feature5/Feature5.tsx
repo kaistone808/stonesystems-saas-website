@@ -1,12 +1,54 @@
 'use client';
 
-import { Image, Container, Title, Button, Text, List, ThemeIcon, rem } from '@mantine/core';
-import { IconCheck, IconCircleDashedCheck } from '@tabler/icons-react';
+import { Image, Container, Title, Button, Text, rem, SimpleGrid, Flex } from '@mantine/core';
+import { IconCheckbox } from '@tabler/icons-react';
 import classes from './Feature5.module.css';
 
+const features = [
+  {
+    title: 'Get Found On The Go',
+    description:
+      "Have your business's information available to potential customers when they're on the go.",
+  },
+  {
+    title: 'Be With The Times',
+    description:
+      'Show potential customers that you are up-to-date with the latest technology by being found on voice search.',
+  },
+  {
+    title: 'Get Found On Siri',
+    description:
+      'Get found on Siri by having your business information available to potential customers.',
+  },
+  {
+    title: 'Get Found On Alexa',
+    description:
+      'Get found on Alexa by having your business information available to potential customers.',
+  },
+];
+
 export function Feature5() {
+  const items = features.map((feature) => (
+    <div key={feature.title}>
+      <Flex>
+        <IconCheckbox
+          style={{ width: rem(24), height: rem(24) }}
+          color="var(--yellow)"
+          stroke={2}
+        />
+        <Text fz="lg" ml={5} fw={500}>
+          {feature.title}
+        </Text>
+      </Flex>
+
+      <Text c="dimmed" fz="sm">
+        {feature.description}
+      </Text>
+    </div>
+  ));
+
   return (
-    <Container size="md">
+    <Container size="lg">
       <div className={classes.inner}>
         <Image
           src="https://cdn.prod.website-files.com/602d921508c6c26dc5cebf3f/61d300b1e9f3319ca31a51fc_ProSite%20-%20Hero%20Home-p-1080.png"
@@ -16,29 +58,13 @@ export function Feature5() {
         <div className={classes.content}>
           <Title className={classes.title}>Voice Search</Title>
           <Text className={classes.description} mt="md">
-            Get found through voice search when someone asks their phone to find a business like
-            yours.
+            Kinda weird, we know... <br />
+            But people talk to their phones, and we want you be the answer.
           </Text>
-
-          <List
-            mt={30}
-            spacing="sm"
-            size="md"
-            icon={
-              <ThemeIcon size={20} radius="xl">
-                <IconCircleDashedCheck style={{ width: rem(20), height: rem(20) }} />
-              </ThemeIcon>
-            }
-          >
-            <List.Item>Get found through Siri, Alexa & More</List.Item>
-            <List.Item>Let people find you on the go</List.Item>
-            <List.Item>
-              Show customers you're up-to-date with the latest technology
-            </List.Item>
-            <List.Item>Be accessible to everyone</List.Item>
-          </List>
-
-          <Button size="md" className={classes.control}>
+          <SimpleGrid mt={'lg'} cols={2} spacing={20}>
+            {items}
+          </SimpleGrid>
+          <Button size="lg" bg="var(--yellow)" className={classes.control}>
             Learn More
           </Button>
         </div>

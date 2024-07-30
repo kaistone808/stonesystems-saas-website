@@ -1,26 +1,67 @@
 'use client';
 
-import { Container, Paper, SimpleGrid } from '@mantine/core';
+import { Container, Image, Paper, SimpleGrid } from '@mantine/core';
 import classes from './PartnersSection.module.css';
 
+const data = [
+  {
+    imageSrc: '/images/partners/localfalcon.png',
+  },
+  {
+    imageSrc: '/images/partners/meta.svg.png',
+  },
+  {
+    imageSrc: '/images/partners/godaddy.png',
+  },
+  {
+    imageSrc: '/images/partners/chatgpt.png',
+  },
+  {
+    imageSrc: '/images/partners/gmb.webp',
+  },
+  {
+    imageSrc: '/images/partners/canva.svg.png',
+  },
+  {
+    imageSrc: '/images/partners/ahrefs.png',
+  },
+  {
+    imageSrc: '/images/partners/googleanalytics.png',
+  },
+  {
+    imageSrc: '/images/partners/mailgun.png',
+  },
+  {
+    imageSrc: '/images/partners/semrush.png',
+  },
+  {
+    imageSrc: '/images/partners/twilio.png',
+  },
+  {
+    imageSrc: '/images/partners/zapier.svg.png',
+  },
+  {
+    imageSrc: '/images/partners/googlesearch.png',
+  },
+  {
+    imageSrc: '/images/partners/keywordseverywhere.jpeg',
+  },
+  {
+    imageSrc: '/images/partners/leadconnector.png',
+  },
+];
+
 export function PartnersSection() {
+  const partners = data.map((item) => (
+
+    <Paper className={classes.partnerCard} shadow="md">
+      <Image className={classes.image} src={item.imageSrc} alt="partner" />
+    </Paper>
+  ));
   return (
     <>
-      <Container size="md">
-        <SimpleGrid cols={4}>
-          <Paper className={classes.partnerCard} shadow="md">
-            <img src="/images/1.svg" alt="partner" />
-          </Paper>
-          <Paper className={classes.partnerCard} shadow="md">
-            <img src="/images/1.svg" alt="partner" />
-          </Paper>
-          <Paper className={classes.partnerCard} shadow="md">
-            <img src="/images/1.svg" alt="partner" />
-          </Paper>
-          <Paper className={classes.partnerCard} shadow="md">
-            <img src="/images/1.svg" alt="partner" />
-          </Paper>
-        </SimpleGrid>
+      <Container size="lg">
+        <SimpleGrid cols={4}>{partners}</SimpleGrid>
       </Container>
     </>
   );

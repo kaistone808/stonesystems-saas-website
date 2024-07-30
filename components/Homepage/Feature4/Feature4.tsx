@@ -1,37 +1,65 @@
 'use client';
 
-import { Image, Container, Title, Button, Text, List, ThemeIcon, rem } from '@mantine/core';
-import { IconCheck, IconCircleDashedCheck } from '@tabler/icons-react';
+import { Image, Container, Title, Button, Text, rem, SimpleGrid, Flex } from '@mantine/core';
+import { IconCheckbox } from '@tabler/icons-react';
 import classes from './Feature4.module.css';
 
+const features = [
+  {
+    title: 'More Reviews',
+    description:
+      'We create a marketing campaign that will get you a ton of reviews on Google. All 5-Stars of course.',
+  },
+  {
+    title: 'More Referrals',
+    description:
+      'We create a marketing campaign that will incentivize your customers to refer you to their friends.',
+  },
+  {
+    title: 'More Repeat Customers',
+    description:
+      'We create a marketing campaign that will get your customers to come back to you again and again.',
+  },
+  {
+    title: 'Done For You',
+    description:
+      'We create the marketing campaigns for you, so you can focus on running your business.',
+  },
+];
+
 export function Feature4() {
+  const items = features.map((feature) => (
+    <div key={feature.title}>
+      <Flex>
+        <IconCheckbox
+          style={{ width: rem(24), height: rem(24) }}
+          color="var(--yellow)"
+          stroke={2}
+        />
+        <Text fz="lg" ml={5} fw={500}>
+          {feature.title}
+        </Text>
+      </Flex>
+
+      <Text c="dimmed" fz="sm">
+        {feature.description}
+      </Text>
+    </div>
+  ));
+
   return (
-    <Container size="md">
+    <Container size="lg">
       <div className={classes.inner}>
         <div className={classes.content}>
-          <Title className={classes.title}>Referral & Remarketing campaigns</Title>
+          <Title className={classes.title}>Marketing Campaigns</Title>
           <Text className={classes.description} mt="md">
-            Generate repeat business, create loyal customers that refer others & boost your online
-            presence. All without spending a penny on advertising.
+            You know it, and we know it… <br />
+            Referrals and repeat customers are the best. Let’s get you both!
           </Text>
-
-          <List
-            mt={30}
-            spacing="sm"
-            size="md"
-            icon={
-              <ThemeIcon size={20} radius="xl">
-                <IconCircleDashedCheck style={{ width: rem(20), height: rem(20) }} />
-              </ThemeIcon>
-            }
-          >
-            <List.Item>Generate repeat business</List.Item>
-            <List.Item>Create loyal customers that refer others</List.Item>
-            <List.Item>Boost your online reputation with positive reviews</List.Item>
-            <List.Item>Generate a surge of business when the season is slow</List.Item>
-          </List>
-
-          <Button size="md" className={classes.control}>
+          <SimpleGrid mt={'lg'} cols={2} spacing={20}>
+            {items}
+          </SimpleGrid>
+          <Button size="lg" bg="var(--yellow)" className={classes.control}>
             Learn More
           </Button>
         </div>

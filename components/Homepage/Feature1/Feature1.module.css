@@ -1,57 +1,56 @@
 .inner {
-    display: flex;
-    justify-content: space-between;
-    margin-top: calc(var(--space-40) * 2);
-  }
-  
-  .content {
-    max-width: rem(480px);
-  
-    @media (max-width: $mantine-breakpoint-md) {
-      max-width: 100%;
-      margin-right: 0;
-    }
-  }
-  
-  .title {
-    color: var(--blue);
-    font-family:
-      Greycliff CF,
-      var(--mantine-font-family);
-    font-size: var(--subtitle-font-size);
-    line-height: 1.2;
-    font-weight: 700;
-  
-    @media (max-width: $mantine-breakpoint-xs) {
-      font-size: rem(28px);
-    }
-  }
+  display: flex;
+  justify-content: space-between;
+  margin-top: calc(var(--space-40) * 2);
+}
 
-  .description{
-    font-size: 18px;
+.content {
+  max-width: 55%;
+
+  @media (max-width: $mantine-breakpoint-md) {
+    max-width: 100%;
+    margin-right: 0;
   }
-  
-  .control {
-    border-radius: var(--border-radius-sm);
-    margin-top: var(--space-40);
-    @media (max-width: $mantine-breakpoint-xs) {
-      flex: 1;
-    }
+}
+
+.title {
+  color: var(--blue);
+  font-family:
+    Greycliff CF,
+    var(--mantine-font-family);
+  font-size: var(--subtitle-font-size);
+  line-height: 1.2;
+  font-weight: 700;
+
+  @media (max-width: $mantine-breakpoint-xs) {
+    font-size: rem(28px);
   }
-  
-  .image {
-    width: rem(376px);
-    height: rem(356px);
-    margin-right: calc(var(--mantine-spacing-xl) * 3);
-  
-    @media (max-width: $mantine-breakpoint-md) {
-      display: none;
-    }
+}
+
+.description {
+  font-size: 18px;
+}
+
+.control {
+  border-radius: var(--border-radius-sm);
+  margin-top: calc(var(--space-40) / 2);
+  @media (max-width: $mantine-breakpoint-xs) {
+    flex: 1;
   }
-  
-  .highlight {
-    position: relative;
-    background-color: var(--mantine-color-blue-light);
-    border-radius: var(--mantine-radius-sm);
-    padding: rem(4px) rem(12px);
+}
+
+.image {
+  max-width: 45%;
+  margin-right: calc(var(--mantine-spacing-xl) * 3);
+
+  @media (max-width: $mantine-breakpoint-md) {
+    display: none;
   }
+}
+
+.highlight {
+  position: relative;
+  background-color: var(--mantine-color-blue-light);
+  border-radius: var(--mantine-radius-sm);
+  padding: rem(4px) rem(12px);
+}

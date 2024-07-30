@@ -1,13 +1,30 @@
 :root {
   --black: #000000;
   --white: #ffffff;
-  --gray: #E5E5E5;
+  --gray: #e5e5e5;
   --light-gray: #f1f1f1;
-  --yellow: #FCA311;
+  --yellow: #fca311;
   --blue: #14213d;
   --title-font-size: 48px;
   --subtitle-font-size: 40px;
   --space-40: 40px;
   --border-radius-sm: 5px;
   --border-radius-md: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Work Sans', sans-serif !important;
+}
+p,
+a,
+ul,
+ol,
+li,
+span {
+  font-family: 'Roboto', sans-serif !important;
 }

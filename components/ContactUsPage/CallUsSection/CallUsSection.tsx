@@ -6,7 +6,7 @@ import classes from './CallUsSection.module.css';
 export function CallUsSection() {
   return (
     <>
-      <Container size="md" className={classes.inner}>
+      <Container size="lg" className={classes.inner}>
         <Title className={classes.mainTitle}>Or Contact Us…</Title>
         <Text c="dimmed" className={classes.description} ta="center" mt="md">
           In the last 14 years we have helped countless contractors reach their goals.

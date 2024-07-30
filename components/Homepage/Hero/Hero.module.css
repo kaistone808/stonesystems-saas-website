@@ -1,58 +1,57 @@
 .inner {
-    display: flex;
-    justify-content: space-between;
-    padding-top: calc(var(--space-40) * 3);
-    padding-bottom: calc(var(--space-40) * 3);
-  }
-  
-  .content {
-    max-width: rem(480px);
-    margin-right: calc(var(--space-40) * 2);
-  
-    @media (max-width: $mantine-breakpoint-md) {
-      max-width: 100%;
-      margin-right: 0;
-    }
-  }
-  
-  .title {
-    color: var(--blue);
-    font-family:
-      Greycliff CF,
-      var(--mantine-font-family);
-    font-size: var(--title-font-size);
-    line-height: 1.2;
-    font-weight: 900;
-  
-    @media (max-width: $mantine-breakpoint-xs) {
-      font-size: rem(28px);
-    }
-  }
+  display: flex;
+  justify-content: space-between;
+  padding-top: calc(var(--space-40) * 3);
+  padding-bottom: calc(var(--space-40) * 3);
+}
 
-  .description{
-    font-size: 18px;
+.content {
+  max-width: 70%;
+  margin-right: calc(var(--space-40) * 2);
+
+  @media (max-width: $mantine-breakpoint-md) {
+    max-width: 100%;
+    margin-right: 0;
   }
-  
-  .control {
-    border-radius: var(--border-radius-sm);
-    margin-top: var(--space-40);
-    @media (max-width: $mantine-breakpoint-xs) {
-      flex: 1;
-    }
+}
+
+.title {
+  color: var(--blue);
+  font-family:
+    Greycliff CF,
+    var(--mantine-font-family);
+  font-size: var(--title-font-size);
+  line-height: 1.2;
+  font-weight: 900;
+
+  @media (max-width: $mantine-breakpoint-xs) {
+    font-size: rem(28px);
   }
-  
-  .image {
-    width: rem(376px);
-    height: rem(356px);
-  
-    @media (max-width: $mantine-breakpoint-md) {
-      display: none;
-    }
+}
+
+.description {
+  font-size: 18px;
+}
+
+.control {
+  border-radius: var(--border-radius-sm);
+  margin-top: var(--space-40);
+  background-color: var(--yellow);
+  @media (max-width: $mantine-breakpoint-xs) {
+    flex: 1;
   }
-  
-  .highlight {
-    position: relative;
-    background-color: var(--mantine-color-blue-light);
-    border-radius: var(--border-radius-sm);
-    padding: rem(4px) rem(12px);
+}
+
+.image {
+  max-width: 30%;
+  @media (max-width: $mantine-breakpoint-md) {
+    display: none;
   }
+}
+
+.highlight {
+  position: relative;
+  background-color: var(--mantine-color-yellow-light);
+  border-radius: var(--border-radius-sm);
+  padding: rem(4px) rem(12px);
+}

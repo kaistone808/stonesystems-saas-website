@@ -32,51 +32,71 @@ function Card({ tradeName, imageSrc }: CardProps) {
 
 const data = [
   {
-    tradeName: 'Carpenter',
+    tradeName: 'General Contractors',
     imageSrc: 'https://3e2022dc.rocketcdn.me/wp-content/uploads/2022/09/Remodeling.webp',
   },
   {
-    tradeName: 'Carpenter',
+    tradeName: 'Remodeling',
     imageSrc: 'https://3e2022dc.rocketcdn.me/wp-content/uploads/2022/09/Remodeling.webp',
   },
   {
-    tradeName: 'Carpenter',
+    tradeName: 'Roofing',
     imageSrc: 'https://3e2022dc.rocketcdn.me/wp-content/uploads/2022/09/Remodeling.webp',
   },
   {
-    tradeName: 'Carpenter',
+    tradeName: 'Home Builders',
     imageSrc: 'https://3e2022dc.rocketcdn.me/wp-content/uploads/2022/09/Remodeling.webp',
   },
   {
-    tradeName: 'Carpenter',
+    tradeName: 'Commercial',
     imageSrc: 'https://3e2022dc.rocketcdn.me/wp-content/uploads/2022/09/Remodeling.webp',
   },
   {
-    tradeName: 'Carpenter',
+    tradeName: 'Plumbing',
     imageSrc: 'https://3e2022dc.rocketcdn.me/wp-content/uploads/2022/09/Remodeling.webp',
   },
   {
-    tradeName: 'Carpenter',
+    tradeName: 'Electrician',
     imageSrc: 'https://3e2022dc.rocketcdn.me/wp-content/uploads/2022/09/Remodeling.webp',
   },
   {
-    tradeName: 'Carpenter',
+    tradeName: 'HVAC',
     imageSrc: 'https://3e2022dc.rocketcdn.me/wp-content/uploads/2022/09/Remodeling.webp',
   },
   {
-    tradeName: 'Carpenter',
+    tradeName: 'Decks & Patios',
     imageSrc: 'https://3e2022dc.rocketcdn.me/wp-content/uploads/2022/09/Remodeling.webp',
   },
   {
-    tradeName: 'Carpenter',
+    tradeName: 'Handyman',
     imageSrc: 'https://3e2022dc.rocketcdn.me/wp-content/uploads/2022/09/Remodeling.webp',
   },
   {
-    tradeName: 'Carpenter',
+    tradeName: 'Painters',
     imageSrc: 'https://3e2022dc.rocketcdn.me/wp-content/uploads/2022/09/Remodeling.webp',
   },
   {
-    tradeName: 'Carpenter',
+    tradeName: 'Landscapers',
+    imageSrc: 'https://3e2022dc.rocketcdn.me/wp-content/uploads/2022/09/Remodeling.webp',
+  },
+  {
+    tradeName: 'Pool Construction',
+    imageSrc: 'https://3e2022dc.rocketcdn.me/wp-content/uploads/2022/09/Remodeling.webp',
+  },
+  {
+    tradeName: 'Siding',
+    imageSrc: 'https://3e2022dc.rocketcdn.me/wp-content/uploads/2022/09/Remodeling.webp',
+  },
+  {
+    tradeName: 'Paving',
+    imageSrc: 'https://3e2022dc.rocketcdn.me/wp-content/uploads/2022/09/Remodeling.webp',
+  },
+  {
+    tradeName: 'Hardscaping',
+    imageSrc: 'https://3e2022dc.rocketcdn.me/wp-content/uploads/2022/09/Remodeling.webp',
+  },
+  {
+    tradeName: 'Windows & Doors',
     imageSrc: 'https://3e2022dc.rocketcdn.me/wp-content/uploads/2022/09/Remodeling.webp',
   },
 ];

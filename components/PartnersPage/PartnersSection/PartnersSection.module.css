@@ -2,11 +2,10 @@
   display: flex;
   justify-content: center;
   padding: 2rem;
-  max-width: 330px;
   width: 100%;
+  height: 200px;
   border-radius: 10px;
-  img {
-    width: 150px;
-    height: 150px;
+  .image {
+    object-fit: contain;
   }
 }

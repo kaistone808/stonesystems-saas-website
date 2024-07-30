@@ -9,7 +9,7 @@ export function TitleBlock() {
     <div className={classes.outer}>
     <Container size="md">
           <Title className={classes.title}>
-          So, we built the <span className={classes.highlight}>Pro Pipeline</span>
+          That's why we built the <span className={classes.highlight}>Stone System</span>
           </Title>
     </Container>
     </div>

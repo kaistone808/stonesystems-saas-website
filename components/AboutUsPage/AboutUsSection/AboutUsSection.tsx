@@ -1,62 +1,27 @@
 'use client';
 
-import { Container, Title, Text, SimpleGrid, Paper } from '@mantine/core';
+import { Container, Text, SimpleGrid, Image } from '@mantine/core';
 
 import classes from './AboutUsSection.module.css';
 
 export function AboutUsSection() {
   return (
-    <div className={classes.outer}>
-      <Container size="md">
-        <Title className={classes.title}>Focus on doing great work, leave the rest to us</Title>
-        <Text c="dimmed" className={classes.description} ta="center" mt="md">
-          We noticed contractors looking to grow their business online were getting tied down with
-          complex software, so we built a platform that handles everything for you.
+    <Container size="lg">
+      <SimpleGrid className={classes.grid} cols={2}>
+        <Text className={classes.text}>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, fugit officia ipsam
+          deserunt iure voluptas aperiam obcaecati dolores reprehenderit nulla porro minima eos quas
+          dignissimos voluptatum harum, distinctio reiciendis perferendis. Lorem ipsum dolor sit,
+          amet consectetur adipisicing elit. Suscipit distinctio quisquam perspiciatis odit,
+          laudantium enim atque neque consequatur. Commodi fugiat soluta recusandae consectetur
+          magni nulla natus corrupti nisi dolore eveniet?
         </Text>
-        <SimpleGrid cols={4}>
-          <Paper pt="xl" pb="xl">
-            <Text c="dimmed" className={classes.normalText} ta="center">
-              Founded in
-            </Text>
-            <Text c="dimmed" className={classes.largeText} ta="center">
-              2020
-            </Text>
-          </Paper>
-          <Paper pt="xl" pb="xl">
-            <Text c="dimmed" className={classes.normalText} ta="center">
-              Serving all
-            </Text>
-            <Text c="dimmed" className={classes.largeText} ta="center">
-              50
-            </Text>
-            <Text c="dimmed" className={classes.normalText} ta="center">
-              states
-            </Text>
-          </Paper>
-          <Paper pt="xl" pb="xl">
-            <Text c="dimmed" className={classes.normalText} ta="center">
-              More than
-            </Text>
-            <Text c="dimmed" className={classes.largeText} ta="center">
-              150
-            </Text>
-            <Text c="dimmed" className={classes.normalText} ta="center">
-              websites built
-            </Text>
-          </Paper>
-          <Paper pt="xl" pb="xl">
-            <Text c="dimmed" className={classes.normalText} ta="center">
-              Made with love in
-            </Text>
-            <Text c="dimmed" className={classes.largeText} ta="center">
-              5
-            </Text>
-            <Text c="dimmed" className={classes.normalText} ta="center">
-              cities
-            </Text>
-          </Paper>
-        </SimpleGrid>
-      </Container>
-    </div>
+        <Image
+          src="https://cdn.prod.website-files.com/602d921508c6c26dc5cebf3f/61d300b1e9f3319ca31a51fc_ProSite%20-%20Hero%20Home-p-1080.png"
+          alt="About Us"
+          className={classes.image}
+        />
+      </SimpleGrid>
+    </Container>
   );
 }

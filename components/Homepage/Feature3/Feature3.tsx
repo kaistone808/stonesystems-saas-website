@@ -1,12 +1,54 @@
 'use client';
 
-import { Image, Container, Title, Button, Text, List, ThemeIcon, rem } from '@mantine/core';
-import { IconCheck, IconCircleDashedCheck } from '@tabler/icons-react';
+import { Image, Container, Title, Button, Text, rem, SimpleGrid, Flex } from '@mantine/core';
+import { IconCheckbox } from '@tabler/icons-react';
 import classes from './Feature3.module.css';
 
+const features = [
+  {
+    title: 'No More Lost Leads',
+    description:
+      "Send potential customers a text message when you miss their call, so they don't go to the next guy.",
+  },
+  {
+    title: 'Be available 24/7',
+    description:
+      'Automatically respond to missed calls with a text message, so that you can be available 24/7.',
+  },
+  {
+    title: 'Always Respond Quickly',
+    description:
+      'Respond to missed calls with a text message in less than 5 minutes, making it 21x more likely to convert.',
+  },
+  {
+    title: 'Show People You Care',
+    description:
+      'Show potential customers that you care about their business by responding to missed calls with a text message.',
+  },
+];
+
 export function Feature3() {
+  const items = features.map((feature) => (
+    <div key={feature.title}>
+      <Flex>
+        <IconCheckbox
+          style={{ width: rem(24), height: rem(24) }}
+          color="var(--yellow)"
+          stroke={2}
+        />
+        <Text fz="lg" ml={5} fw={500}>
+          {feature.title}
+        </Text>
+      </Flex>
+
+      <Text c="dimmed" fz="sm">
+        {feature.description}
+      </Text>
+    </div>
+  ));
+
   return (
-    <Container size="md">
+    <Container size="lg">
       <div className={classes.inner}>
         <Image
           src="https://cdn.prod.website-files.com/602d921508c6c26dc5cebf3f/61d300b1e9f3319ca31a51fc_ProSite%20-%20Hero%20Home-p-1080.png"
@@ -14,28 +56,15 @@ export function Feature3() {
         />
 
         <div className={classes.content}>
-          <Title className={classes.title}>Missed call text back</Title>
+          <Title className={classes.title}>Missed Call Text Back</Title>
           <Text className={classes.description} mt="md">
-            Automatically follow up with missed calls via text message and never miss a lead.
+            It’s not rocket science… <br />
+            Quickly getting back to customers will make you more money.
           </Text>
-
-          <List
-            mt={30}
-            spacing="sm"
-            size="md"
-            icon={
-              <ThemeIcon size={20} radius="xl">
-                <IconCircleDashedCheck style={{ width: rem(20), height: rem(20) }} />
-              </ThemeIcon>
-            }
-          >
-            <List.Item>Never miss another lead</List.Item>
-            <List.Item>Show customers you care by responding immediately</List.Item>
-            <List.Item>Always stay connected</List.Item>
-            <List.Item>Automatically respond 24/7</List.Item>
-          </List>
-
-          <Button size="md" className={classes.control}>
+          <SimpleGrid mt={'lg'} cols={2} spacing={20}>
+            {items}
+          </SimpleGrid>
+          <Button size="lg" bg="var(--yellow)" className={classes.control}>
             Learn More
           </Button>
         </div>

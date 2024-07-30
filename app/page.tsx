@@ -6,6 +6,7 @@ import { Feature3 } from '@/components/Homepage/Feature3/Feature3';
 import { Feature4 } from '@/components/Homepage/Feature4/Feature4';
 import { Feature5 } from '@/components/Homepage/Feature5/Feature5';
 import { Hero } from '@/components/Homepage/Hero/Hero';
+import { OurProcessSection } from '@/components/Homepage/Our Process/OurProcessSection';
 import { PartnersSection } from '@/components/Homepage/PartnersSection/PartnersSection';
 import { TestimonialSection } from '@/components/Homepage/TestimonialSection/TestimonialSection';
 import { TitleBlock } from '@/components/Homepage/TitleBlock/TitleBlock';
@@ -27,6 +28,7 @@ export default function HomePage() {
       <Feature4 />
       <Feature5 />
       <WhoWeServeSection />
+      <OurProcessSection />
       <WhyChooseUsSection />
       <PartnersSection />
       <Faq />
