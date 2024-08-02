@@ -1,10 +1,11 @@
 :root {
   --black: #000000;
   --white: #ffffff;
-  --gray: #e5e5e5;
-  --light-gray: #f1f1f1;
-  --yellow: #fca311;
-  --blue: #14213d;
+  --gray: #F1F1F1;
+  --yellow: #E8A743;
+  --blue: #1F2236;
+  --text-gray: #C4C6CD;
+  --border-color: #424453;
   --title-font-size: 48px;
   --subtitle-font-size: 40px;
   --space-40: 40px;

@@ -1,6 +1,11 @@
 .outer {
-  background-color: var(--blue);
-  padding: var(--space-40) 0;
+  background-color: var(--white);
+  background-image: url('/images/bg_white.svg');
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-top: 40px;
+  padding-bottom: 146px;
 }
 
 .card {
@@ -11,13 +16,11 @@
   background-size: cover;
   background-position: center;
   padding: 1rem;
+  background-color: var(--blue);
 }
 
 .mainTitle {
-  color: var(--white);
-  font-family:
-    Greycliff CF,
-    var(--mantine-font-family);
+  color: var(--blue);
   font-size: rem(52px);
   line-height: 1.2;
   font-weight: 900;
@@ -33,7 +36,6 @@
   font-family: var(--mantine-font-family);
   font-size: rem(21px);
   line-height: 1.5;
-  color: var(--white);
   margin-bottom: var(--mantine-spacing-lg);
 }
 
@@ -41,13 +43,16 @@
   height: 50px;
   width: 50px;
   margin-bottom: 10px;
+  filter: invert(1);
 }
 
 .cardTitle {
   margin-bottom: 10px;
+  color: var(--white);
 }
 
 .cardDescription {
   font-size: 16px;
   margin-bottom: 10px;
+  color: var(--white);
 }

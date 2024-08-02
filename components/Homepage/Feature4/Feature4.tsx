@@ -1,6 +1,16 @@
 'use client';
 
-import { Image, Container, Title, Button, Text, rem, SimpleGrid, Flex } from '@mantine/core';
+import {
+  Image,
+  Container,
+  Title,
+  Button,
+  Text,
+  rem,
+  SimpleGrid,
+  Flex,
+  Divider,
+} from '@mantine/core';
 import { IconCheckbox } from '@tabler/icons-react';
 import classes from './Feature4.module.css';
 
@@ -11,14 +21,9 @@ const features = [
       'We create a marketing campaign that will get you a ton of reviews on Google. All 5-Stars of course.',
   },
   {
-    title: 'More Referrals',
+    title: 'More Referrals & Repeat Customers',
     description:
-      'We create a marketing campaign that will incentivize your customers to refer you to their friends.',
-  },
-  {
-    title: 'More Repeat Customers',
-    description:
-      'We create a marketing campaign that will get your customers to come back to you again and again.',
+      'We create a marketing campaign that will incentivize your customers to refer you to their friends and come back.',
   },
   {
     title: 'Done For You',
@@ -28,22 +33,11 @@ const features = [
 ];
 
 export function Feature4() {
-  const items = features.map((feature) => (
+  const items = features.map((feature, index) => (
     <div key={feature.title}>
-      <Flex>
-        <IconCheckbox
-          style={{ width: rem(24), height: rem(24) }}
-          color="var(--yellow)"
-          stroke={2}
-        />
-        <Text fz="lg" ml={5} fw={500}>
-          {feature.title}
-        </Text>
-      </Flex>
-
-      <Text c="dimmed" fz="sm">
-        {feature.description}
-      </Text>
+      {index > 0 && <Divider my={'1.5rem'} />}
+      <Text className={classes.featureTitle}>{feature.title}</Text>
+      <Text className={classes.featureDescription}>{feature.description}</Text>
     </div>
   ));
 
@@ -56,17 +50,14 @@ export function Feature4() {
             You know it, and we know it… <br />
             Referrals and repeat customers are the best. Let’s get you both!
           </Text>
-          <SimpleGrid mt={'lg'} cols={2} spacing={20}>
+          <Flex mt={'lg'} direction={'column'}>
             {items}
-          </SimpleGrid>
-          <Button size="lg" bg="var(--yellow)" className={classes.control}>
-            Learn More
+          </Flex>
+          <Button size="xl" bg="var(--yellow)" className={classes.control}>
+            See 30 Second Demo
           </Button>
         </div>
-        <Image
-          src="https://cdn.prod.website-files.com/602d921508c6c26dc5cebf3f/61d300b1e9f3319ca31a51fc_ProSite%20-%20Hero%20Home-p-1080.png"
-          className={classes.image}
-        />
+        <Image src="/images/phone-left.png" className={classes.image} />
       </div>
     </Container>
   );

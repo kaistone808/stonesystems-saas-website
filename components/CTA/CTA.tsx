@@ -12,7 +12,7 @@ export function CTA() {
             let us do it for you.
           </Text>
 
-          <Button size="lg" className={classes.control}>
+          <Button size="xl" bg={'var(--yellow)'} className={classes.control}>
             Book A Call
           </Button>
         </div>

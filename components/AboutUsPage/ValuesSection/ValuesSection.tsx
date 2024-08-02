@@ -71,7 +71,7 @@ export function ValuesSection() {
             </Flex>
           </div>
           <Image
-            src="/images/logo.webp"
+            src="/images/stone-systems-guy.png"
             alt="Contractor"
           />
         </SimpleGrid>

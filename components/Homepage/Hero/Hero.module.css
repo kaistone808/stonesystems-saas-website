@@ -1,3 +1,7 @@
+.outer {
+  background-color: var(--blue);
+}
+
 .inner {
   display: flex;
   justify-content: space-between;
@@ -6,8 +10,8 @@
 }
 
 .content {
-  max-width: 70%;
-  margin-right: calc(var(--space-40) * 2);
+  max-width: 65%;
+  margin-right: calc(var(--space-40) / 2);
 
   @media (max-width: $mantine-breakpoint-md) {
     max-width: 100%;
@@ -16,11 +20,8 @@
 }
 
 .title {
-  color: var(--blue);
-  font-family:
-    Greycliff CF,
-    var(--mantine-font-family);
-  font-size: var(--title-font-size);
+  color: var(--white);
+  font-size: 5rem;
   line-height: 1.2;
   font-weight: 900;
 
@@ -30,12 +31,14 @@
 }
 
 .description {
-  font-size: 18px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-gray);
 }
 
 .control {
   border-radius: var(--border-radius-sm);
-  margin-top: var(--space-40);
+  margin-top: 5px;
   background-color: var(--yellow);
   @media (max-width: $mantine-breakpoint-xs) {
     flex: 1;
@@ -43,7 +46,9 @@
 }
 
 .image {
-  max-width: 30%;
+  margin-top: -6rem;
+  max-width: 35%;
+  object-fit: contain;
   @media (max-width: $mantine-breakpoint-md) {
     display: none;
   }
@@ -54,4 +59,31 @@
   background-color: var(--mantine-color-yellow-light);
   border-radius: var(--border-radius-sm);
   padding: rem(4px) rem(12px);
+}
+
+.credit {
+  display: flex;
+  align-items: end;
+}
+
+.creditImage {
+  width: rem(44px);
+  height: rem(44px);
+  margin-right: 6px;
+}
+
+.stars {
+  display: flex;
+  align-items: center;
+}
+
+.star {
+  width: rem(22px);
+  height: rem(22px);
+}
+
+.creditTitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--white);
 }

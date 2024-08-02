@@ -45,86 +45,79 @@ function Card({ personName, companyName, testimonial, videoSrc }: CardProps) {
 const data = [
   {
     testimonial:
-      '"lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."',
-    videoSrc: 'https://www.youtube.com/embed/9bZkp7q19f0',
-    personName: 'John',
+      "I can't say anymore good things about these guys, thank you Kai and Stone Systems!",
+    videoSrc: 'https://www.youtube.com/embed/bWyTPJnU3t4',
+    personName: 'Ben',
     companyName: 'John Construction LLC',
   },
   {
     testimonial:
-      '"lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."',
-    videoSrc: 'https://www.youtube.com/embed/9bZkp7q19f0',
-    personName: 'John',
+      'Nothing but professional and awesome in every way, they are absolutely great to work with',
+    videoSrc: 'https://www.youtube.com/embed/5hXZMg8nsTo',
+    personName: 'Netane',
     companyName: 'John Construction LLC',
   },
   {
     testimonial:
-      '"lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."',
-    videoSrc: 'https://www.youtube.com/embed/9bZkp7q19f0',
-    personName: 'John',
+      'My business has ramped up, literally overnight and their prices are very affordable.',
+    videoSrc: 'https://www.youtube.com/embed/egzkjJrVYqM',
+    personName: 'Frank',
     companyName: 'John Construction LLC',
   },
   {
     testimonial:
-      '"lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."',
-    videoSrc: 'https://www.youtube.com/embed/9bZkp7q19f0',
-    personName: 'John',
+      "They built me a new website and within 10 day's I got my first unpaid for Lead! I'm so happy with them!",
+    videoSrc: 'https://www.youtube.com/embed/uM9kTzFmPC8',
+    personName: 'Armando',
     companyName: 'John Construction LLC',
   },
   {
     testimonial:
-      '"lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."',
-    videoSrc: 'https://www.youtube.com/embed/9bZkp7q19f0',
-    personName: 'John',
+      "I've seen a significant improvement in my business. Stone Systems has made my life so much easier!",
+    videoSrc: 'https://www.youtube.com/embed/loTB8xKbagU',
+    personName: 'David',
     companyName: 'John Construction LLC',
   },
   {
     testimonial:
-      '"lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."',
-    videoSrc: 'https://www.youtube.com/embed/9bZkp7q19f0',
-    personName: 'John',
+      "If you are looking for someone to get that phone ringing, they're the right fit for you! I'm so happy with them!",
+    videoSrc: 'https://www.youtube.com/embed/fXSYQR3r9t8',
+    personName: 'Cody',
+    companyName: 'Next Level Carpet Masters',
+  },
+  {
+    testimonial:
+      'Our company finally has the web presence it needs and our sales and profits have grown significantly!',
+    videoSrc: 'https://www.youtube.com/embed/a5aRLRKbQqg',
+    personName: 'Rick',
     companyName: 'John Construction LLC',
   },
   {
     testimonial:
-      '"lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."',
-    videoSrc: 'https://www.youtube.com/embed/9bZkp7q19f0',
-    personName: 'John',
+      'I have seen a significant increase in business since I started working with them. Highly recommend!',
+    videoSrc: 'https://www.youtube.com/embed/gornitx-N1I',
+    personName: 'Wendy',
     companyName: 'John Construction LLC',
   },
   {
     testimonial:
-      '"lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."',
-    videoSrc: 'https://www.youtube.com/embed/9bZkp7q19f0',
-    personName: 'John',
+      "They're super helpful with everything they do and deliver quality, I would recommend them to anybody",
+    videoSrc: 'https://www.youtube.com/embed/orjSm-VlTMU',
+    personName: 'Rickie',
     companyName: 'John Construction LLC',
   },
   {
     testimonial:
-      '"lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."',
-    videoSrc: 'https://www.youtube.com/embed/9bZkp7q19f0',
-    personName: 'John',
+      'Stonesystems is super affordable and they do a fantastic Job! Would recommend to anyone!',
+    videoSrc: 'https://www.youtube.com/embed/TOdbUPsM-QM',
+    personName: 'Lopaka',
     companyName: 'John Construction LLC',
   },
   {
     testimonial:
-      '"lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."',
-    videoSrc: 'https://www.youtube.com/embed/9bZkp7q19f0',
-    personName: 'John',
-    companyName: 'John Construction LLC',
-  },
-  {
-    testimonial:
-      '"lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."',
-    videoSrc: 'https://www.youtube.com/embed/9bZkp7q19f0',
-    personName: 'John',
-    companyName: 'John Construction LLC',
-  },
-  {
-    testimonial:
-      '"lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."',
-    videoSrc: 'https://www.youtube.com/embed/9bZkp7q19f0',
-    personName: 'John',
+      'Fantastic product. I use them for my website and my CRM. Anytime I have any questions Kai is always available.',
+    videoSrc: 'https://www.youtube.com/embed/Jh6A-iN2EXc',
+    personName: 'Emannuel',
     companyName: 'John Construction LLC',
   },
 ];

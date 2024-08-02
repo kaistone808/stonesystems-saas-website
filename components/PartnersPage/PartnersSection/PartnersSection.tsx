@@ -14,7 +14,7 @@ const data = [
     imageSrc: '/images/partners/godaddy.png',
   },
   {
-    imageSrc: '/images/partners/chatgpt.png',
+    imageSrc: '/images/partners/openai.webp',
   },
   {
     imageSrc: '/images/partners/gmb.webp',
@@ -53,7 +53,6 @@ const data = [
 
 export function PartnersSection() {
   const partners = data.map((item) => (
-
     <Paper className={classes.partnerCard} shadow="md">
       <Image className={classes.image} src={item.imageSrc} alt="partner" />
     </Paper>

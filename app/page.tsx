@@ -1,4 +1,3 @@
-import { CredibilitySection } from '@/components/Homepage/CredibilitySection/CredibilitySection';
 import { Faq } from '@/components/Homepage/Faq/Faq';
 import { Feature1 } from '@/components/Homepage/Feature1/Feature1';
 import { Feature2 } from '@/components/Homepage/Feature2/Feature2';
@@ -10,7 +9,6 @@ import { OurProcessSection } from '@/components/Homepage/Our Process/OurProcessS
 import { PartnersSection } from '@/components/Homepage/PartnersSection/PartnersSection';
 import { TestimonialSection } from '@/components/Homepage/TestimonialSection/TestimonialSection';
 import { TitleBlock } from '@/components/Homepage/TitleBlock/TitleBlock';
-import { TitleBlockColored } from '@/components/Homepage/TitleBlockColored/TitleBlockColored';
 import { WhoWeServeSection } from '@/components/Homepage/WhoWeServeSection/WhoWeServeSection';
 import { WhyChooseUsSection } from '@/components/Homepage/WhyChooseUsSection/WhyChooseUsSection';
 
@@ -18,8 +16,6 @@ export default function HomePage() {
   return (
     <>
       <Hero />
-      <CredibilitySection />
-      <TitleBlockColored />
       <TestimonialSection />
       <TitleBlock />
       <Feature1 />

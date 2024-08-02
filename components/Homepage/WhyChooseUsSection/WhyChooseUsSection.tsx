@@ -69,13 +69,11 @@ export function WhyChooseUsSection() {
         <Container size="lg">
           <Title className={classes.mainTitle}>Why Choose Us</Title>
           <Text ta={'center'} className={classes.subTitle}>
-          There's nothing quite like Stone Systems
+            There's nothing quite like Stone Systems
           </Text>
-          <div className={classes.card}>
             <Container size="lg">
               <SimpleGrid cols={3}>{slides}</SimpleGrid>
             </Container>
-          </div>
         </Container>
       </div>
     </>

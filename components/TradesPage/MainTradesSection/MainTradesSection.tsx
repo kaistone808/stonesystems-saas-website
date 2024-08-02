@@ -33,71 +33,71 @@ function Card({ tradeName, imageSrc }: CardProps) {
 const data = [
   {
     tradeName: 'General Contractors',
-    imageSrc: 'https://3e2022dc.rocketcdn.me/wp-content/uploads/2022/09/Remodeling.webp',
+    imageSrc: '/images/trades/generalcontractor.png',
   },
   {
     tradeName: 'Remodeling',
-    imageSrc: 'https://3e2022dc.rocketcdn.me/wp-content/uploads/2022/09/Remodeling.webp',
+    imageSrc: '/images/trades/remodeling.png',
   },
   {
     tradeName: 'Roofing',
-    imageSrc: 'https://3e2022dc.rocketcdn.me/wp-content/uploads/2022/09/Remodeling.webp',
+    imageSrc: '/images/trades/roofing.png',
   },
   {
     tradeName: 'Home Builders',
-    imageSrc: 'https://3e2022dc.rocketcdn.me/wp-content/uploads/2022/09/Remodeling.webp',
+    imageSrc: '/images/trades/homebuilders.png',
   },
   {
     tradeName: 'Commercial',
-    imageSrc: 'https://3e2022dc.rocketcdn.me/wp-content/uploads/2022/09/Remodeling.webp',
+    imageSrc: '/images/trades/commercial.png',
   },
   {
     tradeName: 'Plumbing',
-    imageSrc: 'https://3e2022dc.rocketcdn.me/wp-content/uploads/2022/09/Remodeling.webp',
+    imageSrc: '/images/trades/plumbing.png',
   },
   {
     tradeName: 'Electrician',
-    imageSrc: 'https://3e2022dc.rocketcdn.me/wp-content/uploads/2022/09/Remodeling.webp',
+    imageSrc: '/images/trades/electrician.png',
   },
   {
     tradeName: 'HVAC',
-    imageSrc: 'https://3e2022dc.rocketcdn.me/wp-content/uploads/2022/09/Remodeling.webp',
+    imageSrc: '/images/trades/hvac.png',
   },
   {
     tradeName: 'Decks & Patios',
-    imageSrc: 'https://3e2022dc.rocketcdn.me/wp-content/uploads/2022/09/Remodeling.webp',
+    imageSrc: '/images/trades/decksandpatios.png',
   },
   {
     tradeName: 'Handyman',
-    imageSrc: 'https://3e2022dc.rocketcdn.me/wp-content/uploads/2022/09/Remodeling.webp',
+    imageSrc: '/images/trades/handyman.png',
   },
   {
     tradeName: 'Painters',
-    imageSrc: 'https://3e2022dc.rocketcdn.me/wp-content/uploads/2022/09/Remodeling.webp',
+    imageSrc: '/images/trades/painters.png',
   },
   {
     tradeName: 'Landscapers',
-    imageSrc: 'https://3e2022dc.rocketcdn.me/wp-content/uploads/2022/09/Remodeling.webp',
+    imageSrc: '/images/trades/landscapers.png',
   },
   {
     tradeName: 'Pool Construction',
-    imageSrc: 'https://3e2022dc.rocketcdn.me/wp-content/uploads/2022/09/Remodeling.webp',
+    imageSrc: '/images/trades/poolbuilders.png',
   },
   {
     tradeName: 'Siding',
-    imageSrc: 'https://3e2022dc.rocketcdn.me/wp-content/uploads/2022/09/Remodeling.webp',
+    imageSrc: '/images/trades/siding.png',
   },
   {
     tradeName: 'Paving',
-    imageSrc: 'https://3e2022dc.rocketcdn.me/wp-content/uploads/2022/09/Remodeling.webp',
+    imageSrc: '/images/trades/paving.png',
   },
   {
     tradeName: 'Hardscaping',
-    imageSrc: 'https://3e2022dc.rocketcdn.me/wp-content/uploads/2022/09/Remodeling.webp',
+    imageSrc: '/images/trades/hardscaping.png',
   },
   {
     tradeName: 'Windows & Doors',
-    imageSrc: 'https://3e2022dc.rocketcdn.me/wp-content/uploads/2022/09/Remodeling.webp',
+    imageSrc: '/images/trades/windowsanddoors.png',
   },
 ];
 

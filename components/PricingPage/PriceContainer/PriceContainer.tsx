@@ -45,8 +45,8 @@ export const PriceContainer = () => {
                 uncheckedIcon={false}
                 width={45}
                 height={25}
-                onColor={'#7F85E4'}
-                offColor={'#7F85E4'}
+                onColor={'#E8A743'}
+                offColor={'#E8A743'}
                 handleDiameter={18}
               />
               <Text ml={'md'} fz={'md'}>
@@ -64,7 +64,7 @@ export const PriceContainer = () => {
             >
               <Paper shadow={'md'} className={classes.cardBox1}>
                 <Stack w={'100%'} align={'center'} p={20}>
-                  <Text fw={700} fz={'md'}>
+                  <Text fw={900} fz={'xl'}>
                     Contractor Basic
                   </Text>
                   <Title order={2} className={classes.moneyTitle}>
@@ -98,18 +98,14 @@ export const PriceContainer = () => {
                     </Text>
                     <Divider w={'100%'} opacity={0.7} />
                   </Stack>
-                  <Button
-                    variant="gradient"
-                    gradient={{ from: 'hsl(236, 72%, 79%)', to: 'hsl(237, 63%, 64%)' }}
-                    w="100%"
-                  >
+                  <Button bg={'var(--yellow)'} w="100%">
                     START NOW
                   </Button>
                 </Stack>
               </Paper>
               <Paper shadow={'md'} className={classes.cardBox2}>
                 <Stack w={'100%'} align={'center'} p={20}>
-                  <Text fw={700} fz={'md'}>
+                  <Text fw={900} fz={'xl'}>
                     Contractor Advanced
                   </Text>
                   <Title order={2} className={classes.moneyTitle}>
@@ -147,12 +143,14 @@ export const PriceContainer = () => {
                     </Text>
                     <Divider w={'100%'} opacity={0.6} />
                   </Stack>
-                  <Button w="100%">START NOW</Button>
+                  <Button c={'var(--blue)'} bg={'var(--white)'} w="100%">
+                    START NOW
+                  </Button>
                 </Stack>
               </Paper>
               <Paper shadow={'md'} className={classes.cardBox3}>
                 <Stack w={'100%'} align={'center'} p={20}>
-                  <Text fw={700} fz={'md'}>
+                  <Text fw={900} fz={'xl'}>
                     Contractor Supreme
                   </Text>
                   <Title order={2} className={classes.moneyTitle}>
@@ -186,11 +184,7 @@ export const PriceContainer = () => {
                     </Text>
                     <Divider w={'100%'} opacity={0.7} />
                   </Stack>
-                  <Button
-                    variant="gradient"
-                    gradient={{ from: 'hsl(236, 72%, 79%)', to: 'hsl(237, 63%, 64%)' }}
-                    w="100%"
-                  >
+                  <Button bg={'var(--yellow)'} w="100%">
                     START NOW
                   </Button>
                 </Stack>

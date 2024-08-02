@@ -1,6 +1,6 @@
 'use client';
 
-import { Container, Title, Accordion } from '@mantine/core';
+import { Container, Title, Accordion, Image } from '@mantine/core';
 import classes from './Faq.module.css';
 
 const placeholder =
@@ -8,47 +8,49 @@ const placeholder =
 
 export function Faq() {
   return (
-    <Container size="lg" className={classes.wrapper}>
-      <Title ta="center" className={classes.title}>
-        Frequently Asked Questions
-      </Title>
+    <div className={classes.outer}>
+      <Container size="lg" className={classes.wrapper}>
+        <Title ta="center" className={classes.title}>
+          Frequently Asked Questions
+        </Title>
 
-      <Accordion chevronSize={50} variant="separated">
-        <Accordion.Item className={classes.item} value="reset-password">
-          <Accordion.Control className={classes.itemTitle}>
-            How can I reset my password?
-          </Accordion.Control>
-          <Accordion.Panel className={classes.itemDescription}>{placeholder}</Accordion.Panel>
-        </Accordion.Item>
+        <Accordion chevronSize={50} variant="separated">
+          <Accordion.Item className={classes.item} value="reset-password">
+            <Accordion.Control className={classes.itemTitle}>
+              How can I reset my password?
+            </Accordion.Control>
+            <Accordion.Panel className={classes.itemDescription}>{placeholder}</Accordion.Panel>
+          </Accordion.Item>
 
-        <Accordion.Item className={classes.item} value="another-account">
-          <Accordion.Control className={classes.itemTitle}>
-            Can I create more that one account?
-          </Accordion.Control>
-          <Accordion.Panel className={classes.itemDescription}>{placeholder}</Accordion.Panel>
-        </Accordion.Item>
+          <Accordion.Item className={classes.item} value="another-account">
+            <Accordion.Control className={classes.itemTitle}>
+              Can I create more that one account?
+            </Accordion.Control>
+            <Accordion.Panel className={classes.itemDescription}>{placeholder}</Accordion.Panel>
+          </Accordion.Item>
 
-        <Accordion.Item className={classes.item} value="newsletter">
-          <Accordion.Control className={classes.itemTitle}>
-            How can I subscribe to monthly newsletter?
-          </Accordion.Control>
-          <Accordion.Panel className={classes.itemDescription}>{placeholder}</Accordion.Panel>
-        </Accordion.Item>
+          <Accordion.Item className={classes.item} value="newsletter">
+            <Accordion.Control className={classes.itemTitle}>
+              How can I subscribe to monthly newsletter?
+            </Accordion.Control>
+            <Accordion.Panel className={classes.itemDescription}>{placeholder}</Accordion.Panel>
+          </Accordion.Item>
 
-        <Accordion.Item className={classes.item} value="credit-card">
-          <Accordion.Control className={classes.itemTitle}>
-            Do you store credit card information securely?
-          </Accordion.Control>
-          <Accordion.Panel className={classes.itemDescription}>{placeholder}</Accordion.Panel>
-        </Accordion.Item>
+          <Accordion.Item className={classes.item} value="credit-card">
+            <Accordion.Control className={classes.itemTitle}>
+              Do you store credit card information securely?
+            </Accordion.Control>
+            <Accordion.Panel className={classes.itemDescription}>{placeholder}</Accordion.Panel>
+          </Accordion.Item>
 
-        <Accordion.Item className={classes.item} value="payment">
-          <Accordion.Control className={classes.itemTitle}>
-            What payment systems to you work with?
-          </Accordion.Control>
-          <Accordion.Panel className={classes.itemDescription}>{placeholder}</Accordion.Panel>
-        </Accordion.Item>
-      </Accordion>
-    </Container>
+          <Accordion.Item className={classes.item} value="payment">
+            <Accordion.Control className={classes.itemTitle}>
+              What payment systems to you work with?
+            </Accordion.Control>
+            <Accordion.Panel className={classes.itemDescription}>{placeholder}</Accordion.Panel>
+          </Accordion.Item>
+        </Accordion>
+      </Container>
+    </div>
   );
 }

@@ -28,12 +28,12 @@
 }
 
 .description {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .control {
   border-radius: var(--border-radius-sm);
-  margin-top: calc(var(--space-40) / 2);
+  margin-top: var(--space-40);
   @media (max-width: $mantine-breakpoint-xs) {
     flex: 1;
   }
@@ -42,6 +42,7 @@
 .image {
   max-width: 45%;
   margin-right: calc(var(--mantine-spacing-xl) * 3);
+  object-fit: contain;
 
   @media (max-width: $mantine-breakpoint-md) {
     display: none;
@@ -53,4 +54,16 @@
   background-color: var(--mantine-color-blue-light);
   border-radius: var(--mantine-radius-sm);
   padding: rem(4px) rem(12px);
+}
+
+.featureTitle {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--yellow);
+}
+
+.featureDescription {
+  font-size: 16px;
+  line-height: 1.625;
 }

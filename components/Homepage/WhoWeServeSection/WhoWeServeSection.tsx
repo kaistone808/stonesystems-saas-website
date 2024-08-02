@@ -27,7 +27,7 @@ function Card({ tradeName, imageSrc }: CardProps) {
       <AspectRatio ratio={16 / 9} className={classes.video}>
         <img src={imageSrc} alt="Panda" />
       </AspectRatio>
-      <Title mx={'auto'} order={3} className={classes.tradeName}>
+      <Title pt={'sm'} mx={'auto'} order={3} className={classes.tradeName}>
         {tradeName}
       </Title>
     </Paper>
@@ -37,71 +37,71 @@ function Card({ tradeName, imageSrc }: CardProps) {
 const data = [
   {
     tradeName: 'General Contractors',
-    imageSrc: 'https://3e2022dc.rocketcdn.me/wp-content/uploads/2022/09/Remodeling.webp',
+    imageSrc: '/images/trades/generalcontractor.png',
   },
   {
     tradeName: 'Remodeling',
-    imageSrc: 'https://3e2022dc.rocketcdn.me/wp-content/uploads/2022/09/Remodeling.webp',
+    imageSrc: '/images/trades/remodeling.png',
   },
   {
     tradeName: 'Roofing',
-    imageSrc: 'https://3e2022dc.rocketcdn.me/wp-content/uploads/2022/09/Remodeling.webp',
+    imageSrc: '/images/trades/roofing.png',
   },
   {
     tradeName: 'Home Builders',
-    imageSrc: 'https://3e2022dc.rocketcdn.me/wp-content/uploads/2022/09/Remodeling.webp',
+    imageSrc: '/images/trades/homebuilders.png',
   },
   {
     tradeName: 'Commercial',
-    imageSrc: 'https://3e2022dc.rocketcdn.me/wp-content/uploads/2022/09/Remodeling.webp',
+    imageSrc: '/images/trades/commercial.png',
   },
   {
     tradeName: 'Plumbing',
-    imageSrc: 'https://3e2022dc.rocketcdn.me/wp-content/uploads/2022/09/Remodeling.webp',
+    imageSrc: '/images/trades/plumbing.png',
   },
   {
     tradeName: 'Electrician',
-    imageSrc: 'https://3e2022dc.rocketcdn.me/wp-content/uploads/2022/09/Remodeling.webp',
+    imageSrc: '/images/trades/electrician.png',
   },
   {
     tradeName: 'HVAC',
-    imageSrc: 'https://3e2022dc.rocketcdn.me/wp-content/uploads/2022/09/Remodeling.webp',
+    imageSrc: '/images/trades/hvac.png',
   },
   {
     tradeName: 'Decks & Patios',
-    imageSrc: 'https://3e2022dc.rocketcdn.me/wp-content/uploads/2022/09/Remodeling.webp',
+    imageSrc: '/images/trades/decksandpatios.png',
   },
   {
     tradeName: 'Handyman',
-    imageSrc: 'https://3e2022dc.rocketcdn.me/wp-content/uploads/2022/09/Remodeling.webp',
+    imageSrc: '/images/trades/handyman.png',
   },
   {
     tradeName: 'Painters',
-    imageSrc: 'https://3e2022dc.rocketcdn.me/wp-content/uploads/2022/09/Remodeling.webp',
+    imageSrc: '/images/trades/painters.png',
   },
   {
     tradeName: 'Landscapers',
-    imageSrc: 'https://3e2022dc.rocketcdn.me/wp-content/uploads/2022/09/Remodeling.webp',
+    imageSrc: '/images/trades/landscapers.png',
   },
   {
     tradeName: 'Pool Construction',
-    imageSrc: 'https://3e2022dc.rocketcdn.me/wp-content/uploads/2022/09/Remodeling.webp',
+    imageSrc: '/images/trades/poolbuilders.png',
   },
   {
     tradeName: 'Siding',
-    imageSrc: 'https://3e2022dc.rocketcdn.me/wp-content/uploads/2022/09/Remodeling.webp',
+    imageSrc: '/images/trades/siding.png',
   },
   {
     tradeName: 'Paving',
-    imageSrc: 'https://3e2022dc.rocketcdn.me/wp-content/uploads/2022/09/Remodeling.webp',
+    imageSrc: '/images/trades/paving.png',
   },
   {
     tradeName: 'Hardscaping',
-    imageSrc: 'https://3e2022dc.rocketcdn.me/wp-content/uploads/2022/09/Remodeling.webp',
+    imageSrc: '/images/trades/hardscaping.png',
   },
   {
     tradeName: 'Windows & Doors',
-    imageSrc: 'https://3e2022dc.rocketcdn.me/wp-content/uploads/2022/09/Remodeling.webp',
+    imageSrc: '/images/trades/windowsanddoors.png',
   },
 ];
 
@@ -117,32 +117,34 @@ export function WhoWeServeSection() {
 
   return (
     <>
-      <Container mt={'calc(var(--space-40)*2)'} mb={'var(--space-40)'} size="lg">
-        <Title className={classes.mainTitle}>Who We Serve</Title>
-        <Text ta={'center'} className={classes.subTitle}>
-          Our system is specifically built for contractors and home service providers across
-          100+ trades.
-        </Text>
-        <div className={classes.card}>
-          <Container size="lg">
-            <Carousel
-              slideSize={{ base: '100%', sm: '33.33%' }}
-              slideGap={{ base: rem(2), sm: 'xl' }}
-              align="start"
-              loop
-              dragFree
-              slidesToScroll={mobile ? 1 : 3}
-              plugins={[autoplay.current]}
-              withControls={false}
-            >
-              {slides}
-            </Carousel>
-          </Container>
-          <Button mx={'auto'} bg='var(--yellow)' size="lg" className={classes.control}>
-            See All Trades We Work With
-          </Button>
-        </div>
-      </Container>
+      <div className={classes.outer}>
+        <Container mt={'calc(var(--space-40)*2)'} mb={'var(--space-40)'} size="lg">
+          <Title className={classes.mainTitle}>Who We Serve</Title>
+          <Text ta={'center'} className={classes.subTitle}>
+            Our system is specifically built for contractors and home service providers across 100+
+            trades.
+          </Text>
+          <div className={classes.card}>
+            <Container size="lg">
+              <Carousel
+                slideSize={{ base: '100%', sm: '33.33%' }}
+                slideGap={{ base: rem(2), sm: 'xl' }}
+                align="start"
+                loop
+                dragFree
+                slidesToScroll={mobile ? 1 : 3}
+                plugins={[autoplay.current]}
+                withControls={false}
+              >
+                {slides}
+              </Carousel>
+            </Container>
+            <Button mx={'auto'} bg="var(--yellow)" size="lg" className={classes.control}>
+              See All Trades We Work With
+            </Button>
+          </div>
+        </Container>
+      </div>
     </>
   );
 }

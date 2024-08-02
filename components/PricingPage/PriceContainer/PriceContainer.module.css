@@ -6,6 +6,7 @@
 
 .title {
   font-size: var(--title-font-size);
+  color: var(--blue);
 }
 
 .mainGroup {
@@ -51,7 +52,7 @@
   height: 42rem;
   width: 19rem;
   padding-inline: 1.5rem;
-  background: linear-gradient(to bottom right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  background: var(--yellow);
   color: white;
   border-radius: 0.7rem;
   display: flex;

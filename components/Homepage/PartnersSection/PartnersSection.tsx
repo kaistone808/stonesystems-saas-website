@@ -18,7 +18,7 @@ const data = [
     imageSrc: '/images/partners/godaddy.png',
   },
   {
-    imageSrc: '/images/partners/chatgpt.png',
+    imageSrc: '/images/partners/openai.webp',
   },
   {
     imageSrc: '/images/partners/gmb.webp',
@@ -48,9 +48,6 @@ const data = [
     imageSrc: '/images/partners/googlesearch.png',
   },
   {
-    imageSrc: '/images/partners/keywordseverywhere.jpeg',
-  },
-  {
     imageSrc: '/images/partners/leadconnector.png',
   },
 ];
@@ -67,25 +64,27 @@ export function PartnersSection() {
 
   return (
     <>
-      <Container size="lg">
-        <Title className={classes.mainTitle}>We partner with these services</Title>
-        <div className={classes.card}>
-          <Container size="lg">
-            <Carousel
-              slideSize={{ base: '100%', sm: '20%' }}
-              slideGap={{ base: rem(2), sm: 'xl' }}
-              align="start"
-              loop
-              dragFree
-              slidesToScroll={mobile ? 1 : 5}
-              plugins={[autoplay.current]}
-              withControls={false}
-            >
-              {slides}
-            </Carousel>
-          </Container>
-        </div>
-      </Container>
+      <div className={classes.outer}>
+        <Container size="lg">
+          <Title className={classes.mainTitle}>We partner with these services</Title>
+          <div className={classes.card}>
+            <Container size="lg">
+              <Carousel
+                slideSize={{ base: '100%', sm: '20%' }}
+                slideGap={{ base: rem(2), sm: 'xl' }}
+                align="start"
+                loop
+                dragFree
+                slidesToScroll={mobile ? 1 : 5}
+                plugins={[autoplay.current]}
+                withControls={false}
+              >
+                {slides}
+              </Carousel>
+            </Container>
+          </div>
+        </Container>
+      </div>
     </>
   );
 }

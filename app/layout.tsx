@@ -7,7 +7,7 @@ import { Footer } from '@/components/Footer/Footer';
 import '@mantine/carousel/styles.css';
 import '../globals.css';
 import { CTA } from '@/components/CTA/CTA';
-import { TestimonialSection } from '@/components/Homepage/TestimonialSection/TestimonialSection';
+import { TestimonialSection } from '@/components/TestimonialSection/TestimonialSection';
 
 export const metadata = {
   title: 'Mantine Next.js template',

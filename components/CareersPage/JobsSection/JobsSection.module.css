@@ -21,6 +21,7 @@
 
 .itemTitle {
   font-size: 26px;
+  color: var(--blue);
   > * {
     font-weight: 600 !important;
   }

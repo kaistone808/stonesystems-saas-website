@@ -1,5 +1,5 @@
 .mainTitle {
-    color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+  color: var(--blue);
     font-family:
       Greycliff CF,
       var(--mantine-font-family);

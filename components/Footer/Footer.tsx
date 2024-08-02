@@ -1,47 +1,58 @@
 'use client';
 
-import { Text, Container, ActionIcon, Group, rem } from '@mantine/core';
 import {
-  IconBrandTwitter,
-  IconBrandYoutube,
-  IconBrandInstagram,
-  IconBrandFacebook,
-} from '@tabler/icons-react';
-import { MantineLogo } from '@mantinex/mantine-logo';
+  Text,
+  Container,
+  ActionIcon,
+  Group,
+  rem,
+  Image,
+  Flex,
+  Divider,
+  Button,
+} from '@mantine/core';
+import { IconBrandYoutube, IconBrandInstagram, IconBrandFacebook } from '@tabler/icons-react';
 import classes from './Footer.module.css';
 
 const data = [
   {
-    title: 'Product',
-    links: [
-      { label: 'Functional Website', link: '#' },
-      { label: 'Automated Follow Up', link: '#' },
-      { label: 'SEO', link: '#' },
-      { label: 'Printing Services', link: '#' },
-      { label: 'Missed Call Text Back', link: '#' },
-      { label: '5 Star Only Reviews', link: '#' },
-      { label: 'VoiceSearch', link: '#' },
-      { label: 'Reactivation Campaigns', link: '#' },
-    ],
-  },
-  {
-    title: 'Company',
-    links: [
-      { label: 'About Us', link: '#' },
-      { label: 'Our Process', link: '#' },
-      { label: 'Careers', link: '#' },
-      { label: 'Partners', link: '#' },
-      { label: 'Contact', link: '#' },
-    ],
-  },
-  {
     title: 'Links',
     links: [
-      { label: 'Pricing', link: '#' },
-      { label: 'Testimonials', link: '#' },
-      { label: 'Trades We Serve', link: '#' },
-      { label: 'Blog', link: '#' },
-      { label: 'Youtube', link: '#' },
+      { label: 'Pricing', link: '/pricing' },
+      { label: 'Testimonials', link: '/testimonials' },
+      { label: 'Trades We Serve', link: '/trades-we-serve' },
+      { label: 'Log in', link: '/trades-we-serve' },
+    ],
+  },
+  {
+    title: 'About',
+    links: [
+      { label: 'About Us', link: '/about-us' },
+      { label: 'Our Process', link: '/our-process' },
+      { label: 'Our Work', link: '/our-work' },
+      { label: 'Careers', link: '/careers' },
+      { label: 'Partners', link: '/partners' },
+      { label: 'Contact', link: '/contact-us' },
+    ],
+  },
+  {
+    title: 'Product',
+    links: [
+      { label: 'Functional Website', link: '/features/functional-website' },
+      { label: 'Missed Call Text Back', link: '/features/missed-call-text-back' },
+      { label: '5 Star Magic Funnel', link: '/features/5-star-magic-funnel' },
+      { label: 'Blog Posts', link: '/features/blog-posts' },
+      { label: 'Voice Search', link: '/features/voice-search' },
+      { label: 'Printing Services', link: '/features/printing-services' },
+    ],
+  },
+  {
+    links: [
+      { label: 'Automated SMS Lead Follow Up', link: '/features/automated-sms-lead-follow-up' },
+      { label: 'Business Info Synchronization', link: '/features/business-info-synchronization' },
+      { label: 'Reputation Management', link: '/features/reputation-management' },
+      { label: 'Marketing Campaigns', link: '/features/marketing-campaigns' },
+      { label: 'All-In-One Inbox', link: '/features/all-in-one-inbox' },
     ],
   },
 ];
@@ -53,6 +64,7 @@ export function Footer() {
         key={index}
         className={classes.link}
         component="a"
+        mb={'1rem'}
         href={link.link}
         onClick={(event) => event.preventDefault()}
       >
@@ -70,29 +82,54 @@ export function Footer() {
 
   return (
     <footer className={classes.footer}>
+      <Container size={'lg'}>
+        <Flex align={'center'} justify={'space-between'} direction={'row'}>
+          <Image src="/images/logo.png" w={250} h={'100%'} />
+          <Flex align={'center'}>
+            <Text className={classes.cta}>Ready to get started?</Text>
+            <Button className={classes.button} size="md">Book A Call</Button>
+          </Flex>
+        </Flex>
+        <Divider my={'2.5rem'} color="var(--border-color)" />
+      </Container>
       <Container size={'lg'} className={classes.inner}>
         <div className={classes.logo}>
-          <MantineLogo size={30} />
-          <Text size="xs" c="dimmed" className={classes.description}>
-            Build fully functional accessible web applications faster than ever
-          </Text>
+          <Text className={classes.description}>Want to learn more about how we can help?</Text>
+          <Button className={classes.button} mt={'1rem'} size="xl">
+            Book A Call
+          </Button>
         </div>
         <div className={classes.groups}>{groups}</div>
       </Container>
-      <Container size='lg' className={classes.afterFooter}>
-        <Text c="dimmed" size="sm">
-          © 2023 Stone Systems All rights reserved.
-        </Text>
-
+      <Container size="lg" className={classes.afterFooter}>
+        <Flex>
+          <Text<'a'>
+            className={classes.specialLink}
+            component="a"
+            mr={'3rem'}
+            href={'/terms-and-conditions'}
+            onClick={(event) => event.preventDefault()}
+          >
+            Terms & Conditions
+          </Text>
+          <Text<'a'>
+            className={classes.specialLink}
+            component="a"
+            href={'/privacy-policy'}
+            onClick={(event) => event.preventDefault()}
+          >
+            Privacy Policy
+          </Text>
+        </Flex>
         <Group gap={0} className={classes.social} justify="flex-end" wrap="nowrap">
-          <ActionIcon size="lg" color="gray" variant="subtle">
-            <IconBrandFacebook style={{ width: rem(18), height: rem(18) }} stroke={1.5} />
+          <ActionIcon size="lg" mx={10} color="white" variant="subtle">
+            <IconBrandFacebook style={{ width: rem(24), height: rem(24) }} stroke={2} />
           </ActionIcon>
-          <ActionIcon size="lg" color="gray" variant="subtle">
-            <IconBrandYoutube style={{ width: rem(18), height: rem(18) }} stroke={1.5} />
+          <ActionIcon size="lg" mx={10} color="white" variant="subtle">
+            <IconBrandYoutube style={{ width: rem(24), height: rem(24) }} stroke={2} />
           </ActionIcon>
-          <ActionIcon size="lg" color="gray" variant="subtle">
-            <IconBrandInstagram style={{ width: rem(18), height: rem(18) }} stroke={1.5} />
+          <ActionIcon size="lg" mx={10} color="white" variant="subtle">
+            <IconBrandInstagram style={{ width: rem(24), height: rem(24) }} stroke={2} />
           </ActionIcon>
         </Group>
       </Container>

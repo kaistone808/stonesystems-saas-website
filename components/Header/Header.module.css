@@ -5,7 +5,7 @@
   border-bottom: rem(1px) solid light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4));
   display: flex;
   justify-content: center;
-  background-color: var( --gray);
+  background-color: var(--white);
 }
 
 .link {
@@ -25,7 +25,10 @@
   }
 
   @mixin hover {
-    background-color: light-dark(var(--mantine-color-gray-0), var(--mantine-color-dark-6));
+    color: var(--yellow);
+    svg {
+      stroke: var(--yellow);
+    }
   }
 }
 

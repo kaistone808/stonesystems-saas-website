@@ -1,33 +1,30 @@
-.outer{
+.outer {
   background-color: var(--gray);
+  background-image: url('/images/bg.svg');
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-bottom: 148px;
 }
 
 .personName {
-  font-family:
-    Greycliff CF,
-    sans-serif;
-  font-weight: 900;
-  color: var(--mantine-color-black);
-  line-height: 1.2;
-  font-size: rem(16px);
-  margin: var(--mantine-spacing-xs) 0 0 var(--mantine-spacing-sm);
+  font-weight: 900 !important;
+  color: var(--mantine-color-black) !important;
+  line-height: 1.2 !important;
+  font-size: rem(16px) !important;
+  margin: var(--mantine-spacing-xs) 0 0 20px !important;
 }
 
-.companyName {
-  color: var(--mantine-color-black);
-  opacity: 0.7;
-  font-weight: 700;
-  font-size: rem(16px);
-  text-transform: capitalize;
-  margin: 0 0 0 var(--mantine-spacing-sm);
-  padding-bottom: 1rem;
+.quote {
+  font-weight: 900 !important;
+  color: var(--mantine-color-black) !important;
+  line-height: 1.2 !important;
+  font-size: rem(18px) !important;
+  margin: var(--mantine-spacing-xs) 0 0 20px !important;
 }
 
 .mainTitle {
   color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
-  font-family:
-    Greycliff CF,
-    var(--mantine-font-family);
   font-size: rem(52px);
   line-height: 1.2;
   font-weight: 900;
@@ -50,13 +47,34 @@
 .video {
   width: 100%;
   iframe {
-    border-radius: 10px 10px 0 0;
+    border-radius: 10px;
     width: 100%;
+    height: 100%;
   }
 }
 
 .testimonial {
-  padding: 0 1rem;
-  margin: 20px 0;
-  font-size: 18px;
+  padding: 0 1rem !important;
+  margin: 20px 0 !important;
+  font-size: 18px !important;
+}
+
+.testimonialCard {
+  display: flex;
+  padding: 20px;
+  max-height: 250px;
+  height: 100%;
+  background-color: var(--white);
+}
+
+.title {
+  color: var(--blue);
+  font-size: var(--title-font-size);
+  line-height: 1.2;
+  font-weight: 900;
+  padding-top: calc(var(--space-40) * 2);
+
+  @media (max-width: $mantine-breakpoint-xs) {
+    font-size: rem(28px);
+  }
 }

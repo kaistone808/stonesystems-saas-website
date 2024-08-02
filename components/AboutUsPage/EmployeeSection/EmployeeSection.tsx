@@ -11,7 +11,7 @@ function Card({ name, title, imageSrc }: CardProps) {
   return (
     <Paper py={'lg'} radius="md" shadow="md" bg="var(--white)">
       <Avatar src={imageSrc} size={200} radius={120} mx="auto" />
-      <Text className={classes.name} ta="center" fw={500} mt="md">
+      <Text className={classes.name} ta="center" mt="md">
         {name}
       </Text>
       <Text className={classes.jobTitle} ta="center" c="dimmed" fz="sm">
@@ -24,25 +24,25 @@ function Card({ name, title, imageSrc }: CardProps) {
 const data = [
   {
     name: 'Kai Stone',
-    title: 'CEO',
+    title: 'CEO / Founder',
     imageSrc:
       'https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/avatars/avatar-8.png',
   },
   {
-    name: 'Kai Stone',
-    title: 'CEO',
+    name: 'Michael Vanhoutte',
+    title: 'Systems Engineer',
     imageSrc:
       'https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/avatars/avatar-8.png',
   },
   {
-    name: 'Kai Stone',
-    title: 'CEO',
+    name: 'Astrid',
+    title: 'Web Developer',
     imageSrc:
       'https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/avatars/avatar-8.png',
   },
   {
-    name: 'Kai Stone',
-    title: 'CEO',
+    name: 'Renny',
+    title: 'Designer / Social Media Manager',
     imageSrc:
       'https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/avatars/avatar-8.png',
   },

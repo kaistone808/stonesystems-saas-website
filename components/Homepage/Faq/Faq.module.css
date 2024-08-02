@@ -1,3 +1,7 @@
+.outer{
+  background-color: var(--gray);
+}
+
 .wrapper {
   padding-top: calc(var(--mantine-spacing-xl) * 2);
   padding-bottom: var(--mantine-spacing-xl);
@@ -7,6 +11,7 @@
   margin-bottom: calc(var(--mantine-spacing-xl) * 1.5);
   font-size: var(--title-font-size);
   font-weight: 900;
+  color: var(--blue);
 }
 
 .item {
@@ -17,12 +22,14 @@
 
 .itemTitle {
   font-size: 26px;
+  color: var(--blue);
   > * {
     font-weight: 600 !important;
   }
   svg {
     height: 30px !important;
     width: 30px !important;
+    stroke: var(--blue);;
   }
 }
 

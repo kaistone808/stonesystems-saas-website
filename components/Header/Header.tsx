@@ -17,6 +17,7 @@ import {
   ScrollArea,
   rem,
   useMantineTheme,
+  Image,
 } from '@mantine/core';
 import { MantineLogo } from '@mantinex/mantine-logo';
 import { useDisclosure } from '@mantine/hooks';
@@ -46,56 +47,67 @@ const mockdata = [
     icon: IconAppWindow,
     title: 'Functional Website',
     description: 'Get a lead-generating Website in just days',
+    href: '/features/functional-website',
   },
   {
     icon: IconDeviceMobileVibration,
     title: 'Missed Call Text Back',
     description: 'Automatically text back missed calls',
-  },
-  {
-    icon: IconReport,
-    title: 'Automated SMS Lead Follow Up',
-    description: 'Automatically follow up with leads via text',
+    href: '/features/missed-call-text-back',
   },
   {
     icon: IconStarFilled,
     title: '5-Star Magic Funnel',
     description: 'Get more 5 star reviews and prevent bad ones',
+    href: '/features/5-star-magic-funnel',
   },
   {
     icon: IconSearch,
     title: 'Blog Posts',
     description: 'Keep your audience engaged',
+    href: '/features/blog-posts',
   },
   {
     icon: IconSpeakerphone,
     title: 'Voice Search',
     description: 'Get found on voice search',
+    href: '/features/voice-search',
   },
   {
     icon: IconPrinter,
     title: 'Printing Services',
     description: 'Put your business out there both on and offline',
+    href: '/features/printing-services',
   },
   {
-    icon: IconFileAnalytics,
-    title: 'Marketing Campaigns',
-    description: 'Keep your audience thinking about you',
-  },
-  {
-    icon: IconFileAnalytics,
-    title: 'Reputation Management',
-    description: 'Reactivate old leads and customers',
-  },
-  {
-    icon: IconFileAnalytics,
-    title: 'All-In-One Inbox',
-    description: 'Get all your messages in one place',
+    icon: IconReport,
+    title: 'Automated SMS Lead Follow Up',
+    description: 'Automatically follow up with leads via text',
+    href: '/features/automated-sms-lead-follow-up',
   },
   {
     icon: IconFileAnalytics,
     title: 'Business Info Synchronization',
     description: 'Put your business on hundreds of websites',
+    href: '/features/business-info-sync',
+  },
+  {
+    icon: IconFileAnalytics,
+    title: 'Reputation Management',
+    description: 'Reactivate old leads and customers',
+    href: '/features/reputation-management',
+  },
+  {
+    icon: IconFileAnalytics,
+    title: 'Marketing Campaigns',
+    description: 'Keep your audience thinking about you',
+    href: '/features/marketing-campaigns',
+  },
+  {
+    icon: IconFileAnalytics,
+    title: 'All-In-One Inbox',
+    description: 'Get all your messages in one place',
+    href: '/features/all-in-one-inbox',
   },
 ];
 
@@ -105,7 +117,16 @@ export function Header() {
   const theme = useMantineTheme();
 
   const links = mockdata.map((item) => (
-    <UnstyledButton pt={'md'} pb={'md'} pr={'xl'} className={classes.subLink} key={item.title}>
+    <UnstyledButton
+      component="a"
+      href={item.href}
+      pt={'md'}
+      pb={'md'}
+      pr={'xl'}
+      pl={'md'}
+      className={classes.subLink}
+      key={item.title}
+    >
       <Group wrap="nowrap" align="center">
         <ThemeIcon size={52} variant="default" radius="md" bd={'none'} bg={'#F1F1F1'}>
           <item.icon style={{ width: rem(32), height: rem(32) }} color={'#000000'} />
@@ -126,7 +147,9 @@ export function Header() {
     <Box>
       <header className={classes.header}>
         <Group justify="space-between" w="75em" h="100%">
-          <MantineLogo size={30} />
+          <a href="/" className={classes.link}>
+            <Image src={'/images/logo.png'} w={200} />
+          </a>
           <Group h="100%" gap={0} visibleFrom="sm">
             <HoverCard width={900} position="bottom" radius="md" shadow="md" withinPortal>
               <HoverCard.Target>
@@ -154,6 +177,15 @@ export function Header() {
               </HoverCard.Dropdown>
             </HoverCard>
 
+            <a href="/pricing" className={classes.link}>
+              Pricing
+            </a>
+            <a href="/testimonials" className={classes.link}>
+              Testimonials
+            </a>
+            <a href="/trades-we-serve" className={classes.link}>
+              Trades We Serve
+            </a>
             <HoverCard width={350} position="bottom" radius="md" shadow="md" withinPortal>
               <HoverCard.Target>
                 <a href="#" className={classes.link}>
@@ -171,7 +203,15 @@ export function Header() {
 
               <HoverCard.Dropdown style={{ overflow: 'hidden' }}>
                 <SimpleGrid cols={1} spacing={0}>
-                  <UnstyledButton pt={'md'} pb={'md'} className={classes.subLink}>
+                  <UnstyledButton
+                    component="a"
+                    href="/about-us"
+                    pt={'md'}
+                    pb={'md'}
+                    pr={'xl'}
+                    pl={'md'}
+                    className={classes.subLink}
+                  >
                     <Group wrap="nowrap" align="center">
                       <ThemeIcon size={52} variant="default" radius="md" bd={'none'} bg={'#F1F1F1'}>
                         <IconUsers style={{ width: rem(32), height: rem(32) }} color={'#000000'} />
@@ -186,7 +226,15 @@ export function Header() {
                       </div>
                     </Group>
                   </UnstyledButton>
-                  <UnstyledButton pt={'md'} pb={'md'} className={classes.subLink}>
+                  <UnstyledButton
+                    component="a"
+                    href="/our-process"
+                    pt={'md'}
+                    pb={'md'}
+                    pr={'xl'}
+                    pl={'md'}
+                    className={classes.subLink}
+                  >
                     <Group wrap="nowrap" align="center">
                       <ThemeIcon size={52} variant="default" radius="md" bd={'none'} bg={'#F1F1F1'}>
                         <IconTimeline
@@ -204,7 +252,15 @@ export function Header() {
                       </div>
                     </Group>
                   </UnstyledButton>
-                  <UnstyledButton pt={'md'} pb={'md'} className={classes.subLink}>
+                  <UnstyledButton
+                    component="a"
+                    href="/our-work"
+                    pt={'md'}
+                    pb={'md'}
+                    pr={'xl'}
+                    pl={'md'}
+                    className={classes.subLink}
+                  >
                     <Group wrap="nowrap" align="center">
                       <ThemeIcon size={52} variant="default" radius="md" bd={'none'} bg={'#F1F1F1'}>
                         <IconDeviceDesktop
@@ -222,7 +278,15 @@ export function Header() {
                       </div>
                     </Group>
                   </UnstyledButton>
-                  <UnstyledButton pt={'md'} pb={'md'} className={classes.subLink}>
+                  <UnstyledButton
+                    component="a"
+                    href="/careers"
+                    pt={'md'}
+                    pb={'md'}
+                    pr={'xl'}
+                    pl={'md'}
+                    className={classes.subLink}
+                  >
                     <Group wrap="nowrap" align="center">
                       <ThemeIcon size={52} variant="default" radius="md" bd={'none'} bg={'#F1F1F1'}>
                         <IconNotebook
@@ -240,7 +304,15 @@ export function Header() {
                       </div>
                     </Group>
                   </UnstyledButton>
-                  <UnstyledButton pt={'md'} pb={'md'} className={classes.subLink}>
+                  <UnstyledButton
+                    component="a"
+                    href="/partners"
+                    pt={'md'}
+                    pb={'md'}
+                    pr={'xl'}
+                    pl={'md'}
+                    className={classes.subLink}
+                  >
                     <Group wrap="nowrap" align="center">
                       <ThemeIcon size={52} variant="default" radius="md" bd={'none'} bg={'#F1F1F1'}>
                         <IconHeartHandshake
@@ -258,7 +330,15 @@ export function Header() {
                       </div>
                     </Group>
                   </UnstyledButton>
-                  <UnstyledButton pt={'md'} pb={'md'} className={classes.subLink}>
+                  <UnstyledButton
+                    component="a"
+                    href="/contact-us"
+                    pt={'md'}
+                    pb={'md'}
+                    pr={'xl'}
+                    pl={'md'}
+                    className={classes.subLink}
+                  >
                     <Group wrap="nowrap" align="center">
                       <ThemeIcon size={52} variant="default" radius="md" bd={'none'} bg={'#F1F1F1'}>
                         <IconMail style={{ width: rem(32), height: rem(32) }} color={'#000000'} />
@@ -269,71 +349,6 @@ export function Header() {
                         </Text>
                         <Text className={classes.subLinkDescription} c="dimmed">
                           {'Chat with us'}
-                        </Text>
-                      </div>
-                    </Group>
-                  </UnstyledButton>
-                </SimpleGrid>
-              </HoverCard.Dropdown>
-            </HoverCard>
-            <a href="#" className={classes.link}>
-              Pricing
-            </a>
-            <a href="#" className={classes.link}>
-              Testimonials
-            </a>
-            <a href="#" className={classes.link}>
-              Trades We Serve
-            </a>
-            <HoverCard width={350} position="bottom" radius="md" shadow="md" withinPortal>
-              <HoverCard.Target>
-                <a href="#" className={classes.link}>
-                  <Center inline>
-                    <Box component="span" mr={5}>
-                      Resources
-                    </Box>
-                    <IconChevronDown
-                      style={{ width: rem(16), height: rem(16) }}
-                      color={'#000000'}
-                    />
-                  </Center>
-                </a>
-              </HoverCard.Target>
-
-              <HoverCard.Dropdown style={{ overflow: 'hidden' }}>
-                <SimpleGrid cols={1} spacing={0}>
-                  <UnstyledButton pt={'md'} pb={'md'} className={classes.subLink}>
-                    <Group wrap="nowrap" align="center">
-                      <ThemeIcon size={52} variant="default" radius="md" bd={'none'} bg={'#F1F1F1'}>
-                        <IconBlockquote
-                          style={{ width: rem(32), height: rem(32) }}
-                          color={'#000000'}
-                        />
-                      </ThemeIcon>
-                      <div>
-                        <Text className={classes.subLinkTitle} fw={500}>
-                          {'Blog'}
-                        </Text>
-                        <Text className={classes.subLinkDescription} c="dimmed">
-                          {"Let's Build your business together"}
-                        </Text>
-                      </div>
-                    </Group>
-                  </UnstyledButton>
-                  <UnstyledButton pt={'md'} pb={'md'} className={classes.subLink}>
-                    <Group wrap="nowrap" align="center">
-                      <ThemeIcon size={52} variant="default" radius="md" bd={'none'} bg={'#F1F1F1'}>
-                        <IconBrandYoutube
-                          style={{ width: rem(32), height: rem(32) }}
-                          color={'#000000'}
-                        />
-                      </ThemeIcon>
-                      <div>
-                        <Text className={classes.subLinkTitle} fw={500}>
-                          {'Youtube'}
-                        </Text>
-                        <Text className={classes.subLinkDescription} c="dimmed">
-                          {'Learn directly from the best'}
                         </Text>
                       </div>
                     </Group>
@@ -353,7 +368,7 @@ export function Header() {
             >
               Log In
             </Button>
-            <Button className={classes.button} size="lg" bg='var(--yellow)' color='var(--gray)'>
+            <Button className={classes.button} size="lg" bg="var(--yellow)" color="var(--gray)">
               Get Started
             </Button>
           </Group>

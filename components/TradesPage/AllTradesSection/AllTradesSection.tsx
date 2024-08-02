@@ -1,8 +1,9 @@
 'use client';
 
 import { useMediaQuery } from '@mantine/hooks';
-import { Paper, Text, Title, useMantineTheme, Container, Image, SimpleGrid } from '@mantine/core';
+import { Text, Title, useMantineTheme, Container, Image, SimpleGrid } from '@mantine/core';
 import classes from './AllTradesSection.module.css';
+import { IconCircleCheck } from '@tabler/icons-react';
 
 interface CardProps {
   tradeName: string;
@@ -12,12 +13,7 @@ function Card({ tradeName }: CardProps) {
   return (
     <div className={classes.allTrades}>
       {' '}
-      <Image
-        width={30}
-        height={30}
-        src="https://cdn.prod.website-files.com/602d921508c6c26dc5cebf3f/61cf37d203a8ee012aadcd94_no_gray.png"
-        alt="No"
-      />
+      <IconCircleCheck width={30} height={30} color={'var(--yellow)'} />
       <Text className={classes.tradeName}>{tradeName}</Text>
     </div>
   );

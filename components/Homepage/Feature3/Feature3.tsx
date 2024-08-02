@@ -1,6 +1,16 @@
 'use client';
 
-import { Image, Container, Title, Button, Text, rem, SimpleGrid, Flex } from '@mantine/core';
+import {
+  Image,
+  Container,
+  Title,
+  Button,
+  Text,
+  rem,
+  SimpleGrid,
+  Flex,
+  Divider,
+} from '@mantine/core';
 import { IconCheckbox } from '@tabler/icons-react';
 import classes from './Feature3.module.css';
 
@@ -16,11 +26,6 @@ const features = [
       'Automatically respond to missed calls with a text message, so that you can be available 24/7.',
   },
   {
-    title: 'Always Respond Quickly',
-    description:
-      'Respond to missed calls with a text message in less than 5 minutes, making it 21x more likely to convert.',
-  },
-  {
     title: 'Show People You Care',
     description:
       'Show potential customers that you care about their business by responding to missed calls with a text message.',
@@ -28,32 +33,18 @@ const features = [
 ];
 
 export function Feature3() {
-  const items = features.map((feature) => (
+  const items = features.map((feature, index) => (
     <div key={feature.title}>
-      <Flex>
-        <IconCheckbox
-          style={{ width: rem(24), height: rem(24) }}
-          color="var(--yellow)"
-          stroke={2}
-        />
-        <Text fz="lg" ml={5} fw={500}>
-          {feature.title}
-        </Text>
-      </Flex>
-
-      <Text c="dimmed" fz="sm">
-        {feature.description}
-      </Text>
+      {index > 0 && <Divider my={'1.5rem'} />}
+      <Text className={classes.featureTitle}>{feature.title}</Text>
+      <Text className={classes.featureDescription}>{feature.description}</Text>
     </div>
   ));
 
   return (
     <Container size="lg">
       <div className={classes.inner}>
-        <Image
-          src="https://cdn.prod.website-files.com/602d921508c6c26dc5cebf3f/61d300b1e9f3319ca31a51fc_ProSite%20-%20Hero%20Home-p-1080.png"
-          className={classes.image}
-        />
+        <Image src="/images/phone-right.png" className={classes.image} />
 
         <div className={classes.content}>
           <Title className={classes.title}>Missed Call Text Back</Title>
@@ -61,11 +52,11 @@ export function Feature3() {
             It’s not rocket science… <br />
             Quickly getting back to customers will make you more money.
           </Text>
-          <SimpleGrid mt={'lg'} cols={2} spacing={20}>
+          <Flex mt={'lg'} direction={'column'}>
             {items}
-          </SimpleGrid>
-          <Button size="lg" bg="var(--yellow)" className={classes.control}>
-            Learn More
+          </Flex>
+          <Button size="xl" bg="var(--yellow)" className={classes.control}>
+            See 30 Second Demo
           </Button>
         </div>
       </div>
