@@ -1,9 +1,13 @@
+.outer {
+  background-color: var(--gray);
+}
+
 .text {
   font-size: 18px;
   line-height: 1.75;
 }
 
 .grid {
-  margin-top: calc(var(--space-40)*2);
+  padding-top: var(--space-40);
   align-items: center;
 }

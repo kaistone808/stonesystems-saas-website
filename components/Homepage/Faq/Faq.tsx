@@ -10,7 +10,7 @@ export function Faq() {
   return (
     <div className={classes.outer}>
       <Container size="lg" className={classes.wrapper}>
-        <Title ta="center" className={classes.title}>
+        <Title ta="center" className={classes.mainTitle}>
           Frequently Asked Questions
         </Title>
 

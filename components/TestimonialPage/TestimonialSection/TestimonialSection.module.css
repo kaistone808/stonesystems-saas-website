@@ -1,5 +1,6 @@
 .outer {
-  background-color: lightgray;
+  background-color: var(--gray);
+  padding-bottom: 8rem;
 }
 
 .personName {
@@ -10,16 +11,7 @@
   color: var(--mantine-color-black);
   line-height: 1.2;
   font-size: rem(16px);
-  margin: var(--mantine-spacing-xs) 0 0 var(--mantine-spacing-sm);
-}
-
-.companyName {
-  color: var(--mantine-color-black);
-  opacity: 0.7;
-  font-weight: 700;
-  font-size: rem(16px);
-  text-transform: capitalize;
-  margin: 0 0 0 var(--mantine-spacing-sm);
+  margin-left: 1rem;
   padding-bottom: 1rem;
 }
 
@@ -29,7 +21,7 @@
   line-height: 1.2;
   font-weight: 900;
   text-align: center;
-  margin: 2rem 0 1rem 0;
+  padding: 2rem 0 0 0;
 
   @media (max-width: $mantine-breakpoint-xs) {
     font-size: rem(28px);
@@ -41,19 +33,32 @@
   font-size: rem(21px);
   line-height: 1.5;
   color: var(--mantine-color-black);
-  margin-bottom: var(--mantine-spacing-lg);
+  margin-bottom: 1rem;
 }
 
 .video {
   width: 100%;
+  padding: 1rem 1rem 0 1rem;
   iframe {
-    border-radius: 10px 10px 0 0;
+    border-radius: 10px;
     width: 100%;
   }
 }
 
 .testimonial {
   padding: 0 1rem;
-  margin: 20px 0;
+  margin: 1rem 0;
   font-size: 18px;
+}
+
+.stars {
+  padding-left: 1rem;
+  padding-top: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.star {
+  width: rem(22px);
+  height: rem(22px);
 }

@@ -9,6 +9,7 @@ const placeholder =
 
 export function JobsSection() {
   return (
+    <div className={classes.outer}>
     <Container size="lg" className={classes.wrapper}>
       <Title ta="center" className={classes.title}>
         Open Positions
@@ -268,5 +269,6 @@ export function JobsSection() {
         </Accordion.Item>
       </Accordion>
     </Container>
+    </div>
   );
 }

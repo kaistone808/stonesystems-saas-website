@@ -44,7 +44,7 @@ export function Hero() {
                   </div>
                 </div>
               </div>
-              <Divider mx={20} orientation="vertical" />
+              <Divider mx={20} color="var(--border-color)" orientation="vertical" />
               <div className={classes.credit}>
                 <Image src="/images/fb.png" className={classes.creditImage} />
                 <div className={classes.creditContent}>
@@ -58,7 +58,7 @@ export function Hero() {
                   </div>
                 </div>
               </div>
-              <Divider mx={20} orientation="vertical" />
+              <Divider mx={20} color="var(--border-color)" orientation="vertical" />
               <div className={classes.credit}>
                 <Image src="/images/trustpilot.png" className={classes.creditImage} />
                 <div className={classes.creditContent}>

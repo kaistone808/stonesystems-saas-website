@@ -79,18 +79,7 @@ const mockdata = [
     description: 'Put your business out there both on and offline',
     href: '/features/printing-services',
   },
-  {
-    icon: IconReport,
-    title: 'Automated SMS Lead Follow Up',
-    description: 'Automatically follow up with leads via text',
-    href: '/features/automated-sms-lead-follow-up',
-  },
-  {
-    icon: IconFileAnalytics,
-    title: 'Business Info Synchronization',
-    description: 'Put your business on hundreds of websites',
-    href: '/features/business-info-sync',
-  },
+
   {
     icon: IconFileAnalytics,
     title: 'Reputation Management',
@@ -108,6 +97,18 @@ const mockdata = [
     title: 'All-In-One Inbox',
     description: 'Get all your messages in one place',
     href: '/features/all-in-one-inbox',
+  },
+  {
+    icon: IconReport,
+    title: 'Automated SMS Lead Follow Up',
+    description: 'Automatically follow up with leads via text',
+    href: '/features/automated-sms-lead-follow-up',
+  },
+  {
+    icon: IconFileAnalytics,
+    title: 'Business Info Synchronization',
+    description: 'Put your business on hundreds of websites',
+    href: '/features/business-info-sync',
   },
 ];
 
@@ -147,11 +148,11 @@ export function Header() {
     <Box>
       <header className={classes.header}>
         <Group justify="space-between" w="75em" h="100%">
-          <a href="/" className={classes.link}>
-            <Image src={'/images/logo.png'} w={200} />
-          </a>
           <Group h="100%" gap={0} visibleFrom="sm">
-            <HoverCard width={900} position="bottom" radius="md" shadow="md" withinPortal>
+            <a href="/" className={classes.link}>
+              <Image src={'/images/logo.png'} w={200} />
+            </a>
+            <HoverCard width={1000} position="bottom" radius="md" shadow="md" withinPortal>
               <HoverCard.Target>
                 <a href="#" className={classes.link}>
                   <Center inline>
@@ -191,7 +192,7 @@ export function Header() {
                 <a href="#" className={classes.link}>
                   <Center inline>
                     <Box component="span" mr={5}>
-                      Company
+                      About
                     </Box>
                     <IconChevronDown
                       style={{ width: rem(16), height: rem(16) }}
@@ -248,32 +249,6 @@ export function Header() {
                         </Text>
                         <Text className={classes.subLinkDescription} c="dimmed">
                           {'Discover how we work'}
-                        </Text>
-                      </div>
-                    </Group>
-                  </UnstyledButton>
-                  <UnstyledButton
-                    component="a"
-                    href="/our-work"
-                    pt={'md'}
-                    pb={'md'}
-                    pr={'xl'}
-                    pl={'md'}
-                    className={classes.subLink}
-                  >
-                    <Group wrap="nowrap" align="center">
-                      <ThemeIcon size={52} variant="default" radius="md" bd={'none'} bg={'#F1F1F1'}>
-                        <IconDeviceDesktop
-                          style={{ width: rem(32), height: rem(32) }}
-                          color={'#000000'}
-                        />
-                      </ThemeIcon>
-                      <div>
-                        <Text className={classes.subLinkTitle} fw={500}>
-                          {'Our Work'}
-                        </Text>
-                        <Text className={classes.subLinkDescription} c="dimmed">
-                          {'See some of our previous work'}
                         </Text>
                       </div>
                     </Group>
@@ -369,7 +344,7 @@ export function Header() {
               Log In
             </Button>
             <Button className={classes.button} size="lg" bg="var(--yellow)" color="var(--gray)">
-              Get Started
+              Book A Call
             </Button>
           </Group>
 

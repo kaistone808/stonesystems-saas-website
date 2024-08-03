@@ -44,7 +44,7 @@
 }
 
 .wrapper {
-  margin-right: 4rem;
+  margin-right: 3rem;
 }
 
 .wrapper:nth-of-type(4) {
@@ -101,6 +101,6 @@
   color: var(--white) !important;
 }
 
-.button{
+.button {
   background-color: var(--yellow) !important;
 }

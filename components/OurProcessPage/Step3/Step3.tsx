@@ -5,8 +5,10 @@ import classes from './Step3.module.css';
 
 export function Step3() {
   return (
-    <Container size="md">
-      <SimpleGrid mb={'xl'} cols={2}>
+    <div className={classes.outer}>
+
+    <Container size="lg">
+      <SimpleGrid pb={'xl'} cols={2}>
         <Image src="/images/3.svg" className={classes.image} />
         <div className={classes.content}>
           <Title className={classes.title}>Launch</Title>
@@ -19,5 +21,6 @@ export function Step3() {
         </div>
       </SimpleGrid>
     </Container>
+    </div>
   );
 }

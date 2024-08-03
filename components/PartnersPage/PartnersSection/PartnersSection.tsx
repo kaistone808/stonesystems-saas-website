@@ -58,10 +58,10 @@ export function PartnersSection() {
     </Paper>
   ));
   return (
-    <>
+    <div className={classes.outer}>
       <Container size="lg">
         <SimpleGrid cols={4}>{partners}</SimpleGrid>
       </Container>
-    </>
+    </div>
   );
 }

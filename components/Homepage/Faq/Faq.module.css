@@ -1,17 +1,22 @@
-.outer{
+.outer {
   background-color: var(--gray);
 }
 
 .wrapper {
-  padding-top: calc(var(--mantine-spacing-xl) * 2);
   padding-bottom: var(--mantine-spacing-xl);
 }
 
-.title {
-  margin-bottom: calc(var(--mantine-spacing-xl) * 1.5);
-  font-size: var(--title-font-size);
-  font-weight: 900;
+.mainTitle {
   color: var(--blue);
+  font-size: var(--title-font-size);
+  line-height: 1.2;
+  font-weight: 900;
+  text-align: center;
+  padding: calc(var(--space-40) * 2) 0;
+
+  @media (max-width: $mantine-breakpoint-xs) {
+    font-size: rem(28px);
+  }
 }
 
 .item {
@@ -29,7 +34,7 @@
   svg {
     height: 30px !important;
     width: 30px !important;
-    stroke: var(--blue);;
+    stroke: var(--blue);
   }
 }
 

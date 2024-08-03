@@ -19,7 +19,7 @@ export function OurProcessSection() {
         <Title className={classes.mainTitle}>Our Process</Title>
         <div className={classes.card}>
           <SimpleGrid cols={3}>
-            <Flex direction="column" align="center" ta={'center'} pt={'2rem'} px={'2rem'}>
+            <Flex direction="column" align="center" ta={'center'} px={'2rem'}>
               <ThemeIcon radius="xl" size="xl" color="blue" variant="filled">
                 <CheckIcon />
               </ThemeIcon>
@@ -31,7 +31,7 @@ export function OurProcessSection() {
                 esse neque blanditiis hic ipsam possimus nisi?
               </Text>
             </Flex>
-            <Flex direction="column" align="center" ta={'center'} pt={'2rem'} px={'2rem'}>
+            <Flex direction="column" align="center" ta={'center'}  px={'2rem'}>
               <ThemeIcon radius="xl" size="xl" color="blue" variant="filled">
                 <CheckIcon />
               </ThemeIcon>
@@ -43,7 +43,7 @@ export function OurProcessSection() {
                 esse neque blanditiis hic ipsam possimus nisi?
               </Text>
             </Flex>
-            <Flex direction="column" align="center" ta={'center'} pt={'2rem'} px={'2rem'}>
+            <Flex direction="column" align="center" ta={'center'}  px={'2rem'}>
               <ThemeIcon mb={'3.5rem'} radius="xl" size="xl" color="blue" variant="filled">
                 <CheckIcon />
               </ThemeIcon>

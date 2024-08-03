@@ -5,7 +5,7 @@ import classes from './IntroSection.module.css';
 
 export function IntroSection() {
   return (
-    <>
+    <div className={classes.outer}>
       <Container size="lg">
         <Title className={classes.mainTitle}>StoneSystems Partners</Title>
         <Text c="dimmed" className={classes.description} ta="center" mt="md">
@@ -13,6 +13,6 @@ export function IntroSection() {
           customers.
         </Text>
       </Container>
-    </>
+    </div>
   );
 }

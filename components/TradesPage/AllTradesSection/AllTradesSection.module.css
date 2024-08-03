@@ -1,5 +1,6 @@
 .outer {
-  background-color: lightgray;
+  background-color: var(--gray);
+  padding-bottom: 8rem;
 }
 
 .card {
@@ -39,7 +40,7 @@
   line-height: 1.2;
   font-weight: 900;
   text-align: center;
-  margin: 2rem 0 1rem 0;
+  padding: 2rem 0;
 
   @media (max-width: $mantine-breakpoint-xs) {
     font-size: rem(28px);

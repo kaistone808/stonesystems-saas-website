@@ -23,7 +23,7 @@ interface CardProps {
 
 function Card({ tradeName, imageSrc }: CardProps) {
   return (
-    <Paper my={'var(--space-40'} shadow="md" radius="md" className={classes.card}>
+    <Paper mb={'var(--space-40'} radius="md" className={classes.card}>
       <AspectRatio ratio={16 / 9} className={classes.video}>
         <img src={imageSrc} alt="Panda" />
       </AspectRatio>
@@ -118,12 +118,8 @@ export function WhoWeServeSection() {
   return (
     <>
       <div className={classes.outer}>
-        <Container mt={'calc(var(--space-40)*2)'} mb={'var(--space-40)'} size="lg">
+        <Container size="lg">
           <Title className={classes.mainTitle}>Who We Serve</Title>
-          <Text ta={'center'} className={classes.subTitle}>
-            Our system is specifically built for contractors and home service providers across 100+
-            trades.
-          </Text>
           <div className={classes.card}>
             <Container size="lg">
               <Carousel
@@ -134,7 +130,7 @@ export function WhoWeServeSection() {
                 dragFree
                 slidesToScroll={mobile ? 1 : 3}
                 plugins={[autoplay.current]}
-                withControls={false}
+                classNames={{control: classes.control, controls: classes.controls, root: classes.root}}
               >
                 {slides}
               </Carousel>

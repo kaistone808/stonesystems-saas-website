@@ -9,7 +9,7 @@ interface CardProps {
 
 function Card({ name, title, imageSrc }: CardProps) {
   return (
-    <Paper py={'lg'} radius="md" shadow="md" bg="var(--white)">
+    <Paper py={'lg'} radius="md" bg="var(--white)">
       <Avatar src={imageSrc} size={200} radius={120} mx="auto" />
       <Text className={classes.name} ta="center" mt="md">
         {name}
@@ -52,9 +52,11 @@ export function EmployeeSection() {
   const slides = data.map((item) => <Card {...item} />);
 
   return (
-    <Container size="lg">
-      <Title className={classes.title}>Meet Your Team at StoneSystems</Title>
-      <SimpleGrid cols={3}>{slides}</SimpleGrid>
-    </Container>
+    <div className={classes.outer}>
+      <Container size="lg">
+        <Title className={classes.title}>Meet Your Team at StoneSystems</Title>
+        <SimpleGrid cols={3}>{slides}</SimpleGrid>
+      </Container>
+    </div>
   );
 }

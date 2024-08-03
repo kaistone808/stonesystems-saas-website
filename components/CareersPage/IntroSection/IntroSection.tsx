@@ -5,7 +5,7 @@ import classes from './IntroSection.module.css';
 
 export function IntroSection() {
   return (
-    <>
+    <div className={classes.outer}>
       <Container size="lg">
         <Title className={classes.mainTitle}>Discover Your Next Team</Title>
         <Text c="dimmed" className={classes.description} ta="center" mt="md">
@@ -14,6 +14,6 @@ export function IntroSection() {
           Together, we live our core values and create a culture that’s part of our everyday life.
         </Text>
       </Container>
-    </>
+    </div>
   );
 }

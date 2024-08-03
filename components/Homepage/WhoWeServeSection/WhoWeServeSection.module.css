@@ -5,7 +5,8 @@
   background-position: 50% 100%;
   background-repeat: no-repeat;
   background-size: 100%;
-  padding-bottom: 146px;
+  padding-bottom: 148px;
+  margin-bottom: -1px !important;
 }
 .card {
   display: flex;
@@ -28,14 +29,11 @@
 
 .mainTitle {
   color: var(--white);
-  font-family:
-    Greycliff CF,
-    var(--mantine-font-family);
-  font-size: rem(52px);
+  font-size: var(--title-font-size);
   line-height: 1.2;
   font-weight: 900;
   text-align: center;
-  margin: 0 0 1rem 0;
+  padding: calc(var(--space-40) * 2) 0;
 
   @media (max-width: $mantine-breakpoint-xs) {
     font-size: rem(28px);
@@ -55,5 +53,27 @@
   img {
     border-radius: 10px 10px 0 0;
     width: 100%;
+  }
+}
+.root {
+  margin: 0 2rem;
+  .controls {
+    top: calc(50% - 100px / 2);
+    padding: 0;
+    .control {
+      box-shadow: none;
+      opacity: 1;
+      svg {
+        width: 100px !important;
+        height: 100px !important;
+        stroke: var(--yellow);
+      }
+    }
+    .control:nth-of-type(1) {
+      margin-left: -4.5rem;
+    }
+    .control:nth-of-type(2) {
+      margin-right: -4.5rem;
+    }
   }
 }

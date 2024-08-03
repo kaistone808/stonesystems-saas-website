@@ -29,7 +29,6 @@ const data = [
     links: [
       { label: 'About Us', link: '/about-us' },
       { label: 'Our Process', link: '/our-process' },
-      { label: 'Our Work', link: '/our-work' },
       { label: 'Careers', link: '/careers' },
       { label: 'Partners', link: '/partners' },
       { label: 'Contact', link: '/contact-us' },
@@ -84,10 +83,12 @@ export function Footer() {
     <footer className={classes.footer}>
       <Container size={'lg'}>
         <Flex align={'center'} justify={'space-between'} direction={'row'}>
-          <Image src="/images/logo.png" w={250} h={'100%'} />
+          <Image src="/images/logo-white.png" w={250} h={'100%'} />
           <Flex align={'center'}>
             <Text className={classes.cta}>Ready to get started?</Text>
-            <Button className={classes.button} size="md">Book A Call</Button>
+            <Button className={classes.button} size="md">
+              Book A Call
+            </Button>
           </Flex>
         </Flex>
         <Divider my={'2.5rem'} color="var(--border-color)" />

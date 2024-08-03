@@ -1,13 +1,14 @@
+.outer{
+  background-color: var(--gray);
+}
+
 .mainTitle {
   color: var(--blue);
-    font-family:
-      Greycliff CF,
-      var(--mantine-font-family);
     font-size: rem(52px);
     line-height: 1.2;
     font-weight: 900;
     text-align: center;
-    margin: 2rem 0 1rem 0;
+    padding: 2rem 0 1rem 0;
   
     @media (max-width: $mantine-breakpoint-xs) {
       font-size: rem(28px);
@@ -19,5 +20,5 @@
     font-size: rem(21px);
     line-height: 1.5;
     color: var(--mantine-color-black);
-    margin-bottom: var(--mantine-spacing-lg);
+    padding-bottom: var(--mantine-spacing-lg);
   }

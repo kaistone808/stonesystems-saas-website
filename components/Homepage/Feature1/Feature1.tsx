@@ -46,11 +46,11 @@ export function Feature1() {
 
   return (
     <Container size="lg">
+      <Title className={classes.mainTitle}>
+        That's why we built the Stone System
+      </Title>
       <div className={classes.inner}>
-        <Image
-          src="/images/phone-right.png"
-          className={classes.image}
-        />
+        <Image src="/images/phone-right.png" className={classes.image} />
 
         <div className={classes.content}>
           <Title className={classes.title}>Functional Website</Title>

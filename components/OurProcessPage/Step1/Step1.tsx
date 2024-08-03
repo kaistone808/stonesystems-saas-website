@@ -6,8 +6,10 @@ import classes from './Step1.module.css';
 
 export function Step1() {
   return (
-    <Container size="md">
-      <SimpleGrid mb={'xl'} cols={2}>
+    <div className={classes.outer}>
+
+    <Container size="lg">
+      <SimpleGrid pb={'xl'} cols={2}>
         <Image src="/images/1.svg" className={classes.image} />
         <div className={classes.content}>
           <Title className={classes.title}>Consultation Call</Title>
@@ -19,5 +21,6 @@ export function Step1() {
         </div>
       </SimpleGrid>
     </Container>
+    </div>
   );
 }

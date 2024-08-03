@@ -5,6 +5,7 @@
   background-repeat: no-repeat;
   background-size: 100%;
   padding-bottom: 148px;
+  margin-bottom: -1px !important;
 }
 
 .personName {
@@ -12,30 +13,21 @@
   color: var(--mantine-color-black) !important;
   line-height: 1.2 !important;
   font-size: rem(16px) !important;
-  margin: var(--mantine-spacing-xs) 0 0 20px !important;
-}
-
-.quote {
-  font-weight: 900 !important;
-  color: var(--mantine-color-black) !important;
-  line-height: 1.2 !important;
-  font-size: rem(18px) !important;
-  margin: var(--mantine-spacing-xs) 0 0 20px !important;
+  margin: var(--mantine-spacing-sm) 0 0 20px !important;
 }
 
 .mainTitle {
-  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
-  font-size: rem(52px);
+  color: var(--blue);
+  font-size: var(--title-font-size);
   line-height: 1.2;
   font-weight: 900;
   text-align: center;
-  margin: 2rem 0 1rem 0;
+  padding: calc(var(--space-40) * 2) 0;
 
   @media (max-width: $mantine-breakpoint-xs) {
     font-size: rem(28px);
   }
 }
-
 .description {
   font-family: var(--mantine-font-family);
   font-size: rem(21px);
@@ -67,14 +59,36 @@
   background-color: var(--white);
 }
 
-.title {
-  color: var(--blue);
-  font-size: var(--title-font-size);
-  line-height: 1.2;
-  font-weight: 900;
-  padding-top: calc(var(--space-40) * 2);
+.stars {
+  padding-left: 1rem;
+  display: flex;
+  align-items: center;
+}
 
-  @media (max-width: $mantine-breakpoint-xs) {
-    font-size: rem(28px);
+.star {
+  width: rem(22px);
+  height: rem(22px);
+}
+
+.root {
+  margin: 0 3.5rem;
+  .controls {
+    top: calc(50% - 100px / 2);
+    padding: 0;
+    .control {
+      box-shadow: none;
+      opacity: 1;
+      svg {
+        width: 100px !important;
+        height: 100px !important;
+        stroke: var(--yellow);
+      }
+    }
+    .control:nth-of-type(1) {
+      margin-left: -4.5rem;
+    }
+    .control:nth-of-type(2) {
+      margin-right: -4.5rem;
+    }
   }
 }

@@ -298,11 +298,11 @@ export function AllTradesSection() {
   const slides = data.map((item) => <Card {...item} />);
 
   return (
-    <>
+    <div className={classes.outer}>
       <Title className={classes.mainTitle}>All Trades by Category</Title>
       <Container size="lg">
         <SimpleGrid cols={4}>{slides}</SimpleGrid>
       </Container>
-    </>
+    </div>
   );
 }

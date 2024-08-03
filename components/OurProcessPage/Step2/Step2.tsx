@@ -5,8 +5,10 @@ import classes from './Step2.module.css';
 
 export function Step2() {
   return (
-    <Container size="md">
-      <SimpleGrid mb={'xl'} cols={2}>
+    <div className={classes.outer}>
+
+    <Container size="lg">
+      <SimpleGrid pb={'xl'} cols={2}>
         <div className={classes.content}>
           <Title className={classes.title}>Buildout</Title>
           <Text c="dimmed" mt="md" className={classes.description}>
@@ -22,5 +24,6 @@ export function Step2() {
         />
       </SimpleGrid>
     </Container>
+    </div>
   );
 }

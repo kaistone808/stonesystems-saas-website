@@ -53,7 +53,7 @@ const data = [
 ];
 
 export function PartnersSection() {
-  const autoplay = useRef(Autoplay({ delay: 4000 }));
+  const autoplay = useRef(Autoplay({ delay: 2500 }));
   const theme = useMantineTheme();
   const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
   const slides = data.map((item) => (

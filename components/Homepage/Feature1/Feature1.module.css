@@ -1,7 +1,6 @@
 .inner {
   display: flex;
   justify-content: space-between;
-  margin-top: calc(var(--space-40) * 2);
 }
 
 .content {
@@ -13,11 +12,21 @@
   }
 }
 
+.mainTitle {
+  color: var(--blue);
+  font-size: var(--title-font-size);
+  line-height: 1.2;
+  font-weight: 900;
+  text-align: center;
+  padding: calc(var(--space-40) * 2) 0;
+
+  @media (max-width: $mantine-breakpoint-xs) {
+    font-size: rem(28px);
+  }
+}
+
 .title {
   color: var(--blue);
-  font-family:
-    Greycliff CF,
-    var(--mantine-font-family);
   font-size: var(--subtitle-font-size);
   line-height: 1.2;
   font-weight: 700;
@@ -47,13 +56,6 @@
   @media (max-width: $mantine-breakpoint-md) {
     display: none;
   }
-}
-
-.highlight {
-  position: relative;
-  background-color: var(--mantine-color-blue-light);
-  border-radius: var(--mantine-radius-sm);
-  padding: rem(4px) rem(12px);
 }
 
 .featureTitle {

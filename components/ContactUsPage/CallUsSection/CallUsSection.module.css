@@ -1,3 +1,8 @@
+.outer {
+  background-color: var(--gray);
+  padding-bottom: 8rem;
+}
+
 .inner {
   background-color: var(--blue);
   padding: 3rem;
@@ -12,18 +17,6 @@
   background-size: cover;
   background-position: center;
   padding: 0 0 1rem 0;
-}
-
-.tradeName {
-  text-align: center;
-  font-family:
-    Greycliff CF,
-    sans-serif;
-  font-weight: 900;
-  color: var(--mantine-color-black);
-  line-height: 1.2;
-  font-size: rem(28px);
-  margin: var(--mantine-spacing-xs) auto 0 auto;
 }
 
 .mainTitle {
@@ -58,7 +51,7 @@
 
 .contactBox {
   padding-right: 2rem;
-  border-right: 1px solid black;
+  border-right: 1px solid var(--border-color);
   margin-right: 2rem;
   &:last-of-type {
     border: none;

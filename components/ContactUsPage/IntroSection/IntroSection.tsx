@@ -5,7 +5,7 @@ import classes from './IntroSection.module.css';
 
 export function IntroSection() {
   return (
-    <>
+    <div className={classes.outer}>
       <Container size="lg">
         <Title className={classes.mainTitle}>How can we help?</Title>
         <Text c="dimmed" className={classes.description} ta="center" mt="md">
@@ -27,6 +27,6 @@ export function IntroSection() {
           <script src="https://api.ezclick.io/js/form_embed.js" type="text/javascript"></script>
         </Container>
       </Container>
-    </>
+    </div>
   );
 }
