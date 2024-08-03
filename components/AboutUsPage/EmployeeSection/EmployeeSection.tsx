@@ -54,7 +54,7 @@ export function EmployeeSection() {
   return (
     <div className={classes.outer}>
       <Container size="lg">
-        <Title className={classes.title}>Meet Your Team at StoneSystems</Title>
+        <Title className={classes.mainTitle}>Meet Your Team at StoneSystems</Title>
         <SimpleGrid cols={3}>{slides}</SimpleGrid>
       </Container>
     </div>

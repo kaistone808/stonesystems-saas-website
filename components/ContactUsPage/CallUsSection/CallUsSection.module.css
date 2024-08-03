@@ -1,6 +1,6 @@
 .outer {
   background-color: var(--gray);
-  padding-bottom: 8rem;
+  padding-bottom: calc(var(--space-40) * 2);
 }
 
 .inner {
@@ -53,6 +53,9 @@
   padding-right: 2rem;
   border-right: 1px solid var(--border-color);
   margin-right: 2rem;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
   &:last-of-type {
     border: none;
   }

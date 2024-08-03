@@ -1,6 +1,6 @@
 .outer {
   background-color: var(--gray);
-  padding-bottom: 8rem;
+  padding-bottom: calc(var(--space-40) * 2);
 }
 
 .card {
@@ -32,15 +32,12 @@
 }
 
 .mainTitle {
-  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
-  font-family:
-    Greycliff CF,
-    var(--mantine-font-family);
-  font-size: rem(52px);
+  color: var(--blue);
+  font-size: var(--title-font-size);
   line-height: 1.2;
   font-weight: 900;
   text-align: center;
-  padding: 2rem 0;
+  padding: var(--space-40) 0 ;
 
   @media (max-width: $mantine-breakpoint-xs) {
     font-size: rem(28px);

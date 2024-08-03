@@ -2,16 +2,29 @@
   background-color: var(--gray);
 }
 
+.outer2 {
+  background-color: var(--gray);
+  padding-bottom: calc(var(--space-40) * 2);
+}
+
 .main {
   display: flex;
   justify-content: center;
   margin: 0 auto 0 auto;
-  padding: var(--space-40) 0;
+  padding: 0 0 calc(var(--space-40) * 2) 0;
 }
 
-.title {
-  font-size: var(--title-font-size);
+.mainTitle {
   color: var(--blue);
+  font-size: var(--title-font-size);
+  line-height: 1.2;
+  font-weight: 900;
+  text-align: center;
+  padding: var(--space-40) 0 0 0;
+
+  @media (max-width: $mantine-breakpoint-xs) {
+    font-size: rem(28px);
+  }
 }
 
 .mainGroup {
@@ -90,4 +103,44 @@
     width: 15rem;
     border-radius: 0 0.7rem 0.7rem 0;
   }
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.planTitle {
+  text-align: center;
+  color: var(--white);
+  font-size: 21px;
+  font-weight: 900;
+}
+
+.header {
+  background-color: var(--blue);
+  padding: calc(var(--space-40) / 2) 0;
+  margin-bottom: calc(var(--space-40) / 2);
+  border-radius: var(--border-radius-md);
+}
+
+.contentTitle {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.bullet {
+  list-style: square;
+}
+
+.featureName {
+  cursor: pointer;
+}
+
+.discount {
+  font-weight: 900;
+  margin-left: .5rem;
+  color: red;
+  margin-top: 0.25rem;
 }

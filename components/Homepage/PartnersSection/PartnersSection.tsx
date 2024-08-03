@@ -45,6 +45,9 @@ const data = [
     imageSrc: '/images/partners/zapier.svg.png',
   },
   {
+    imageSrc: '/images/partners/ads.png',
+  },
+  {
     imageSrc: '/images/partners/googlesearch.png',
   },
   {

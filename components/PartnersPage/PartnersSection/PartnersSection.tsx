@@ -49,6 +49,9 @@ const data = [
   {
     imageSrc: '/images/partners/leadconnector.png',
   },
+  {
+    imageSrc: '/images/partners/ads.png',
+  },
 ];
 
 export function PartnersSection() {

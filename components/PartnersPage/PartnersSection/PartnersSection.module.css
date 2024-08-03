@@ -1,6 +1,6 @@
 .outer {
   background-color: var(--gray);
-  padding-bottom: 8rem;
+  padding-bottom: calc(var(--space-40) * 2);
 }
 
 .partnerCard {

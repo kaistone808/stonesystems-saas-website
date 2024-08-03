@@ -108,10 +108,7 @@ export function MainTradesSection() {
 
   return (
     <div className={classes.outer}>
-      <Title className={classes.mainTitle}>Don't just take our word for it</Title>
-      <Text c="dimmed" className={classes.description} ta="center" mt="md">
-        With tons of testimonials and 5-star reviews, our customers love StoneSystems
-      </Text>
+      <Title className={classes.mainTitle}>See exactly who this is for</Title>
       <Container size="lg">
         <SimpleGrid cols={3}>{slides}</SimpleGrid>
       </Container>

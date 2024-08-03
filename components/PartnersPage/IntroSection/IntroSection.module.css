@@ -1,42 +1,16 @@
 .outer {
   background-color: var(--gray);
-  padding-bottom: 1rem;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  background-size: cover;
-  background-position: center;
-  padding: 0 0 1rem 0;
 }
 
 .mainTitle {
   color: var(--blue);
-  font-size: rem(52px);
+  font-size: var(--title-font-size);
   line-height: 1.2;
   font-weight: 900;
   text-align: center;
-  padding: 2rem 0 1rem 0;
+  padding: var(--space-40) 0;
 
   @media (max-width: $mantine-breakpoint-xs) {
     font-size: rem(28px);
-  }
-}
-
-.description {
-  font-family: var(--mantine-font-family);
-  font-size: rem(21px);
-  line-height: 1.5;
-  color: var(--mantine-color-black);
-  margin-bottom: var(--mantine-spacing-lg);
-}
-
-.video {
-  width: 100%;
-  img {
-    border-radius: 10px 10px 0 0;
   }
 }
