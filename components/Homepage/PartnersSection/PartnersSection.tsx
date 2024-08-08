@@ -69,16 +69,16 @@ export function PartnersSection() {
     <>
       <div className={classes.outer}>
         <Container size="lg">
-          <Title className={classes.mainTitle}>We partner with these services</Title>
+          <Title className={classes.mainTitle}>Just to be fancy, we partner with...</Title>
           <div className={classes.card}>
             <Container size="lg">
               <Carousel
-                slideSize={{ base: '100%', sm: '20%' }}
-                slideGap={{ base: rem(2), sm: 'xl' }}
+                slideSize={{ base: '50%', sm: '20%' }}
+                slideGap={{ base: 'sm', sm: 'xl' }}
                 align="start"
                 loop
                 dragFree
-                slidesToScroll={mobile ? 1 : 5}
+                slidesToScroll={mobile ? 2 : 5}
                 plugins={[autoplay.current]}
                 withControls={false}
               >

@@ -7,7 +7,8 @@ export function IntroSection() {
   return (
     <div className={classes.outer}>
       <Container size="lg">
-        <Title className={classes.mainTitle}>StoneSystems Partners</Title>
+        <Title className={classes.mainTitle}>Just to be fancy, we partner with...
+</Title>
       </Container>
     </div>
   );

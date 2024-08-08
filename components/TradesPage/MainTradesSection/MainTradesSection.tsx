@@ -36,6 +36,10 @@ const data = [
     imageSrc: '/images/trades/generalcontractor.png',
   },
   {
+    tradeName: 'Dog Groomers',
+    imageSrc: '/images/trades/doggroomer.png',
+  },
+  {
     tradeName: 'Remodeling',
     imageSrc: '/images/trades/remodeling.png',
   },
@@ -108,7 +112,7 @@ export function MainTradesSection() {
 
   return (
     <div className={classes.outer}>
-      <Title className={classes.mainTitle}>See exactly who this is for</Title>
+      <Title className={classes.mainTitle}>Serving all these trades and more...</Title>
       <Container size="lg">
         <SimpleGrid cols={3}>{slides}</SimpleGrid>
       </Container>

@@ -7,13 +7,7 @@ export function IntroSection() {
   return (
     <div className={classes.outer}>
       <Container size="lg">
-        <Title className={classes.mainTitle}>How can we help?</Title>
-        <Text c="dimmed" className={classes.description} ta="center" mt="md">
-          Do you have a question or are you interested in working with us?
-        </Text>
-        <Text c="dimmed" className={classes.description} ta="center" mt="md">
-          Just Book a consultation call below.
-        </Text>
+        <Title className={classes.mainTitle}>Want to book a time to talk?</Title>
         <Container className={classes.calendarSection} size="lg">
           <SimpleGrid cols={2}>
             <iframe

@@ -40,18 +40,16 @@ const data = [
       { label: 'Functional Website', link: '/features/functional-website' },
       { label: 'Missed Call Text Back', link: '/features/missed-call-text-back' },
       { label: '5 Star Magic Funnel', link: '/features/5-star-magic-funnel' },
-      { label: 'Blog Posts', link: '/features/blog-posts' },
-      { label: 'Voice Search', link: '/features/voice-search' },
       { label: 'Printing Services', link: '/features/printing-services' },
     ],
   },
   {
     links: [
-      { label: 'Automated SMS Lead Follow Up', link: '/features/automated-sms-lead-follow-up' },
-      { label: 'Business Info Synchronization', link: '/features/business-info-synchronization' },
-      { label: 'Reputation Management', link: '/features/reputation-management' },
+      { label: 'Automated Lead Follow Up', link: '/features/automated-lead-follow-up' },
       { label: 'Marketing Campaigns', link: '/features/marketing-campaigns' },
       { label: 'All-In-One Inbox', link: '/features/all-in-one-inbox' },
+      { label: 'Business Phone', link: '/features/business-phone' },
+      { label: 'Local SEO', link: '/features/seo' },
     ],
   },
 ];
@@ -84,7 +82,7 @@ export function Footer() {
       <Container size={'lg'}>
         <Flex align={'center'} justify={'space-between'} direction={'row'}>
           <Image src="/images/logo-white.png" w={250} h={'100%'} />
-          <Flex align={'center'}>
+          <Flex className={classes.ctaDiv} align={'center'}>
             <Text className={classes.cta}>Ready to get started?</Text>
             <Button className={classes.button} size="md">
               Book A Call

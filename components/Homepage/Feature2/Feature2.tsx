@@ -11,32 +11,34 @@ import {
   Flex,
   Divider,
 } from '@mantine/core';
-import { IconCheckbox } from '@tabler/icons-react';
+import { IconCheckbox, IconRosetteDiscountCheckFilled } from '@tabler/icons-react';
 import classes from './Feature2.module.css';
 
 const features = [
   {
     title: '5-Star Reviews Only',
     description:
-      'Only the best reviews will be published on Google, so that you can attract more customers.',
+    "You can’t make everyone happy, but our magic funnel sure can. Five stars, every time.",
   },
   {
-    title: 'Automatic Follow-Up',
+    title: 'Automatic Follow-Up Reminders',
     description:
-      'Automatically follow up with customers through SMS to get more reviews, so that you can build a 5-star reputation.',
+      `"Sure I'll leave you a review", but the truth is people forget. We’ll 'gently' reminder them for a few weeks until they remember.`,
   },
   {
-    title: 'Ask In One Click',
+    title: 'Ask For Reviews In One Click',
     description:
-      'To keep it simple, you can ask for reviews wit just one click. No mobile app or emails needed.',
+      "As promised, we keep it simple. If you're confused, we're fired and extremely embarrassed.",
   },
 ];
 
 export function Feature2() {
   const items = features.map((feature, index) => (
     <div key={feature.title}>
-      {index > 0 && <Divider my={'1.5rem'} />}
-      <Text className={classes.featureTitle}>{feature.title}</Text>
+      <Flex>
+        <IconRosetteDiscountCheckFilled color='var(--yellow)' />
+        <Text className={classes.featureTitle}>{feature.title}</Text>
+      </Flex>
       <Text className={classes.featureDescription}>{feature.description}</Text>
     </div>
   ));
@@ -47,7 +49,7 @@ export function Feature2() {
         <div className={classes.content}>
           <Title className={classes.title}>5-Star Magic Funnel</Title>
           <Text className={classes.description} mt="md">
-            Okay… <br />
+            Okay… 
             It’s not magic but it comes pretty close, and it’s automated
           </Text>
           <Flex mt={'lg'} direction={'column'}>

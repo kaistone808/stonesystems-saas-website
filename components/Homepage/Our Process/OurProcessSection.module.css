@@ -6,6 +6,9 @@
   background-size: 100%;
   padding-bottom: 148px;
   margin-bottom: -1px !important;
+  @media (max-width: $mantine-breakpoint-xs) {
+    padding-bottom: 75px;
+  }
 }
 .card {
   display: flex;
@@ -26,6 +29,7 @@
 
   @media (max-width: $mantine-breakpoint-xs) {
     font-size: rem(28px);
+    padding: var(--space-40) 0;
   }
 }
 
@@ -50,6 +54,16 @@
 
 .line {
   position: relative;
-  top: -1.5rem;
+  top: -2.5rem;
   right: -11.5rem;
+  @media (max-width: $mantine-breakpoint-xs) {
+    display: none;
+  }
+}
+
+.iconThing {
+  z-index: 2;
+  @media (max-width: $mantine-breakpoint-xs) {
+    margin-bottom: 10px;
+  }
 }

@@ -14,7 +14,7 @@ function Card({ name, title, imageSrc }: CardProps) {
       <Text className={classes.name} ta="center" mt="md">
         {name}
       </Text>
-      <Text className={classes.jobTitle} ta="center" c="dimmed" fz="sm">
+      <Text className={classes.jobTitle} ta="center" c="dimmed">
         {title}
       </Text>
     </Paper>
@@ -23,28 +23,30 @@ function Card({ name, title, imageSrc }: CardProps) {
 
 const data = [
   {
-    name: 'Kai Stone',
+    name: 'Kai',
     title: 'CEO / Founder',
-    imageSrc:
-      'https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/avatars/avatar-8.png',
+    imageSrc: '/images/people/kai.jpeg',
   },
   {
-    name: 'Michael Vanhoutte',
+    name: 'Michael',
     title: 'Systems Engineer',
-    imageSrc:
-      'https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/avatars/avatar-8.png',
+    imageSrc: '/images/people/michael.jpg',
   },
   {
     name: 'Astrid',
     title: 'Web Developer',
     imageSrc:
-      'https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/avatars/avatar-8.png',
+      '/images/people/astrid.jpeg',
   },
   {
-    name: 'Renny',
-    title: 'Designer / Social Media Manager',
-    imageSrc:
-      'https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/avatars/avatar-8.png',
+    name: 'Kevin',
+    title: 'Performance Marketer',
+    imageSrc: '/images/people/kevin.jpeg',
+  },
+  {
+    name: 'Munzi',
+    title: 'Graphic Designer',
+    imageSrc: '/images/people/munzi.jpeg',
   },
 ];
 

@@ -6,7 +6,7 @@
   --blue: #1f2236;
   --text-gray: #c4c6cd;
   --border-color: #424453;
-  --title-font-size: 46px;
+  --title-font-size: 50px;
   --subtitle-font-size: 40px;
   --space-40: 40px;
   --border-radius-sm: 5px;
@@ -19,7 +19,22 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Sora, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"  !important;
+  font-family:
+    Sora,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    'Helvetica Neue',
+    Arial,
+    'Noto Sans',
+    sans-serif,
+    'Apple Color Emoji',
+    'Segoe UI Emoji',
+    'Segoe UI Symbol',
+    'Noto Color Emoji' !important;
 }
 p,
 a,
@@ -27,5 +42,20 @@ ul,
 ol,
 li,
 span {
-  font-family: Sora, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"  !important;
+  font-family:
+    Sora,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    'Helvetica Neue',
+    Arial,
+    'Noto Sans',
+    sans-serif,
+    'Apple Color Emoji',
+    'Segoe UI Emoji',
+    'Segoe UI Symbol',
+    'Noto Color Emoji' !important;
 }

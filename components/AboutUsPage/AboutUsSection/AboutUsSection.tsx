@@ -38,7 +38,7 @@ export function AboutUsSection() {
             </Group>
           </div>
           <Image
-            src="https://cdn.prod.website-files.com/602d921508c6c26dc5cebf3f/61d300b1e9f3319ca31a51fc_ProSite%20-%20Hero%20Home-p-1080.png"
+            src='/images/people/kai.jpeg'
             alt="About Us"
             className={classes.image}
           />

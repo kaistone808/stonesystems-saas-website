@@ -1,6 +1,6 @@
 'use client';
 
-import { Container, Image, SimpleGrid, Text, ThemeIcon, Title } from '@mantine/core';
+import { Container, SimpleGrid, Text, ThemeIcon, Title } from '@mantine/core';
 import classes from './CallUsSection.module.css';
 import { IconClockHour1, IconMapPin, IconPhone } from '@tabler/icons-react';
 
@@ -8,12 +8,9 @@ export function CallUsSection() {
   return (
     <div className={classes.outer}>
       <Container size="lg" className={classes.inner}>
-        <Title className={classes.mainTitle}>Or Contact Us…</Title>
+        <Title className={classes.mainTitle}>Or Contact Us Here…</Title>
         <Text className={classes.description} ta="center" mt="md">
-          In the last 14 years we have helped countless contractors reach their goals.
-        </Text>
-        <Text className={classes.description} ta="center" mt="md">
-          You could be next…
+          We've helped hundreds of contractors grow their business online, let us help you too.
         </Text>
         <SimpleGrid cols={3}>
           <div className={classes.contactBox}>

@@ -6,17 +6,20 @@ import classes from './Hero.module.css';
 export function Hero() {
   return (
     <div className={classes.outer}>
-      <Container size="lg">
+      <Container size="xl">
         <div className={classes.inner}>
           <div className={classes.content}>
-            <Flex mb={50} className={classes.titleDiv}>
+            <Flex className={classes.titleDiv}>
               <Divider size={2} mr={40} color={'var(--border-color)'} orientation="vertical" />
-              <Title className={classes.title}>Simplicity & Growth At Your Fingertips</Title>
+              <Title className={classes.title}>
+                Website Design & Marketing Systems For Contractors
+              </Title>
             </Flex>
             <Flex className={classes.textDiv}>
               <Text className={classes.description}>
-                More Customers. More Jobs. Less Bullsh*t. Receive a fully custom website optimized
-                with AI and put your online presence on autopilot to be discovered.
+                Cut the bullsh*t, Marketing isn't rocket science.
+                <br /> No agency... (including us) has the miracle solution to all your problems.
+                We'll give you the tools to win but you need to actually commit to using them.
               </Text>
               <div className={classes.buttonDiv}>
                 <Flex>
@@ -26,11 +29,11 @@ export function Hero() {
                   <Avatar />
                 </Flex>
                 <Button size="xl" className={classes.control}>
-                  Learn More
+                  Book A Call
                 </Button>
               </div>
             </Flex>
-            <Flex mt={75} className={classes.creditDiv}>
+            <Flex className={classes.creditDiv}>
               <div className={classes.credit}>
                 <Image src="/images/google.webp" className={classes.creditImage} />
                 <div className={classes.creditContent}>
@@ -44,7 +47,7 @@ export function Hero() {
                   </div>
                 </div>
               </div>
-              <Divider mx={20} color="var(--border-color)" orientation="vertical" />
+              <Divider className={classes.divider} mx={20} color="var(--border-color)" orientation="vertical" />
               <div className={classes.credit}>
                 <Image src="/images/fb.png" className={classes.creditImage} />
                 <div className={classes.creditContent}>
@@ -58,7 +61,7 @@ export function Hero() {
                   </div>
                 </div>
               </div>
-              <Divider mx={20} color="var(--border-color)" orientation="vertical" />
+              <Divider className={classes.divider} mx={20} color="var(--border-color)" orientation="vertical" />
               <div className={classes.credit}>
                 <Image src="/images/trustpilot.png" className={classes.creditImage} />
                 <div className={classes.creditContent}>

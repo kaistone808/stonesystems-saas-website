@@ -104,3 +104,9 @@
 .button {
   background-color: var(--yellow) !important;
 }
+
+.ctaDiv {
+  @media (max-width: $mantine-breakpoint-sm) {
+    display: none !important;
+  }
+}

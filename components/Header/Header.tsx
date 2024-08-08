@@ -19,26 +19,22 @@ import {
   useMantineTheme,
   Image,
 } from '@mantine/core';
-import { MantineLogo } from '@mantinex/mantine-logo';
 import { useDisclosure } from '@mantine/hooks';
 import {
   IconDeviceMobileVibration,
   IconStarFilled,
   IconReport,
-  IconSpeakerphone,
   IconSearch,
   IconPrinter,
   IconChevronDown,
   IconAppWindow,
   IconFileAnalytics,
-  IconBlockquote,
-  IconBrandYoutube,
   IconHeartHandshake,
   IconMail,
   IconNotebook,
   IconTimeline,
   IconUsers,
-  IconDeviceDesktop,
+  IconDeviceMobile,
 } from '@tabler/icons-react';
 import classes from './Header.module.css';
 
@@ -62,34 +58,15 @@ const mockdata = [
     href: '/features/5-star-magic-funnel',
   },
   {
-    icon: IconSearch,
-    title: 'Blog Posts',
-    description: 'Keep your audience engaged',
-    href: '/features/blog-posts',
-  },
-  {
-    icon: IconSpeakerphone,
-    title: 'Voice Search',
-    description: 'Get found on voice search',
-    href: '/features/voice-search',
-  },
-  {
     icon: IconPrinter,
     title: 'Printing Services',
     description: 'Put your business out there both on and offline',
     href: '/features/printing-services',
   },
-
-  {
-    icon: IconFileAnalytics,
-    title: 'Reputation Management',
-    description: 'Reactivate old leads and customers',
-    href: '/features/reputation-management',
-  },
   {
     icon: IconFileAnalytics,
     title: 'Marketing Campaigns',
-    description: 'Keep your audience thinking about you',
+    description: 'Keep your customers thinking about you',
     href: '/features/marketing-campaigns',
   },
   {
@@ -99,16 +76,22 @@ const mockdata = [
     href: '/features/all-in-one-inbox',
   },
   {
-    icon: IconReport,
-    title: 'Automated SMS Lead Follow Up',
-    description: 'Automatically follow up with leads via text',
-    href: '/features/automated-sms-lead-follow-up',
+    icon: IconDeviceMobile,
+    title: 'Business Phone',
+    description: 'Separate business and personal',
+    href: '/features/business-phone',
   },
   {
-    icon: IconFileAnalytics,
-    title: 'Business Info Synchronization',
-    description: 'Put your business on hundreds of websites',
-    href: '/features/business-info-sync',
+    icon: IconSearch,
+    title: 'Local SEO',
+    description: 'Actually get found on Google',
+    href: '/features/seo',
+  },
+  {
+    icon: IconReport,
+    title: 'Automated Lead Follow Up',
+    description: 'Automatically follow up with leads via text',
+    href: '/features/automated-lead-follow-up',
   },
 ];
 

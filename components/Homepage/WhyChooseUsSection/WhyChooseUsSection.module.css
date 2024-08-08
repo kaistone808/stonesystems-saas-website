@@ -6,6 +6,9 @@
   background-size: 100%;
   padding-bottom: 148px;
   margin-bottom: -1px !important;
+  @media (max-width: $mantine-breakpoint-xs) {
+    padding-bottom: 75px;
+  }
 }
 
 .card {
@@ -29,6 +32,7 @@
 
   @media (max-width: $mantine-breakpoint-xs) {
     font-size: rem(28px);
+    padding: var(--space-40) 0;
   }
 }
 
@@ -55,4 +59,8 @@
   font-size: 16px;
   margin-bottom: 10px;
   color: var(--white);
+  a {
+    color: var(--yellow);
+    text-decoration: none;
+  }
 }

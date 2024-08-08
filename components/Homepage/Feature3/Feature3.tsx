@@ -1,42 +1,39 @@
 'use client';
 
-import {
-  Image,
-  Container,
-  Title,
-  Button,
-  Text,
-  rem,
-  SimpleGrid,
-  Flex,
-  Divider,
-} from '@mantine/core';
-import { IconCheckbox } from '@tabler/icons-react';
+import { Image, Container, Title, Button, Text, Flex } from '@mantine/core';
+import { IconRosetteDiscountCheckFilled } from '@tabler/icons-react';
 import classes from './Feature3.module.css';
 
 const features = [
   {
+    title: 'Stand out from your competition',
+    description:
+      "Everyone misses calls, but not everyone texts back. Be the one who does and outshine your competition.",
+  },
+  {
     title: 'No More Lost Leads',
     description:
-      "Send potential customers a text message when you miss their call, so they don't go to the next guy.",
+      "On site and can't answer the phone? No problem, we'll fire off a text and start the conversation for you.",
+  },
+  {
+    title: 'Show Customers You Care',
+    description:
+      "Your ex didn't like it when you missed their calls, neither do your customers. At least send a text so they know you care.",
   },
   {
     title: 'Be available 24/7',
     description:
-      'Automatically respond to missed calls with a text message, so that you can be available 24/7.',
-  },
-  {
-    title: 'Show People You Care',
-    description:
-      'Show potential customers that you care about their business by responding to missed calls with a text message.',
+      'Missed a call after hours? No worries, we’ll make sure everyone feels loved even while you’re getting your beauty sleep.',
   },
 ];
 
 export function Feature3() {
   const items = features.map((feature, index) => (
     <div key={feature.title}>
-      {index > 0 && <Divider my={'1.5rem'} />}
-      <Text className={classes.featureTitle}>{feature.title}</Text>
+      <Flex>
+        <IconRosetteDiscountCheckFilled color="var(--yellow)" />
+        <Text className={classes.featureTitle}>{feature.title}</Text>
+      </Flex>
       <Text className={classes.featureDescription}>{feature.description}</Text>
     </div>
   ));
@@ -49,8 +46,7 @@ export function Feature3() {
         <div className={classes.content}>
           <Title className={classes.title}>Missed Call Text Back</Title>
           <Text className={classes.description} mt="md">
-            It’s not rocket science… <br />
-            Quickly getting back to customers will make you more money.
+            It’s not rocket science… Quickly getting back to customers will make you more money.
           </Text>
           <Flex mt={'lg'} direction={'column'}>
             {items}

@@ -2,6 +2,9 @@
   display: flex;
   justify-content: space-between;
   margin-top: calc(var(--space-40) * 2);
+  @media (max-width: $mantine-breakpoint-md) {
+    flex-direction: column;
+  }
 }
 
 .content {
@@ -13,22 +16,36 @@
   }
 }
 
+.mainTitle {
+  color: var(--blue);
+  font-size: var(--title-font-size);
+  line-height: 1.2;
+  font-weight: 900;
+  text-align: center;
+  padding: calc(var(--space-40) * 2) 0;
+
+  @media (max-width: $mantine-breakpoint-xs) {
+    font-size: rem(28px);
+    padding: var(--space-40) 0;
+  }
+}
+
 .title {
   color: var(--blue);
-  font-family:
-    Greycliff CF,
-    var(--mantine-font-family);
   font-size: var(--subtitle-font-size);
   line-height: 1.2;
   font-weight: 700;
 
   @media (max-width: $mantine-breakpoint-xs) {
-    font-size: rem(28px);
+    font-size: rem(26px);
   }
 }
 
 .description {
   font-size: 20px;
+  @media (max-width: $mantine-breakpoint-xs) {
+    font-size: 18px;
+  }
 }
 
 .control {
@@ -45,25 +62,27 @@
   object-fit: contain;
 
   @media (max-width: $mantine-breakpoint-md) {
-    display: none;
+    margin-right: 0;
+    max-width: 100%;
   }
-}
-
-.highlight {
-  position: relative;
-  background-color: var(--mantine-color-blue-light);
-  border-radius: var(--mantine-radius-sm);
-  padding: rem(4px) rem(12px);
 }
 
 .featureTitle {
   font-size: 18px;
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   color: var(--yellow);
+  margin-left: 5px;
+  @media (max-width: $mantine-breakpoint-xs) {
+    font-size: 16px;
+  }
 }
 
 .featureDescription {
   font-size: 16px;
   line-height: 1.625;
+  margin-bottom: 10px;
+  @media (max-width: $mantine-breakpoint-xs) {
+    font-size: 15px;
+  }
 }

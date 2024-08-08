@@ -1,0 +1,132 @@
+.outer {
+  background-color: var(--gray);
+  background-image: url('/images/bg_reverse_blue.svg');
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-bottom: 148px;
+  margin-bottom: -1px !important;
+  @media (max-width: $mantine-breakpoint-xs) {
+    padding-bottom: 75px;
+  }
+}
+
+.outer2 {
+  background-color: var(--blue);
+  background-image: url('/images/bg_blue.svg');
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-bottom: 148px;
+  margin-bottom: -1px !important;
+  @media (max-width: $mantine-breakpoint-xs) {
+    padding-bottom: 75px;
+  }
+}
+
+.mainTitle {
+  color: var(--blue);
+  font-size: var(--title-font-size);
+  line-height: 1.2;
+  font-weight: 900;
+  text-align: center;
+  padding: calc(var(--space-40) * 2) 0 var(--space-40) 0;
+
+  @media (max-width: $mantine-breakpoint-xs) {
+    font-size: rem(28px);
+    padding: var(--space-40) 0;
+  }
+}
+
+.mainTitle2 {
+  color: var(--white);
+  font-size: var(--title-font-size);
+  line-height: 1.2;
+  font-weight: 900;
+  text-align: center;
+  padding: var(--space-40) 0;
+
+  @media (max-width: $mantine-breakpoint-xs) {
+    font-size: rem(28px);
+  }
+}
+
+.video {
+  padding: 15px 20px;
+  iframe {
+    border-radius: 10px;
+  }
+  @media (max-width: $mantine-breakpoint-xs) {
+    padding: 15px 10px;
+  }
+}
+
+.statisticDiv {
+  flex-direction: column;
+  height: 100%;
+}
+
+.statistic {
+  padding: 10px;
+  p {
+    font-size: 18px;
+  }
+}
+
+.statistic:nth-of-type(2) {
+  margin: 5px 0;
+  @media (max-width: $mantine-breakpoint-xs) {
+    margin: 2.5px 0;
+  }
+}
+
+.statistic:nth-of-type(1) {
+  margin-bottom: 5px;
+  @media (max-width: $mantine-breakpoint-xs) {
+    margin-top: 20px;
+    margin-bottom: 2.5px;
+  }
+}
+
+.statistic:nth-of-type(3) {
+  margin-top: 5px;
+  @media (max-width: $mantine-breakpoint-xs) {
+    margin-top: 2.5px;
+  }
+}
+
+.videoTitle {
+  font-size: var(--subtitle-font-size);
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-align: center;
+  @media (max-width: $mantine-breakpoint-xs) {
+    font-size: 24px;
+  }
+}
+
+.percentage {
+  font-size: 46px;
+  font-weight: 700;
+  color: var(--yellow);
+}
+
+.featureInfo {
+  margin-top: 10px;
+  padding: 20px 40px 20px 20px;
+  p {
+    font-size: 18px;
+  }
+}
+
+.featureInfo:nth-of-type(odd) {
+  margin-right: 5px;
+}
+.featureInfo:nth-of-type(even) {
+  margin-left: 5x;
+}
+
+.infoTitle {
+  font-size: 28px;
+  margin: 5px 0 15px 0;
+}

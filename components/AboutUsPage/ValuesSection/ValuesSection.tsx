@@ -9,7 +9,8 @@ export function ValuesSection() {
       <div className={classes.outer}>
         <Container size="lg">
           <Title className={classes.mainTitle}>
-            We are deliberate in every aspect of our culture.
+            Our culture? It’s no accident. We’ve crafted it with the same precision as a Tinder bio
+            that actually works.
           </Title>
           <SimpleGrid cols={2}>
             <div>
@@ -17,11 +18,10 @@ export function ValuesSection() {
                 <Image w={80} h={80} mt={'md'} mr={'lg'} src="/images/one.webp" alt="Contractor" />
                 <div>
                   <Title order={3} className={classes.aboutTitle}>
-                    We Give a Shit
+                    F*cks Given
                   </Title>
                   <Text c="dimmed" className={classes.aboutDescription}>
-                    We’re a team of passionate professionals who truly care for our work and for
-                    each other.
+                    We’re in the business of giving a f*ck. And business is booming.
                   </Text>
                 </div>
               </Flex>
@@ -36,11 +36,11 @@ export function ValuesSection() {
                 />
                 <div>
                   <Title order={3} className={classes.aboutTitle}>
-                    Radical Integrity
+                    Humor
                   </Title>
                   <Text c="dimmed" className={classes.aboutDescription}>
-                    We're accountable to one another and our clients to do what’s right all of the
-                    time.
+                    We're serious about results, but our team meetings might as well be stand-up
+                    gigs.
                   </Text>
                 </div>
               </Flex>
@@ -55,11 +55,10 @@ export function ValuesSection() {
                 />
                 <div>
                   <Title order={3} className={classes.aboutTitle}>
-                    People First
+                    Genuine
                   </Title>
                   <Text c="dimmed" className={classes.aboutDescription}>
-                    We believe that a company culture focused on people is the key to a thriving
-                    business.
+                    Real talk and real action. We’re genuine because anything else is boring.
                   </Text>
                 </div>
               </Flex>
@@ -74,10 +73,10 @@ export function ValuesSection() {
                 />
                 <div>
                   <Title order={3} className={classes.aboutTitle}>
-                    Process Perfection
+                    Humility
                   </Title>
                   <Text c="dimmed" className={classes.aboutDescription}>
-                    We’re driven to always improve our approach and processes.
+                    We’re perfect, we've never made a mistake, not one time, ever... (wink wink).
                   </Text>
                 </div>
               </Flex>
@@ -92,11 +91,10 @@ export function ValuesSection() {
                 />
                 <div>
                   <Title order={3} className={classes.aboutTitle}>
-                    Empower One Another
+                    Integrity
                   </Title>
                   <Text c="dimmed" className={classes.aboutDescription}>
-                    We stand together as a team and support each others goals to ensure everyone is
-                    successful.
+                    When we say we'll do something we do it. It's that simple.
                   </Text>
                 </div>
               </Flex>

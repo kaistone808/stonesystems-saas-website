@@ -1,7 +1,8 @@
 'use client';
 
-import { Paper, Text, Title, Container, SimpleGrid, Image } from '@mantine/core';
+import { Paper, Text, Title, Container, SimpleGrid, Image, useMantineTheme } from '@mantine/core';
 import classes from './WhyChooseUsSection.module.css';
+import { useMediaQuery } from '@mantine/hooks';
 
 interface CardProps {
   cardTitle: string;
@@ -16,7 +17,8 @@ function Card({ cardTitle, cardDescription, imageSrc }: CardProps) {
       <Title order={3} className={classes.cardTitle}>
         {cardTitle}
       </Title>
-      <Text className={classes.cardDescription}>{cardDescription}</Text>
+      <Text className={classes.cardDescription} dangerouslySetInnerHTML={{__html: cardDescription}}/>
+
     </Paper>
   );
 }
@@ -24,53 +26,54 @@ function Card({ cardTitle, cardDescription, imageSrc }: CardProps) {
 const data = [
   {
     cardTitle: 'Simple To Use',
-    cardDescription:
-      "We've made everything so easy you don't have to learn anything and can practically do it in your sleep.",
+    cardDescription: `We built Stone Systems with the core concept of being simple to use, so everything is made to be exactly that.`,
     imageSrc: '/images/why/easy.png',
   },
   {
     cardTitle: 'Affordable',
     cardDescription:
-      'Affordable plans made to fit the budget of contracting businesses of all sizes to support your growth year round.',
+      "Our prices are designed to keep you for 10 years, not 10 weeks. We're in it for the long haul.",
     imageSrc: '/images/why/low-price.png',
   },
   {
     cardTitle: 'No Contracts ',
     cardDescription:
-      "We don't lock you in any contracts because we believe that continue business should be earned.",
+      "If it's affordable & awesome, why would we need a contract... if you're happy, you'll stay.",
     imageSrc: '/images/why/documents.png',
   },
   {
-    cardTitle: 'Round-the-Clock Support',
+    cardTitle: 'No Bullsh*t',
     cardDescription:
-      '24/7 customer support to help with any issues, ensuring your business keeps running smoothly.',
-    imageSrc: '/images/why/back-in-time.png',
+      "We don’t believe in the fluff, we just tell you exactly what we're going to do and we do it. Period.",
+    imageSrc: '/images/why/poo.svg',
   },
   {
-    cardTitle: 'Proven Results',
-    cardDescription:
-      "We already know what's working and have all the reviews & testimonials to back it up.",
-    imageSrc: '/images/why/business.png',
+    cardTitle: 'We Have Proof',
+    cardDescription: `We already know what's working and have all the <a href='/testimonials'>reviews & testimonials</a> to back it up.`,
+    imageSrc: '/images/why/shield.svg',
   },
   {
     cardTitle: 'Constant Improvements',
     cardDescription:
-      'We regularly make new improvements and updates to our systems to make sure you get the best value for your money.',
+      'We regularly make improvements and updates to our systems to make sure you get the best value for your money.',
     imageSrc: '/images/why/efficacy.png',
   },
 ];
 
 export function WhyChooseUsSection() {
   const slides = data.map((item) => <Card {...item} />);
-
+  const theme = useMantineTheme();
+  const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
   return (
     <>
       <div className={classes.outer}>
         <Container size="lg">
-          <Title className={classes.mainTitle}>Why Choose Us</Title>
-            <Container size="lg">
-              <SimpleGrid cols={3}>{slides}</SimpleGrid>
-            </Container>
+          <Title className={classes.mainTitle}>
+            Why we’re "totally unique"... <br /> just like everyone else
+          </Title>
+          <Container size="lg">
+            <SimpleGrid cols={mobile ? 1 :3}>{slides}</SimpleGrid>
+          </Container>
         </Container>
       </div>
     </>

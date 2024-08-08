@@ -1,42 +1,32 @@
 'use client';
 
-import {
-  Image,
-  Container,
-  Title,
-  Button,
-  Text,
-  rem,
-  SimpleGrid,
-  Flex,
-  Divider,
-} from '@mantine/core';
-import { IconCheckbox } from '@tabler/icons-react';
+import { Image, Container, Title, Button, Text, Flex } from '@mantine/core';
+import { IconRosetteDiscountCheckFilled } from '@tabler/icons-react';
 import classes from './Feature5.module.css';
 
 const features = [
   {
-    title: 'Get Found On The Go',
+    title: 'Qualified Leads',
     description:
-      "Have your business's information available to potential customers when they're on the go.",
+      "Sounds better than paying $50 for a lead that doesn't even pick up the phone, right?",
   },
   {
-    title: 'Be With The Times',
-    description:
-      'Show potential customers that you are up-to-date with the latest technology by being found on voice search.',
+    title: 'Stop Paying For Unqualified Lead',
+    description: 'Like mom always said, quality over quantity. Do we agree with her on this?',
   },
   {
-    title: 'Get Found On Siri & Alexa',
-    description:
-      'Get found on Siri & Alexa by having your business information available to potential customers.',
+    title: 'Organic Acquisition System',
+    description: 'Create your own qualified leads instead of paying for tirekickers.',
   },
 ];
 
 export function Feature5() {
   const items = features.map((feature, index) => (
     <div key={feature.title}>
-      {index > 0 && <Divider my={'1.5rem'} />}
-      <Text className={classes.featureTitle}>{feature.title}</Text>
+      <Flex>
+        <IconRosetteDiscountCheckFilled color="var(--yellow)" />
+        <Text className={classes.featureTitle}>{feature.title}</Text>
+      </Flex>
       <Text className={classes.featureDescription}>{feature.description}</Text>
     </div>
   ));
@@ -48,10 +38,10 @@ export function Feature5() {
           <Image src="/images/phone-right.png" className={classes.image} />
 
           <div className={classes.content}>
-            <Title className={classes.title}>Voice Search</Title>
+            <Title className={classes.title}>Local SEO</Title>
             <Text className={classes.description} mt="md">
-              Kinda weird, we know... <br />
-              But people talk to their phones, and we want you be the answer.
+              "Rank number one on Google in a week!"
+              <br /> Just kidding, SEO takes time...
             </Text>
             <Flex mt={'lg'} direction={'column'}>
               {items}

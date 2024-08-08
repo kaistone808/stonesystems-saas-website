@@ -1,45 +1,39 @@
 'use client';
 
-import {
-  Image,
-  Container,
-  Title,
-  Button,
-  Text,
-  rem,
-  Flex,
-  Divider,
-  SimpleGrid,
-} from '@mantine/core';
-import { IconDeviceMobile, IconLicense, IconWorldSearch } from '@tabler/icons-react';
+import { Image, Container, Title, Button, Text, Flex } from '@mantine/core';
+import { IconRosetteDiscountCheckFilled } from '@tabler/icons-react';
 import classes from './Feature1.module.css';
 
 const features = [
   {
-    icon: IconLicense,
-    title: 'Optimized For SEO',
+    title: 'Actually Get Found Online',
     description:
-      'Everything is optimized so that people will be able to find your website on Google.',
+      "If a customer googles your business and can't find you, that might be awkward... Don't worry, we won't let that happen.",
   },
   {
-    icon: IconDeviceMobile,
+    title: 'Showcase Your Best Reviews',
+    description:
+      "We all have one or two bad reviews... That doesn't mean your customers need to see them.",
+  },
+  {
     title: 'Mobile Friendly',
     description:
-      'Your website will look great on any device, from desktop to mobile and everything in between.',
+      "87% of people visit websites on their phone. We'll make sure your business looks extra sexy on mobile.",
   },
   {
-    icon: IconWorldSearch,
-    title: 'Local Search Results',
+    title: 'Optimized For Local Google Searches',
     description:
-      'Get found in local search results, so that people in your area can find you easily when they need a contractor.',
+      "This should go without saying but we'll still say it. We make sure your business is found on Google.",
   },
 ];
 
 export function Feature1() {
   const items = features.map((feature, index) => (
     <div key={feature.title}>
-      {index > 0 && <Divider my={'1.5rem'} />}
-      <Text className={classes.featureTitle}>{feature.title}</Text>
+      <Flex>
+        <IconRosetteDiscountCheckFilled color="var(--yellow)" />
+        <Text className={classes.featureTitle}>{feature.title}</Text>
+      </Flex>
       <Text className={classes.featureDescription}>{feature.description}</Text>
     </div>
   ));
@@ -47,7 +41,7 @@ export function Feature1() {
   return (
     <Container size="lg">
       <Title className={classes.mainTitle}>
-        That's why we built the Stone System
+        Simple systems that actually work <br /> No degrees required, just a hard hat
       </Title>
       <div className={classes.inner}>
         <Image src="/images/phone-right.png" className={classes.image} />
@@ -55,8 +49,7 @@ export function Feature1() {
         <div className={classes.content}>
           <Title className={classes.title}>Functional Website</Title>
           <Text className={classes.description} mt="md">
-            No customer wants to go back and forth over email… <br />
-            Get a website that turns leads into text conversations.
+            Get a website that instantly turns leads into text conversations.
           </Text>
           <Flex mt={'lg'} direction={'column'}>
             {items}
