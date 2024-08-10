@@ -7,6 +7,9 @@
   background-color: var(--blue);
   padding: 3rem;
   border-radius: 10px;
+  @media (max-width: $mantine-breakpoint-xs) {
+    margin: 0 10px;
+  }
 }
 
 .card {
@@ -41,6 +44,9 @@
   line-height: 1.5;
   color: var(--white);
   margin-bottom: var(--mantine-spacing-lg);
+  @media (max-width: $mantine-breakpoint-xs) {
+    margin-bottom: 1rem;
+  }
 }
 
 .image {
@@ -54,9 +60,17 @@
   border-right: 1px solid var(--border-color);
   margin-right: 2rem;
   display: flex;
-    flex-direction: column;
-    align-items: center;
+  flex-direction: column;
+  align-items: center;
   &:last-of-type {
     border: none;
+  }
+  @media (max-width: $mantine-breakpoint-xs) {
+    border-right: none;
+    border-bottom: 1px solid var(--border-color);
+    padding-right: 0;
+    margin-right: 0;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
   }
 }

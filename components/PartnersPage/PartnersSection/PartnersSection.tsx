@@ -1,7 +1,8 @@
 'use client';
 
-import { Container, Image, Paper, SimpleGrid } from '@mantine/core';
+import { Container, Image, Paper, SimpleGrid, useMantineTheme } from '@mantine/core';
 import classes from './PartnersSection.module.css';
+import { useMediaQuery } from '@mantine/hooks';
 
 const data = [
   {
@@ -55,6 +56,8 @@ const data = [
 ];
 
 export function PartnersSection() {
+  const theme = useMantineTheme();
+  const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
   const partners = data.map((item) => (
     <Paper className={classes.partnerCard} shadow="md">
       <Image className={classes.image} src={item.imageSrc} alt="partner" />
@@ -63,7 +66,7 @@ export function PartnersSection() {
   return (
     <div className={classes.outer}>
       <Container size="lg">
-        <SimpleGrid cols={4}>{partners}</SimpleGrid>
+        <SimpleGrid cols={mobile ? 2 :4}>{partners}</SimpleGrid>
       </Container>
     </div>
   );

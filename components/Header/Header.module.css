@@ -22,6 +22,8 @@
   @media (max-width: $mantine-breakpoint-sm) {
     height: rem(42px);
     width: 100%;
+    font-size: 22px;
+    margin: 5px 0;
   }
 
   @mixin hover {
@@ -39,6 +41,9 @@
 
   @mixin hover {
     background-color: light-dark(var(--mantine-color-gray-0), var(--mantine-color-dark-7));
+  }
+  @media (max-width: $mantine-breakpoint-sm) {
+    padding: 0 15px !important;
   }
 }
 

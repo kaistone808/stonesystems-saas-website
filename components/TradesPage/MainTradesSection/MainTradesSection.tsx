@@ -114,7 +114,7 @@ export function MainTradesSection() {
     <div className={classes.outer}>
       <Title className={classes.mainTitle}>Serving all these trades and more...</Title>
       <Container size="lg">
-        <SimpleGrid cols={3}>{slides}</SimpleGrid>
+        <SimpleGrid cols={mobile? 1 :3}>{slides}</SimpleGrid>
       </Container>
     </div>
   );

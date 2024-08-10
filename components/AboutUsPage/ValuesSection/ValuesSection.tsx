@@ -1,9 +1,12 @@
 'use client';
 
-import { Container, Flex, Image, SimpleGrid, Text, Title } from '@mantine/core';
+import { Container, Flex, Image, SimpleGrid, Text, Title, useMantineTheme } from '@mantine/core';
 import classes from './ValuesSection.module.css';
+import { useMediaQuery } from '@mantine/hooks';
 
 export function ValuesSection() {
+  const theme = useMantineTheme();
+  const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
   return (
     <>
       <div className={classes.outer}>
@@ -12,7 +15,7 @@ export function ValuesSection() {
             Our culture? It’s no accident. We’ve crafted it with the same precision as a Tinder bio
             that actually works.
           </Title>
-          <SimpleGrid cols={2}>
+          <SimpleGrid cols={mobile ? 1 :2}>
             <div>
               <Flex className={classes.aboutValue}>
                 <Image w={80} h={80} mt={'md'} mr={'lg'} src="/images/one.webp" alt="Contractor" />
@@ -99,7 +102,7 @@ export function ValuesSection() {
                 </div>
               </Flex>
             </div>
-            <Image src="/images/stone-systems-guy.png" alt="Contractor" />
+            <Image className={classes.stoneMan} src="/images/stone-systems-guy.png" alt="Contractor" />
           </SimpleGrid>
         </Container>
       </div>

@@ -1,13 +1,16 @@
 'use client';
 
-import { Image, Container, Title, Text, SimpleGrid } from '@mantine/core';
+import { Image, Container, Title, Text, SimpleGrid, useMantineTheme } from '@mantine/core';
 import classes from './Step3.module.css';
+import { useMediaQuery } from '@mantine/hooks';
 
 export function Step3() {
+  const theme = useMantineTheme();
+  const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
   return (
     <div className={classes.outer}>
       <Container size="lg">
-        <SimpleGrid pb={'xl'} cols={2}>
+      <SimpleGrid pb={mobile ? 'sm' : 'xl'} cols={mobile ? 1 :2}>
           <Image src="/images/3.svg" className={classes.image} />
           <div className={classes.content}>
             <Title className={classes.title}>Launch</Title>

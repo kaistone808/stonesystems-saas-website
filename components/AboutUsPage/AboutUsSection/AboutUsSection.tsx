@@ -1,15 +1,18 @@
 'use client';
 
-import { Container, Text, SimpleGrid, Image, ActionIcon, Group, rem } from '@mantine/core';
+import { Container, Text, SimpleGrid, Image, ActionIcon, Group, rem, useMantineTheme } from '@mantine/core';
 
 import classes from './AboutUsSection.module.css';
 import { IconBrandFacebook, IconBrandYoutube, IconBrandInstagram } from '@tabler/icons-react';
+import { useMediaQuery } from '@mantine/hooks';
 
 export function AboutUsSection() {
+  const theme = useMantineTheme();
+  const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
   return (
     <div className={classes.outer}>
       <Container size="lg">
-        <SimpleGrid className={classes.grid} cols={2}>
+        <SimpleGrid className={classes.grid} cols={mobile ? 1 :2}>
           <div>
             <Text className={classes.text}>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, fugit officia ipsam

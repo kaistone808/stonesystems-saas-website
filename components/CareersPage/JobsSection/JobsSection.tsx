@@ -1,10 +1,13 @@
 'use client';
 
-import { Container, Title, Accordion, SimpleGrid, Text } from '@mantine/core';
+import { Container, Title, Accordion, SimpleGrid, Text, useMantineTheme } from '@mantine/core';
 import classes from './JobsSection.module.css';
 import { IconArrowRightToArc } from '@tabler/icons-react';
+import { useMediaQuery } from '@mantine/hooks';
 
 export function JobsSection() {
+  const theme = useMantineTheme();
+  const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
   return (
     <div className={classes.outer}>
       <Container size="lg" className={classes.wrapper}>
@@ -16,7 +19,7 @@ export function JobsSection() {
           <Accordion.Item className={classes.item} value="reset-password">
             <Accordion.Control className={classes.itemTitle}>Sales Associate</Accordion.Control>
             <Accordion.Panel className={classes.itemDescription}>
-              <SimpleGrid cols={2}>
+              <SimpleGrid cols={mobile ? 1 : 2}>
                 <div className={classes.column}>
                   <Text className={classes.jobText}>
                     We are seeking a sales associate with an interest in construction. Our ideal
@@ -82,7 +85,7 @@ export function JobsSection() {
               Senior SEO Specialist
             </Accordion.Control>
             <Accordion.Panel className={classes.itemDescription}>
-              <SimpleGrid cols={2}>
+              <SimpleGrid cols={mobile ? 1 : 2}>
                 <div className={classes.column}>
                   <Text className={classes.jobText}>
                     We are seeking a senior SEO specialist with an interest in construction. Our
@@ -136,7 +139,7 @@ export function JobsSection() {
                   <Text className={classes.bold}>Location: Remote</Text>
                   <Text className={classes.bold}>Pay: $75,000.00 – $120,000.00 per year</Text>
                   <Text className={classes.bold}>
-                    Please submit your resume and cover letter to careers@careers@stonesystems.io
+                    Please submit your resume and cover letter to careers@stonesystems.io
                   </Text>
                 </div>
               </SimpleGrid>
@@ -148,7 +151,7 @@ export function JobsSection() {
               Senior Software Engineer
             </Accordion.Control>
             <Accordion.Panel className={classes.itemDescription}>
-              <SimpleGrid cols={2}>
+              <SimpleGrid cols={mobile ? 1 : 2}>
                 <div className={classes.column}>
                   <Text className={classes.jobText}>
                     We are seeking a software engineer with an interest in construction. Our ideal
@@ -200,7 +203,7 @@ export function JobsSection() {
                   <Text className={classes.bold}>Location: Remote</Text>
                   <Text className={classes.bold}>Pay: $75,000.00 – $120,000.00 per year</Text>
                   <Text className={classes.bold}>
-                    Please submit your resume and cover letter to careers@careers@stonesystems.io
+                    Please submit your resume and cover letter to careers@stonesystems.io
                   </Text>
                 </div>
               </SimpleGrid>

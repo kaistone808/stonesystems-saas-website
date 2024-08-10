@@ -80,7 +80,7 @@ export function Footer() {
   return (
     <footer className={classes.footer}>
       <Container size={'lg'}>
-        <Flex align={'center'} justify={'space-between'} direction={'row'}>
+        <Flex className={classes.logo} align={'center'} justify={'space-between'} direction={'row'}>
           <Image src="/images/logo-white.png" w={250} h={'100%'} />
           <Flex className={classes.ctaDiv} align={'center'}>
             <Text className={classes.cta}>Ready to get started?</Text>
@@ -92,7 +92,7 @@ export function Footer() {
         <Divider my={'2.5rem'} color="var(--border-color)" />
       </Container>
       <Container size={'lg'} className={classes.inner}>
-        <div className={classes.logo}>
+        <div className={classes.bigCta}>
           <Text className={classes.description}>Want to learn more about how we can help?</Text>
           <Button className={classes.button} mt={'1rem'} size="xl">
             Book A Call

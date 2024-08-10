@@ -1,7 +1,6 @@
-.outer{
+.outer {
   background-color: var(--gray);
   padding-bottom: calc(var(--space-40) * 2);
-
 }
 
 .inner {
@@ -14,6 +13,8 @@
 .content {
   max-width: rem(480px);
   align-content: center;
+  text-align: center;
+
   @media (max-width: $mantine-breakpoint-md) {
     max-width: 100%;
     margin-right: 0;
@@ -46,9 +47,10 @@
   width: rem(200px);
   height: rem(200px);
   margin: auto;
-
-  @media (max-width: $mantine-breakpoint-md) {
-    display: none;
+  @media (max-width: $mantine-breakpoint-xs) {
+    width: rem(150px);
+    height: rem(150px);
+    margin: auto;
   }
 }
 

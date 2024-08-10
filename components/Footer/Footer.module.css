@@ -4,13 +4,21 @@
   border-top: rem(1px) solid light-dark(var(--mantine-color-gray-2), var(--mantine-color-dark-5));
 }
 
-.logo {
+.bigCta {
   max-width: rem(200px);
 
   @media (max-width: $mantine-breakpoint-sm) {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 100%;
+    margin-bottom: var(--space-40);
+  }
+}
+
+.logo {
+  @media (max-width: $mantine-breakpoint-sm) {
+    justify-content: center;
   }
 }
 
@@ -38,9 +46,6 @@
 .groups {
   display: flex;
   flex-wrap: wrap;
-  @media (max-width: $mantine-breakpoint-sm) {
-    display: none;
-  }
 }
 
 .wrapper {
@@ -49,6 +54,9 @@
 
 .wrapper:nth-of-type(4) {
   margin-top: 1.74rem;
+  @media (max-width: $mantine-breakpoint-sm) {
+    margin-top: -1rem;
+  }
 }
 
 .link {
@@ -67,6 +75,9 @@
 
   &:hover {
     text-decoration: underline;
+  }
+  @media (max-width: $mantine-breakpoint-sm) {
+    font-size: 14px !important;
   }
 }
 

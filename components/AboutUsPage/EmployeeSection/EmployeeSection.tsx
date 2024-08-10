@@ -1,5 +1,8 @@
-import { Avatar, Text, Paper, Container, SimpleGrid, Title } from '@mantine/core';
+'use client';
+
+import { Avatar, Text, Paper, Container, SimpleGrid, Title, useMantineTheme } from '@mantine/core';
 import classes from './EmployeeSection.module.css';
+import { useMediaQuery } from '@mantine/hooks';
 
 interface CardProps {
   name: string;
@@ -35,8 +38,7 @@ const data = [
   {
     name: 'Astrid',
     title: 'Web Developer',
-    imageSrc:
-      '/images/people/astrid.jpeg',
+    imageSrc: '/images/people/astrid.jpeg',
   },
   {
     name: 'Kevin',
@@ -52,12 +54,14 @@ const data = [
 
 export function EmployeeSection() {
   const slides = data.map((item) => <Card {...item} />);
+  const theme = useMantineTheme();
+  const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
 
   return (
     <div className={classes.outer}>
       <Container size="lg">
         <Title className={classes.mainTitle}>Meet Your Team at StoneSystems</Title>
-        <SimpleGrid cols={3}>{slides}</SimpleGrid>
+        <SimpleGrid cols={mobile ? 1 : 3}>{slides}</SimpleGrid>
       </Container>
     </div>
   );

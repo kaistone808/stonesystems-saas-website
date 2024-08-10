@@ -9,9 +9,10 @@
   line-height: 1.2;
   font-weight: 900;
   text-align: center;
-  padding: calc(var(--space-40) * 2) 0 var(--space-40) 0;
+  padding: calc(var(--space-40) * 2) 0 ;
 
   @media (max-width: $mantine-breakpoint-xs) {
     font-size: rem(28px);
+    padding: var(--space-40) 0 ;
   }
 }
