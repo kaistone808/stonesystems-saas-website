@@ -690,12 +690,12 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
-"@mantine/carousel@^7.11.2":
+"@mantine/carousel@7.11.2":
   version "7.11.2"
   resolved "https://registry.npmjs.org/@mantine/carousel/-/carousel-7.11.2.tgz"
   integrity sha512-SSK8VRMNhSzKV+icfjgBpc0XyN/SlwWZMw3bZ8/pg4kfhl8mzX21omG6ZaIaDdB3hs8CPLg1jZiQDjDAMniFpA==
 
-"@mantine/core@>=7.0.0", "@mantine/core@7.11.2":
+"@mantine/core@7.11.2":
   version "7.11.2"
   resolved "https://registry.npmjs.org/@mantine/core/-/core-7.11.2.tgz"
   integrity sha512-T64RjdgY8UPAv249miW1lQyPPot1JbCcKKsAZMNQHgcttcxLhrFpKVvglc4/48hdSoxI4LYJPNvqp7zciZmucQ==
@@ -707,15 +707,10 @@
     react-textarea-autosize "8.5.3"
     type-fest "^4.12.0"
 
-"@mantine/hooks@>=7.0.0", "@mantine/hooks@7.11.2":
+"@mantine/hooks@7.11.2":
   version "7.11.2"
   resolved "https://registry.npmjs.org/@mantine/hooks/-/hooks-7.11.2.tgz"
   integrity sha512-jhyVe/sbDEG2U8rr2lMecUPgQxcfr5hh9HazqGfkS7ZRIMDO7uJ947yAcTMGGkp5Lxtt5TBFt1Cb6tiB2/1agg==
-
-"@mantinex/mantine-logo@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.npmjs.org/@mantinex/mantine-logo/-/mantine-logo-1.0.1.tgz"
-  integrity sha512-t5Lp4Bpae+EVydBr5n0bDG6EXhQ3QY/fw29PCvnwn9LwWReIaYUKhQ4mRINyb7ted2R3MuG7VS1MZQcJ1Qh6Cg==
 
 "@next/bundle-analyzer@^14.2.4":
   version "14.2.5"
