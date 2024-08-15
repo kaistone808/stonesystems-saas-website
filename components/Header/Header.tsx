@@ -254,7 +254,7 @@ export function Header() {
               Book A Call
             </Button>
           </Group>
-          <Image src={'/images/logo.png'} w={200} />
+          <Image src={'/images/logo.png'} w={200} hiddenFrom="sm"/>
           <Burger opened={drawerOpened} onClick={toggleDrawer} hiddenFrom="sm" />
         </Group>
       </header>

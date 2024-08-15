@@ -17,9 +17,9 @@ export function Hero() {
             </Flex>
             <Flex className={classes.textDiv}>
               <Text className={classes.description}>
-                Cut the bullsh*t, Marketing isn't rocket science.
-                <br /> No agency... (including us) has the miracle solution to all your problems.
-                We'll give you the tools to win but you need to actually commit to using them.
+                Cut the bullsh*t, Marketing isn't rocket science. <br/> No agency... (including ours) has
+                the miracle solution to all your problems. We'll give you the tools to win but you
+                need to commit to using them!
               </Text>
               <div className={classes.buttonDiv}>
                 <Flex>
@@ -47,7 +47,12 @@ export function Hero() {
                   </div>
                 </div>
               </div>
-              <Divider className={classes.divider} mx={20} color="var(--border-color)" orientation="vertical" />
+              <Divider
+                className={classes.divider}
+                mx={20}
+                color="var(--border-color)"
+                orientation="vertical"
+              />
               <div className={classes.credit}>
                 <Image src="/images/fb.png" className={classes.creditImage} />
                 <div className={classes.creditContent}>
@@ -61,7 +66,12 @@ export function Hero() {
                   </div>
                 </div>
               </div>
-              <Divider className={classes.divider} mx={20} color="var(--border-color)" orientation="vertical" />
+              <Divider
+                className={classes.divider}
+                mx={20}
+                color="var(--border-color)"
+                orientation="vertical"
+              />
               <div className={classes.credit}>
                 <Image src="/images/trustpilot.png" className={classes.creditImage} />
                 <div className={classes.creditContent}>

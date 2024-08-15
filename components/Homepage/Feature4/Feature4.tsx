@@ -8,7 +8,7 @@ const features = [
   {
     title: 'Done For You',
     description:
-      'Again... Keep it simple. Activate our pre-built marketing campaigns with just one click.',
+      'Again... let’s keep it simple. Activate our pre-built marketing campaigns with just one click.',
   },
   {
     title: 'Referral Campaigns',
@@ -45,8 +45,7 @@ export function Feature4() {
         <div className={classes.content}>
           <Title className={classes.title}>One-Click Marketing Campaigns</Title>
           <Text className={classes.description} mt="md">
-            You know it, and we know it… Referrals and repeat customers are the best. Let’s get you
-            both!
+          You know it, and we know it… Referrals and repeat customers are the best. Let’s get you both!
           </Text>
           <Flex mt={'lg'} direction={'column'}>
             {items}

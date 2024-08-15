@@ -8,17 +8,17 @@ const features = [
   {
     title: 'Stand out from your competition',
     description:
-      "Everyone misses calls, but not everyone texts back. Be the one who does and outshine your competition.",
+      'Everyone misses calls, but not everyone texts back. Be the one who does and outshine your competition.',
   },
   {
     title: 'No More Lost Leads',
     description:
-      "On site and can't answer the phone? No problem, we'll fire off a text and start the conversation for you.",
+      "On a job site and can't answer the phone? No problem, we'll fire off a text and start the conversation for you.",
   },
   {
     title: 'Show Customers You Care',
     description:
-      "Your ex didn't like it when you missed their calls, neither do your customers. At least send a text so they know you care.",
+      "Your ex didn't like it when you missed their calls - neither do your customers. At least send a text so they know you care.",
   },
   {
     title: 'Be available 24/7',
@@ -46,7 +46,8 @@ export function Feature3() {
         <div className={classes.content}>
           <Title className={classes.title}>Missed Call Text Back</Title>
           <Text className={classes.description} mt="md">
-            It’s not rocket science… Quickly getting back to customers will make you more money.
+            Everyone misses calls, but not everyone texts back. Be the one who does. Outshine your
+            competition.
           </Text>
           <Flex mt={'lg'} direction={'column'}>
             {items}

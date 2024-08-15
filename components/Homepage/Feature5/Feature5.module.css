@@ -53,6 +53,7 @@
 }
 
 .description {
+  font-style: italic;
   font-size: 20px;
   @media (max-width: $mantine-breakpoint-xs) {
     font-size: 18px;

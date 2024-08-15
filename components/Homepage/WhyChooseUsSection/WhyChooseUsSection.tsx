@@ -17,8 +17,10 @@ function Card({ cardTitle, cardDescription, imageSrc }: CardProps) {
       <Title order={3} className={classes.cardTitle}>
         {cardTitle}
       </Title>
-      <Text className={classes.cardDescription} dangerouslySetInnerHTML={{__html: cardDescription}}/>
-
+      <Text
+        className={classes.cardDescription}
+        dangerouslySetInnerHTML={{ __html: cardDescription }}
+      />
     </Paper>
   );
 }
@@ -69,10 +71,10 @@ export function WhyChooseUsSection() {
       <div className={classes.outer}>
         <Container size="lg">
           <Title className={classes.mainTitle}>
-            Why we’re "totally unique"... <br /> just like everyone else
+            Why we’re "totally unique"... <br/> just like everyone else, right?
           </Title>
           <Container size="lg">
-            <SimpleGrid cols={mobile ? 1 :3}>{slides}</SimpleGrid>
+            <SimpleGrid cols={mobile ? 1 : 3}>{slides}</SimpleGrid>
           </Container>
         </Container>
       </div>

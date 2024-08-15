@@ -49,7 +49,8 @@ export function Feature1() {
         <div className={classes.content}>
           <Title className={classes.title}>Functional Website</Title>
           <Text className={classes.description} mt="md">
-            Get a website that instantly turns leads into text conversations.
+            Get a website that instantly turns leads into text conversations that go DIRECTLY to
+            your phone.
           </Text>
           <Flex mt={'lg'} direction={'column'}>
             {items}

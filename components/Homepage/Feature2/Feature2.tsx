@@ -49,8 +49,7 @@ export function Feature2() {
         <div className={classes.content}>
           <Title className={classes.title}>5-Star Magic Funnel</Title>
           <Text className={classes.description} mt="md">
-            Okay… 
-            It’s not magic but it comes pretty close, and it’s automated
+          "Sure I'll leave you a review", but the truth is people forget. We’ll 'gently' remind them for a few weeks until they remember.
           </Text>
           <Flex mt={'lg'} direction={'column'}>
             {items}

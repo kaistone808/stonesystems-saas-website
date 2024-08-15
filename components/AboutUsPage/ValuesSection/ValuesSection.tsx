@@ -15,7 +15,7 @@ export function ValuesSection() {
             Our culture? It’s no accident. We’ve crafted it with the same precision as a Tinder bio
             that actually works.
           </Title>
-          <SimpleGrid cols={mobile ? 1 :2}>
+          <SimpleGrid cols={mobile ? 1 : 2}>
             <div>
               <Flex className={classes.aboutValue}>
                 <Image w={80} h={80} mt={'md'} mr={'lg'} src="/images/one.webp" alt="Contractor" />
@@ -79,7 +79,8 @@ export function ValuesSection() {
                     Humility
                   </Title>
                   <Text c="dimmed" className={classes.aboutDescription}>
-                    We’re perfect, we've never made a mistake, not one time, ever... (wink wink).
+                    We’re perfect, we've never made a mistake, right? (But… if we do, you know we’ll
+                    fix it right away).
                   </Text>
                 </div>
               </Flex>
@@ -102,7 +103,11 @@ export function ValuesSection() {
                 </div>
               </Flex>
             </div>
-            <Image className={classes.stoneMan} src="/images/stone-systems-guy.png" alt="Contractor" />
+            <Image
+              className={classes.stoneMan}
+              src="/images/stone-systems-guy.png"
+              alt="Contractor"
+            />
           </SimpleGrid>
         </Container>
       </div>
