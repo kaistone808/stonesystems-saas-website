@@ -65,6 +65,16 @@
   font-size: 14px;
 }
 
-.button {
+.button,
+.button2 {
   font-size: 16px !important;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.button:hover {
+  background-color: var(--dark-yellow) !important;
+}
+
+.button2:hover {
+  color: var(--dark-yellow) !important;
 }

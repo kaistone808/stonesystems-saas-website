@@ -55,9 +55,14 @@
   border-radius: var(--border-radius-sm);
   margin-top: 5px;
   background-color: var(--yellow);
+  transition: all 0.3s;
   @media (max-width: $mantine-breakpoint-xs) {
     flex: 1;
   }
+}
+
+.control:hover {
+  background-color: var(--dark-yellow) !important;
 }
 
 .image {
@@ -126,4 +131,25 @@
   @media (max-width: $mantine-breakpoint-xs) {
     display: none;
   }
+}
+
+.buttonDiv {
+  padding-left: 1rem;
+  @media (max-width: $mantine-breakpoint-xs) {
+    padding-left: 0;
+  }
+}
+
+.avatar:nth-child(2) {
+  margin-left: -0.5rem;
+}
+.avatar:nth-child(3) {
+  margin-left: -0.5rem;
+}
+.avatar:nth-child(4) {
+  margin-left: -0.5rem;
+}
+
+.avatar {
+  border: 2px solid white;
 }

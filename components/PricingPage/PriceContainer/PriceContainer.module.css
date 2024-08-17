@@ -5,6 +5,9 @@
 .outer2 {
   background-color: var(--gray);
   padding-bottom: calc(var(--space-40) * 2);
+  li {
+    margin-right: 1rem;
+  }
 }
 
 .main {
@@ -50,8 +53,8 @@
 
 .cardBox1 {
   box-shadow: 0px 30px 50px -7px rgba(0, 0, 0, 0.1);
-  height: 40rem;
-  width: 24rem;
+  height: 42rem;
+  width: 27rem;
   padding-inline: 1.5rem;
   border-radius: 0.7rem 0 0 0.7rem;
   display: flex;
@@ -73,8 +76,8 @@
 
 .cardBox2 {
   box-shadow: 0px 30px 50px -7px rgba(0, 0, 0, 0.1);
-  height: 42rem;
-  width: 24rem;
+  height: 46rem;
+  width: 27rem;
   padding-inline: 1.5rem;
   background: var(--yellow);
   color: white;
@@ -97,8 +100,8 @@
 
 .cardBox3 {
   box-shadow: 0px 30px 50px -7px rgba(0, 0, 0, 0.1);
-  height: 36rem;
-  width: 24rem;
+  height: 42rem;
+  width: 27rem;
   padding-inline: 1.5rem;
   border-radius: 0 0.7rem 0.7rem 0;
   display: flex;
@@ -120,7 +123,6 @@
 
 .container {
   width: 100%;
-  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -151,11 +153,6 @@
   list-style: square;
 }
 
-.featureName,
-.featureDiv {
-  cursor: pointer;
-}
-
 .discount {
   font-weight: 900;
   margin-left: 0.5rem;
@@ -165,4 +162,21 @@
 
 .everythingDiv {
   flex-direction: row;
+}
+
+.button1 {
+  transition: all 0.3s;
+}
+
+.button1:hover {
+  background-color: var(--dark-yellow) !important;
+}
+
+.button2 {
+  transition: all 0.3s;
+}
+
+.button2:hover {
+  color: var(--white) !important;
+  background-color: var(--blue) !important;
 }

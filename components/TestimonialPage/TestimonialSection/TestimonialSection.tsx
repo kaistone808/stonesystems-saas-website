@@ -23,13 +23,10 @@ function Card({ personName, testimonial, videoSrc }: CardProps) {
   return (
     <Paper radius="md">
       <AspectRatio ratio={16 / 9} className={classes.video}>
-        <iframe
-          src={videoSrc}
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        />
+        <video width="320" height="240" controls preload="metadata">
+          <source src={videoSrc} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       </AspectRatio>
       <div>
         <div className={classes.stars}>
@@ -49,64 +46,117 @@ function Card({ personName, testimonial, videoSrc }: CardProps) {
 const data = [
   {
     testimonial: `"They took our website to basic to very high end, and made getting 5 star google reviews easy with their 5 star google review funnel!. I can't say anymore good things about these guys, thank you!"`,
-    videoSrc: 'https://www.youtube.com/embed/bWyTPJnU3t4',
+    videoSrc: '/videos/Leader.mov',
     personName: 'Ben',
   },
   {
     testimonial:
       '"Nothing but professional and awesome in every way, they are absolutely great to work with"',
-    videoSrc: 'https://www.youtube.com/embed/5hXZMg8nsTo',
+    videoSrc: '/videos/Netane.mov#t=0.1',
     personName: 'Netane',
   },
   {
     testimonial:
       '"I would highly recommend going with Stone Systems, my business has ramped up, literally overnight and their prices are very affordable. Feel free to reach out to me personally with any questions about them, thank you!"',
-    videoSrc: 'https://www.youtube.com/embed/egzkjJrVYqM',
+    videoSrc: '/videos/Frank.mp4',
     personName: 'Frank',
   },
   {
     testimonial: `"They are the absolute best at what they do. They built me a new website and within 10 day's I got my first unpaid for Lead! Best money spent with Kai and StoneSystems"`,
-    videoSrc: 'https://www.youtube.com/embed/uM9kTzFmPC8',
+    videoSrc: '/videos/Armando2.mp4',
     personName: 'Armando',
   },
   {
     testimonial: `"I've seen a significant improvement in my business. Stone Systems has made my life so much easier!"`,
-    videoSrc: 'https://www.youtube.com/embed/loTB8xKbagU',
+    videoSrc: '/videos/David.mov',
     personName: 'David',
   },
   {
     testimonial: `"If you are looking for someone to get that phone ringing, they're the right fit for you! I'm so happy with them!"`,
-    videoSrc: 'https://www.youtube.com/embed/fXSYQR3r9t8',
+    videoSrc: '/videos/Cody.mp4',
     personName: 'Cody',
   },
   {
     testimonial:
       '"Thank you to Kai and Stone Systems , our company finally has the web presence it needs and our sales and profits have grown significantly! We look forward to working with them for many years to come!"',
-    videoSrc: 'https://www.youtube.com/embed/a5aRLRKbQqg',
+    videoSrc: '/videos/Rick.mov',
     personName: 'Rick',
   },
   {
     testimonial:
       '"Getting 5 star reviews has always given me anxiety, Kai and his team have taken all that away and I have seen a significant increase in business since I started working with them. I would recommend them to anyone looking to grow their business!"',
-    videoSrc: 'https://www.youtube.com/embed/gornitx-N1I',
+    videoSrc: '/videos/Wendy.mov',
     personName: 'Wendy',
   },
   {
     testimonial: `"Their business marketing systems have helped us a lot. Anytime I need anything I can always give them a call. They're super helpful with everything they do, I would recommend them to anybody"`,
-    videoSrc: 'https://www.youtube.com/embed/orjSm-VlTMU',
+    videoSrc: '/videos/Luckie.mp4',
     personName: 'Luckie',
   },
   {
     testimonial:
       '"Before I started working with Stonesystems I was paying $1500/month with another service that just was not working for me. Stonesystems is super affordable and they do a fantastic Job!"',
-    videoSrc: 'https://www.youtube.com/embed/TOdbUPsM-QM',
+    videoSrc: '/videos/Lopaka.mov',
     personName: 'Lopaka',
   },
   {
     testimonial:
       '"Fantastic product. I use them for my website and my CRM. Anytime I have any questions Kai is always available. I highly recommend StoneSystems"',
-    videoSrc: 'https://www.youtube.com/embed/Jh6A-iN2EXc',
+    videoSrc: '/videos/Emannuel.mov',
     personName: 'Emannuel',
+  },
+  {
+    testimonial: `"It's been great and all I needed was one sale a month to pay for the service. Since I signed up i've gotten quite a bit more than that. I would recommend them to anyone!"`,
+    videoSrc: '/videos/Adam.mov',
+    personName: 'Adam',
+  },
+  {
+    testimonial: `"Since we've started working with StoneSystems, our website has been on pointer. These guys really know what they're doing and i highly recommend them!"`,
+    videoSrc: '/videos/Andrew.mov',
+    personName: 'Andrew',
+  },
+  {
+    testimonial:
+      '"After going through 2-3 other people i finally found someone that told me the truth. Really easy to work with and very respectable. I would recommend them to anyone!"',
+    videoSrc: '/videos/James.mov',
+    personName: 'James',
+  },
+  {
+    testimonial: `"Ever since he implemented the new website and landing pages, it's been nothing but great and our conversion has gone way up. We started getting calls almost immediately."`,
+    videoSrc: '/videos/Manny.mov',
+    personName: 'Manny',
+  },
+  {
+    testimonial:
+      '"They were incredibly helpfull and made everything super smooth and efficient. We highly recommend them to anyone that needs top notch web services!"',
+    videoSrc: '/videos/Mariah.mov',
+    personName: 'Mariah',
+  },
+  {
+    testimonial: `"They made me a brand new website, super professional and it's been absolutely amazing. I cannot say enough good things about theme. It turned those 100s of viewers into 100s of clients!"`,
+    videoSrc: '/videos/Mason.mp4',
+    personName: 'Mason',
+  },
+  {
+    testimonial: `"First i thought it was a scam, but then it turns out they're just a really good company at a really good price. I would recommend them to anyone!"`,
+    videoSrc: '/videos/Matt.mov',
+    personName: 'Matt',
+  },
+  {
+    testimonial: `"They've made it so easy with all their automations and the awesome website. I can't thank them enough and you should all definitely check them out"`,
+    videoSrc: '/videos/RyanSmith.mov',
+    personName: 'Ryan',
+  },
+  {
+    testimonial: `"He really got everything going well. I'm getting organic leads now that don't cost me any money. I would recommend them to anyone!"`,
+    videoSrc: '/videos/William.mp4',
+    personName: 'Scott',
+  },
+  {
+    testimonial:
+      '"Big shoutout to Kai and Stone Systems for helping me with my website and getting me more leads. I would recommend them to anyone!"',
+    videoSrc: '/videos/Zach.MOV',
+    personName: 'Zach',
   },
 ];
 

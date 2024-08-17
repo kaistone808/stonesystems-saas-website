@@ -114,6 +114,11 @@
 
 .button {
   background-color: var(--yellow) !important;
+  transition: all 0.3s;
+}
+
+.button:hover {
+  background-color: var(--dark-yellow) !important;
 }
 
 .ctaDiv {

@@ -47,6 +47,10 @@
   @media (max-width: $mantine-breakpoint-xs) {
     margin-bottom: 1rem;
   }
+  a {
+    text-decoration: none;
+    color: var(--white);
+  }
 }
 
 .image {

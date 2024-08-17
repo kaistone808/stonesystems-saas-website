@@ -11,3 +11,20 @@
   padding-top: var(--space-40);
   align-items: center;
 }
+
+.icon {
+  svg {
+    transition: all 0.3s;
+    stroke: var(--yellow);
+  }
+}
+.icon:hover {
+  background-color: transparent;
+  svg {
+    stroke: var(--dark-yellow);
+  }
+}
+
+.image {
+  border-radius: 10px;
+}

@@ -71,6 +71,9 @@
     max-height: 100%;
     padding: 10px;
   }
+  video {
+    border-radius: 10px;
+  }
 }
 
 .stars {
@@ -95,7 +98,10 @@
     .control {
       box-shadow: none;
       opacity: 1;
+      background-color: transparent;
+      border: none;
       svg {
+        transition: all 0.3s;
         width: 100px !important;
         height: 100px !important;
         stroke: var(--yellow);
@@ -109,6 +115,11 @@
       margin-left: -4.5rem;
       @media (max-width: $mantine-breakpoint-xs) {
         margin-left: -2.5rem;
+      }
+    }
+    .control:hover {
+      svg {
+        stroke: var(--dark-yellow) !important;
       }
     }
     .control:nth-of-type(2) {

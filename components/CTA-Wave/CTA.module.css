@@ -62,4 +62,9 @@
 
 .control {
   font-size: 23px !important;
+  transition: all 0.3s;
+}
+
+.control:hover {
+  background-color: var(--dark-yellow) !important;
 }

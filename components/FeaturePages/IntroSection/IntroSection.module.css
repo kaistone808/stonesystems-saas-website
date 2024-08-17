@@ -113,7 +113,7 @@
 
 .featureInfo {
   margin-top: 10px;
-  padding: 20px 40px 20px 20px;
+  padding: 40px;
   p {
     font-size: 18px;
   }
@@ -129,4 +129,11 @@
 .infoTitle {
   font-size: 28px;
   margin: 5px 0 15px 0;
+  color: var(--yellow);
+}
+
+.icon {
+  width: 80px;
+  height: 80px;
+  margin-right: 1rem;
 }

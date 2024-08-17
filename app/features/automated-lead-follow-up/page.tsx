@@ -5,16 +5,24 @@ export default function AutomatedSMSLeadFollowUpPage() {
     {
       title: 'Website Quote Forms',
       description:
-        "When a customer uses your website’s chat widget, we automatically send them a text to confirm their request and start the conversation. This helps you stand out and reassures them that you’re handling their inquiry. You’ll also receive a notification to respond promptly.",
+        'When a customer uses your website’s chat widget, we automatically send them a text to confirm their request and start the conversation. This helps you stand out and reassures them that you’re handling their inquiry. You’ll also receive a notification to respond promptly.',
+      icon: '/images/features/forms.svg',
     },
     {
       title: 'Chat Widget',
       description:
         "When a customer uses the chat widget on your website, we automatically send them a text message to confirm that their request has been received and to kick off the conversation. This sets you apart from the competition and reassures them that their inquiry is being handled. Plus, you'll get a notification so you can respond quickly.",
+      icon: '/images/features/message-circle.svg',
     },
     {
       title: 'Missed Call Text Back',
       description: `When a customer misses your call, we automatically send them a text to let them know you tried to reach them and start the conversation. This makes you stand out and reassures them that you're ready to help. Plus, you'll get a notification so you can follow up quickly.`,
+      icon: '/images/features/device-mobile-vibration.svg',
+    },
+    {
+      title: 'Instagram & Facebook Auto Responder',
+      description: `When a customer messages you on Facebook or Instagram, we automatically message back to let them know you'll get back to them as soon as possible. This makes you stand out and reassures them that you're ready to help. Plus, you'll get a notification so you can follow up quickly.`,
+      icon: '/images/features/brand-facebook.svg',
     },
   ];
 
@@ -37,7 +45,7 @@ export default function AutomatedSMSLeadFollowUpPage() {
     <>
       <IntroSection
         statistics={statistics as [{ stat: string; description: string }]}
-        benefits={benefits as [{ title: string; description: string }]}
+        benefits={benefits as [{ title: string; description: string; icon: string }]}
         title="Automated SMS Lead Follow-Up"
         title2="What is automated SMS lead follow-up?"
         videoSrc="https://www.youtube.com/embed/9bZkp7q19f0"

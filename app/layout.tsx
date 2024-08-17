@@ -7,6 +7,7 @@ import { theme } from '../theme';
 import '@mantine/carousel/styles.css';
 import '../globals.css';
 import { LayoutWrapper } from '@/components/LayoutWrapper/LayoutWrapper';
+import Script from 'next/script';
 
 export const metadata = {
   title: 'Mantine Next.js template',
@@ -32,11 +33,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body>
         <MantineProvider theme={theme}>
-          <LayoutWrapper>
-            {children}
-          </LayoutWrapper>
+          <LayoutWrapper>{children}</LayoutWrapper>
         </MantineProvider>
       </body>
+      <Script
+        src="https://widgets.leadconnectorhq.com/loader.js"
+        data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
+        data-widget-id="6683957add58569330bbe445"
+      />
     </html>
   );
 }

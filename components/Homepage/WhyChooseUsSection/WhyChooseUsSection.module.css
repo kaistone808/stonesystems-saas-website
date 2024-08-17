@@ -62,5 +62,10 @@
   a {
     color: var(--yellow);
     text-decoration: none;
+    transition: all 0.3s;
   }
+  a:hover {
+    color: var(--dark-yellow) !important;
+  }
+  
 }

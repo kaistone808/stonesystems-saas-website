@@ -13,32 +13,17 @@ import {
   Stack,
   Text,
   Title,
-  rem,
   useMantineTheme,
 } from '@mantine/core';
 import { MutableRefObject, createRef, useState } from 'react';
 import Switch from 'react-switch';
 import classes from './PriceContainer.module.css';
-import { IconChevronDown } from '@tabler/icons-react';
 import { useMediaQuery } from '@mantine/hooks';
 
 export const PriceContainer = () => {
   const theme = useMantineTheme();
   const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
   const [monthly, setMonthly] = useState(true);
-  const [openBasic, setOpenBasic] = useState<string | null>(null);
-  const [openAdvanced, setOpenAdvanced] = useState<string | null>(null);
-  const [openSupreme, setOpenSupreme] = useState<string | null>(null);
-
-  const toggleAccordion = (plan: 'basic' | 'advanced' | 'supreme', value: string) => {
-    if (plan === 'basic') {
-      setOpenBasic((prev) => (prev === value ? null : value));
-    } else if (plan === 'advanced') {
-      setOpenAdvanced((prev) => (prev === value ? null : value));
-    } else if (plan === 'supreme') {
-      setOpenSupreme((prev) => (prev === value ? null : value));
-    }
-  };
 
   const handleChange = () => {
     setMonthly(!monthly);
@@ -77,23 +62,10 @@ export const PriceContainer = () => {
     reports: createRef<HTMLDivElement>(),
   };
 
-  const openAccordionItem = (plan: any, item: any) => {
-    if (plan === 'basic') {
-      setOpenBasic(item);
-      basicRefs[item]?.current?.scrollIntoView({ behavior: 'smooth' });
-    } else if (plan === 'advanced') {
-      setOpenAdvanced(item);
-      advancedRefs[item]?.current?.scrollIntoView({ behavior: 'smooth' });
-    } else if (plan === 'supreme') {
-      setOpenSupreme(item);
-      supremeRefs[item]?.current?.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <>
       <div className={classes.outer}>
-        <Container className={classes.main} size={'lg'}>
+        <Container className={classes.main} size={'xl'}>
           <Stack>
             {/** header section */}
             <Flex direction="column" gap={10} align="center" justify="start">
@@ -141,89 +113,57 @@ export const PriceContainer = () => {
                     </Title>
                     <Stack w={'100%'} align="center" p={10}>
                       <Divider w={'100%'} opacity={0.7} />
-                      <Flex
-                        className={classes.featureDiv}
-                        onClick={() => openAccordionItem('basic', 'website')}
-                      >
-                        <Text ta={'center'} fz={'sm'} fw={600} className={classes.featureName}>
+                      <Flex className={classes.featureDiv}>
+                        <Text ta={'center'} fz={'md'} fw={600} className={classes.featureName}>
                           Functional Website
                         </Text>
-                        <IconChevronDown style={{ width: rem(22), height: rem(22) }} />
                       </Flex>
                       <Divider w={'100%'} opacity={0.7} />
-                      <Flex
-                        className={classes.featureDiv}
-                        onClick={() => openAccordionItem('basic', 'mctb')}
-                      >
-                        <Text ta={'center'} fz={'sm'} fw={600} className={classes.featureName}>
+                      <Flex className={classes.featureDiv}>
+                        <Text ta={'center'} fz={'md'} fw={600} className={classes.featureName}>
                           Missed Call Text Back
                         </Text>
-                        <IconChevronDown style={{ width: rem(22), height: rem(22) }} />
                       </Flex>
                       <Divider w={'100%'} opacity={0.7} />
-                      <Flex
-                        className={classes.featureDiv}
-                        onClick={() => openAccordionItem('basic', 'hosting')}
-                      >
-                        <Text ta={'center'} fz={'sm'} fw={600} className={classes.featureName}>
+                      <Flex className={classes.featureDiv}>
+                        <Text ta={'center'} fz={'md'} fw={600} className={classes.featureName}>
                           Web Hosting & Security
                         </Text>
-                        <IconChevronDown style={{ width: rem(22), height: rem(22) }} />
                       </Flex>
                       <Divider w={'100%'} opacity={0.7} />
-                      <Flex
-                        className={classes.featureDiv}
-                        onClick={() => openAccordionItem('basic', 'inbox')}
-                      >
-                        <Text ta={'center'} fz={'sm'} fw={600} className={classes.featureName}>
+                      <Flex className={classes.featureDiv}>
+                        <Text ta={'center'} fz={'md'} fw={600} className={classes.featureName}>
                           All In One Inbox
                         </Text>
-                        <IconChevronDown style={{ width: rem(22), height: rem(22) }} />
                       </Flex>
 
                       <Divider w={'100%'} opacity={0.7} />
-                      <Flex
-                        className={classes.featureDiv}
-                        onClick={() => openAccordionItem('basic', 'repmanage')}
-                      >
-                        <Text ta={'center'} fz={'sm'} fw={600} className={classes.featureName}>
+                      <Flex className={classes.featureDiv}>
+                        <Text ta={'center'} fz={'md'} fw={600} className={classes.featureName}>
                           Reputation Management
                         </Text>
-                        <IconChevronDown style={{ width: rem(22), height: rem(22) }} />
                       </Flex>
                       <Divider w={'100%'} opacity={0.7} />
-                      <Flex
-                        className={classes.featureDiv}
-                        onClick={() => openAccordionItem('basic', 'bphone')}
-                      >
-                        <Text ta={'center'} fz={'sm'} fw={600} className={classes.featureName}>
+                      <Flex className={classes.featureDiv}>
+                        <Text ta={'center'} fz={'md'} fw={600} className={classes.featureName}>
                           Business Phone
                         </Text>
-                        <IconChevronDown style={{ width: rem(22), height: rem(22) }} />
                       </Flex>
                       <Divider w={'100%'} opacity={0.7} />
-                      <Flex
-                        className={classes.featureDiv}
-                        onClick={() => openAccordionItem('basic', 'qrcode')}
-                      >
-                        <Text ta={'center'} fz={'sm'} fw={600} className={classes.featureName}>
+                      <Flex className={classes.featureDiv}>
+                        <Text ta={'center'} fz={'md'} fw={600} className={classes.featureName}>
                           Review QR Codes
                         </Text>
-                        <IconChevronDown style={{ width: rem(22), height: rem(22) }} />
                       </Flex>
                       <Divider w={'100%'} opacity={0.7} />
-                      <Flex
-                        className={classes.featureDiv}
-                        onClick={() => openAccordionItem('basic', 'bcards')}
-                      >
-                        <Text ta={'center'} fz={'sm'} fw={600} className={classes.featureName}>
+                      <Flex className={classes.featureDiv}>
+                        <Text ta={'center'} fz={'md'} fw={600} className={classes.featureName}>
                           500 Branded Business Cards
                         </Text>
-                        <IconChevronDown style={{ width: rem(22), height: rem(22) }} />
                       </Flex>
                       <Divider w={'100%'} opacity={0.7} />
                     </Stack>
-                    <Button bg={'var(--yellow)'} w="100%">
+                    <Button className={classes.button1} bg={'var(--yellow)'} w="100%">
                       START NOW
                     </Button>
                   </Stack>
@@ -241,72 +181,53 @@ export const PriceContainer = () => {
                     </Title>
                     <Stack w={'100%'} align="center" p={10}>
                       <Divider w={'100%'} opacity={0.6} />
-                      <Text c={'var(--blue)'} fs={'italic'} ta={'center'} fz={'sm'} fw={900}>
+                      <Text c={'var(--blue)'} fs={'italic'} ta={'center'} fz={'md'} fw={900}>
                         Everything in Contractor Basic +
                       </Text>
                       <Divider w={'100%'} opacity={0.6} />
-                      <Flex
-                        className={classes.featureDiv}
-                        onClick={() => openAccordionItem('advanced', 'websiteseo')}
-                      >
-                        <Text ta={'center'} fz={'sm'} fw={600} className={classes.featureName}>
+                      <Flex className={classes.featureDiv}>
+                        <Text ta={'center'} fz={'md'} fw={600} className={classes.featureName}>
                           Full Website SEO Optimizations
                         </Text>
-                        <IconChevronDown style={{ width: rem(22), height: rem(22) }} />
                       </Flex>
                       <Divider w={'100%'} opacity={0.6} />
-                      <Flex
-                        className={classes.featureDiv}
-                        onClick={() => openAccordionItem('advanced', 'leadconf')}
-                      >
-                        <Text ta={'center'} fz={'sm'} fw={600} className={classes.featureName}>
+                      <Flex className={classes.featureDiv}>
+                        <Text ta={'center'} fz={'md'} fw={600} className={classes.featureName}>
                           Automated Lead Follow Up
                         </Text>
-                        <IconChevronDown style={{ width: rem(22), height: rem(22) }} />
                       </Flex>
                       <Divider w={'100%'} opacity={0.6} />
-                      <Flex
-                        className={classes.featureDiv}
-                        onClick={() => openAccordionItem('advanced', 'reviews')}
-                      >
-                        <Text ta={'center'} fz={'sm'} fw={600} className={classes.featureName}>
+                      <Flex className={classes.featureDiv}>
+                        <Text ta={'center'} fz={'md'} fw={600} className={classes.featureName}>
                           5-Star Magic Funnel
                         </Text>
-                        <IconChevronDown style={{ width: rem(22), height: rem(22) }} />
                       </Flex>
                       <Divider w={'100%'} opacity={0.6} />
-                      <Flex
-                        className={classes.featureDiv}
-                        onClick={() => openAccordionItem('advanced', 'marketing')}
-                      >
-                        <Text ta={'center'} fz={'sm'} fw={600} className={classes.featureName}>
+                      <Flex className={classes.featureDiv}>
+                        <Text ta={'center'} fz={'md'} fw={600} className={classes.featureName}>
                           Marketing Campaigns
                         </Text>
-                        <IconChevronDown style={{ width: rem(22), height: rem(22) }} />
                       </Flex>
                       <Divider w={'100%'} opacity={0.6} />
-                      <Flex
-                        className={classes.featureDiv}
-                        onClick={() => openAccordionItem('advanced', 'chat')}
-                      >
-                        <Text ta={'center'} fz={'sm'} fw={600} className={classes.featureName}>
+                      <Flex className={classes.featureDiv}>
+                        <Text ta={'center'} fz={'md'} fw={600} className={classes.featureName}>
                           Live Website Chat
                         </Text>
-                        <IconChevronDown style={{ width: rem(22), height: rem(22) }} />
                       </Flex>
                       <Divider w={'100%'} opacity={0.6} />
-                      <Flex
-                        className={classes.featureDiv}
-                        onClick={() => openAccordionItem('advanced', 'blogs')}
-                      >
-                        <Text ta={'center'} fz={'sm'} fw={600} className={classes.featureName}>
+                      <Flex className={classes.featureDiv}>
+                        <Text ta={'center'} fz={'md'} fw={600} className={classes.featureName}>
                           Blog Posts
                         </Text>
-                        <IconChevronDown style={{ width: rem(22), height: rem(22) }} />
                       </Flex>
                       <Divider w={'100%'} opacity={0.6} />
                     </Stack>
-                    <Button c={'var(--blue)'} bg={'var(--white)'} w="100%">
+                    <Button
+                      className={classes.button2}
+                      c={'var(--blue)'}
+                      bg={'var(--white)'}
+                      w="100%"
+                    >
                       START NOW
                     </Button>
                   </Stack>
@@ -324,13 +245,13 @@ export const PriceContainer = () => {
                     </Title>
                     <Stack w={'100%'} align="center" p={10}>
                       <Divider w={'100%'} opacity={0.7} />
-                      <Text c={'var(--yellow)'} fs={'italic'} ta={'center'} fz={'sm'} fw={900}>
+                      <Text c={'var(--yellow)'} fs={'italic'} ta={'center'} fz={'md'} fw={900}>
                         Everything in Contractor Advanced +
                       </Text>
                       <Divider w={'100%'} opacity={0.7} />
                       {/*                     <Text
                         ta={'center'}
-                        fz={'sm'}
+                        fz={'md'}
                         fw={600}
                         className={classes.featureName}
                         onClick={() => openAccordionItem('supreme', 'gmb')}
@@ -338,58 +259,38 @@ export const PriceContainer = () => {
                         GMB Posts
                       </Text>
                       <Divider w={'100%'} opacity={0.7} /> */}
-                      <Flex
-                        className={classes.featureDiv}
-                        onClick={() => openAccordionItem('supreme', 'onsite')}
-                      >
-                        <Text ta={'center'} fz={'sm'} fw={600} className={classes.featureName}>
+                      <Flex className={classes.featureDiv}>
+                        <Text ta={'center'} fz={'md'} fw={600} className={classes.featureName}>
                           On-Site SEO
                         </Text>
-                        <IconChevronDown style={{ width: rem(22), height: rem(22) }} />
                       </Flex>
                       <Divider w={'100%'} opacity={0.7} />
-                      <Flex
-                        className={classes.featureDiv}
-                        onClick={() => openAccordionItem('supreme', 'offsite')}
-                      >
-                        <Text ta={'center'} fz={'sm'} fw={600} className={classes.featureName}>
+                      <Flex className={classes.featureDiv}>
+                        <Text ta={'center'} fz={'md'} fw={600} className={classes.featureName}>
                           Off-Site SEO
                         </Text>
-                        <IconChevronDown style={{ width: rem(22), height: rem(22) }} />
                       </Flex>
                       <Divider w={'100%'} opacity={0.7} />
-                      <Flex
-                        className={classes.featureDiv}
-                        onClick={() => openAccordionItem('supreme', 'techseo')}
-                      >
-                        <Text ta={'center'} fz={'sm'} fw={600} className={classes.featureName}>
+                      <Flex className={classes.featureDiv}>
+                        <Text ta={'center'} fz={'md'} fw={600} className={classes.featureName}>
                           Technical SEO
                         </Text>
-                        <IconChevronDown style={{ width: rem(22), height: rem(22) }} />
                       </Flex>
                       <Divider w={'100%'} opacity={0.7} />
-                      <Flex
-                        className={classes.featureDiv}
-                        onClick={() => openAccordionItem('supreme', 'gmbopt')}
-                      >
-                        <Text ta={'center'} fz={'sm'} fw={600} className={classes.featureName}>
+                      <Flex className={classes.featureDiv}>
+                        <Text ta={'center'} fz={'md'} fw={600} className={classes.featureName}>
                           Google My Business Optimizations
                         </Text>
-                        <IconChevronDown style={{ width: rem(22), height: rem(22) }} />
                       </Flex>
                       <Divider w={'100%'} opacity={0.7} />
-                      <Flex
-                        className={classes.featureDiv}
-                        onClick={() => openAccordionItem('supreme', 'reports')}
-                      >
-                        <Text ta={'center'} fz={'sm'} fw={600} className={classes.featureName}>
+                      <Flex className={classes.featureDiv}>
+                        <Text ta={'center'} fz={'md'} fw={600} className={classes.featureName}>
                           Monthly SEO Reports Sent To You
                         </Text>
-                        <IconChevronDown style={{ width: rem(22), height: rem(22) }} />
                       </Flex>
                       <Divider w={'100%'} opacity={0.7} />
                     </Stack>
-                    <Button bg={'var(--yellow)'} w="100%">
+                    <Button className={classes.button1} bg={'var(--yellow)'} w="100%">
                       START NOW
                     </Button>
                   </Stack>
@@ -400,23 +301,29 @@ export const PriceContainer = () => {
         </Container>
       </div>
       <div className={classes.outer2}>
-        <Container className={classes.container} size={'lg'}>
-        { !mobile &&
-          <SimpleGrid cols={3} className={classes.header}>
-            <Text className={classes.planTitle}>Contractor Basic </Text>
-            <Text className={classes.planTitle}>Contractor Advanced </Text>
-            <Text className={classes.planTitle}>Contractor Supreme </Text>
-          </SimpleGrid>}
+        <Container className={classes.container} size={'xl'}>
+          {!mobile && (
+            <SimpleGrid cols={3} >
+              <div className={classes.header}>
+                <Text className={classes.planTitle}>Contractor Basic </Text>
+              </div>
+              <div className={classes.header}>
+                <Text className={classes.planTitle}>Contractor Advanced </Text>
+              </div>
+              <div className={classes.header}>
+                <Text className={classes.planTitle}>Contractor Supreme </Text>
+              </div>
+            </SimpleGrid>
+          )}
           <SimpleGrid cols={mobile ? 1 : 3} className={classes.content}>
-            { mobile &&
-          <div className={classes.header}>
-            <Text className={classes.planTitle}>Contractor Basic </Text>
-            </div>}
-            <Accordion value={openBasic} onChange={() => setOpenBasic} variant="separated">
+            {mobile && (
+              <div className={classes.header}>
+                <Text className={classes.planTitle}>Contractor Basic </Text>
+              </div>
+            )}
+            <Accordion variant="separated">
               <Accordion.Item value="website" ref={basicRefs.website}>
-                <Accordion.Control onClick={() => toggleAccordion('basic', 'website')}>
-                  Functional Website
-                </Accordion.Control>
+                <Accordion.Control>Functional Website</Accordion.Control>
                 <Accordion.Panel>
                   <Text className={classes.contentTitle}>
                     No customer wants to go back and forth over email… Get a website that turns
@@ -441,9 +348,7 @@ export const PriceContainer = () => {
               </Accordion.Item>
 
               <Accordion.Item value="mctb" ref={basicRefs.mctb}>
-                <Accordion.Control onClick={() => toggleAccordion('basic', 'mctb')}>
-                  Missed Call Text Back
-                </Accordion.Control>
+                <Accordion.Control>Missed Call Text Back</Accordion.Control>
                 <Accordion.Panel>
                   <Text className={classes.contentTitle}>
                     It’s not rocket science… getting back to customers right away is going to make
@@ -466,9 +371,7 @@ export const PriceContainer = () => {
               </Accordion.Item>
 
               <Accordion.Item value="hosting" ref={basicRefs.hosting}>
-                <Accordion.Control onClick={() => toggleAccordion('basic', 'hosting')}>
-                  Web Hosting & Security
-                </Accordion.Control>
+                <Accordion.Control>Web Hosting & Security</Accordion.Control>
                 <Accordion.Panel>
                   <Text className={classes.contentTitle}>
                     Don’t be an idiot… you don’t want your website to be slow, and definitely don’t
@@ -484,9 +387,7 @@ export const PriceContainer = () => {
               </Accordion.Item>
 
               <Accordion.Item value="inbox" ref={basicRefs.inbox}>
-                <Accordion.Control onClick={() => toggleAccordion('basic', 'inbox')}>
-                  All In One Inbox
-                </Accordion.Control>
+                <Accordion.Control>All In One Inbox</Accordion.Control>
                 <Accordion.Panel>
                   <Text className={classes.contentTitle}>
                     No offense mr contractor… most of you guys are notorious for not getting back to
@@ -502,9 +403,7 @@ export const PriceContainer = () => {
               </Accordion.Item>
 
               <Accordion.Item value="repmanage" ref={basicRefs.repmanage}>
-                <Accordion.Control onClick={() => toggleAccordion('basic', 'repmanage')}>
-                  Reputation Management
-                </Accordion.Control>
+                <Accordion.Control>Reputation Management</Accordion.Control>
                 <Accordion.Panel>
                   <Text className={classes.contentTitle}>
                     Are you going to see what other contractors have to say about stone systems
@@ -522,9 +421,7 @@ export const PriceContainer = () => {
               </Accordion.Item>
 
               <Accordion.Item value="bphone" ref={basicRefs.bphone}>
-                <Accordion.Control onClick={() => toggleAccordion('basic', 'bphone')}>
-                  Business Phone
-                </Accordion.Control>
+                <Accordion.Control>Business Phone</Accordion.Control>
                 <Accordion.Panel>
                   <Text className={classes.contentTitle}>
                     You're not actually going to buy a second phone are you? Just use our app on
@@ -538,9 +435,7 @@ export const PriceContainer = () => {
               </Accordion.Item>
 
               <Accordion.Item value="qrcode" ref={basicRefs.qrcode}>
-                <Accordion.Control onClick={() => toggleAccordion('basic', 'qrcode')}>
-                  Review QR Codes
-                </Accordion.Control>
+                <Accordion.Control>Review QR Codes</Accordion.Control>
                 <Accordion.Panel>
                   <Text className={classes.contentTitle}>
                     Have people leave you a review by just scanning a simple QR code.
@@ -553,9 +448,7 @@ export const PriceContainer = () => {
               </Accordion.Item>
 
               <Accordion.Item value="bcards" ref={basicRefs.bcards}>
-                <Accordion.Control onClick={() => toggleAccordion('basic', 'bcards')}>
-                  500 Branded Business Cards
-                </Accordion.Control>
+                <Accordion.Control>500 Branded Business Cards</Accordion.Control>
                 <Accordion.Panel>
                   <Text className={classes.contentTitle}>
                     Honestly, if you don't have any of these yet, I don't know what you're waiting
@@ -568,11 +461,12 @@ export const PriceContainer = () => {
                 </Accordion.Panel>
               </Accordion.Item>
             </Accordion>
-            { mobile &&
-            <div className={classes.header}>
-            <Text className={classes.planTitle}>Contractor Advanced </Text>
-            </div>}
-            <Accordion value={openAdvanced} onChange={() => setOpenAdvanced} variant="separated">
+            {mobile && (
+              <div className={classes.header}>
+                <Text className={classes.planTitle}>Contractor Advanced </Text>
+              </div>
+            )}
+            <Accordion variant="separated">
               <Accordion.Item value="everything1">
                 <Accordion.Control>Everything From Contractor Basic</Accordion.Control>
                 <Accordion.Panel>
@@ -583,9 +477,7 @@ export const PriceContainer = () => {
               </Accordion.Item>
 
               <Accordion.Item value="websiteseo" ref={advancedRefs.websiteseo}>
-                <Accordion.Control onClick={() => toggleAccordion('advanced', 'websiteseo')}>
-                  Full Website SEO Optimizations
-                </Accordion.Control>
+                <Accordion.Control>Full Website SEO Optimizations</Accordion.Control>
                 <Accordion.Panel>
                   <Text className={classes.contentTitle}>
                     Okay, let’s see how much we can confuse you… Some nerdy tech mumbo jumbo with a
@@ -601,9 +493,7 @@ export const PriceContainer = () => {
               </Accordion.Item>
 
               <Accordion.Item value="leadconf" ref={advancedRefs.leadconf}>
-                <Accordion.Control onClick={() => toggleAccordion('advanced', 'leadconf')}>
-                  Automated Lead Follow Up
-                </Accordion.Control>
+                <Accordion.Control>Automated Lead Follow Up</Accordion.Control>
                 <Accordion.Panel>
                   <Text className={classes.contentTitle}>
                     Once again, it’s not rocket science… it’s going to make you more money and make
@@ -616,9 +506,7 @@ export const PriceContainer = () => {
               </Accordion.Item>
 
               <Accordion.Item value="reviews" ref={advancedRefs.reviews}>
-                <Accordion.Control onClick={() => toggleAccordion('advanced', 'reviews')}>
-                  5-Star Magic Funnel
-                </Accordion.Control>
+                <Accordion.Control>5-Star Magic Funnel</Accordion.Control>
                 <Accordion.Panel>
                   <Text className={classes.contentTitle}>
                     Okay… It’s not magic but it comes pretty close, and it’s automated
@@ -636,9 +524,7 @@ export const PriceContainer = () => {
               </Accordion.Item>
 
               <Accordion.Item value="marketing" ref={advancedRefs.marketing}>
-                <Accordion.Control onClick={() => toggleAccordion('advanced', 'marketing')}>
-                  Marketing Campaigns
-                </Accordion.Control>
+                <Accordion.Control>Marketing Campaigns</Accordion.Control>
                 <Accordion.Panel>
                   <Text className={classes.contentTitle}>
                     You know it, and we know it… The best customers are referrals and return
@@ -658,9 +544,7 @@ export const PriceContainer = () => {
               </Accordion.Item>
 
               <Accordion.Item value="chat" ref={advancedRefs.chat}>
-                <Accordion.Control onClick={() => toggleAccordion('advanced', 'chat')}>
-                  Live Website Chat
-                </Accordion.Control>
+                <Accordion.Control>Live Website Chat</Accordion.Control>
                 <Accordion.Panel>
                   <Text className={classes.contentTitle}>
                     Don’t leave your leads hanging… Let them text you directly from your website and
@@ -673,9 +557,7 @@ export const PriceContainer = () => {
               </Accordion.Item>
 
               <Accordion.Item value="blogs" ref={advancedRefs.blogs}>
-                <Accordion.Control onClick={() => toggleAccordion('advanced', 'blogs')}>
-                  Blog Posts
-                </Accordion.Control>
+                <Accordion.Control>Blog Posts</Accordion.Control>
                 <Accordion.Panel>
                   <Text className={classes.contentTitle}>
                     Let’s be honest, nobody reads these… They’re good for SEO though and make you
@@ -694,11 +576,12 @@ export const PriceContainer = () => {
                 </Accordion.Panel>
               </Accordion.Item>
             </Accordion>
-            { mobile &&
-            <div className={classes.header}>
-            <Text className={classes.planTitle}>Contractor Supreme </Text>
-            </div>}
-            <Accordion value={openSupreme} onChange={() => setOpenSupreme} variant="separated">
+            {mobile && (
+              <div className={classes.header}>
+                <Text className={classes.planTitle}>Contractor Supreme </Text>
+              </div>
+            )}
+            <Accordion variant="separated">
               <Accordion.Item value="everything2">
                 <Accordion.Control>Everything From Contractor Advanced</Accordion.Control>
                 <Accordion.Panel>
@@ -732,9 +615,7 @@ export const PriceContainer = () => {
               </Accordion.Item> */}
 
               <Accordion.Item value="onsite" ref={supremeRefs.onsite}>
-                <Accordion.Control onClick={() => toggleAccordion('supreme', 'onsite')}>
-                  On-Site SEO
-                </Accordion.Control>
+                <Accordion.Control>On-Site SEO</Accordion.Control>
                 <Accordion.Panel>
                   <Text className={classes.contentTitle}>
                     We'll be making your site less of an online ghost town
@@ -751,9 +632,7 @@ export const PriceContainer = () => {
               </Accordion.Item>
 
               <Accordion.Item value="offsite" ref={supremeRefs.offsite}>
-                <Accordion.Control onClick={() => toggleAccordion('supreme', 'offsite')}>
-                  Off-Site SEO
-                </Accordion.Control>
+                <Accordion.Control>Off-Site SEO</Accordion.Control>
                 <Accordion.Panel>
                   <Text className={classes.contentTitle}>
                     We're basically making your website the cool kid on the block everyone talks
@@ -770,9 +649,7 @@ export const PriceContainer = () => {
               </Accordion.Item>
 
               <Accordion.Item value="techseo" ref={supremeRefs.techseo}>
-                <Accordion.Control onClick={() => toggleAccordion('supreme', 'techseo')}>
-                  Technical SEO
-                </Accordion.Control>
+                <Accordion.Control>Technical SEO</Accordion.Control>
                 <Accordion.Panel>
                   <Text className={classes.contentTitle}>
                     We're making sure your website is actually optimized to bring people to it and
@@ -789,9 +666,7 @@ export const PriceContainer = () => {
               </Accordion.Item>
 
               <Accordion.Item value="gmbopt" ref={supremeRefs.gmbopt}>
-                <Accordion.Control onClick={() => toggleAccordion('supreme', 'gmbopt')}>
-                  Google My Business Optimizations
-                </Accordion.Control>
+                <Accordion.Control>Google My Business Optimizations</Accordion.Control>
                 <Accordion.Panel>
                   <Text className={classes.contentTitle}>
                     Because your business needs more than just a pin on the map
@@ -805,20 +680,14 @@ export const PriceContainer = () => {
               </Accordion.Item>
 
               <Accordion.Item value="reports" ref={supremeRefs.reports}>
-                <Accordion.Control onClick={() => toggleAccordion('supreme', 'reports')}>
-                  Monthly SEO Reports Sent To You
-                </Accordion.Control>
+                <Accordion.Control>Monthly SEO Reports Sent To You</Accordion.Control>
                 <Accordion.Panel>
                   <Text className={classes.contentTitle}>
                     Because who doesn't enjoy a fresh batch of SEO data to look at every month
                   </Text>
                   <List>
-                    <List.Item>
-                      Get monthly SEO reports to track your progress
-                    </List.Item>
-                    <List.Item>
-                      See exactly where your site ranks for what keywords
-                    </List.Item>
+                    <List.Item>Get monthly SEO reports to track your progress</List.Item>
+                    <List.Item>See exactly where your site ranks for what keywords</List.Item>
                   </List>
                 </Accordion.Panel>
               </Accordion.Item>

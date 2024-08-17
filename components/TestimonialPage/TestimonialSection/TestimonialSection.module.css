@@ -32,7 +32,7 @@
 .video {
   width: 100%;
   padding: 1rem 1rem 0 1rem;
-  iframe {
+  video {
     border-radius: 10px;
     width: 100%;
   }

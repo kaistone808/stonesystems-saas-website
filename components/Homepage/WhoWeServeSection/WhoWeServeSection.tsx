@@ -138,7 +138,7 @@ export function WhoWeServeSection() {
                 {slides}
               </Carousel>
             </Container>
-            <Button mx={'auto'} bg="var(--yellow)" size={mobile ? 'lg' : "xl"} className={classes.control}>
+            <Button mx={'auto'} bg="var(--yellow)" size={mobile ? 'lg' : "xl"} className={classes.button}>
               See All Trades We Work With
             </Button>
           </div>

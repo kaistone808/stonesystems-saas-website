@@ -242,7 +242,8 @@ export function Header() {
 
           <Group visibleFrom="sm">
             <Button
-              className={classes.button}
+              className={classes.button2}
+              c={'var(--yellow)'}
               size="lg"
               variant="default"
               bg={'transparent'}

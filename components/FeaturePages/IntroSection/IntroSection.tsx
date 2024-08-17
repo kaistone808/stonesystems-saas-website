@@ -11,13 +11,14 @@ import {
   SimpleGrid,
   List,
   useMantineTheme,
+  Image,
 } from '@mantine/core';
 import classes from './IntroSection.module.css';
 import { useMediaQuery } from '@mantine/hooks';
 
 interface FeatureProps {
   statistics: [{ stat: string; description: string }];
-  benefits: [{ title: string; description: string }];
+  benefits: [{ title: string; description: string; icon: string }];
   title: string;
   title2: string;
   videoSrc: string;
@@ -28,14 +29,13 @@ export function IntroSection({ statistics, benefits, title, title2, videoSrc }: 
   const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
   const benefitsContent = benefits.map((benefit) => (
     <Paper className={classes.featureInfo} radius="md" key={benefit.title}>
-      <Title order={3} className={classes.infoTitle}>
-        {benefit.title}
-      </Title>
-      <List>
-        <List.Item>
-          <Text dangerouslySetInnerHTML={{__html: benefit.description}}/>
-        </List.Item>
-      </List>
+      <Flex align={'center'} mb={'sm'}>
+        <Image src={benefit.icon} className={classes.icon} />
+        <Title order={3} className={classes.infoTitle}>
+          {benefit.title}
+        </Title>
+      </Flex>
+      <Text dangerouslySetInnerHTML={{ __html: benefit.description }} />
     </Paper>
   ));
   const statsContent = statistics.map((statistic) => (
@@ -53,9 +53,11 @@ export function IntroSection({ statistics, benefits, title, title2, videoSrc }: 
         <Container size="lg">
           <Title className={classes.mainTitle}>{title}</Title>
           <Grid columns={18}>
-            {!mobile &&<Grid.Col span={6}>
-              <SimpleGrid className={classes.statisticDiv}>{statsContent}</SimpleGrid>
-            </Grid.Col>}
+            {!mobile && (
+              <Grid.Col span={6}>
+                <SimpleGrid className={classes.statisticDiv}>{statsContent}</SimpleGrid>
+              </Grid.Col>
+            )}
             <Grid.Col span={mobile ? 18 : 12}>
               <Paper className={classes.video} radius="md">
                 <Title order={2} className={classes.videoTitle}>
@@ -79,7 +81,7 @@ export function IntroSection({ statistics, benefits, title, title2, videoSrc }: 
       <div className={classes.outer2}>
         <Container size="lg">
           <Title className={classes.mainTitle2}>{title2}</Title>
-          <SimpleGrid cols={mobile ? 1 :2}>{benefitsContent}</SimpleGrid>
+          <SimpleGrid cols={mobile ? 1 : 2}>{benefitsContent}</SimpleGrid>
         </Container>
       </div>
     </>
