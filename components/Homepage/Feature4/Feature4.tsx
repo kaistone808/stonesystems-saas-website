@@ -1,8 +1,10 @@
 'use client';
 
-import { Image, Container, Title, Button, Text, Flex } from '@mantine/core';
+import { Image, Container, Title, Button, Text, Flex, Modal } from '@mantine/core';
 import { IconRosetteDiscountCheckFilled } from '@tabler/icons-react';
 import classes from './Feature4.module.css';
+import { VideoPopup } from '@/components/Popups/VideoPopup/VideoPopup';
+import { useDisclosure } from '@mantine/hooks';
 
 const features = [
   {
@@ -28,6 +30,7 @@ const features = [
 ];
 
 export function Feature4() {
+  const [opened, { close, open }] = useDisclosure(false);
   const items = features.map((feature, index) => (
     <div key={feature.title}>
       <Flex>
@@ -50,9 +53,12 @@ export function Feature4() {
           <Flex mt={'lg'} direction={'column'}>
             {items}
           </Flex>
-          <Button size="xl" bg="var(--yellow)" className={classes.control}>
+          <Button onClick={open} size="xl" bg="var(--yellow)" className={classes.control}>
             See 30 Second Demo
           </Button>
+          <Modal opened={opened} onClose={close} size={'xl'}>
+            <VideoPopup />
+          </Modal>
         </div>
         <Image src="/images/phone-left.png" className={classes.image} />
       </div>

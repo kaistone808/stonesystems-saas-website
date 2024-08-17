@@ -1,7 +1,10 @@
-import { Text, Title, Button, Image, Container } from '@mantine/core';
+import { Text, Title, Button, Image, Container, Modal } from '@mantine/core';
 import classes from './CTA.module.css';
+import { useDisclosure } from '@mantine/hooks';
+import { CalendarPopup } from '../Popups/CalendarPopup/CalendarPopup';
 
 export function CTA() {
+  const [opened, { close, open }] = useDisclosure(false);
   return (
     <div className={classes.outer}>
       <Container size="lg" className={classes.wrapper}>
@@ -12,9 +15,12 @@ export function CTA() {
             let us do it for you.
           </Text>
 
-          <Button size="xl" bg={'var(--yellow)'} className={classes.control}>
-            Book A Call
-          </Button>
+          <Button onClick={open} size="xl" bg="var(--yellow)" className={classes.control}>
+              Book A Call
+            </Button>
+            <Modal opened={opened} onClose={close} size={'xl'}>
+            <CalendarPopup />
+            </Modal>
         </div>
         <Image
           src="https://cdn.prod.website-files.com/602d921508c6c26dc5cebf3f/61d300b1e9f3319ca31a51fc_ProSite%20-%20Hero%20Home-p-1080.png"

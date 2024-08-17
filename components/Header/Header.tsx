@@ -18,6 +18,7 @@ import {
   rem,
   useMantineTheme,
   Image,
+  Modal,
 } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import {
@@ -37,6 +38,7 @@ import {
   IconDeviceMobile,
 } from '@tabler/icons-react';
 import classes from './Header.module.css';
+import { CalendarPopup } from '../Popups/CalendarPopup/CalendarPopup';
 
 const productData = [
   {
@@ -168,6 +170,7 @@ export function Header() {
   const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] = useDisclosure(false);
   const [productLinksOpened, { toggle: toggleProductLinks }] = useDisclosure(false);
   const [aboutLinksOpened, { toggle: toggleAboutLinks }] = useDisclosure(false);
+  const [opened, { open, close }] = useDisclosure(false);
   const theme = useMantineTheme();
 
   const productLinks = productData.map((item) => <LinkButton {...item} />);
@@ -248,14 +251,26 @@ export function Header() {
               variant="default"
               bg={'transparent'}
               bd={'none'}
+              component="a"
+              href="https://app.stonesystems.io"
+              target='_blank'
             >
               Log In
             </Button>
-            <Button className={classes.button} size="lg" bg="var(--yellow)" color="var(--gray)">
+            <Button
+              className={classes.button}
+              onClick={open}
+              size="lg"
+              bg="var(--yellow)"
+              color="var(--gray)"
+            >
               Book A Call
             </Button>
+            <Modal opened={opened} onClose={close} size={'xl'}>
+              <CalendarPopup />
+            </Modal>
           </Group>
-          <Image src={'/images/logo.png'} w={200} hiddenFrom="sm"/>
+          <Image src={'/images/logo.png'} w={200} hiddenFrom="sm" />
           <Burger opened={drawerOpened} onClick={toggleDrawer} hiddenFrom="sm" />
         </Group>
       </header>
@@ -275,7 +290,7 @@ export function Header() {
           <a href="/" className={classes.link}>
             Home
           </a>
-          <UnstyledButton  onClick={toggleProductLinks}>
+          <UnstyledButton onClick={toggleProductLinks}>
             <Center inline>
               <Box className={classes.link} component="span" mr={5}>
                 Product
@@ -293,7 +308,7 @@ export function Header() {
           <a href="/trades-we-serve" className={classes.link}>
             Trades We Serve
           </a>
-          <UnstyledButton  onClick={toggleAboutLinks}>
+          <UnstyledButton onClick={toggleAboutLinks}>
             <Center inline>
               <Box className={classes.link} component="span" mr={5}>
                 About

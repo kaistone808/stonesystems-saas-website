@@ -10,9 +10,12 @@ import {
   Flex,
   Divider,
   Button,
+  Modal,
 } from '@mantine/core';
 import { IconBrandYoutube, IconBrandInstagram, IconBrandFacebook } from '@tabler/icons-react';
 import classes from './Footer.module.css';
+import { useDisclosure } from '@mantine/hooks';
+import { CalendarPopup } from '../Popups/CalendarPopup/CalendarPopup';
 
 const data = [
   {
@@ -21,7 +24,7 @@ const data = [
       { label: 'Pricing', link: '/pricing' },
       { label: 'Testimonials', link: '/testimonials' },
       { label: 'Trades We Serve', link: '/trades-we-serve' },
-      { label: 'Log in', link: '/trades-we-serve' },
+      { label: 'Log in', link: 'https://app.stonesystems.io' },
     ],
   },
   {
@@ -55,17 +58,17 @@ const data = [
 ];
 
 export function Footer() {
+  const [opened, { close, open }] = useDisclosure(false);
   const groups = data.map((group) => {
-    const links = group.links.map((link, index) => (
-      <Text<'a'>
+    const links = group.links.map((linkItem, index) => (
+      <Text
         key={index}
         className={classes.link}
         component="a"
         mb={'1rem'}
-        href={link.link}
-        onClick={(event) => event.preventDefault()}
+        href={linkItem.link}
       >
-        {link.label}
+        {linkItem.label}
       </Text>
     ));
 
@@ -84,9 +87,12 @@ export function Footer() {
           <Image src="/images/logo-white.png" w={250} h={'100%'} />
           <Flex className={classes.ctaDiv} align={'center'}>
             <Text className={classes.cta}>Ready to get started?</Text>
-            <Button className={classes.button} size="md">
+            <Button onClick={open} className={classes.button} size="md">
               Book A Call
             </Button>
+            <Modal opened={opened} onClose={close} size={'xl'}>
+              <CalendarPopup />
+            </Modal>
           </Flex>
         </Flex>
         <Divider my={'2.5rem'} color="var(--border-color)" />
@@ -94,15 +100,18 @@ export function Footer() {
       <Container size={'lg'} className={classes.inner}>
         <div className={classes.bigCta}>
           <Text className={classes.description}>Want to learn more about how we can help?</Text>
-          <Button className={classes.button} mt={'1rem'} size="xl">
+          <Button onClick={open} className={classes.button} mt={'1rem'} size="xl">
             Book A Call
           </Button>
+          <Modal opened={opened} onClose={close} size={'xl'}>
+          <CalendarPopup />
+            </Modal>
         </div>
         <div className={classes.groups}>{groups}</div>
       </Container>
       <Container size="lg" className={classes.afterFooter}>
         <Flex>
-          <Text<'a'>
+          <Text
             className={classes.specialLink}
             component="a"
             mr={'3rem'}
@@ -121,13 +130,13 @@ export function Footer() {
           </Text>
         </Flex>
         <Group gap={0} className={classes.social} justify="flex-end" wrap="nowrap">
-          <ActionIcon size="lg" mx={10} color="white" variant="subtle">
+          <ActionIcon component='a' href='https://www.instagram.com/stonesystems.io/' size="lg" mx={10} color="white" variant="subtle">
             <IconBrandFacebook style={{ width: rem(24), height: rem(24) }} stroke={2} />
           </ActionIcon>
-          <ActionIcon size="lg" mx={10} color="white" variant="subtle">
+          <ActionIcon component='a' href='https://www.youtube.com/@StoneSystemsGMB' size="lg" mx={10} color="white" variant="subtle">
             <IconBrandYoutube style={{ width: rem(24), height: rem(24) }} stroke={2} />
           </ActionIcon>
-          <ActionIcon size="lg" mx={10} color="white" variant="subtle">
+          <ActionIcon component='a' href='https://www.instagram.com/stonesystems.io/' size="lg" mx={10} color="white" variant="subtle">
             <IconBrandInstagram style={{ width: rem(24), height: rem(24) }} stroke={2} />
           </ActionIcon>
         </Group>

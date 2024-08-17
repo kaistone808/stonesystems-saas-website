@@ -10,9 +10,12 @@ import {
   SimpleGrid,
   Flex,
   Divider,
+  Modal,
 } from '@mantine/core';
 import { IconCheckbox, IconRosetteDiscountCheckFilled } from '@tabler/icons-react';
 import classes from './Feature2.module.css';
+import { VideoPopup } from '@/components/Popups/VideoPopup/VideoPopup';
+import { useDisclosure } from '@mantine/hooks';
 
 const features = [
   {
@@ -33,6 +36,7 @@ const features = [
 ];
 
 export function Feature2() {
+  const [opened, { close, open }] = useDisclosure(false);
   const items = features.map((feature, index) => (
     <div key={feature.title}>
       <Flex>
@@ -54,9 +58,12 @@ export function Feature2() {
           <Flex mt={'lg'} direction={'column'}>
             {items}
           </Flex>
-          <Button size="xl" bg="var(--yellow)" className={classes.control}>
+          <Button onClick={open} size="xl" bg="var(--yellow)" className={classes.control}>
             See 30 Second Demo
           </Button>
+          <Modal opened={opened} onClose={close} size={'xl'}>
+            <VideoPopup />
+          </Modal>
         </div>
         <Image
           src="/images/phone-left.png"

@@ -1,9 +1,13 @@
 'use client';
 
-import { Image, Container, Title, Button, Text, Flex, Avatar, Divider } from '@mantine/core';
+import { Image, Container, Title, Button, Text, Flex, Avatar, Divider, Modal } from '@mantine/core';
 import classes from './Hero.module.css';
+import { CalendarPopup } from '@/components/Popups/CalendarPopup/CalendarPopup';
+import { useDisclosure } from '@mantine/hooks';
 
 export function Hero() {
+  const [opened, { close, open }] = useDisclosure(false);
+
   return (
     <div className={classes.outer}>
       <Container size="xl">
@@ -28,9 +32,12 @@ export function Hero() {
                   <Avatar className={classes.avatar} src="/images/people/kevin.jpeg" />
                   <Avatar className={classes.avatar} src="/images/people/astrid.jpeg" />
                 </Flex>
-                <Button size="xl" className={classes.control}>
+                <Button size="xl" onClick={open} className={classes.control}>
                   Book A Call
                 </Button>
+                <Modal opened={opened} onClose={close} size={'xl'}>
+                  <CalendarPopup />
+                </Modal>
               </div>
             </Flex>
             <Flex className={classes.creditDiv}>

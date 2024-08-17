@@ -3,6 +3,7 @@
 import { Container, SimpleGrid, Text, Title, Image, useMantineTheme } from '@mantine/core';
 import classes from './IntroSection.module.css';
 import { useMediaQuery } from '@mantine/hooks';
+import Script from 'next/script';
 
 export function IntroSection() {
   const theme = useMantineTheme();
@@ -18,7 +19,7 @@ export function IntroSection() {
             scrolling="no"
             id="hUF685Mpy55WxvsB3UV1_1723761228001"
           ></iframe>
-          <script src="https://api.ezclick.io/js/form_embed.js" type="text/javascript"></script>
+          <Script src="https://api.ezclick.io/js/form_embed.js" type="text/javascript"></Script>
         </Container>
       </Container>
     </div>

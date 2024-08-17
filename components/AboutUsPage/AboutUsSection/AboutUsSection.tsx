@@ -48,6 +48,7 @@ export function AboutUsSection() {
               wrap="nowrap"
             >
               <ActionIcon
+                component='a' href='https://www.instagram.com/stonesystems.io/'
                 className={classes.icon}
                 size="xl"
                 mr={10}
@@ -57,6 +58,7 @@ export function AboutUsSection() {
                 <IconBrandFacebook style={{ width: rem(60), height: rem(60) }} stroke={1.5} />
               </ActionIcon>
               <ActionIcon
+              component='a' href='https://www.youtube.com/@StoneSystemsGMB'
                 className={classes.icon}
                 size="xl"
                 mx={10}
@@ -66,6 +68,7 @@ export function AboutUsSection() {
                 <IconBrandYoutube style={{ width: rem(60), height: rem(60) }} stroke={1.5} />
               </ActionIcon>
               <ActionIcon
+              component='a' href='https://www.instagram.com/stonesystems.io/'
                 className={classes.icon}
                 size="xl"
                 mx={10}
