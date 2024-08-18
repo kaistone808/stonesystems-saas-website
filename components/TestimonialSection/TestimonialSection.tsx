@@ -148,7 +148,7 @@ export function TestimonialSection() {
     <>
       <div className={classes.outer}>
         <Container size="lg">
-          <Title className={classes.mainTitle}>Don't just take our word for it</Title>
+          <Title className={classes.mainTitle}>Don't just take our word for it <br/>See what our clients have to say...</Title>
         </Container>
         <Container size="responsive">
           <Carousel
