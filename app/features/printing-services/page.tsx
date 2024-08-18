@@ -10,7 +10,7 @@ export default function PrintingServicesPage() {
 
     },
     {
-      title: 'Branded QR Code Cards',
+      title: 'Branded QR Review Code Cards',
       description:
         "Your customers are busy and often forget to leave reviews, even when they're happy to do so. We follow up with them 4-5 times over four weeks, using customized messages. To avoid annoying them, we space out the reminders by about a week.",
         icon: '/images/features/qrcode.svg'

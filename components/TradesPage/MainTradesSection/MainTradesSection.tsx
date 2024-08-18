@@ -19,7 +19,7 @@ interface CardProps {
 
 function Card({ tradeName, imageSrc }: CardProps) {
   return (
-    <Paper shadow="md" radius="md" className={classes.card}>
+    <Paper radius="md" className={classes.card}>
       <AspectRatio ratio={16 / 9} className={classes.video}>
         <img src={imageSrc} alt="Panda" />
       </AspectRatio>
@@ -32,28 +32,36 @@ function Card({ tradeName, imageSrc }: CardProps) {
 
 const data = [
   {
-    tradeName: 'General Contractors',
-    imageSrc: '/images/trades/generalcontractor.png',
-  },
-  {
-    tradeName: 'Dog Groomers',
-    imageSrc: '/images/trades/doggroomer.png',
+    tradeName: 'Landscapers',
+    imageSrc: '/images/trades/landscapers.png',
   },
   {
     tradeName: 'Remodeling',
     imageSrc: '/images/trades/remodeling.png',
   },
   {
+    tradeName: 'Pressure Washer',
+    imageSrc: '/images/trades/pressure.png',
+  },
+  {
+    tradeName: 'Pest Control',
+    imageSrc: '/images/trades/pest.png',
+  },
+  {
+    tradeName: 'Moving Companies',
+    imageSrc: '/images/trades/moving.png',
+  },
+  {
+    tradeName: 'Flooring & Carpet Cleaning',
+    imageSrc: '/images/trades/carpet.png',
+  },
+  {
     tradeName: 'Roofing',
     imageSrc: '/images/trades/roofing.png',
   },
   {
-    tradeName: 'Home Builders',
-    imageSrc: '/images/trades/homebuilders.png',
-  },
-  {
-    tradeName: 'Commercial',
-    imageSrc: '/images/trades/commercial.png',
+    tradeName: 'HVAC',
+    imageSrc: '/images/trades/hvac.png',
   },
   {
     tradeName: 'Plumbing',
@@ -64,14 +72,6 @@ const data = [
     imageSrc: '/images/trades/electrician.png',
   },
   {
-    tradeName: 'HVAC',
-    imageSrc: '/images/trades/hvac.png',
-  },
-  {
-    tradeName: 'Decks & Patios',
-    imageSrc: '/images/trades/decksandpatios.png',
-  },
-  {
     tradeName: 'Handyman',
     imageSrc: '/images/trades/handyman.png',
   },
@@ -80,16 +80,16 @@ const data = [
     imageSrc: '/images/trades/painters.png',
   },
   {
-    tradeName: 'Landscapers',
-    imageSrc: '/images/trades/landscapers.png',
-  },
-  {
-    tradeName: 'Pool Construction',
-    imageSrc: '/images/trades/poolbuilders.png',
+    tradeName: 'Decks & Patios',
+    imageSrc: '/images/trades/decksandpatios.png',
   },
   {
     tradeName: 'Siding',
     imageSrc: '/images/trades/siding.png',
+  },
+  {
+    tradeName: 'Pool Construction',
+    imageSrc: '/images/trades/poolbuilders.png',
   },
   {
     tradeName: 'Paving',
@@ -103,6 +103,18 @@ const data = [
     tradeName: 'Windows & Doors',
     imageSrc: '/images/trades/windowsanddoors.png',
   },
+  {
+    tradeName: 'General Contractors',
+    imageSrc: '/images/trades/generalcontractor.png',
+  },
+  {
+    tradeName: 'Dog Groomers',
+    imageSrc: '/images/trades/doggroomer.png',
+  },
+  {
+    tradeName: 'Tree Service',
+    imageSrc: '/images/trades/tree.png',
+  },
 ];
 
 export function MainTradesSection() {
@@ -114,7 +126,7 @@ export function MainTradesSection() {
     <div className={classes.outer}>
       <Title className={classes.mainTitle}>Serving all these trades and more...</Title>
       <Container size="lg">
-        <SimpleGrid cols={mobile? 1 :3}>{slides}</SimpleGrid>
+        <SimpleGrid cols={mobile ? 1 : 3}>{slides}</SimpleGrid>
       </Container>
     </div>
   );

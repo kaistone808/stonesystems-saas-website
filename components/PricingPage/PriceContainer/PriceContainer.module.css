@@ -45,7 +45,7 @@
 }
 
 .moneyTitle {
-  font-size: 50;
+  font-size: 40px;
   display: flex;
   align-items: center;
   gap: 5;
@@ -53,7 +53,7 @@
 
 .cardBox1 {
   box-shadow: 0px 30px 50px -7px rgba(0, 0, 0, 0.1);
-  height: 42rem;
+  height: 45rem;
   width: 27rem;
   padding-inline: 1.5rem;
   border-radius: 0.7rem 0 0 0.7rem;
@@ -76,7 +76,7 @@
 
 .cardBox2 {
   box-shadow: 0px 30px 50px -7px rgba(0, 0, 0, 0.1);
-  height: 46rem;
+  height: 48rem;
   width: 27rem;
   padding-inline: 1.5rem;
   background: var(--yellow);
@@ -100,7 +100,7 @@
 
 .cardBox3 {
   box-shadow: 0px 30px 50px -7px rgba(0, 0, 0, 0.1);
-  height: 42rem;
+  height: 45rem;
   width: 27rem;
   padding-inline: 1.5rem;
   border-radius: 0 0.7rem 0.7rem 0;
@@ -166,6 +166,10 @@
 
 .button1 {
   transition: all 0.3s;
+  font-size: 22px;
+  font-weight: 900;
+  height: auto;
+  padding: 15px 0;
 }
 
 .button1:hover {
@@ -174,9 +178,22 @@
 
 .button2 {
   transition: all 0.3s;
+  font-size: 22px;
+  font-weight: 900;
+  height: auto;
+  padding: 15px 0;
 }
 
 .button2:hover {
   color: var(--white) !important;
   background-color: var(--blue) !important;
+}
+
+.everythingControl {
+  background-color: var(--yellow);
+  border-radius: 5px;
+  color: white;
+  span {
+    font-weight: 700 !important;
+  }
 }

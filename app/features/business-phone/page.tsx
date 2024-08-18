@@ -45,7 +45,7 @@ export default function BusinessPhonePage() {
         statistics={statistics as [{ stat: string; description: string }]}
         benefits={benefits as [{ title: string; description: string; icon: string }]}
         title="Blog Posts"
-        title2="Why do i need blog posts?"
+        title2="Why do i need a business phone?"
         videoSrc="https://www.youtube.com/embed/9bZkp7q19f0"
       />
     </>

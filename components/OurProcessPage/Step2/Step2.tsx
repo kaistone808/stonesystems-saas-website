@@ -21,6 +21,7 @@ export function Step2() {
           </div>
           {!mobile && <Image src="/images/2.svg" className={classes.image} />}
         </SimpleGrid>
+        <Image src={'/images/line.svg'} className={classes.line} />
       </Container>
     </div>
   );

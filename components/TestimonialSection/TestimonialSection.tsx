@@ -2,7 +2,7 @@
 
 import { Carousel } from '@mantine/carousel';
 import Autoplay from 'embla-carousel-autoplay';
-import { Paper, Text, rem, Container, AspectRatio, Image } from '@mantine/core';
+import { Paper, Text, rem, Container, AspectRatio, Image, Title } from '@mantine/core';
 import classes from './TestimonialSection.module.css';
 import { useRef } from 'react';
 
@@ -15,12 +15,11 @@ interface CardProps {
 function Card({ personName, testimonial, videoSrc }: CardProps) {
   return (
     <Paper radius="md" className={classes.testimonialCard}>
-      <AspectRatio ratio={16 / 9} className={classes.video}>
-        <video width="320" height="240" controls preload="metadata">
-          <source src={videoSrc} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </AspectRatio>
+      <video width="auto" height="100%" controls preload="metadata">
+        <source src={videoSrc} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
       <div>
         <div className={classes.stars}>
           <Image src="/images/star.png" className={classes.star} />
@@ -48,13 +47,13 @@ const data = [
     personName: 'Armando',
   },
   {
-    testimonial: '"After going through 2-3 other people i finally found someone that told me the truth. Really easy to work with and very respectable. I would recommend them to anyone!"',
+    testimonial:
+      '"After going through 2-3 other people i finally found someone that told me the truth. Really easy to work with and very respectable. I would recommend them to anyone!"',
     videoSrc: '/videos/James.mov',
     personName: 'James',
   },
   {
-    testimonial:
-      `"Ever since he implemented the new website and landing pages, it's been nothing but great and our conversion has gone way up. We started getting calls almost immediately."`,
+    testimonial: `"Ever since he implemented the new website and landing pages, it's been nothing but great and our conversion has gone way up. We started getting calls almost immediately."`,
     videoSrc: '/videos/Manny.mov',
     personName: 'Manny',
   },
@@ -109,26 +108,22 @@ const data = [
     personName: 'Adam',
   },
   {
-    testimonial:
-      `"They made me a brand new website, super professional and it's been absolutely amazing. I cannot say enough good things about theme. It turned those 100s of viewers into 100s of clients!"`,
+    testimonial: `"They made me a brand new website, super professional and it's been absolutely amazing. I cannot say enough good things about theme. It turned those 100s of viewers into 100s of clients!"`,
     videoSrc: '/videos/Mason.mp4',
     personName: 'Mason',
   },
   {
-    testimonial:
-      `"First i thought it was a scam, but then it turns out they're just a really good company at a really good price. I would recommend them to anyone!"`,
+    testimonial: `"First i thought it was a scam, but then it turns out they're just a really good company at a really good price. I would recommend them to anyone!"`,
     videoSrc: '/videos/Matt.mov',
     personName: 'Matt',
   },
   {
-    testimonial:
-      `"They've made it so easy with all their automations and the awesome website. I can't thank them enough and you should all definitely check them out"`,
+    testimonial: `"They've made it so easy with all their automations and the awesome website. I can't thank them enough and you should all definitely check them out"`,
     videoSrc: '/videos/RyanSmith.mov',
     personName: 'Ryan',
   },
   {
-    testimonial:
-      `"He really got everything going well. I'm getting organic leads now that don't cost me any money. I would recommend them to anyone!"`,
+    testimonial: `"He really got everything going well. I'm getting organic leads now that don't cost me any money. I would recommend them to anyone!"`,
     videoSrc: '/videos/William.mp4',
     personName: 'Scott',
   },
@@ -152,6 +147,9 @@ export function TestimonialSection() {
   return (
     <>
       <div className={classes.outer}>
+        <Container size="lg">
+          <Title className={classes.mainTitle}>Don't just take our word for it</Title>
+        </Container>
         <Container size="responsive">
           <Carousel
             slideSize={{ base: '100%', sm: '50%' }}

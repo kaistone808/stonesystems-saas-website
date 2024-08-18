@@ -70,7 +70,7 @@ export const PriceContainer = () => {
             {/** header section */}
             <Flex direction="column" gap={10} align="center" justify="start">
               <Title className={classes.mainTitle} order={1}>
-                Our Pricing
+                Our pricing
               </Title>
               <Paper className={classes.headerBox}>
                 <Text mr={'md'} fz={'md'}>
@@ -103,7 +103,7 @@ export const PriceContainer = () => {
                 <Paper shadow={'md'} className={classes.cardBox1}>
                   <Stack w={'100%'} align={'center'} p={20}>
                     <Flex>
-                      <Text fw={900} fz={'xl'}>
+                      <Text fw={900} fz={'24'}>
                         Contractor Basic
                       </Text>
                       {!monthly && <Text className={classes.discount}>17% off</Text>}
@@ -114,56 +114,56 @@ export const PriceContainer = () => {
                     <Stack w={'100%'} align="center" p={10}>
                       <Divider w={'100%'} opacity={0.7} />
                       <Flex className={classes.featureDiv}>
-                        <Text ta={'center'} fz={'md'} fw={600} className={classes.featureName}>
+                        <Text ta={'center'} fz={'md'} fw={700} className={classes.featureName}>
                           Functional Website
                         </Text>
                       </Flex>
                       <Divider w={'100%'} opacity={0.7} />
                       <Flex className={classes.featureDiv}>
-                        <Text ta={'center'} fz={'md'} fw={600} className={classes.featureName}>
+                        <Text ta={'center'} fz={'md'} fw={700} className={classes.featureName}>
                           Missed Call Text Back
                         </Text>
                       </Flex>
                       <Divider w={'100%'} opacity={0.7} />
                       <Flex className={classes.featureDiv}>
-                        <Text ta={'center'} fz={'md'} fw={600} className={classes.featureName}>
+                        <Text ta={'center'} fz={'md'} fw={700} className={classes.featureName}>
                           Web Hosting & Security
                         </Text>
                       </Flex>
                       <Divider w={'100%'} opacity={0.7} />
                       <Flex className={classes.featureDiv}>
-                        <Text ta={'center'} fz={'md'} fw={600} className={classes.featureName}>
+                        <Text ta={'center'} fz={'md'} fw={700} className={classes.featureName}>
                           All In One Inbox
                         </Text>
                       </Flex>
 
                       <Divider w={'100%'} opacity={0.7} />
                       <Flex className={classes.featureDiv}>
-                        <Text ta={'center'} fz={'md'} fw={600} className={classes.featureName}>
+                        <Text ta={'center'} fz={'md'} fw={700} className={classes.featureName}>
                           Reputation Management
                         </Text>
                       </Flex>
                       <Divider w={'100%'} opacity={0.7} />
                       <Flex className={classes.featureDiv}>
-                        <Text ta={'center'} fz={'md'} fw={600} className={classes.featureName}>
+                        <Text ta={'center'} fz={'md'} fw={700} className={classes.featureName}>
                           Business Phone
                         </Text>
                       </Flex>
                       <Divider w={'100%'} opacity={0.7} />
                       <Flex className={classes.featureDiv}>
-                        <Text ta={'center'} fz={'md'} fw={600} className={classes.featureName}>
+                        <Text ta={'center'} fz={'md'} fw={700} className={classes.featureName}>
                           Review QR Codes
                         </Text>
                       </Flex>
                       <Divider w={'100%'} opacity={0.7} />
                       <Flex className={classes.featureDiv}>
-                        <Text ta={'center'} fz={'md'} fw={600} className={classes.featureName}>
+                        <Text ta={'center'} fz={'md'} fw={700} className={classes.featureName}>
                           500 Branded Business Cards
                         </Text>
                       </Flex>
                       <Divider w={'100%'} opacity={0.7} />
                     </Stack>
-                    <Button className={classes.button1} bg={'var(--yellow)'} w="100%">
+                    <Button className={classes.button1} bg={'var(--yellow)'} w="75%">
                       START NOW
                     </Button>
                   </Stack>
@@ -171,7 +171,7 @@ export const PriceContainer = () => {
                 <Paper shadow={'md'} className={classes.cardBox2}>
                   <Stack w={'100%'} align={'center'} p={20}>
                     <Flex>
-                      <Text fw={900} fz={'xl'}>
+                      <Text fw={900} fz={'24'}>
                         Contractor Advanced
                       </Text>
                       {!monthly && <Text className={classes.discount}>17% off</Text>}
@@ -186,37 +186,37 @@ export const PriceContainer = () => {
                       </Text>
                       <Divider w={'100%'} opacity={0.6} />
                       <Flex className={classes.featureDiv}>
-                        <Text ta={'center'} fz={'md'} fw={600} className={classes.featureName}>
+                        <Text ta={'center'} fz={'md'} fw={700} className={classes.featureName}>
                           Full Website SEO Optimizations
                         </Text>
                       </Flex>
                       <Divider w={'100%'} opacity={0.6} />
                       <Flex className={classes.featureDiv}>
-                        <Text ta={'center'} fz={'md'} fw={600} className={classes.featureName}>
+                        <Text ta={'center'} fz={'md'} fw={700} className={classes.featureName}>
                           Automated Lead Follow Up
                         </Text>
                       </Flex>
                       <Divider w={'100%'} opacity={0.6} />
                       <Flex className={classes.featureDiv}>
-                        <Text ta={'center'} fz={'md'} fw={600} className={classes.featureName}>
+                        <Text ta={'center'} fz={'md'} fw={700} className={classes.featureName}>
                           5-Star Magic Funnel
                         </Text>
                       </Flex>
                       <Divider w={'100%'} opacity={0.6} />
                       <Flex className={classes.featureDiv}>
-                        <Text ta={'center'} fz={'md'} fw={600} className={classes.featureName}>
+                        <Text ta={'center'} fz={'md'} fw={700} className={classes.featureName}>
                           Marketing Campaigns
                         </Text>
                       </Flex>
                       <Divider w={'100%'} opacity={0.6} />
                       <Flex className={classes.featureDiv}>
-                        <Text ta={'center'} fz={'md'} fw={600} className={classes.featureName}>
+                        <Text ta={'center'} fz={'md'} fw={700} className={classes.featureName}>
                           Live Website Chat
                         </Text>
                       </Flex>
                       <Divider w={'100%'} opacity={0.6} />
                       <Flex className={classes.featureDiv}>
-                        <Text ta={'center'} fz={'md'} fw={600} className={classes.featureName}>
+                        <Text ta={'center'} fz={'md'} fw={700} className={classes.featureName}>
                           Blog Posts
                         </Text>
                       </Flex>
@@ -226,7 +226,7 @@ export const PriceContainer = () => {
                       className={classes.button2}
                       c={'var(--blue)'}
                       bg={'var(--white)'}
-                      w="100%"
+                      w="75%"
                     >
                       START NOW
                     </Button>
@@ -235,7 +235,7 @@ export const PriceContainer = () => {
                 <Paper shadow={'md'} className={classes.cardBox3}>
                   <Stack w={'100%'} align={'center'} p={20}>
                     <Flex>
-                      <Text fw={900} fz={'xl'}>
+                      <Text fw={900} fz={'24'}>
                         Contractor Supreme
                       </Text>
                       {!monthly && <Text className={classes.discount}>17% off</Text>}
@@ -252,7 +252,7 @@ export const PriceContainer = () => {
                       {/*                     <Text
                         ta={'center'}
                         fz={'md'}
-                        fw={600}
+                        fw={700}
                         className={classes.featureName}
                         onClick={() => openAccordionItem('supreme', 'gmb')}
                       >
@@ -260,37 +260,49 @@ export const PriceContainer = () => {
                       </Text>
                       <Divider w={'100%'} opacity={0.7} /> */}
                       <Flex className={classes.featureDiv}>
-                        <Text ta={'center'} fz={'md'} fw={600} className={classes.featureName}>
+                        <Text ta={'center'} fz={'md'} fw={700} className={classes.featureName}>
                           On-Site SEO
                         </Text>
                       </Flex>
                       <Divider w={'100%'} opacity={0.7} />
                       <Flex className={classes.featureDiv}>
-                        <Text ta={'center'} fz={'md'} fw={600} className={classes.featureName}>
+                        <Text ta={'center'} fz={'md'} fw={700} className={classes.featureName}>
                           Off-Site SEO
                         </Text>
                       </Flex>
                       <Divider w={'100%'} opacity={0.7} />
                       <Flex className={classes.featureDiv}>
-                        <Text ta={'center'} fz={'md'} fw={600} className={classes.featureName}>
+                        <Text ta={'center'} fz={'md'} fw={700} className={classes.featureName}>
                           Technical SEO
                         </Text>
                       </Flex>
                       <Divider w={'100%'} opacity={0.7} />
                       <Flex className={classes.featureDiv}>
-                        <Text ta={'center'} fz={'md'} fw={600} className={classes.featureName}>
+                        <Text ta={'center'} fz={'md'} fw={700} className={classes.featureName}>
                           Google My Business Optimizations
                         </Text>
                       </Flex>
                       <Divider w={'100%'} opacity={0.7} />
                       <Flex className={classes.featureDiv}>
-                        <Text ta={'center'} fz={'md'} fw={600} className={classes.featureName}>
+                        <Text ta={'center'} fz={'md'} fw={700} className={classes.featureName}>
                           Monthly SEO Reports Sent To You
                         </Text>
                       </Flex>
                       <Divider w={'100%'} opacity={0.7} />
+                      <Flex className={classes.featureDiv}>
+                        <Text ta={'center'} fz={'md'} fw={700} className={classes.featureName}>
+                          Keyword Optimizations
+                        </Text>
+                      </Flex>
+                      <Divider w={'100%'} opacity={0.7} />
+                      <Flex className={classes.featureDiv}>
+                        <Text ta={'center'} fz={'md'} fw={700} className={classes.featureName}>
+                          Voice Search
+                        </Text>
+                      </Flex>
+                      <Divider w={'100%'} opacity={0.7} />
                     </Stack>
-                    <Button className={classes.button1} bg={'var(--yellow)'} w="100%">
+                    <Button className={classes.button1} bg={'var(--yellow)'} w="75%">
                       START NOW
                     </Button>
                   </Stack>
@@ -303,7 +315,7 @@ export const PriceContainer = () => {
       <div className={classes.outer2}>
         <Container className={classes.container} size={'xl'}>
           {!mobile && (
-            <SimpleGrid cols={3} >
+            <SimpleGrid cols={3}>
               <div className={classes.header}>
                 <Text className={classes.planTitle}>Contractor Basic </Text>
               </div>
@@ -323,7 +335,7 @@ export const PriceContainer = () => {
             )}
             <Accordion variant="separated">
               <Accordion.Item value="website" ref={basicRefs.website}>
-                <Accordion.Control>Functional Website</Accordion.Control>
+                <Accordion.Control bg={'var(--white)'}>Functional Website</Accordion.Control>
                 <Accordion.Panel>
                   <Text className={classes.contentTitle}>
                     No customer wants to go back and forth over email… Get a website that turns
@@ -348,7 +360,7 @@ export const PriceContainer = () => {
               </Accordion.Item>
 
               <Accordion.Item value="mctb" ref={basicRefs.mctb}>
-                <Accordion.Control>Missed Call Text Back</Accordion.Control>
+                <Accordion.Control bg={'var(--white)'}>Missed Call Text Back</Accordion.Control>
                 <Accordion.Panel>
                   <Text className={classes.contentTitle}>
                     It’s not rocket science… getting back to customers right away is going to make
@@ -371,7 +383,7 @@ export const PriceContainer = () => {
               </Accordion.Item>
 
               <Accordion.Item value="hosting" ref={basicRefs.hosting}>
-                <Accordion.Control>Web Hosting & Security</Accordion.Control>
+                <Accordion.Control bg={'var(--white)'}>Web Hosting & Security</Accordion.Control>
                 <Accordion.Panel>
                   <Text className={classes.contentTitle}>
                     Don’t be an idiot… you don’t want your website to be slow, and definitely don’t
@@ -387,7 +399,7 @@ export const PriceContainer = () => {
               </Accordion.Item>
 
               <Accordion.Item value="inbox" ref={basicRefs.inbox}>
-                <Accordion.Control>All In One Inbox</Accordion.Control>
+                <Accordion.Control bg={'var(--white)'}>All In One Inbox</Accordion.Control>
                 <Accordion.Panel>
                   <Text className={classes.contentTitle}>
                     No offense mr contractor… most of you guys are notorious for not getting back to
@@ -403,7 +415,7 @@ export const PriceContainer = () => {
               </Accordion.Item>
 
               <Accordion.Item value="repmanage" ref={basicRefs.repmanage}>
-                <Accordion.Control>Reputation Management</Accordion.Control>
+                <Accordion.Control bg={'var(--white)'}>Reputation Management</Accordion.Control>
                 <Accordion.Panel>
                   <Text className={classes.contentTitle}>
                     Are you going to see what other contractors have to say about stone systems
@@ -421,7 +433,7 @@ export const PriceContainer = () => {
               </Accordion.Item>
 
               <Accordion.Item value="bphone" ref={basicRefs.bphone}>
-                <Accordion.Control>Business Phone</Accordion.Control>
+                <Accordion.Control bg={'var(--white)'}>Business Phone</Accordion.Control>
                 <Accordion.Panel>
                   <Text className={classes.contentTitle}>
                     You're not actually going to buy a second phone are you? Just use our app on
@@ -435,7 +447,7 @@ export const PriceContainer = () => {
               </Accordion.Item>
 
               <Accordion.Item value="qrcode" ref={basicRefs.qrcode}>
-                <Accordion.Control>Review QR Codes</Accordion.Control>
+                <Accordion.Control bg={'var(--white)'}>Review QR Codes</Accordion.Control>
                 <Accordion.Panel>
                   <Text className={classes.contentTitle}>
                     Have people leave you a review by just scanning a simple QR code.
@@ -448,7 +460,7 @@ export const PriceContainer = () => {
               </Accordion.Item>
 
               <Accordion.Item value="bcards" ref={basicRefs.bcards}>
-                <Accordion.Control>500 Branded Business Cards</Accordion.Control>
+                <Accordion.Control bg={'var(--white)'}>500 Branded Business Cards</Accordion.Control>
                 <Accordion.Panel>
                   <Text className={classes.contentTitle}>
                     Honestly, if you don't have any of these yet, I don't know what you're waiting
@@ -468,7 +480,7 @@ export const PriceContainer = () => {
             )}
             <Accordion variant="separated">
               <Accordion.Item value="everything1">
-                <Accordion.Control>Everything From Contractor Basic</Accordion.Control>
+                <Accordion.Control className={classes.everythingControl}>Everything From Contractor Basic +</Accordion.Control>
                 <Accordion.Panel>
                   <Text className={classes.contentTitle}>
                     Contractor Advanced also includes everything from Contractor Basic
@@ -477,7 +489,7 @@ export const PriceContainer = () => {
               </Accordion.Item>
 
               <Accordion.Item value="websiteseo" ref={advancedRefs.websiteseo}>
-                <Accordion.Control>Full Website SEO Optimizations</Accordion.Control>
+                <Accordion.Control bg={'var(--white)'}>Full Website SEO Optimizations</Accordion.Control>
                 <Accordion.Panel>
                   <Text className={classes.contentTitle}>
                     Okay, let’s see how much we can confuse you… Some nerdy tech mumbo jumbo with a
@@ -493,7 +505,7 @@ export const PriceContainer = () => {
               </Accordion.Item>
 
               <Accordion.Item value="leadconf" ref={advancedRefs.leadconf}>
-                <Accordion.Control>Automated Lead Follow Up</Accordion.Control>
+                <Accordion.Control bg={'var(--white)'}>Automated Lead Follow Up</Accordion.Control>
                 <Accordion.Panel>
                   <Text className={classes.contentTitle}>
                     Once again, it’s not rocket science… it’s going to make you more money and make
@@ -506,7 +518,7 @@ export const PriceContainer = () => {
               </Accordion.Item>
 
               <Accordion.Item value="reviews" ref={advancedRefs.reviews}>
-                <Accordion.Control>5-Star Magic Funnel</Accordion.Control>
+                <Accordion.Control bg={'var(--white)'}>5-Star Magic Funnel</Accordion.Control>
                 <Accordion.Panel>
                   <Text className={classes.contentTitle}>
                     Okay… It’s not magic but it comes pretty close, and it’s automated
@@ -524,7 +536,7 @@ export const PriceContainer = () => {
               </Accordion.Item>
 
               <Accordion.Item value="marketing" ref={advancedRefs.marketing}>
-                <Accordion.Control>Marketing Campaigns</Accordion.Control>
+                <Accordion.Control bg={'var(--white)'}>Marketing Campaigns</Accordion.Control>
                 <Accordion.Panel>
                   <Text className={classes.contentTitle}>
                     You know it, and we know it… The best customers are referrals and return
@@ -544,7 +556,7 @@ export const PriceContainer = () => {
               </Accordion.Item>
 
               <Accordion.Item value="chat" ref={advancedRefs.chat}>
-                <Accordion.Control>Live Website Chat</Accordion.Control>
+                <Accordion.Control bg={'var(--white)'}>Live Website Chat</Accordion.Control>
                 <Accordion.Panel>
                   <Text className={classes.contentTitle}>
                     Don’t leave your leads hanging… Let them text you directly from your website and
@@ -557,7 +569,7 @@ export const PriceContainer = () => {
               </Accordion.Item>
 
               <Accordion.Item value="blogs" ref={advancedRefs.blogs}>
-                <Accordion.Control>Blog Posts</Accordion.Control>
+                <Accordion.Control bg={'var(--white)'}>Blog Posts</Accordion.Control>
                 <Accordion.Panel>
                   <Text className={classes.contentTitle}>
                     Let’s be honest, nobody reads these… They’re good for SEO though and make you
@@ -583,7 +595,7 @@ export const PriceContainer = () => {
             )}
             <Accordion variant="separated">
               <Accordion.Item value="everything2">
-                <Accordion.Control>Everything From Contractor Advanced</Accordion.Control>
+                <Accordion.Control className={classes.everythingControl}>Everything From Contractor Advanced +</Accordion.Control>
                 <Accordion.Panel>
                   <Text className={classes.contentTitle}>
                     Contractor Supreme also includes everything from Contractor Basic and Contractor
@@ -615,7 +627,7 @@ export const PriceContainer = () => {
               </Accordion.Item> */}
 
               <Accordion.Item value="onsite" ref={supremeRefs.onsite}>
-                <Accordion.Control>On-Site SEO</Accordion.Control>
+                <Accordion.Control bg={'var(--white)'}>On-Site SEO</Accordion.Control>
                 <Accordion.Panel>
                   <Text className={classes.contentTitle}>
                     We'll be making your site less of an online ghost town
@@ -632,7 +644,7 @@ export const PriceContainer = () => {
               </Accordion.Item>
 
               <Accordion.Item value="offsite" ref={supremeRefs.offsite}>
-                <Accordion.Control>Off-Site SEO</Accordion.Control>
+                <Accordion.Control bg={'var(--white)'}>Off-Site SEO</Accordion.Control>
                 <Accordion.Panel>
                   <Text className={classes.contentTitle}>
                     We're basically making your website the cool kid on the block everyone talks
@@ -649,7 +661,7 @@ export const PriceContainer = () => {
               </Accordion.Item>
 
               <Accordion.Item value="techseo" ref={supremeRefs.techseo}>
-                <Accordion.Control>Technical SEO</Accordion.Control>
+                <Accordion.Control bg={'var(--white)'}>Technical SEO</Accordion.Control>
                 <Accordion.Panel>
                   <Text className={classes.contentTitle}>
                     We're making sure your website is actually optimized to bring people to it and
@@ -666,7 +678,7 @@ export const PriceContainer = () => {
               </Accordion.Item>
 
               <Accordion.Item value="gmbopt" ref={supremeRefs.gmbopt}>
-                <Accordion.Control>Google My Business Optimizations</Accordion.Control>
+                <Accordion.Control bg={'var(--white)'}>Google My Business Optimizations</Accordion.Control>
                 <Accordion.Panel>
                   <Text className={classes.contentTitle}>
                     Because your business needs more than just a pin on the map
@@ -680,7 +692,7 @@ export const PriceContainer = () => {
               </Accordion.Item>
 
               <Accordion.Item value="reports" ref={supremeRefs.reports}>
-                <Accordion.Control>Monthly SEO Reports Sent To You</Accordion.Control>
+                <Accordion.Control bg={'var(--white)'}>Monthly SEO Reports Sent To You</Accordion.Control>
                 <Accordion.Panel>
                   <Text className={classes.contentTitle}>
                     Because who doesn't enjoy a fresh batch of SEO data to look at every month
@@ -688,6 +700,33 @@ export const PriceContainer = () => {
                   <List>
                     <List.Item>Get monthly SEO reports to track your progress</List.Item>
                     <List.Item>See exactly where your site ranks for what keywords</List.Item>
+                  </List>
+                </Accordion.Panel>
+              </Accordion.Item>
+              <Accordion.Item value="keyword" ref={supremeRefs.reports}>
+                <Accordion.Control bg={'var(--white)'}>Keyword Optimization</Accordion.Control>
+                <Accordion.Panel>
+                  <Text className={classes.contentTitle}>
+                    So that people don't just find your website, but they find it for the right
+                    reasons
+                  </Text>
+                  <List>
+                    <List.Item>Off-Site Keyword Optimizations</List.Item>
+                    <List.Item>On-Site Keyword Optimizations</List.Item>
+                  </List>
+                </Accordion.Panel>
+              </Accordion.Item>
+              <Accordion.Item value="voicesearch" ref={supremeRefs.reports}>
+                <Accordion.Control bg={'var(--white)'}>Voice Search</Accordion.Control>
+                <Accordion.Panel>
+                  <Text className={classes.contentTitle}>
+                    Literally the future of search... and we're making sure you're ready for it
+                  </Text>
+                  <List>
+                    <List.Item>
+                      Ask Siri or Alexa for a business near you and have your business come up
+                    </List.Item>
+                    <List.Item>Join the future of online search</List.Item>
                   </List>
                 </Accordion.Panel>
               </Accordion.Item>

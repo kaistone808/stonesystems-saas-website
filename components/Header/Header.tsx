@@ -179,7 +179,7 @@ export function Header() {
   const aboutLinks = aboutData.map((item) => <LinkButton {...item} />);
 
   return (
-    <Box>
+    <Box className={classes.stickyHeader}>
       <header className={classes.header}>
         <Group justify="space-between" w="75em" h="100%">
           <Group h="100%" gap={0} visibleFrom="sm">

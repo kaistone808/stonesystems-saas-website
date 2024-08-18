@@ -22,6 +22,7 @@ export function Step1() {
             </Text>
           </div>
         </SimpleGrid>
+        <Image src={'/images/line.svg'} className={classes.line} />
       </Container>
     </div>
   );

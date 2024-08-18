@@ -5,7 +5,7 @@ export default function MarketingCampaignsPage() {
     {
       title: 'Contractor Lead Revival',
       description:
-        "Give us a list of at least 150 of your past customers and or lead you haven't been able to close. We will run a campaign to get them through the door again.",
+        "Give us a list of at least 150 of your past customers and or leads you haven't been able to close. We will run a campaign to get them through the door again.",
         icon: '/images/features/circuit-battery.svg'
     },
     {

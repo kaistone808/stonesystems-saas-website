@@ -63,3 +63,7 @@
   border-radius: var(--mantine-radius-sm);
   padding: rem(4px) rem(12px);
 }
+
+.image{
+  z-index: 2;
+}

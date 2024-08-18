@@ -21,17 +21,21 @@ const features = [
   {
     title: '5-Star Reviews Only',
     description:
-    "You can’t make everyone happy, but our magic funnel sure can. Five stars, every time.",
+      'You can’t make everyone happy, but our magic funnel sure can. Five stars, every time.',
   },
   {
     title: 'Automatic Follow-Up Reminders',
-    description:
-      `"Sure I'll leave you a review", but the truth is people forget. We’ll 'gently' reminder them for a few weeks until they remember.`,
+    description: `"Sure I'll leave you a review", but the truth is people forget. We’ll 'gently' reminder them for a few weeks until they remember.`,
   },
   {
     title: 'Ask For Reviews In One Click',
     description:
       "As promised, we keep it simple. If you're confused, we're fired and extremely embarrassed.",
+  },
+  {
+    title: 'Stop worrying about bad reviews',
+    description:
+      'Unsure if you should ask for a review? We’ll take the guesswork out by guiding your customer to leave a 5-star review!',
   },
 ];
 
@@ -40,7 +44,7 @@ export function Feature2() {
   const items = features.map((feature, index) => (
     <div key={feature.title}>
       <Flex>
-        <IconRosetteDiscountCheckFilled color='var(--yellow)' />
+        <IconRosetteDiscountCheckFilled color="var(--yellow)" />
         <Text className={classes.featureTitle}>{feature.title}</Text>
       </Flex>
       <Text className={classes.featureDescription}>{feature.description}</Text>
@@ -53,7 +57,8 @@ export function Feature2() {
         <div className={classes.content}>
           <Title className={classes.title}>5-Star Magic Funnel</Title>
           <Text className={classes.description} mt="md">
-          "Sure I'll leave you a review", but the truth is people forget. We’ll 'gently' remind them for a few weeks until they remember.
+            "Sure I'll leave you a review", but the truth is people forget. We’ll 'gently' remind
+            them for a few weeks until they remember.
           </Text>
           <Flex mt={'lg'} direction={'column'}>
             {items}
@@ -65,10 +70,7 @@ export function Feature2() {
             <VideoPopup />
           </Modal>
         </div>
-        <Image
-          src="/images/phone-left.png"
-          className={classes.image}
-        />
+        <Image src="/images/phone-left.png" className={classes.image} />
       </div>
     </Container>
   );

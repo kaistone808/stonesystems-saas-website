@@ -8,7 +8,7 @@ export function IntroSection() {
     <>
       <div className={classes.outer}>
         <Container size="lg">
-          <Title className={classes.mainTitle}>Built with love for contractors</Title>
+          <Title className={classes.mainTitle}>Less bullshit, more results</Title>
         </Container>
       </div>
     </>

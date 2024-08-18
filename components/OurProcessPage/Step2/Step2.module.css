@@ -60,3 +60,15 @@
   border-radius: var(--mantine-radius-sm);
   padding: rem(4px) rem(12px);
 }
+
+.line{
+  position: relative;
+  top: 60px;
+  transform: rotate(-34deg);
+  left: 304px;
+  width: 550px;
+}
+
+.image{
+  z-index: 2;
+}

@@ -15,12 +15,10 @@ interface CardProps {
 function Card({ personName, testimonial, videoSrc }: CardProps) {
   return (
     <Paper radius="md" className={classes.testimonialCard}>
-      <AspectRatio ratio={16 / 9} className={classes.video}>
-        <video width="320" height="240" controls preload="metadata">
+        <video width="auto" height="100%" controls preload="metadata">
           <source src={videoSrc} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-      </AspectRatio>
       <div>
         <div className={classes.stars}>
           <Image src="/images/star.png" className={classes.star} />
