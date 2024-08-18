@@ -25,7 +25,7 @@
 
   @media (max-width: $mantine-breakpoint-xs) {
     font-size: rem(28px);
-    padding: var(--space-40) 0 calc(var(--space-40)/2) 0;
+    padding: var(--space-40) 0 calc(var(--space-40) / 2) 0;
   }
 }
 
@@ -33,8 +33,11 @@
   width: 100%;
   padding: 1rem 1rem 0 1rem;
   video {
+    min-width: 386px;
+    max-height: 217px;
     border-radius: 10px;
     width: 100%;
+    background-color: black;
   }
 }
 
