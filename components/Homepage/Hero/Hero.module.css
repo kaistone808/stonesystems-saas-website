@@ -134,7 +134,7 @@
 }
 
 .buttonDiv {
-  padding-left: 1rem;
+  padding-left: 4rem;
   @media (max-width: $mantine-breakpoint-xs) {
     padding-left: 0;
   }

@@ -36,6 +36,7 @@ import {
   IconTimeline,
   IconUsers,
   IconDeviceMobile,
+  IconX,
 } from '@tabler/icons-react';
 import classes from './Header.module.css';
 import { CalendarPopup } from '../Popups/CalendarPopup/CalendarPopup';
@@ -183,7 +184,7 @@ export function Header() {
         <Group justify="space-between" w="75em" h="100%">
           <Group h="100%" gap={0} visibleFrom="sm">
             <a href="/" className={classes.link}>
-              <Image src={'/images/logo.png'} w={200} />
+              <Image src={'/images/newlogo.png'} w={200} mr={'sm'} />
             </a>
             <HoverCard width={1000} position="bottom" radius="md" shadow="md" withinPortal>
               <HoverCard.Target>
@@ -253,7 +254,7 @@ export function Header() {
               bd={'none'}
               component="a"
               href="https://app.stonesystems.io"
-              target='_blank'
+              target="_blank"
             >
               Log In
             </Button>
@@ -270,7 +271,7 @@ export function Header() {
               <CalendarPopup />
             </Modal>
           </Group>
-          <Image src={'/images/logo.png'} w={200} hiddenFrom="sm" />
+          <Image src={'/images/newlogo.png'} w={200} hiddenFrom="sm" />
           <Burger opened={drawerOpened} onClick={toggleDrawer} hiddenFrom="sm" />
         </Group>
       </header>
@@ -280,7 +281,10 @@ export function Header() {
         onClose={closeDrawer}
         size="100%"
         padding="md"
-        title="Navigation"
+        title={<Image src={'/images/newlogo.png'} w={200} hiddenFrom="sm" />}
+        closeButtonProps={{
+          icon: <IconX size={100} stroke={1.5} />,
+        }}
         hiddenFrom="sm"
         zIndex={1000000}
       >
@@ -318,10 +322,15 @@ export function Header() {
           </UnstyledButton>
           <Collapse in={aboutLinksOpened}>{aboutLinks}</Collapse>
 
-          <Group justify="center" grow pb="xl" px="md">
-            <Button variant="default">Log in</Button>
-            <Button>Sign up</Button>
-          </Group>
+          <a href="https://app.stonesystems.io" className={classes.linkLogin}>
+            Log in
+          </a>
+          <a onClick={open} className={classes.linkModal}>
+            Book A Call
+          </a>
+            <Modal opened={opened} onClose={close} size={'xl'}>
+              <CalendarPopup />
+            </Modal>
         </ScrollArea>
       </Drawer>
     </Box>

@@ -105,7 +105,7 @@ export function ValuesSection() {
             </div>
             <Image
               className={classes.stoneMan}
-              src="/images/stone-systems-guy.png"
+              src="/images/new.png"
               alt="Contractor"
             />
           </SimpleGrid>

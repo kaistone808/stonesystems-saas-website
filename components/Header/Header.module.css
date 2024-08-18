@@ -8,7 +8,9 @@
   background-color: var(--white);
 }
 
-.link {
+.link,
+.linkModal,
+.linkLogin {
   display: flex;
   align-items: center;
   height: 100%;
@@ -20,10 +22,12 @@
   font-size: 16px;
 
   @media (max-width: $mantine-breakpoint-sm) {
-    height: rem(42px);
+    height: rem(60px);
     width: 100%;
     font-size: 22px;
-    margin: 5px 0;
+    @mixin hover {
+      color: var(--blue);
+    }
   }
 
   @mixin hover {
@@ -32,6 +36,15 @@
       stroke: var(--yellow);
     }
   }
+}
+
+.linkLogin {
+  color: var(--yellow);
+}
+
+.linkModal {
+  color: var(--white);
+  background-color: var(--yellow);
 }
 
 .subLink {
@@ -43,7 +56,12 @@
     background-color: light-dark(var(--mantine-color-gray-0), var(--mantine-color-dark-7));
   }
   @media (max-width: $mantine-breakpoint-sm) {
-    padding: 0 15px !important;
+    > div{
+      padding: 0 15px !important;
+    }
+    @mixin hover {
+      background-color: transparent;
+    }
   }
 }
 
@@ -77,4 +95,13 @@
 
 .button2:hover {
   color: var(--dark-yellow) !important;
+}
+
+.mobileButton {
+  width: 100%;
+}
+
+.mantine-focus-auto{
+  width: 40px;
+  height: 40px;
 }

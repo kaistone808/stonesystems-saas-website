@@ -94,7 +94,7 @@ export function Hero() {
               </div>
             </Flex>
           </div>
-          <Image src="/images/stone-systems-guy.png" className={classes.image} />
+          <Image src="/images/new.png" className={classes.image} />
         </div>
       </Container>
     </div>

@@ -130,10 +130,17 @@
   font-size: 28px;
   margin: 5px 0 15px 0;
   color: var(--yellow);
+  @media (max-width: $mantine-breakpoint-xs) {
+    font-size: 24px;
+  }
 }
 
 .icon {
   width: 80px;
   height: 80px;
   margin-right: 1rem;
+  @media (max-width: $mantine-breakpoint-xs) {
+    width: 60px;
+    height: 60px;
+  }
 }

@@ -84,7 +84,7 @@ export function Footer() {
     <footer className={classes.footer}>
       <Container size={'lg'}>
         <Flex className={classes.logo} align={'center'} justify={'space-between'} direction={'row'}>
-          <Image src="/images/logo-white.png" w={250} h={'100%'} />
+          <Image src="/images/footerlogo.png" w={250} h={'100%'} />
           <Flex className={classes.ctaDiv} align={'center'}>
             <Text className={classes.cta}>Ready to get started?</Text>
             <Button onClick={open} className={classes.button} size="md">
