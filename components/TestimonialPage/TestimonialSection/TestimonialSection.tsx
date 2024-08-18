@@ -172,7 +172,7 @@ export function TestimonialSection() {
         <br />
         Let's see what our clients have to say
       </Title>
-      <Container size="lg">
+      <Container size="xl">
         <SimpleGrid cols={mobile ? 1 : 3}>{slides}</SimpleGrid>
       </Container>
     </div>
