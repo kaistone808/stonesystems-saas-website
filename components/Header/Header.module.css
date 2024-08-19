@@ -1,10 +1,10 @@
 .stickyHeader {
-  position: -webkit-sticky; /* For Safari */
+  position: -webkit-sticky; 
   position: sticky;
   top: 0;
-  z-index: 1000; /* Ensure it appears above other content */
-  background-color: white; /* Adjust this to match your header's background */
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow effect */
+  z-index: 1000; 
+  background-color: white; 
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
 .header {
