@@ -1,10 +1,12 @@
 'use client';
 
-import { Container, Title, Button, Text, Flex, Avatar, Divider, Modal } from '@mantine/core';
+import { Container, Title, Button, Text, Flex, Divider, Modal } from '@mantine/core';
 import classes from './Hero.module.css';
-import { CalendarPopup } from '@/components/Popups/CalendarPopup/CalendarPopup';
 import { useDisclosure } from '@mantine/hooks';
 import Image from 'next/image';
+import { CalendarPopup } from '@/components/Popups/CalendarPopup/CalendarPopup';
+
+
 
 export function Hero() {
   const [opened, { close, open }] = useDisclosure(false);
@@ -238,7 +240,13 @@ export function Hero() {
               </div>
             </Flex>
           </div>
-          <img src="/images/new.png" className={classes.image} />
+          <Image
+            width={500}
+            height={900}
+            alt="stone systems man"
+            src="/images/new.png"
+            className={classes.image}
+          />
         </div>
       </Container>
     </div>

@@ -1,7 +1,6 @@
 'use client';
 
-import { Container, Title } from '@mantine/core';
-import classes from './CalendarPopup.module.css';
+import { Container } from '@mantine/core';
 import Script from 'next/script';
 
 export function CalendarPopup() {
