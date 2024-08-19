@@ -54,7 +54,7 @@ const data = [
 ];
 
 export function EmployeeSection() {
-  const slides = data.map((item) => <Card {...item} />);
+  const slides = data.map((item) => <Card key={item.name} {...item} />);
   const theme = useMantineTheme();
   const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
 

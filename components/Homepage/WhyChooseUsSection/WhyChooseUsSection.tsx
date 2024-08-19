@@ -63,7 +63,7 @@ const data = [
 ];
 
 export function WhyChooseUsSection() {
-  const slides = data.map((item) => <Card {...item} />);
+  const slides = data.map((item) => <Card key={item.cardTitle} {...item} />);
   const theme = useMantineTheme();
   const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
   return (

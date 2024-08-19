@@ -8,7 +8,6 @@ import {
   useMantineTheme,
   Container,
   SimpleGrid,
-  AspectRatio,
 } from '@mantine/core';
 import classes from './MainTradesSection.module.css';
 import Image from 'next/image';
@@ -119,7 +118,7 @@ const data = [
 export function MainTradesSection() {
   const theme = useMantineTheme();
   const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
-  const slides = data.map((item) => <Card {...item} />);
+  const slides = data.map((item) => <Card key={item.tradeName} {...item} />);
 
   return (
     <div className={classes.outer}>

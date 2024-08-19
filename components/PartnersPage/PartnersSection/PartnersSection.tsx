@@ -59,8 +59,8 @@ const data = [
 export function PartnersSection() {
   const theme = useMantineTheme();
   const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
-  const partners = data.map((item) => (
-    <Paper className={classes.partnerCard} shadow="md">
+  const partners = data.map((item, index) => (
+    <Paper className={classes.partnerCard} shadow="md" key={index}>
       <Image className={classes.image} width={200} height={136} src={item.imageSrc} alt="partner" />
     </Paper>
   ));

@@ -6,10 +6,8 @@ import {
   Text,
   Flex,
   Grid,
-  AspectRatio,
   Paper,
   SimpleGrid,
-  List,
   useMantineTheme,
   Image,
 } from '@mantine/core';
@@ -38,8 +36,8 @@ export function IntroSection({ statistics, benefits, title, title2, videoSrc }: 
       <Text dangerouslySetInnerHTML={{ __html: benefit.description }} />
     </Paper>
   ));
-  const statsContent = statistics.map((statistic) => (
-    <Paper className={classes.statistic} radius="md">
+  const statsContent = statistics.map((statistic, index) => (
+    <Paper className={classes.statistic} radius="md" key={index}>
       <Text>
         <span className={classes.percentage}>{statistic.stat}</span> <br />
         {statistic.description}

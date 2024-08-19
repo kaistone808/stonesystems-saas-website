@@ -8,7 +8,6 @@ import {
   useMantineTheme,
   Container,
   SimpleGrid,
-  AspectRatio,
   Image,
 } from '@mantine/core';
 import classes from './TestimonialSection.module.css';
@@ -161,7 +160,7 @@ const data = [
 export function TestimonialSection() {
   const theme = useMantineTheme();
   const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
-  const slides = data.map((item) => <Card {...item} />);
+  const slides = data.map((item) => <Card key={item.personName} {...item} />);
 
   return (
     <div className={classes.outer}>

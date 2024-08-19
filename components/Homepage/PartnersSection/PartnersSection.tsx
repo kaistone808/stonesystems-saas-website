@@ -60,8 +60,8 @@ export function PartnersSection() {
   const autoplay = useRef(Autoplay({ delay: 2500 }));
   const theme = useMantineTheme();
   const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
-  const slides = data.map((item) => (
-    <Carousel.Slide className={classes.slide}>
+  const slides = data.map((item, index) => (
+    <Carousel.Slide key={index} className={classes.slide}>
       <Image width={170} height={100} className={classes.image} src={item.imageSrc} alt="Panda" />
     </Carousel.Slide>
   ));

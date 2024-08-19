@@ -12,12 +12,7 @@ import {
   Button,
   Modal,
 } from '@mantine/core';
-import {
-  IconBrandYoutube,
-  IconBrandInstagram,
-  IconBrandFacebook,
-  IconBrandGoogle,
-} from '@tabler/icons-react';
+import { IconBrandYoutube, IconBrandInstagram, IconBrandGoogle } from '@tabler/icons-react';
 import classes from './Footer.module.css';
 import { useDisclosure } from '@mantine/hooks';
 import { CalendarPopup } from '../Popups/CalendarPopup/CalendarPopup';
@@ -64,15 +59,21 @@ const data = [
 
 export function Footer() {
   const [opened, { close, open }] = useDisclosure(false);
-  const groups = data.map((group) => {
-    const links = group.links.map((linkItem, index) => (
-      <Text key={index} className={classes.link} component="a" mb={'1rem'} href={linkItem.link}>
+  const groups = data.map((group, groupIndex) => {
+    const links = group.links.map((linkItem) => (
+      <Text
+        key={linkItem.label}
+        className={classes.link}
+        component="a"
+        mb={'1rem'}
+        href={linkItem.link}
+      >
         {linkItem.label}
       </Text>
     ));
 
     return (
-      <div className={classes.wrapper} key={group.title}>
+      <div className={classes.wrapper} key={group.title || `group-${groupIndex}`}>
         <Text className={classes.title}>{group.title}</Text>
         {links}
       </div>

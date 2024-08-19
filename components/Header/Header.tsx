@@ -147,7 +147,6 @@ const LinkButton = (item: LinkProps) => {
       pr={'xl'}
       pl={'md'}
       className={classes.subLink}
-      key={item.title}
     >
       <Group wrap="nowrap" align="center">
         <ThemeIcon size={52} variant="default" radius="md" bd={'none'} bg={'#F1F1F1'}>
@@ -173,9 +172,9 @@ export function Header() {
   const [opened, { open, close }] = useDisclosure(false);
   const theme = useMantineTheme();
 
-  const productLinks = productData.map((item) => <LinkButton {...item} />);
+  const productLinks = productData.map((item) => <LinkButton key={item.title} {...item} />);
 
-  const aboutLinks = aboutData.map((item) => <LinkButton {...item} />);
+  const aboutLinks = aboutData.map((item) => <LinkButton key={item.title} {...item} />);
 
   return (
     <Box className={classes.stickyHeader}>
