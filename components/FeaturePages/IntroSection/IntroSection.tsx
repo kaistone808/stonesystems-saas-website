@@ -63,15 +63,10 @@ export function IntroSection({ statistics, benefits, title, title2, videoSrc }: 
                 <Title order={2} className={classes.videoTitle}>
                   See a 30 sec demo below
                 </Title>
-                <AspectRatio ratio={16 / 9}>
-                  <iframe
-                    src={videoSrc}
-                    title="YouTube video player"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  />
-                </AspectRatio>
+                <video width="100%" height="100%" controls preload="metadata">
+                  <source src={videoSrc} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
               </Paper>
             </Grid.Col>
           </Grid>

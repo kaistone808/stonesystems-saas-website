@@ -17,7 +17,6 @@ import {
   ScrollArea,
   rem,
   useMantineTheme,
-  Image,
   Modal,
 } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
@@ -40,7 +39,7 @@ import {
 } from '@tabler/icons-react';
 import classes from './Header.module.css';
 import { CalendarPopup } from '../Popups/CalendarPopup/CalendarPopup';
-
+import Image from 'next/image';
 const productData = [
   {
     icon: IconAppWindow,
@@ -181,16 +180,16 @@ export function Header() {
   return (
     <Box className={classes.stickyHeader}>
       <header className={classes.header}>
-        <Group justify="space-between" w="75em" h="100%">
+        <Group justify="space-between" w="83em" h="100%">
           <Group h="100%" gap={0} visibleFrom="sm">
             <a href="/" className={classes.link}>
-              <Image src={'/images/newlogo.png'} w={200} mr={'sm'} />
+              <Image src={'/images/newlogo.png'} alt="logo" width={200} height={81} />
             </a>
             <HoverCard width={1000} position="bottom" radius="md" shadow="md" withinPortal>
               <HoverCard.Target>
                 <a href="#" className={classes.link}>
                   <Center inline>
-                    <Box component="span" mr={5}>
+                    <Box component="span" ml={'sm'} mr={5}>
                       Product
                     </Box>
                     <IconChevronDown
@@ -261,7 +260,7 @@ export function Header() {
             <Button
               className={classes.button}
               onClick={open}
-              size="lg"
+              size="xl"
               bg="var(--yellow)"
               color="var(--gray)"
             >
@@ -271,7 +270,7 @@ export function Header() {
               <CalendarPopup />
             </Modal>
           </Group>
-          <Image src={'/images/newlogo.png'} w={200} hiddenFrom="sm" />
+          <Image className={classes.logoImage} src={'/images/newlogo.png'} alt="logo" width={200} height={81} />
           <Burger opened={drawerOpened} onClick={toggleDrawer} hiddenFrom="sm" />
         </Group>
       </header>
@@ -281,7 +280,7 @@ export function Header() {
         onClose={closeDrawer}
         size="100%"
         padding="md"
-        title={<Image src={'/images/newlogo.png'} w={200} hiddenFrom="sm" />}
+        title={<Image src={'/images/newlogo.png'} alt="logo" width={200} height={81} />}
         closeButtonProps={{
           icon: <IconX size={100} stroke={1.5} />,
         }}
@@ -328,9 +327,9 @@ export function Header() {
           <a onClick={open} className={classes.linkModal}>
             Book A Call
           </a>
-            <Modal opened={opened} onClose={close} size={'xl'}>
-              <CalendarPopup />
-            </Modal>
+          <Modal opened={opened} onClose={close} size={'xl'}>
+            <CalendarPopup />
+          </Modal>
         </ScrollArea>
       </Drawer>
     </Box>

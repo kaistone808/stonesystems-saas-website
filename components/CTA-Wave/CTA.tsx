@@ -1,7 +1,8 @@
-import { Text, Title, Button, Image, Container, Modal } from '@mantine/core';
+import { Text, Title, Button, Container, Modal } from '@mantine/core';
 import classes from './CTA.module.css';
 import { useDisclosure } from '@mantine/hooks';
 import { CalendarPopup } from '../Popups/CalendarPopup/CalendarPopup';
+import Image from 'next/image';
 
 export function CTA() {
   const [opened, { close, open }] = useDisclosure(false);
@@ -16,14 +17,17 @@ export function CTA() {
           </Text>
 
           <Button onClick={open} size="xl" bg="var(--yellow)" className={classes.control}>
-              Book A Call
-            </Button>
-            <Modal opened={opened} onClose={close} size={'xl'}>
+            Book A Call
+          </Button>
+          <Modal opened={opened} onClose={close} size={'xl'}>
             <CalendarPopup />
-            </Modal>
+          </Modal>
         </div>
         <Image
-          src="https://cdn.prod.website-files.com/602d921508c6c26dc5cebf3f/61d300b1e9f3319ca31a51fc_ProSite%20-%20Hero%20Home-p-1080.png"
+          width={1080}
+          height={1080}
+          src="/images/replacethis.png"
+          alt="cta image"
           className={classes.image}
         />
       </Container>

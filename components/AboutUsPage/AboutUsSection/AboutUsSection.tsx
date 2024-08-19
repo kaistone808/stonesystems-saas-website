@@ -4,15 +4,14 @@ import {
   Container,
   Text,
   SimpleGrid,
-  Image,
   ActionIcon,
   Group,
   rem,
   useMantineTheme,
 } from '@mantine/core';
-
+import Image from 'next/image';
 import classes from './AboutUsSection.module.css';
-import { IconBrandFacebook, IconBrandYoutube, IconBrandInstagram, IconBrandGoogle } from '@tabler/icons-react';
+import { IconBrandYoutube, IconBrandInstagram, IconBrandGoogle } from '@tabler/icons-react';
 import { useMediaQuery } from '@mantine/hooks';
 
 export function AboutUsSection() {
@@ -79,7 +78,7 @@ export function AboutUsSection() {
               </ActionIcon>
             </Group>
           </div>
-          <Image src="/images/people/kai.jpeg" alt="About Us" className={classes.image} />
+          <Image width={500} height={570} src="/images/people/kai.jpeg" alt="About Us" className={classes.image} />
         </SimpleGrid>
       </Container>
     </div>

@@ -1,7 +1,8 @@
-import { Text, Title, Button, Image, Container, Modal } from '@mantine/core';
+import { Text, Title, Button, Container, Modal } from '@mantine/core';
 import classes from './CTA.module.css';
 import { useDisclosure } from '@mantine/hooks';
 import { CalendarPopup } from '../Popups/CalendarPopup/CalendarPopup';
+import Image from 'next/image';
 
 export function CTANoWave() {
   const [opened, { close, open }] = useDisclosure(false);
@@ -22,7 +23,10 @@ export function CTANoWave() {
             </Modal>
         </div>
         <Image
-          src="https://cdn.prod.website-files.com/602d921508c6c26dc5cebf3f/61d300b1e9f3319ca31a51fc_ProSite%20-%20Hero%20Home-p-1080.png"
+          width={1080}
+          height={1080}
+          src="/images/replacethis.png"
+          alt='cta image'
           className={classes.image}
         />
       </Container>

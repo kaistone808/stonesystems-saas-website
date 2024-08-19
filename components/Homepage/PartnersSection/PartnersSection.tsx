@@ -3,9 +3,10 @@
 import { Carousel } from '@mantine/carousel';
 import Autoplay from 'embla-carousel-autoplay';
 import { useMediaQuery } from '@mantine/hooks';
-import { Title, rem, Container, Image, useMantineTheme } from '@mantine/core';
+import { Title, Container, useMantineTheme } from '@mantine/core';
 import classes from './PartnersSection.module.css';
 import { useRef } from 'react';
+import Image from 'next/image';
 
 const data = [
   {
@@ -61,7 +62,7 @@ export function PartnersSection() {
   const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
   const slides = data.map((item) => (
     <Carousel.Slide className={classes.slide}>
-      <Image className={classes.image} src={item.imageSrc} alt="Panda" />
+      <Image width={170} height={100} className={classes.image} src={item.imageSrc} alt="Panda" />
     </Carousel.Slide>
   ));
 

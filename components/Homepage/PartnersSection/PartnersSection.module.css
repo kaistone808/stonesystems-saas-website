@@ -47,3 +47,7 @@
   align-content: center;
   filter: brightness(0) invert(1);
 }
+
+.image{
+  height: auto;
+}

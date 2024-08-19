@@ -1,8 +1,9 @@
 'use client';
 
-import { Container, Flex, Image, SimpleGrid, Text, Title, useMantineTheme } from '@mantine/core';
+import { Container, Flex, SimpleGrid, Text, Title, useMantineTheme } from '@mantine/core';
 import classes from './ValuesSection.module.css';
 import { useMediaQuery } from '@mantine/hooks';
+import Image from 'next/image';
 
 export function ValuesSection() {
   const theme = useMantineTheme();
@@ -18,7 +19,13 @@ export function ValuesSection() {
           <SimpleGrid cols={mobile ? 1 : 2}>
             <div>
               <Flex className={classes.aboutValue}>
-                <Image w={80} h={80} mt={'md'} mr={'lg'} src="/images/one.webp" alt="Contractor" />
+                <Image
+                  className={classes.numberIcon}
+                  width={80}
+                  height={80}
+                  src="/images/one.webp"
+                  alt="1"
+                />
                 <div>
                   <Title order={3} className={classes.aboutTitle}>
                     F*cks Given
@@ -30,12 +37,11 @@ export function ValuesSection() {
               </Flex>
               <Flex className={classes.aboutValue}>
                 <Image
-                  w={80}
-                  h={55}
-                  mt={'xl'}
-                  mr={'lg'}
+                  className={classes.numberIcon}
+                  width={80}
+                  height={55}
                   src="/images/icon2.webp"
-                  alt="Contractor"
+                  alt="2"
                 />
                 <div>
                   <Title order={3} className={classes.aboutTitle}>
@@ -49,12 +55,11 @@ export function ValuesSection() {
               </Flex>
               <Flex className={classes.aboutValue}>
                 <Image
-                  w={80}
-                  h={55}
-                  mt={'xl'}
-                  mr={'lg'}
+                  className={classes.numberIcon}
+                  width={80}
+                  height={55}
                   src="/images/icon3.webp"
-                  alt="Contractor"
+                  alt="3"
                 />
                 <div>
                   <Title order={3} className={classes.aboutTitle}>
@@ -67,12 +72,11 @@ export function ValuesSection() {
               </Flex>
               <Flex className={classes.aboutValue}>
                 <Image
-                  w={80}
-                  h={55}
-                  mt={'xl'}
-                  mr={'lg'}
+                  className={classes.numberIcon}
+                  width={80}
+                  height={55}
                   src="/images/icon4.webp"
-                  alt="Contractor"
+                  alt="4"
                 />
                 <div>
                   <Title order={3} className={classes.aboutTitle}>
@@ -86,12 +90,11 @@ export function ValuesSection() {
               </Flex>
               <Flex className={classes.aboutValue}>
                 <Image
-                  w={80}
-                  h={55}
-                  mt={'xl'}
-                  mr={'lg'}
+                  className={classes.numberIcon}
+                  width={80}
+                  height={55}
                   src="/images/icon5.webp"
-                  alt="Contractor"
+                  alt="5"
                 />
                 <div>
                   <Title order={3} className={classes.aboutTitle}>
@@ -105,8 +108,10 @@ export function ValuesSection() {
             </div>
             <Image
               className={classes.stoneMan}
+              width={505}
+              height={907}
               src="/images/new.png"
-              alt="Contractor"
+              alt="stone systems guy"
             />
           </SimpleGrid>
         </Container>

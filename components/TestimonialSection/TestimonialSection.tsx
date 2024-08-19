@@ -64,7 +64,7 @@ const data = [
   },
   {
     testimonial:
-      '"Getting 5 star reviews has always given me anxiety, Kai and his team have taken all that away and I have seen a significant increase in business since I started working with them. I would recommend them to anyone looking to grow their business!"',
+      '"Getting 5 star reviews has always given me anxiety, Kai and his team have taken all that away and I have seen a significant increase in business since I started working with them. I would recommend them to anyone!"',
     videoSrc: '/videos/Wendy.mov',
     personName: 'Wendy',
   },
@@ -76,7 +76,7 @@ const data = [
   },
   {
     testimonial:
-      '"I would highly recommend going with Stone Systems, my business has ramped up, literally overnight and their prices are very affordable. Feel free to reach out to me personally with any questions about them, thank you!"',
+      '"I would highly recommend going with Stone Systems, my business has ramped up, literally overnight and their prices are very affordable. Feel free to reach out to me personally with any questions about them!"',
     videoSrc: '/videos/Frank.mp4',
     personName: 'Frank',
   },
@@ -148,7 +148,10 @@ export function TestimonialSection() {
     <>
       <div className={classes.outer}>
         <Container size="lg">
-          <Title className={classes.mainTitle}>Don't just take our word for it <br/>See what our clients have to say...</Title>
+          <Title className={classes.mainTitle}>
+            Don't just take our word for it <br />
+            See what our clients have to say...
+          </Title>
         </Container>
         <Container size="responsive">
           <Carousel

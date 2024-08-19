@@ -53,7 +53,7 @@
 
 .video {
   padding: 15px 20px;
-  iframe {
+  video {
     border-radius: 10px;
   }
   @media (max-width: $mantine-breakpoint-xs) {

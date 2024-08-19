@@ -2,19 +2,11 @@
 
 import { Carousel } from '@mantine/carousel';
 import { useMediaQuery } from '@mantine/hooks';
-import {
-  Paper,
-  Text,
-  Title,
-  useMantineTheme,
-  rem,
-  Container,
-  AspectRatio,
-  Button,
-} from '@mantine/core';
+import { Paper, Title, useMantineTheme, Container, AspectRatio, Button } from '@mantine/core';
 import classes from './WhoWeServeSection.module.css';
 import Autoplay from 'embla-carousel-autoplay';
 import { useRef } from 'react';
+import Image from 'next/image';
 
 interface CardProps {
   tradeName: string;
@@ -28,7 +20,7 @@ function Card({ tradeName, imageSrc, tradeName2, imageSrc2 }: CardProps) {
     <>
       <Paper mb={'var(--space-40'} className={classes.card}>
         <AspectRatio ratio={16 / 9} className={classes.video}>
-          <img src={imageSrc} alt="Panda" />
+          <Image width={245} height={200} src={imageSrc} alt={tradeName} />
         </AspectRatio>
         <Title pt={'sm'} mx={'auto'} order={3} className={classes.tradeName}>
           {tradeName}
@@ -37,7 +29,7 @@ function Card({ tradeName, imageSrc, tradeName2, imageSrc2 }: CardProps) {
 
       <Paper mb={'var(--space-40'} className={classes.card}>
         <AspectRatio ratio={16 / 9} className={classes.video}>
-          <img src={imageSrc2} alt="Panda" />
+          <Image width={245} height={200} src={imageSrc2} alt={tradeName} />
         </AspectRatio>
         <Title pt={'sm'} mx={'auto'} order={3} className={classes.tradeName}>
           {tradeName2}
@@ -116,7 +108,6 @@ const data = [
   },
 ];
 
-
 export function WhoWeServeSection() {
   const theme = useMantineTheme();
   const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
@@ -151,7 +142,14 @@ export function WhoWeServeSection() {
                 {slides}
               </Carousel>
             </Container>
-            <Button component='a' href='/trades-we-serve' mx={'auto'} bg="var(--yellow)" size={mobile ? 'lg' : "xl"} className={classes.button}>
+            <Button
+              component="a"
+              href="/trades-we-serve"
+              mx={'auto'}
+              bg="var(--yellow)"
+              size={mobile ? 'lg' : 'xl'}
+              className={classes.button}
+            >
               See All Trades We Work With
             </Button>
           </div>

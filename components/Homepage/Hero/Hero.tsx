@@ -1,9 +1,10 @@
 'use client';
 
-import { Image, Container, Title, Button, Text, Flex, Avatar, Divider, Modal } from '@mantine/core';
+import { Container, Title, Button, Text, Flex, Avatar, Divider, Modal } from '@mantine/core';
 import classes from './Hero.module.css';
 import { CalendarPopup } from '@/components/Popups/CalendarPopup/CalendarPopup';
 import { useDisclosure } from '@mantine/hooks';
+import Image from 'next/image';
 
 export function Hero() {
   const [opened, { close, open }] = useDisclosure(false);
@@ -27,10 +28,34 @@ export function Hero() {
               </Text>
               <div className={classes.buttonDiv}>
                 <Flex>
-                  <Avatar className={classes.avatar} src="/images/people/michael.jpg" />
-                  <Avatar className={classes.avatar} src="/images/people/kai.jpeg" />
-                  <Avatar className={classes.avatar} src="/images/people/kevin.jpeg" />
-                  <Avatar className={classes.avatar} src="/images/people/astrid.jpeg" />
+                  <Image
+                    width={38}
+                    height={38}
+                    className={classes.avatar}
+                    alt="picture of michael"
+                    src="/images/people/michaelsmall.jpg"
+                  />
+                  <Image
+                    width={38}
+                    height={38}
+                    alt="picture of kai"
+                    className={classes.avatar}
+                    src="/images/people/kaismall.jpeg"
+                  />
+                  <Image
+                    width={38}
+                    height={38}
+                    className={classes.avatar}
+                    alt="picture of kevin"
+                    src="/images/people/kevinsmall.jpeg"
+                  />
+                  <Image
+                    width={38}
+                    height={38}
+                    className={classes.avatar}
+                    alt="picture of astrid"
+                    src="/images/people/astridsmall.jpeg"
+                  />
                 </Flex>
                 <Button size="xl" onClick={open} className={classes.control}>
                   Book A Call
@@ -42,15 +67,54 @@ export function Hero() {
             </Flex>
             <Flex className={classes.creditDiv}>
               <div className={classes.credit}>
-                <Image src="/images/google.webp" className={classes.creditImage} />
+                <Image
+                  width={44}
+                  height={44}
+                  alt="google logo"
+                  src="/images/google.webp"
+                  className={classes.creditImage}
+                />
                 <div className={classes.creditContent}>
                   <Text className={classes.creditTitle}>Google</Text>
                   <div className={classes.stars}>
-                    <Image src="/images/star.png" className={classes.star} />
-                    <Image src="/images/star.png" className={classes.star} />
-                    <Image src="/images/star.png" className={classes.star} />
-                    <Image src="/images/star.png" className={classes.star} />
-                    <Image src="/images/star.png" className={classes.star} />
+                    <Image
+                      width={22}
+                      height={22}
+                      alt="star"
+                      src="/images/star.png"
+                      className={classes.star}
+                    />
+                    <Image
+                      width={22}
+                      height={22}
+                      alt="star"
+                      src="/images/star.png"
+                      className={classes.star}
+                    />
+
+                    <Image
+                      width={22}
+                      height={22}
+                      alt="star"
+                      src="/images/star.png"
+                      className={classes.star}
+                    />
+
+                    <Image
+                      width={22}
+                      height={22}
+                      alt="star"
+                      src="/images/star.png"
+                      className={classes.star}
+                    />
+
+                    <Image
+                      width={22}
+                      height={22}
+                      alt="star"
+                      src="/images/star.png"
+                      className={classes.star}
+                    />
                   </div>
                 </div>
               </div>
@@ -61,15 +125,55 @@ export function Hero() {
                 orientation="vertical"
               />
               <div className={classes.credit}>
-                <Image src="/images/fb.png" className={classes.creditImage} />
+                <Image
+                  width={44}
+                  height={44}
+                  alt="fb logo"
+                  src="/images/fb.png"
+                  className={classes.creditImage}
+                />
                 <div className={classes.creditContent}>
                   <Text className={classes.creditTitle}>Facebook</Text>
                   <div className={classes.stars}>
-                    <Image src="/images/star.png" className={classes.star} />
-                    <Image src="/images/star.png" className={classes.star} />
-                    <Image src="/images/star.png" className={classes.star} />
-                    <Image src="/images/star.png" className={classes.star} />
-                    <Image src="/images/star.png" className={classes.star} />
+                    <Image
+                      width={22}
+                      height={22}
+                      alt="star"
+                      src="/images/star.png"
+                      className={classes.star}
+                    />
+
+                    <Image
+                      width={22}
+                      height={22}
+                      alt="star"
+                      src="/images/star.png"
+                      className={classes.star}
+                    />
+
+                    <Image
+                      width={22}
+                      height={22}
+                      alt="star"
+                      src="/images/star.png"
+                      className={classes.star}
+                    />
+
+                    <Image
+                      width={22}
+                      height={22}
+                      alt="star"
+                      src="/images/star.png"
+                      className={classes.star}
+                    />
+
+                    <Image
+                      width={22}
+                      height={22}
+                      alt="star"
+                      src="/images/star.png"
+                      className={classes.star}
+                    />
                   </div>
                 </div>
               </div>
@@ -80,21 +184,61 @@ export function Hero() {
                 orientation="vertical"
               />
               <div className={classes.credit}>
-                <Image src="/images/trustpilot.png" className={classes.creditImage} />
+                <Image
+                  width={44}
+                  height={44}
+                  alt="ig logo"
+                  src="/images/trustpilot.png"
+                  className={classes.creditImage}
+                />
                 <div className={classes.creditContent}>
                   <Text className={classes.creditTitle}>Trustpilot</Text>
                   <div className={classes.stars}>
-                    <Image src="/images/star.png" className={classes.star} />
-                    <Image src="/images/star.png" className={classes.star} />
-                    <Image src="/images/star.png" className={classes.star} />
-                    <Image src="/images/star.png" className={classes.star} />
-                    <Image src="/images/star.png" className={classes.star} />
+                    <Image
+                      width={22}
+                      height={22}
+                      alt="star"
+                      src="/images/star.png"
+                      className={classes.star}
+                    />
+
+                    <Image
+                      width={22}
+                      height={22}
+                      alt="star"
+                      src="/images/star.png"
+                      className={classes.star}
+                    />
+
+                    <Image
+                      width={22}
+                      height={22}
+                      alt="star"
+                      src="/images/star.png"
+                      className={classes.star}
+                    />
+
+                    <Image
+                      width={22}
+                      height={22}
+                      alt="star"
+                      src="/images/star.png"
+                      className={classes.star}
+                    />
+
+                    <Image
+                      width={22}
+                      height={22}
+                      alt="star"
+                      src="/images/star.png"
+                      className={classes.star}
+                    />
                   </div>
                 </div>
               </div>
             </Flex>
           </div>
-          <Image src="/images/new.png" className={classes.image} />
+          <img src="/images/new.png" className={classes.image} />
         </div>
       </Container>
     </div>

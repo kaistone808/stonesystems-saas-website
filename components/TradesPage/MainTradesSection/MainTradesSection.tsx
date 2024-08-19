@@ -11,6 +11,7 @@ import {
   AspectRatio,
 } from '@mantine/core';
 import classes from './MainTradesSection.module.css';
+import Image from 'next/image';
 
 interface CardProps {
   tradeName: string;
@@ -20,9 +21,7 @@ interface CardProps {
 function Card({ tradeName, imageSrc }: CardProps) {
   return (
     <Paper radius="md" className={classes.card}>
-      <AspectRatio ratio={16 / 9} className={classes.video}>
-        <img src={imageSrc} alt="Panda" />
-      </AspectRatio>
+      <Image width={329} height={185} src={imageSrc} alt={tradeName} className={classes.video} />
       <Title order={3} className={classes.tradeName}>
         {tradeName}
       </Title>
@@ -44,15 +43,15 @@ const data = [
     imageSrc: '/images/trades/pressure.png',
   },
   {
-    tradeName: 'Pest Control',
-    imageSrc: '/images/trades/pest.png',
+    tradeName: 'Dog Groomers',
+    imageSrc: '/images/trades/doggroomer.png',
   },
   {
     tradeName: 'Moving Companies',
     imageSrc: '/images/trades/moving.png',
   },
   {
-    tradeName: 'Flooring & Carpet Cleaning',
+    tradeName: 'Floor & Carpet Cleaning',
     imageSrc: '/images/trades/carpet.png',
   },
   {
@@ -108,8 +107,8 @@ const data = [
     imageSrc: '/images/trades/generalcontractor.png',
   },
   {
-    tradeName: 'Dog Groomers',
-    imageSrc: '/images/trades/doggroomer.png',
+    tradeName: 'Pest Control',
+    imageSrc: '/images/trades/pest.png',
   },
   {
     tradeName: 'Tree Service',

@@ -46,13 +46,13 @@ const data = [
     personName: 'Armando',
   },
   {
-    testimonial: '"After going through 2-3 other people i finally found someone that told me the truth. Really easy to work with and very respectable. I would recommend them to anyone!"',
+    testimonial:
+      '"After going through 2-3 other people i finally found someone that told me the truth. Really easy to work with and very respectable. I would recommend them to anyone!"',
     videoSrc: '/videos/James.mov',
     personName: 'James',
   },
   {
-    testimonial:
-      `"Ever since he implemented the new website and landing pages, it's been nothing but great and our conversion has gone way up. We started getting calls almost immediately."`,
+    testimonial: `"Ever since he implemented the new website and landing pages, it's been nothing but great and our conversion has gone way up. We started getting calls almost immediately."`,
     videoSrc: '/videos/Manny.mov',
     personName: 'Manny',
   },
@@ -63,7 +63,7 @@ const data = [
   },
   {
     testimonial:
-      '"Getting 5 star reviews has always given me anxiety, Kai and his team have taken all that away and I have seen a significant increase in business since I started working with them. I would recommend them to anyone looking to grow their business!"',
+      '"Getting 5 star reviews has always given me anxiety, Kai and his team have taken all that away and I have seen a significant increase in business since I started working with them. I would recommend them to anyone!"',
     videoSrc: '/videos/Wendy.mov',
     personName: 'Wendy',
   },
@@ -75,7 +75,7 @@ const data = [
   },
   {
     testimonial:
-      '"I would highly recommend going with Stone Systems, my business has ramped up, literally overnight and their prices are very affordable. Feel free to reach out to me personally with any questions about them, thank you!"',
+      '"I would highly recommend going with Stone Systems, my business has ramped up, literally overnight and their prices are very affordable. Feel free to reach out to me personally with any questions about them!"',
     videoSrc: '/videos/Frank.mp4',
     personName: 'Frank',
   },
@@ -107,26 +107,22 @@ const data = [
     personName: 'Adam',
   },
   {
-    testimonial:
-      `"They made me a brand new website, super professional and it's been absolutely amazing. I cannot say enough good things about theme. It turned those 100s of viewers into 100s of clients!"`,
+    testimonial: `"They made me a brand new website, super professional and it's been absolutely amazing. I cannot say enough good things about theme. It turned those 100s of viewers into 100s of clients!"`,
     videoSrc: '/videos/Mason.mp4',
     personName: 'Mason',
   },
   {
-    testimonial:
-      `"First i thought it was a scam, but then it turns out they're just a really good company at a really good price. I would recommend them to anyone!"`,
+    testimonial: `"First i thought it was a scam, but then it turns out they're just a really good company at a really good price. I would recommend them to anyone!"`,
     videoSrc: '/videos/Matt.mov',
     personName: 'Matt',
   },
   {
-    testimonial:
-      `"They've made it so easy with all their automations and the awesome website. I can't thank them enough and you should all definitely check them out"`,
+    testimonial: `"They've made it so easy with all their automations and the awesome website. I can't thank them enough and you should all definitely check them out"`,
     videoSrc: '/videos/RyanSmith.mov',
     personName: 'Ryan',
   },
   {
-    testimonial:
-      `"He really got everything going well. I'm getting organic leads now that don't cost me any money. I would recommend them to anyone!"`,
+    testimonial: `"He really got everything going well. I'm getting organic leads now that don't cost me any money. I would recommend them to anyone!"`,
     videoSrc: '/videos/William.mp4',
     personName: 'Scott',
   },
