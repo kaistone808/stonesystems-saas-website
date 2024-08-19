@@ -23,7 +23,7 @@
   text-align: center;
   padding: calc(var(--space-40) * 2) 0 var(--space-40) 0;
 
-  @media (max-width: $mantine-breakpoint-xs) {
+  @media (max-width: 30em) {
     font-size: rem(28px);
     padding: var(--space-40) 0 calc(var(--space-40) / 2) 0;
   }

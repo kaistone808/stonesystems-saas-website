@@ -14,7 +14,7 @@
   text-align: center;
   padding: calc(var(--space-40) * 2) 0;
 
-  @media (max-width: $mantine-breakpoint-xs) {
+  @media (max-width: 30em) {
     font-size: rem(28px);
     padding: var(--space-40) 0;
   }
@@ -29,7 +29,7 @@
 .itemTitle {
   font-size: 26px;
   color: var(--blue);
-  @media (max-width: $mantine-breakpoint-xs) {
+  @media (max-width: 30em) {
     font-size: 18px;
   }
   > * {

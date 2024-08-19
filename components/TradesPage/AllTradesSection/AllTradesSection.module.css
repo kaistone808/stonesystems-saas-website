@@ -37,9 +37,9 @@
   line-height: 1.2;
   font-weight: 900;
   text-align: center;
-  padding: var(--space-40) 0 ;
+  padding: var(--space-40) 0;
 
-  @media (max-width: $mantine-breakpoint-xs) {
+  @media (max-width: 30em) {
     font-size: rem(28px);
   }
 }

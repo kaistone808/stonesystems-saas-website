@@ -6,7 +6,7 @@
   background-size: 100%;
   padding-bottom: 148px;
   margin-bottom: -1px !important;
-  @media (max-width: $mantine-breakpoint-xs) {
+  @media (max-width: 30em) {
     padding-bottom: 75px;
   }
 }
@@ -27,7 +27,7 @@
   text-align: center;
   padding: calc(var(--space-40) * 2) 0;
 
-  @media (max-width: $mantine-breakpoint-xs) {
+  @media (max-width: 30em) {
     font-size: rem(28px);
     padding: var(--space-40) 0;
   }
@@ -56,14 +56,14 @@
   position: relative;
   top: -2.5rem;
   right: -11.5rem;
-  @media (max-width: $mantine-breakpoint-xs) {
+  @media (max-width: 30em) {
     display: none !important;
   }
 }
 
 .iconThing {
   z-index: 2;
-  @media (max-width: $mantine-breakpoint-xs) {
+  @media (max-width: 30em) {
     margin-bottom: 10px;
   }
 }

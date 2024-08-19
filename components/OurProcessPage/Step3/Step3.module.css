@@ -1,7 +1,7 @@
 .outer {
   background-color: var(--gray);
   padding-bottom: calc(var(--space-40) * 2);
-  @media (max-width: $mantine-breakpoint-xs) {
+  @media (max-width: 30em) {
     padding-bottom: var(--space-40);
   }
 }
@@ -18,7 +18,7 @@
   align-content: center;
   text-align: center;
 
-  @media (max-width: $mantine-breakpoint-md) {
+  @media (max-width: 62em) {
     max-width: 100%;
     margin-right: 0;
   }
@@ -30,7 +30,7 @@
   line-height: 1.2;
   font-weight: 900;
 
-  @media (max-width: $mantine-breakpoint-xs) {
+  @media (max-width: 30em) {
     font-size: rem(24px);
   }
 }
@@ -41,7 +41,7 @@
 }
 
 .control {
-  @media (max-width: $mantine-breakpoint-xs) {
+  @media (max-width: 30em) {
     flex: 1;
   }
 }
@@ -50,7 +50,7 @@
   width: rem(200px);
   height: rem(200px);
   margin: auto;
-  @media (max-width: $mantine-breakpoint-xs) {
+  @media (max-width: 30em) {
     width: rem(150px);
     height: rem(150px);
     margin: auto;
@@ -64,6 +64,6 @@
   padding: rem(4px) rem(12px);
 }
 
-.image{
+.image {
   z-index: 2;
 }

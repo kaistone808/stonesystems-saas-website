@@ -25,7 +25,7 @@
   text-align: center;
   padding: calc(var(--space-40) * 2) 0 0 0;
 
-  @media (max-width: $mantine-breakpoint-xs) {
+  @media (max-width: 30em) {
     font-size: rem(28px);
     padding: var(--space-40) 0 0 0;
   }
@@ -61,7 +61,7 @@
   align-items: center;
   justify-content: center;
 
-  @media (max-width: $mantine-breakpoint-xs) {
+  @media (max-width: 30em) {
     width: fit-content;
     height: fit-content;
     margin: 0 20px;
@@ -85,7 +85,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  @media (max-width: $mantine-breakpoint-xs) {
+  @media (max-width: 30em) {
     width: fit-content;
     height: fit-content;
     margin: 0 20px;
@@ -108,7 +108,7 @@
   align-items: center;
   justify-content: center;
 
-  @media (max-width: $mantine-breakpoint-xs) {
+  @media (max-width: 30em) {
     width: fit-content;
     height: fit-content;
     margin: 0 20px;
@@ -138,7 +138,7 @@
   padding: calc(var(--space-40) / 2) 0;
   margin-bottom: calc(var(--space-40) / 2);
   border-radius: var(--border-radius-md);
-  @media (max-width: $mantine-breakpoint-xs) {
+  @media (max-width: 30em) {
     margin-top: calc(var(--space-40) / 2);
     margin-bottom: 0;
   }

@@ -7,7 +7,7 @@
   justify-content: space-between;
   padding-top: calc(var(--space-40) * 3);
   padding-bottom: calc(var(--space-40) * 3);
-  @media (max-width: $mantine-breakpoint-md) {
+  @media (max-width: 62em) {
     padding-top: var(--space-40);
     padding-bottom: var(--space-40);
   }
@@ -17,7 +17,7 @@
   max-width: 65%;
   margin-right: calc(var(--space-40) / 2);
 
-  @media (max-width: $mantine-breakpoint-md) {
+  @media (max-width: 62em) {
     max-width: 100%;
     margin-right: 0;
   }
@@ -29,14 +29,14 @@
   line-height: 1.2;
   font-weight: 900;
 
-  @media (max-width: $mantine-breakpoint-xs) {
+  @media (max-width: 30em) {
     font-size: rem(28px);
   }
 }
 
 .titleDiv {
   margin-bottom: 50px;
-  @media (max-width: $mantine-breakpoint-xs) {
+  @media (max-width: 30em) {
     margin-bottom: 15px;
   }
 }
@@ -45,7 +45,7 @@
   font-size: 1.25rem;
   font-weight: 600;
   color: var(--text-gray);
-  @media (max-width: $mantine-breakpoint-xs) {
+  @media (max-width: 30em) {
     font-size: 1.125rem;
     margin-bottom: 30px;
   }
@@ -56,7 +56,7 @@
   margin-top: 5px;
   background-color: var(--yellow);
   transition: all 0.3s;
-  @media (max-width: $mantine-breakpoint-xs) {
+  @media (max-width: 30em) {
     flex: 1;
   }
 }
@@ -70,7 +70,7 @@
   max-width: 35%;
   height: auto;
   object-fit: contain;
-  @media (max-width: $mantine-breakpoint-md) {
+  @media (max-width: 62em) {
     display: none;
   }
 }
@@ -85,7 +85,7 @@
 .credit {
   display: flex;
   align-items: end;
-  @media (max-width: $mantine-breakpoint-xs) {
+  @media (max-width: 30em) {
     margin: 10px 0;
   }
 }
@@ -114,7 +114,7 @@
 
 .creditDiv {
   margin-top: 75px;
-  @media (max-width: $mantine-breakpoint-xs) {
+  @media (max-width: 30em) {
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 30px;
@@ -123,20 +123,20 @@
 }
 
 .textDiv {
-  @media (max-width: $mantine-breakpoint-xs) {
+  @media (max-width: 30em) {
     flex-direction: column;
   }
 }
 
 .divider {
-  @media (max-width: $mantine-breakpoint-xs) {
+  @media (max-width: 30em) {
     display: none;
   }
 }
 
 .buttonDiv {
   padding-left: 4rem;
-  @media (max-width: $mantine-breakpoint-xs) {
+  @media (max-width: 30em) {
     padding-left: 0;
   }
 }

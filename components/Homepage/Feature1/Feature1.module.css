@@ -1,7 +1,7 @@
 .inner {
   display: flex;
   justify-content: space-between;
-  @media (max-width: $mantine-breakpoint-md) {
+  @media (max-width: 62em) {
     flex-direction: column;
   }
 }
@@ -9,7 +9,7 @@
 .content {
   max-width: 55%;
 
-  @media (max-width: $mantine-breakpoint-md) {
+  @media (max-width: 62em) {
     max-width: 100%;
     margin-right: 0;
   }
@@ -23,7 +23,7 @@
   text-align: center;
   padding: calc(var(--space-40) * 2) 0;
 
-  @media (max-width: $mantine-breakpoint-xs) {
+  @media (max-width: 30em) {
     font-size: rem(28px);
     padding: var(--space-40) 0;
   }
@@ -35,7 +35,7 @@
   line-height: 1.2;
   font-weight: 700;
 
-  @media (max-width: $mantine-breakpoint-xs) {
+  @media (max-width: 30em) {
     font-size: rem(26px);
   }
 }
@@ -43,7 +43,7 @@
 .description {
   font-size: 20px;
   font-style: italic;
-  @media (max-width: $mantine-breakpoint-xs) {
+  @media (max-width: 30em) {
     font-size: 18px;
   }
 }
@@ -52,7 +52,7 @@
   border-radius: var(--border-radius-sm);
   margin-top: var(--space-40);
   transition: all 0.3s;
-  @media (max-width: $mantine-breakpoint-xs) {
+  @media (max-width: 30em) {
     flex: 1;
   }
 }
@@ -66,7 +66,7 @@
   margin-right: calc(var(--mantine-spacing-xl) * 3);
   object-fit: contain;
 
-  @media (max-width: $mantine-breakpoint-md) {
+  @media (max-width: 62em) {
     margin-right: 0;
     max-width: 100%;
   }
@@ -78,7 +78,7 @@
   margin-bottom: 5px;
   color: var(--yellow);
   margin-left: 5px;
-  @media (max-width: $mantine-breakpoint-xs) {
+  @media (max-width: 30em) {
     font-size: 16px;
   }
 }
@@ -87,7 +87,7 @@
   font-size: 16px;
   line-height: 1.625;
   margin-bottom: 10px;
-  @media (max-width: $mantine-breakpoint-xs) {
+  @media (max-width: 30em) {
     font-size: 15px;
   }
 }
