@@ -2,9 +2,10 @@
 
 import { Carousel } from '@mantine/carousel';
 import Autoplay from 'embla-carousel-autoplay';
-import { Paper, Text, rem, Container, AspectRatio, Image, Title } from '@mantine/core';
+import { Paper, Text, Container, Image, Title } from '@mantine/core';
 import classes from './TestimonialSection.module.css';
 import { useRef } from 'react';
+import LazyLoadVideo from '../LazyLoadVideo/LazyLoadVideo';
 
 interface CardProps {
   testimonial: string;
@@ -15,10 +16,12 @@ interface CardProps {
 function Card({ personName, testimonial, videoSrc }: CardProps) {
   return (
     <Paper radius="md" className={classes.testimonialCard}>
-      <video width="auto" height="100%" controls preload="metadata">
-        <source src={videoSrc} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+      <LazyLoadVideo
+        src={videoSrc}
+        type="video/mp4"
+        width="100%"
+        height="auto"
+      />
 
       <div>
         <div className={classes.stars}>

@@ -13,6 +13,7 @@ import {
 } from '@mantine/core';
 import classes from './IntroSection.module.css';
 import { useMediaQuery } from '@mantine/hooks';
+import LazyLoadVideo from '@/components/LazyLoadVideo/LazyLoadVideo';
 
 interface FeatureProps {
   statistics: [{ stat: string; description: string }];
@@ -61,10 +62,7 @@ export function IntroSection({ statistics, benefits, title, title2, videoSrc }: 
                 <Title order={2} className={classes.videoTitle}>
                   See a 30 sec demo below
                 </Title>
-                <video width="100%" height="100%" controls preload="metadata">
-                  <source src={videoSrc} type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
+                <LazyLoadVideo src={videoSrc} type="video/mp4" width="100%" height="auto" />
               </Paper>
             </Grid.Col>
           </Grid>

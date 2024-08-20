@@ -182,7 +182,7 @@ export function Header() {
         <Group justify="space-between" w="83em" h="100%">
           <Group h="100%" gap={0} visibleFrom="sm">
             <a href="/" className={classes.link}>
-              <Image src={'/images/newlogo.png'} alt="logo" width={200} height={81} />
+              <Image loading='eager' src={'/images/newlogo.png'} alt="logo" width={200} height={81} />
             </a>
             <HoverCard width={1000} position="bottom" radius="md" shadow="md" withinPortal>
               <HoverCard.Target>
@@ -269,7 +269,7 @@ export function Header() {
               <CalendarPopup />
             </Modal>
           </Group>
-          <Image className={classes.logoImage} src={'/images/newlogo.png'} alt="logo" width={200} height={81} />
+          <Image loading='eager' className={classes.logoImage} src={'/images/newlogo.png'} alt="logo" width={200} height={81} />
           <Burger opened={drawerOpened} onClick={toggleDrawer} hiddenFrom="sm" />
         </Group>
       </header>
@@ -279,7 +279,7 @@ export function Header() {
         onClose={closeDrawer}
         size="100%"
         padding="md"
-        title={<Image src={'/images/newlogo.png'} alt="logo" width={200} height={81} />}
+        title={<Image loading='eager' src={'/images/newlogo.png'} alt="logo" width={200} height={81} />}
         closeButtonProps={{
           icon: <IconX size={100} stroke={1.5} />,
         }}

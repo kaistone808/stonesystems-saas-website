@@ -5,8 +5,7 @@ import classes from './Hero.module.css';
 import { useDisclosure } from '@mantine/hooks';
 import Image from 'next/image';
 import { CalendarPopup } from '@/components/Popups/CalendarPopup/CalendarPopup';
-
-
+import React from 'react';
 
 export function Hero() {
   const [opened, { close, open }] = useDisclosure(false);
@@ -31,6 +30,7 @@ export function Hero() {
               <div className={classes.buttonDiv}>
                 <Flex>
                   <Image
+                    loading="eager"
                     width={38}
                     height={38}
                     className={classes.avatar}
@@ -38,13 +38,15 @@ export function Hero() {
                     src="/images/people/michaelsmall.jpg"
                   />
                   <Image
+                    loading="eager"
                     width={38}
                     height={38}
-                    alt="picture of kai"
                     className={classes.avatar}
+                    alt="picture of kai"
                     src="/images/people/kaismall.jpeg"
                   />
                   <Image
+                    loading="eager"
                     width={38}
                     height={38}
                     className={classes.avatar}
@@ -52,6 +54,7 @@ export function Hero() {
                     src="/images/people/kevinsmall.jpeg"
                   />
                   <Image
+                    loading="eager"
                     width={38}
                     height={38}
                     className={classes.avatar}
@@ -62,185 +65,58 @@ export function Hero() {
                 <Button size="xl" onClick={open} className={classes.control}>
                   Book A Call
                 </Button>
-                <Modal opened={opened} onClose={close} size={'xl'}>
+                <Modal opened={opened} onClose={close} size="xl">
                   <CalendarPopup />
                 </Modal>
               </div>
             </Flex>
             <Flex className={classes.creditDiv}>
-              <div className={classes.credit}>
-                <Image
-                  width={44}
-                  height={44}
-                  alt="google logo"
-                  src="/images/google.webp"
-                  className={classes.creditImage}
-                />
-                <div className={classes.creditContent}>
-                  <Text className={classes.creditTitle}>Google</Text>
-                  <div className={classes.stars}>
+              {['google.webp', 'fb.png', 'trustpilot.png'].map((logo, index) => (
+                <React.Fragment key={logo}>
+                  <div className={classes.credit}>
                     <Image
-                      width={22}
-                      height={22}
-                      alt="star"
-                      src="/images/star.png"
-                      className={classes.star}
+                      loading="eager"
+                      width={44}
+                      height={44}
+                      alt={`${logo.split('.')[0]} logo`}
+                      src={`/images/${logo}`}
+                      className={classes.creditImage}
                     />
-                    <Image
-                      width={22}
-                      height={22}
-                      alt="star"
-                      src="/images/star.png"
-                      className={classes.star}
-                    />
-
-                    <Image
-                      width={22}
-                      height={22}
-                      alt="star"
-                      src="/images/star.png"
-                      className={classes.star}
-                    />
-
-                    <Image
-                      width={22}
-                      height={22}
-                      alt="star"
-                      src="/images/star.png"
-                      className={classes.star}
-                    />
-
-                    <Image
-                      width={22}
-                      height={22}
-                      alt="star"
-                      src="/images/star.png"
-                      className={classes.star}
-                    />
+                    <div>
+                      <Text className={classes.creditTitle}>
+                        {logo.split('.')[0].charAt(0).toUpperCase() + logo.split('.')[0].slice(1)}
+                      </Text>
+                      <div className={classes.stars}>
+                        {Array(5)
+                          .fill(0)
+                          .map((_, starIndex) => (
+                            <Image
+                              loading="eager"
+                              key={starIndex}
+                              width={22}
+                              height={22}
+                              alt="star"
+                              src="/images/star.png"
+                              className={classes.star}
+                            />
+                          ))}
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <Divider
-                className={classes.divider}
-                mx={20}
-                color="var(--border-color)"
-                orientation="vertical"
-              />
-              <div className={classes.credit}>
-                <Image
-                  width={44}
-                  height={44}
-                  alt="fb logo"
-                  src="/images/fb.png"
-                  className={classes.creditImage}
-                />
-                <div className={classes.creditContent}>
-                  <Text className={classes.creditTitle}>Facebook</Text>
-                  <div className={classes.stars}>
-                    <Image
-                      width={22}
-                      height={22}
-                      alt="star"
-                      src="/images/star.png"
-                      className={classes.star}
+                  {index < 2 && (
+                    <Divider
+                      className={classes.divider}
+                      mx={20}
+                      color="var(--border-color)"
+                      orientation="vertical"
                     />
-
-                    <Image
-                      width={22}
-                      height={22}
-                      alt="star"
-                      src="/images/star.png"
-                      className={classes.star}
-                    />
-
-                    <Image
-                      width={22}
-                      height={22}
-                      alt="star"
-                      src="/images/star.png"
-                      className={classes.star}
-                    />
-
-                    <Image
-                      width={22}
-                      height={22}
-                      alt="star"
-                      src="/images/star.png"
-                      className={classes.star}
-                    />
-
-                    <Image
-                      width={22}
-                      height={22}
-                      alt="star"
-                      src="/images/star.png"
-                      className={classes.star}
-                    />
-                  </div>
-                </div>
-              </div>
-              <Divider
-                className={classes.divider}
-                mx={20}
-                color="var(--border-color)"
-                orientation="vertical"
-              />
-              <div className={classes.credit}>
-                <Image
-                  width={44}
-                  height={44}
-                  alt="ig logo"
-                  src="/images/trustpilot.png"
-                  className={classes.creditImage}
-                />
-                <div className={classes.creditContent}>
-                  <Text className={classes.creditTitle}>Trustpilot</Text>
-                  <div className={classes.stars}>
-                    <Image
-                      width={22}
-                      height={22}
-                      alt="star"
-                      src="/images/star.png"
-                      className={classes.star}
-                    />
-
-                    <Image
-                      width={22}
-                      height={22}
-                      alt="star"
-                      src="/images/star.png"
-                      className={classes.star}
-                    />
-
-                    <Image
-                      width={22}
-                      height={22}
-                      alt="star"
-                      src="/images/star.png"
-                      className={classes.star}
-                    />
-
-                    <Image
-                      width={22}
-                      height={22}
-                      alt="star"
-                      src="/images/star.png"
-                      className={classes.star}
-                    />
-
-                    <Image
-                      width={22}
-                      height={22}
-                      alt="star"
-                      src="/images/star.png"
-                      className={classes.star}
-                    />
-                  </div>
-                </div>
-              </div>
+                  )}
+                </React.Fragment>
+              ))}
             </Flex>
           </div>
           <Image
+            loading="eager"
             width={500}
             height={900}
             alt="stone systems man"

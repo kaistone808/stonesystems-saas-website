@@ -11,6 +11,7 @@ import {
   Image,
 } from '@mantine/core';
 import classes from './TestimonialSection.module.css';
+import LazyLoadVideo from '@/components/LazyLoadVideo/LazyLoadVideo';
 
 interface CardProps {
   testimonial: string;
@@ -21,10 +22,12 @@ interface CardProps {
 function Card({ personName, testimonial, videoSrc }: CardProps) {
   return (
     <Paper className={classes.video} radius="md">
-        <video width="auto" height="100%" controls preload="metadata">
-          <source src={videoSrc} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+      <LazyLoadVideo
+        src={videoSrc}
+        type="video/mp4"
+        width="100%"
+        height="auto"
+      />
       <div>
         <div className={classes.stars}>
           <Image src="/images/star.png" className={classes.star} />
