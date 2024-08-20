@@ -38,7 +38,7 @@ export function Feature5() {
     <div className={classes.outer}>
       <Container size="lg">
         <div className={classes.inner}>
-          <Image src="/images/phone-right.png" className={classes.image} />
+          <Image width={500} height={800} alt='website animation' src="/images/phone-right.png" className={classes.image} />
 
           <div className={classes.content}>
             <Title className={classes.title}>Local SEO</Title>

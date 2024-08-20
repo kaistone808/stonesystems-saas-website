@@ -44,7 +44,7 @@ export function Feature3() {
   return (
     <Container size="lg">
       <div className={classes.inner}>
-        <Image src="/images/phone-right.png" className={classes.image} />
+        <Image width={500} height={800} alt='website animation' src="/images/phone-right.png" className={classes.image} />
 
         <div className={classes.content}>
           <Title className={classes.title}>Missed Call Text Back</Title>

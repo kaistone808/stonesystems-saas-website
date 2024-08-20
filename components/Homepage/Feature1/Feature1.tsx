@@ -1,10 +1,11 @@
 'use client';
 
-import { Image, Container, Title, Button, Text, Flex, Modal } from '@mantine/core';
+import { Container, Title, Button, Text, Flex, Modal } from '@mantine/core';
 import { IconRosetteDiscountCheckFilled } from '@tabler/icons-react';
 import classes from './Feature1.module.css';
 import { VideoPopup } from '@/components/Popups/VideoPopup/VideoPopup';
 import { useDisclosure } from '@mantine/hooks';
+import Image from 'next/image';
 
 const features = [
   {
@@ -47,7 +48,7 @@ export function Feature1() {
         Simple systems that actually work <br /> No degrees required, just a hard hat
       </Title>
       <div className={classes.inner}>
-        <Image src="/images/phone-right.png" className={classes.image} />
+        <Image width={500} height={800} alt='website animation' src="/images/phone-right.png" className={classes.image} />
 
         <div className={classes.content}>
           <Title className={classes.title}>Functional Website</Title>

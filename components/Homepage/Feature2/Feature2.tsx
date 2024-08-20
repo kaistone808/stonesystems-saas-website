@@ -70,7 +70,7 @@ export function Feature2() {
             <VideoPopup />
           </Modal>
         </div>
-        <Image src="/images/phone-left.png" className={classes.image} />
+        <Image width={500} height={800} alt='website animation' src="/images/phone-left.png" className={classes.image} />
       </div>
     </Container>
   );

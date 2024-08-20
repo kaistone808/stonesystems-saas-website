@@ -64,6 +64,7 @@
 
 .image {
   max-width: 45%;
+  height: auto;
   margin-left: calc(var(--mantine-spacing-xl) * 3);
   object-fit: contain;
 
