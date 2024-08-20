@@ -3,16 +3,17 @@
 import {
   Title,
   Container,
-  Image,
   SimpleGrid,
   ThemeIcon,
   Text,
   Flex,
   useMantineTheme,
 } from '@mantine/core';
-import classes from './OurProcessSection.module.css';
 import { IconNumber1, IconNumber2, IconNumber3 } from '@tabler/icons-react';
 import { useMediaQuery } from '@mantine/hooks';
+import Image from 'next/image';
+import LineImage from '@/public/images/line.svg';
+import classes from './OurProcessSection.module.css';
 
 export function OurProcessSection() {
   const theme = useMantineTheme();
@@ -23,7 +24,7 @@ export function OurProcessSection() {
         <Title className={classes.mainTitle}>What working with us looks like...</Title>
         <div className={classes.card}>
           <SimpleGrid cols={mobile ? 1 : 3}>
-            <Flex direction="column" align="center" ta={'center'} px={'2rem'}>
+            <Flex direction="column" align="center" ta="center" px="2rem">
               <ThemeIcon
                 className={classes.iconThing}
                 radius="100%"
@@ -33,7 +34,7 @@ export function OurProcessSection() {
               >
                 <IconNumber1 width={40} height={40} />
               </ThemeIcon>
-              <Image src={'/images/line.svg'} className={classes.line} />
+              <Image src={LineImage} alt="line" className={classes.line} />
               <Text className={classes.stepTitle}>
                 Demo Call <br />
                 (20 mins)
@@ -44,7 +45,7 @@ export function OurProcessSection() {
                 you live client accounts & results.
               </Text>
             </Flex>
-            <Flex direction="column" align="center" ta={'center'} px={'2rem'}>
+            <Flex direction="column" align="center" ta="center" px="2rem">
               <ThemeIcon
                 className={classes.iconThing}
                 radius="100%"
@@ -54,7 +55,7 @@ export function OurProcessSection() {
               >
                 <IconNumber2 width={40} height={40} />
               </ThemeIcon>
-              <Image src={'/images/line.svg'} className={classes.line} />
+              <Image src={LineImage} alt="line" className={classes.line} />
               <Text className={classes.stepTitle}>
                 We build your system <br />
                 (7-10 days)
@@ -65,7 +66,7 @@ export function OurProcessSection() {
                 system.
               </Text>
             </Flex>
-            <Flex direction="column" align="center" ta={'center'} px={'2rem'}>
+            <Flex direction="column" align="center" ta="center" px="2rem">
               <ThemeIcon
                 mb={mobile ? 10 : '3.5rem'}
                 radius="100%"

@@ -34,11 +34,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <LayoutWrapper>{children}</LayoutWrapper>
         </MantineProvider>
       </body>
-{/*       <Script
-        src="https://widgets.leadconnectorhq.com/loader.js"
-        data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
-        data-widget-id="6683957add58569330bbe445"
-      /> */}
     </html>
   );
 }

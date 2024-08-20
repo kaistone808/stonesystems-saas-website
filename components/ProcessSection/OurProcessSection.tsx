@@ -3,20 +3,18 @@
 import {
   Title,
   Container,
-  Image,
   SimpleGrid,
   ThemeIcon,
   Text,
   Flex,
   useMantineTheme,
 } from '@mantine/core';
-import classes from './OurProcessSection.module.css';
-import {
-  IconNumber1,
-  IconNumber2,
-  IconNumber3,
-} from '@tabler/icons-react';
+import { IconNumber1, IconNumber2, IconNumber3 } from '@tabler/icons-react';
 import { useMediaQuery } from '@mantine/hooks';
+import Image from 'next/image';
+import classes from './OurProcessSection.module.css';
+
+import LineImage from '@/public/images/line.svg';
 
 export function OurProcessSection() {
   const theme = useMantineTheme();
@@ -26,8 +24,8 @@ export function OurProcessSection() {
       <Container size="lg">
         <Title className={classes.mainTitle}>What working with us looks like...</Title>
         <div className={classes.card}>
-        <SimpleGrid cols={mobile ? 1 : 3}>
-            <Flex direction="column" align="center" ta={'center'} px={'2rem'}>
+          <SimpleGrid cols={mobile ? 1 : 3}>
+            <Flex direction="column" align="center" ta="center" px="2rem">
               <ThemeIcon
                 className={classes.iconThing}
                 radius="100%"
@@ -37,7 +35,7 @@ export function OurProcessSection() {
               >
                 <IconNumber1 width={40} height={40} />
               </ThemeIcon>
-              <Image src={'/images/line.svg'} className={classes.line} />
+              <Image src={LineImage} alt="line" className={classes.line} />
               <Text className={classes.stepTitle}>
                 Demo Call <br />
                 (20 mins)
@@ -48,7 +46,7 @@ export function OurProcessSection() {
                 you live client accounts & results.
               </Text>
             </Flex>
-            <Flex direction="column" align="center" ta={'center'} px={'2rem'}>
+            <Flex direction="column" align="center" ta="center" px="2rem">
               <ThemeIcon
                 className={classes.iconThing}
                 radius="100%"
@@ -58,7 +56,7 @@ export function OurProcessSection() {
               >
                 <IconNumber2 width={40} height={40} />
               </ThemeIcon>
-              <Image src={'/images/line.svg'} className={classes.line} />
+              <Image src={LineImage} alt="line" className={classes.line} />
               <Text className={classes.stepTitle}>
                 We build your system <br />
                 (7-10 days)
@@ -69,7 +67,7 @@ export function OurProcessSection() {
                 system.
               </Text>
             </Flex>
-            <Flex direction="column" align="center" ta={'center'} px={'2rem'}>
+            <Flex direction="column" align="center" ta="center" px="2rem">
               <ThemeIcon
                 mb={mobile ? 10 : '3.5rem'}
                 radius="100%"
@@ -86,8 +84,8 @@ export function OurProcessSection() {
               </Text>
               <Text className={classes.stepDescription}>
                 We'll walk you through your new website & marketing system, answer any questions you
-                have, and show you how "everything" works... And by everything, we’re
-                really just talking about pressing two buttons. 
+                have, and show you how "everything" works... And by everything, we’re really just
+                talking about pressing two buttons.
               </Text>
             </Flex>
           </SimpleGrid>
