@@ -1,3 +1,4 @@
+import { Metadata } from 'next';
 import { Faq } from '@/components/Homepage/Faq/Faq';
 import { Feature1 } from '@/components/Homepage/Feature1/Feature1';
 import { Feature2 } from '@/components/Homepage/Feature2/Feature2';
@@ -10,6 +11,12 @@ import { PartnersSection } from '@/components/Homepage/PartnersSection/PartnersS
 import { TestimonialSection } from '@/components/Homepage/TestimonialSection/TestimonialSection';
 import { WhoWeServeSection } from '@/components/Homepage/WhoWeServeSection/WhoWeServeSection';
 import { WhyChooseUsSection } from '@/components/Homepage/WhyChooseUsSection/WhyChooseUsSection';
+
+export const metadata: Metadata = {
+  title: 'Stone Systems - Website Design & Marketing Systems For Contractors!',
+  description:
+    'Contractors trust us to transform their business with marketing systems, website design, reputation management and automation. And we do all of that at an affordable price!',
+};
 
 export default function HomePage() {
   return (
