@@ -6,8 +6,11 @@ import Image from 'next/image';
 import React from 'react';
 import dynamic from 'next/dynamic';
 import classes from './Hero.module.css';
+import StoneManImage from '@/public/images/new.png';
 
-const CalendarPopup = dynamic(() => import('@/components/Popups/CalendarPopup/CalendarPopup').then(mod => mod.CalendarPopup));
+const CalendarPopup = dynamic(() =>
+  import('@/components/Popups/CalendarPopup/CalendarPopup').then((mod) => mod.CalendarPopup)
+);
 
 export function Hero() {
   const [opened, { close, open }] = useDisclosure(false);
@@ -119,10 +122,8 @@ export function Hero() {
           </div>
           <Image
             loading="eager"
-            width={500}
-            height={900}
             alt="stone systems man"
-            src="/images/new.png"
+            src={StoneManImage}
             className={classes.image}
           />
         </div>

@@ -12,11 +12,11 @@ export function Faq() {
         </Title>
 
         <Accordion chevronSize={50} variant="separated">
-          <Accordion.Item bg={'var(--yellow)'} className={classes.item} value="results">
+          <Accordion.Item bg="var(--yellow)" className={classes.item} value="results">
             <Accordion.Control c="white" className={classes.itemTitle}>
               When am I going to start seeing results?
             </Accordion.Control>
-            <Accordion.Panel bg={'white'} className={classes.itemDescription}>
+            <Accordion.Panel bg="white" className={classes.itemDescription}>
               This will completely depend on what else you're doing for advertising, how long you've
               been in business, the quality of your work, and of course that you commit to using our
               system. If you think you're going to close your eyes and pay us $297/month a month to
