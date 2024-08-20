@@ -1,6 +1,7 @@
 'use client';
 
-import { Image, Container, Title, Button, Text, Flex, Modal } from '@mantine/core';
+import { Container, Title, Button, Text, Flex, Modal } from '@mantine/core';
+import Image from 'next/image';
 import { IconRosetteDiscountCheckFilled } from '@tabler/icons-react';
 import { useDisclosure } from '@mantine/hooks';
 import dynamic from 'next/dynamic';
@@ -63,7 +64,7 @@ export function Feature4() {
             <VideoPopup />
           </Modal>
         </div>
-        <Image width={500} height={800} alt="website animation" src="/images/phone-left.png" className={classes.image} />
+        <Image  alt="website animation" src={PhoneImage} className={classes.image} />
       </div>
     </Container>
     </div>

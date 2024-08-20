@@ -73,7 +73,7 @@ export function Hero() {
               </div>
             </Flex>
             <Flex className={classes.creditDiv}>
-              {['google.webp', 'fb.png', 'trustpilot.png'].map((logo, index) => (
+              {['google.webp', 'facebook.png', 'trustpilot.png'].map((logo, index) => (
                 <React.Fragment key={logo}>
                   <div className={classes.credit}>
                     <Image
