@@ -6,7 +6,6 @@ import {
   ActionIcon,
   Group,
   rem,
-  Image,
   Flex,
   Divider,
   Button,
@@ -15,9 +14,12 @@ import {
 import { IconBrandYoutube, IconBrandInstagram, IconBrandGoogle } from '@tabler/icons-react';
 import { useDisclosure } from '@mantine/hooks';
 import dynamic from 'next/dynamic';
+import Image from 'next/image';
 import classes from './Footer.module.css';
 
-const CalendarPopup = dynamic(() => import('@/components/Popups/CalendarPopup/CalendarPopup').then(mod => mod.CalendarPopup));
+const CalendarPopup = dynamic(() =>
+  import('@/components/Popups/CalendarPopup/CalendarPopup').then((mod) => mod.CalendarPopup)
+);
 
 const data = [
   {

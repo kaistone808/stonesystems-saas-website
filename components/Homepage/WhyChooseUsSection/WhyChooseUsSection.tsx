@@ -1,8 +1,9 @@
 'use client';
 
-import { Paper, Text, Title, Container, SimpleGrid, Image, useMantineTheme } from '@mantine/core';
-import classes from './WhyChooseUsSection.module.css';
+import { Paper, Text, Title, Container, SimpleGrid, useMantineTheme } from '@mantine/core';
 import { useMediaQuery } from '@mantine/hooks';
+import Image from 'next/image';
+import classes from './WhyChooseUsSection.module.css';
 
 interface CardProps {
   cardTitle: string;
@@ -13,7 +14,7 @@ interface CardProps {
 function Card({ cardTitle, cardDescription, imageSrc }: CardProps) {
   return (
     <Paper shadow="md" radius="md" className={classes.card}>
-      <Image src={imageSrc} alt="Panda" className={classes.cardImg} />
+      <Image width={50} height={50} src={imageSrc} alt="Panda" className={classes.cardImg} />
       <Title order={3} className={classes.cardTitle}>
         {cardTitle}
       </Title>
@@ -28,7 +29,7 @@ function Card({ cardTitle, cardDescription, imageSrc }: CardProps) {
 const data = [
   {
     cardTitle: 'Simple To Use',
-    cardDescription: `We built Stone Systems with the core concept of being simple to use, so everything is made to be exactly that.`,
+    cardDescription: 'We built Stone Systems with the core concept of being simple to use, so everything is made to be exactly that.',
     imageSrc: '/images/why/easy.png',
   },
   {
@@ -51,7 +52,7 @@ const data = [
   },
   {
     cardTitle: 'We Have Proof',
-    cardDescription: `We already know what's working and have all the <a href='/testimonials'>reviews & testimonials</a> to back it up.`,
+    cardDescription: 'We already know what\'s working and have all the <a href=\'/testimonials\'>reviews & testimonials</a> to back it up.',
     imageSrc: '/images/why/shield.svg',
   },
   {
@@ -71,7 +72,7 @@ export function WhyChooseUsSection() {
       <div className={classes.outer}>
         <Container size="lg">
           <Title className={classes.mainTitle}>
-            Why we’re "totally unique"... <br/> just like everyone else, right?
+            Why we’re "totally unique"... <br /> just like everyone else, right?
           </Title>
           <Container size="lg">
             <SimpleGrid cols={mobile ? 1 : 3}>{slides}</SimpleGrid>

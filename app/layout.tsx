@@ -1,13 +1,13 @@
 import '@mantine/core/styles.css';
 import React from 'react';
 import { MantineProvider } from '@mantine/core';
+import Script from 'next/script';
+import { Sora } from 'next/font/google';
 import { theme } from '../theme';
 
 import '@mantine/carousel/styles.css';
 import '../globals.css';
 import { LayoutWrapper } from '@/components/LayoutWrapper/LayoutWrapper';
-import Script from 'next/script';
-import { Sora } from 'next/font/google';
 
 export const metadata = {
   title: 'Mantine Next.js template',
@@ -29,7 +29,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           content="minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no"
         />
       </head>
-      <body >
+      <body>
         <MantineProvider theme={theme}>
           <LayoutWrapper>{children}</LayoutWrapper>
         </MantineProvider>
