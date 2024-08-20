@@ -2,9 +2,10 @@
 
 import { Image, Container, Title, Button, Text, Flex, Modal } from '@mantine/core';
 import { IconRosetteDiscountCheckFilled } from '@tabler/icons-react';
+import { useDisclosure } from '@mantine/hooks';
 import classes from './Feature3.module.css';
 import { VideoPopup } from '@/components/Popups/VideoPopup/VideoPopup';
-import { useDisclosure } from '@mantine/hooks';
+import PhoneImage from '@/public/images/phone-right.png';
 
 const features = [
   {
@@ -31,7 +32,7 @@ const features = [
 
 export function Feature3() {
   const [opened, { close, open }] = useDisclosure(false);
-  const items = features.map((feature, index) => (
+  const items = features.map((feature) => (
     <div key={feature.title}>
       <Flex>
         <IconRosetteDiscountCheckFilled color="var(--yellow)" />
@@ -44,7 +45,7 @@ export function Feature3() {
   return (
     <Container size="lg">
       <div className={classes.inner}>
-        <Image width={500} height={800} alt='website animation' src="/images/phone-right.png" className={classes.image} />
+        <Image width={500} height={800} alt="website animation" src={PhoneImage} className={classes.image} />
 
         <div className={classes.content}>
           <Title className={classes.title}>Missed Call Text Back</Title>
@@ -52,13 +53,13 @@ export function Feature3() {
             Everyone misses calls, but not everyone texts back. Be the one who does. Outshine your
             competition.
           </Text>
-          <Flex mt={'lg'} direction={'column'}>
+          <Flex mt="lg" direction="column">
             {items}
           </Flex>
           <Button onClick={open} size="xl" bg="var(--yellow)" className={classes.control}>
             See 30 Second Demo
           </Button>
-          <Modal opened={opened} onClose={close} size={'xl'}>
+          <Modal opened={opened} onClose={close} size="xl">
             <VideoPopup />
           </Modal>
         </div>

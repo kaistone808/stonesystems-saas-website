@@ -6,16 +6,14 @@ import {
   Title,
   Button,
   Text,
-  rem,
-  SimpleGrid,
   Flex,
-  Divider,
   Modal,
 } from '@mantine/core';
-import { IconCheckbox, IconRosetteDiscountCheckFilled } from '@tabler/icons-react';
+import { IconRosetteDiscountCheckFilled } from '@tabler/icons-react';
+import { useDisclosure } from '@mantine/hooks';
 import classes from './Feature2.module.css';
 import { VideoPopup } from '@/components/Popups/VideoPopup/VideoPopup';
-import { useDisclosure } from '@mantine/hooks';
+import PhoneImage from '@/public/images/phone-left.png';
 
 const features = [
   {
@@ -25,7 +23,7 @@ const features = [
   },
   {
     title: 'Automatic Follow-Up Reminders',
-    description: `"Sure I'll leave you a review", but the truth is people forget. We’ll 'gently' reminder them for a few weeks until they remember.`,
+    description: '"Sure I\'ll leave you a review", but the truth is people forget. We’ll \'gently\' reminder them for a few weeks until they remember.',
   },
   {
     title: 'Ask For Reviews In One Click',
@@ -60,17 +58,17 @@ export function Feature2() {
             "Sure I'll leave you a review", but the truth is people forget. We’ll 'gently' remind
             them for a few weeks until they remember.
           </Text>
-          <Flex mt={'lg'} direction={'column'}>
+          <Flex mt="lg" direction="column">
             {items}
           </Flex>
           <Button onClick={open} size="xl" bg="var(--yellow)" className={classes.control}>
             See 30 Second Demo
           </Button>
-          <Modal opened={opened} onClose={close} size={'xl'}>
+          <Modal opened={opened} onClose={close} size="xl">
             <VideoPopup />
           </Modal>
         </div>
-        <Image width={500} height={800} alt='website animation' src="/images/phone-left.png" className={classes.image} />
+        <Image width={500} height={800} alt="website animation" src={PhoneImage} className={classes.image} />
       </div>
     </Container>
   );

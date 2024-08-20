@@ -2,9 +2,10 @@
 
 import { Image, Container, Title, Button, Text, Flex, Modal } from '@mantine/core';
 import { IconRosetteDiscountCheckFilled } from '@tabler/icons-react';
+import { useDisclosure } from '@mantine/hooks';
 import classes from './Feature4.module.css';
 import { VideoPopup } from '@/components/Popups/VideoPopup/VideoPopup';
-import { useDisclosure } from '@mantine/hooks';
+import PhoneImage from '@/public/images/phone-left.png';
 
 const features = [
   {
@@ -50,18 +51,19 @@ export function Feature4() {
           <Text className={classes.description} mt="md">
           You know it, and we know it… Referrals and repeat customers are the best. Let’s get you both!
           </Text>
-          <Flex mt={'lg'} direction={'column'}>
+          <Flex mt="lg" direction="column">
             {items}
           </Flex>
           <Button onClick={open} size="xl" bg="var(--yellow)" className={classes.control}>
             See 30 Second Demo
           </Button>
-          <Modal opened={opened} onClose={close} size={'xl'}>
+          <Modal opened={opened} onClose={close} size="xl">
             <VideoPopup />
           </Modal>
         </div>
-        <Image width={500} height={800} alt='website animation' src="/images/phone-left.png" className={classes.image} />
+        <Image width={500} height={800} alt="website animation" src={PhoneImage} className={classes.image} />
       </div>
-    </Container></div>
+    </Container>
+    </div>
   );
 }

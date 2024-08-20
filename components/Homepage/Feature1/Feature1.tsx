@@ -2,10 +2,11 @@
 
 import { Container, Title, Button, Text, Flex, Modal } from '@mantine/core';
 import { IconRosetteDiscountCheckFilled } from '@tabler/icons-react';
-import classes from './Feature1.module.css';
-import { VideoPopup } from '@/components/Popups/VideoPopup/VideoPopup';
 import { useDisclosure } from '@mantine/hooks';
 import Image from 'next/image';
+import classes from './Feature1.module.css';
+import { VideoPopup } from '@/components/Popups/VideoPopup/VideoPopup';
+import PhoneImage from '@/public/images/phone-right.png';
 
 const features = [
   {
@@ -32,7 +33,7 @@ const features = [
 
 export function Feature1() {
   const [opened, { close, open }] = useDisclosure(false);
-  const items = features.map((feature, index) => (
+  const items = features.map((feature) => (
     <div key={feature.title}>
       <Flex>
         <IconRosetteDiscountCheckFilled color="var(--yellow)" />
@@ -48,7 +49,7 @@ export function Feature1() {
         Simple systems that actually work <br /> No degrees required, just a hard hat
       </Title>
       <div className={classes.inner}>
-        <Image width={500} height={800} alt='website animation' src="/images/phone-right.png" className={classes.image} />
+        <Image alt="website animation" src={PhoneImage} className={classes.image} />
 
         <div className={classes.content}>
           <Title className={classes.title}>Functional Website</Title>
@@ -56,13 +57,13 @@ export function Feature1() {
             Get a website that instantly turns leads into text conversations that go DIRECTLY to
             your phone.
           </Text>
-          <Flex mt={'lg'} direction={'column'}>
+          <Flex mt="lg" direction="column">
             {items}
           </Flex>
           <Button onClick={open} size="xl" bg="var(--yellow)" className={classes.control}>
             See 30 Second Demo
           </Button>
-          <Modal opened={opened} onClose={close} size={'xl'}>
+          <Modal opened={opened} onClose={close} size="xl">
             <VideoPopup />
           </Modal>
         </div>
