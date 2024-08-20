@@ -13,9 +13,11 @@ import {
   Modal,
 } from '@mantine/core';
 import { IconBrandYoutube, IconBrandInstagram, IconBrandGoogle } from '@tabler/icons-react';
-import classes from './Footer.module.css';
 import { useDisclosure } from '@mantine/hooks';
-import { CalendarPopup } from '../Popups/CalendarPopup/CalendarPopup';
+import dynamic from 'next/dynamic';
+import classes from './Footer.module.css';
+
+const CalendarPopup = dynamic(() => import('@/components/Popups/CalendarPopup/CalendarPopup').then(mod => mod.CalendarPopup));
 
 const data = [
   {
@@ -65,7 +67,7 @@ export function Footer() {
         key={linkItem.label}
         className={classes.link}
         component="a"
-        mb={'1rem'}
+        mb="1rem"
         href={linkItem.link}
       >
         {linkItem.label}
@@ -82,35 +84,35 @@ export function Footer() {
 
   return (
     <footer className={classes.footer}>
-      <Container size={'lg'}>
-        <Flex className={classes.logo} align={'center'} justify={'space-between'} direction={'row'}>
+      <Container size="lg">
+        <Flex className={classes.logo} align="center" justify="space-between" direction="row">
           <Image
             className={classes.logoImage}
-            src={'/images/footerlogo.png'}
+            src="/images/footerlogo.png"
             alt="logo"
             width={250}
             height={101}
           />
 
-          <Flex className={classes.ctaDiv} align={'center'}>
+          <Flex className={classes.ctaDiv} align="center">
             <Text className={classes.cta}>Ready to get started?</Text>
             <Button onClick={open} className={classes.button} size="md">
               Book A Call
             </Button>
-            <Modal opened={opened} onClose={close} size={'xl'}>
+            <Modal opened={opened} onClose={close} size="xl">
               <CalendarPopup />
             </Modal>
           </Flex>
         </Flex>
-        <Divider my={'2.5rem'} color="var(--border-color)" />
+        <Divider my="2.5rem" color="var(--border-color)" />
       </Container>
-      <Container size={'lg'} className={classes.inner}>
+      <Container size="lg" className={classes.inner}>
         <div className={classes.bigCta}>
           <Text className={classes.description}>Want to learn more about how we can help?</Text>
-          <Button onClick={open} className={classes.button} mt={'1rem'} size="xl">
+          <Button onClick={open} className={classes.button} mt="1rem" size="xl">
             Book A Call
           </Button>
-          <Modal opened={opened} onClose={close} size={'xl'}>
+          <Modal opened={opened} onClose={close} size="xl">
             <CalendarPopup />
           </Modal>
         </div>
@@ -121,8 +123,8 @@ export function Footer() {
           <Text
             className={classes.specialLink}
             component="a"
-            mr={'3rem'}
-            href={'/terms-and-conditions'}
+            mr="3rem"
+            href="/terms-and-conditions"
             onClick={(event) => event.preventDefault()}
           >
             Terms & Conditions
@@ -130,7 +132,7 @@ export function Footer() {
           <Text<'a'>
             className={classes.specialLink}
             component="a"
-            href={'/privacy-policy'}
+            href="/privacy-policy"
             onClick={(event) => event.preventDefault()}
           >
             Privacy Policy

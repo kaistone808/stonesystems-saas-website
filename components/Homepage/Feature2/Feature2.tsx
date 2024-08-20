@@ -11,9 +11,11 @@ import {
 } from '@mantine/core';
 import { IconRosetteDiscountCheckFilled } from '@tabler/icons-react';
 import { useDisclosure } from '@mantine/hooks';
+import dynamic from 'next/dynamic';
 import classes from './Feature2.module.css';
-import { VideoPopup } from '@/components/Popups/VideoPopup/VideoPopup';
 import PhoneImage from '@/public/images/phone-left.png';
+
+const VideoPopup = dynamic(() => import('@/components/Popups/VideoPopup/VideoPopup').then(mod => mod.VideoPopup));
 
 const features = [
   {
@@ -68,7 +70,7 @@ export function Feature2() {
             <VideoPopup />
           </Modal>
         </div>
-        <Image width={500} height={800} alt="website animation" src={PhoneImage} className={classes.image} />
+        <Image width={500} height={800} alt="website animation" src="/images/phone-left.png" className={classes.image} />
       </div>
     </Container>
   );

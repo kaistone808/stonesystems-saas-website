@@ -37,9 +37,12 @@ import {
   IconDeviceMobile,
   IconX,
 } from '@tabler/icons-react';
-import classes from './Header.module.css';
-import { CalendarPopup } from '../Popups/CalendarPopup/CalendarPopup';
 import Image from 'next/image';
+import dynamic from 'next/dynamic';
+import classes from './Header.module.css';
+
+const CalendarPopup = dynamic(() => import('../Popups/CalendarPopup/CalendarPopup').then(mod => mod.CalendarPopup));
+
 const productData = [
   {
     icon: IconAppWindow,
@@ -137,20 +140,19 @@ interface LinkProps {
   href: string;
 }
 
-const LinkButton = (item: LinkProps) => {
-  return (
+const LinkButton = (item: LinkProps) => (
     <UnstyledButton
       component="a"
       href={item.href}
-      pt={'md'}
-      pb={'md'}
-      pr={'xl'}
-      pl={'md'}
+      pt="md"
+      pb="md"
+      pr="xl"
+      pl="md"
       className={classes.subLink}
     >
       <Group wrap="nowrap" align="center">
-        <ThemeIcon size={52} variant="default" radius="md" bd={'none'} bg={'#F1F1F1'}>
-          <item.icon style={{ width: rem(32), height: rem(32) }} color={'#000000'} />
+        <ThemeIcon size={52} variant="default" radius="md" bd="none" bg="#F1F1F1">
+          <item.icon style={{ width: rem(32), height: rem(32) }} color="#000000" />
         </ThemeIcon>
         <div>
           <Text className={classes.subLinkTitle} fw={500}>
@@ -163,7 +165,6 @@ const LinkButton = (item: LinkProps) => {
       </Group>
     </UnstyledButton>
   );
-};
 
 export function Header() {
   const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] = useDisclosure(false);
@@ -182,18 +183,18 @@ export function Header() {
         <Group justify="space-between" w="83em" h="100%">
           <Group h="100%" gap={0} visibleFrom="sm">
             <a href="/" className={classes.link}>
-              <Image loading='eager' src={'/images/newlogo.png'} alt="logo" width={200} height={81} />
+              <Image loading="eager" src="/images/newlogo.png" alt="logo" width={200} height={81} />
             </a>
             <HoverCard width={1000} position="bottom" radius="md" shadow="md" withinPortal>
               <HoverCard.Target>
                 <a href="#" className={classes.link}>
                   <Center inline>
-                    <Box component="span" ml={'sm'} mr={5}>
+                    <Box component="span" ml="sm" mr={5}>
                       Product
                     </Box>
                     <IconChevronDown
                       style={{ width: rem(16), height: rem(16) }}
-                      color={'#000000'}
+                      color="#000000"
                     />
                   </Center>
                 </a>
@@ -228,7 +229,7 @@ export function Header() {
                     </Box>
                     <IconChevronDown
                       style={{ width: rem(16), height: rem(16) }}
-                      color={'#000000'}
+                      color="#000000"
                     />
                   </Center>
                 </a>
@@ -245,11 +246,11 @@ export function Header() {
           <Group visibleFrom="sm">
             <Button
               className={classes.button2}
-              c={'var(--yellow)'}
+              c="var(--yellow)"
               size="lg"
               variant="default"
-              bg={'transparent'}
-              bd={'none'}
+              bg="transparent"
+              bd="none"
               component="a"
               href="https://app.stonesystems.io"
               target="_blank"
@@ -265,11 +266,11 @@ export function Header() {
             >
               Book A Call
             </Button>
-            <Modal opened={opened} onClose={close} size={'xl'}>
+            <Modal opened={opened} onClose={close} size="xl">
               <CalendarPopup />
             </Modal>
           </Group>
-          <Image loading='eager' className={classes.logoImage} src={'/images/newlogo.png'} alt="logo" width={200} height={81} />
+          <Image loading="eager" className={classes.logoImage} src="/images/newlogo.png" alt="logo" width={200} height={81} />
           <Burger opened={drawerOpened} onClick={toggleDrawer} hiddenFrom="sm" />
         </Group>
       </header>
@@ -279,7 +280,7 @@ export function Header() {
         onClose={closeDrawer}
         size="100%"
         padding="md"
-        title={<Image loading='eager' src={'/images/newlogo.png'} alt="logo" width={200} height={81} />}
+        title={<Image loading="eager" src="/images/newlogo.png" alt="logo" width={200} height={81} />}
         closeButtonProps={{
           icon: <IconX size={100} stroke={1.5} />,
         }}
@@ -297,7 +298,7 @@ export function Header() {
               <Box className={classes.link} component="span" mr={5}>
                 Product
               </Box>
-              <IconChevronDown style={{ width: rem(16), height: rem(16) }} color={'#000000'} />
+              <IconChevronDown style={{ width: rem(16), height: rem(16) }} color="#000000" />
             </Center>
           </UnstyledButton>
           <Collapse in={productLinksOpened}>{productLinks}</Collapse>
@@ -315,7 +316,7 @@ export function Header() {
               <Box className={classes.link} component="span" mr={5}>
                 About
               </Box>
-              <IconChevronDown style={{ width: rem(16), height: rem(16) }} color={'#000000'} />
+              <IconChevronDown style={{ width: rem(16), height: rem(16) }} color="#000000" />
             </Center>
           </UnstyledButton>
           <Collapse in={aboutLinksOpened}>{aboutLinks}</Collapse>
@@ -326,7 +327,7 @@ export function Header() {
           <a onClick={open} className={classes.linkModal}>
             Book A Call
           </a>
-          <Modal opened={opened} onClose={close} size={'xl'}>
+          <Modal opened={opened} onClose={close} size="xl">
             <CalendarPopup />
           </Modal>
         </ScrollArea>

@@ -1,8 +1,11 @@
 import { Text, Title, Button, Container, Modal } from '@mantine/core';
-import classes from './CTA.module.css';
 import { useDisclosure } from '@mantine/hooks';
-import { CalendarPopup } from '../Popups/CalendarPopup/CalendarPopup';
 import Image from 'next/image';
+
+import dynamic from 'next/dynamic';
+import classes from './CTA.module.css';
+
+const CalendarPopup = dynamic(() => import('@/components/Popups/CalendarPopup/CalendarPopup').then(mod => mod.CalendarPopup));
 
 export function CTA() {
   const [opened, { close, open }] = useDisclosure(false);
@@ -19,7 +22,7 @@ export function CTA() {
           <Button onClick={open} size="xl" bg="var(--yellow)" className={classes.control}>
             Book A Call
           </Button>
-          <Modal opened={opened} onClose={close} size={'xl'}>
+          <Modal opened={opened} onClose={close} size="xl">
             <CalendarPopup />
           </Modal>
         </div>

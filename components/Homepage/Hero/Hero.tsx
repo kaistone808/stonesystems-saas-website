@@ -1,11 +1,13 @@
 'use client';
 
 import { Container, Title, Button, Text, Flex, Divider, Modal } from '@mantine/core';
-import classes from './Hero.module.css';
 import { useDisclosure } from '@mantine/hooks';
 import Image from 'next/image';
-import { CalendarPopup } from '@/components/Popups/CalendarPopup/CalendarPopup';
 import React from 'react';
+import dynamic from 'next/dynamic';
+import classes from './Hero.module.css';
+
+const CalendarPopup = dynamic(() => import('@/components/Popups/CalendarPopup/CalendarPopup').then(mod => mod.CalendarPopup));
 
 export function Hero() {
   const [opened, { close, open }] = useDisclosure(false);
@@ -16,7 +18,7 @@ export function Hero() {
         <div className={classes.inner}>
           <div className={classes.content}>
             <Flex className={classes.titleDiv}>
-              <Divider size={2} mr={40} color={'var(--border-color)'} orientation="vertical" />
+              <Divider size={2} mr={40} color="var(--border-color)" orientation="vertical" />
               <Title className={classes.title}>
                 Website Design & Marketing Systems For Contractors
               </Title>
