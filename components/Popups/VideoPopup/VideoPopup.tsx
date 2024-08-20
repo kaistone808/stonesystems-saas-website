@@ -1,21 +1,13 @@
 'use client';
 
-import { Container, Title } from '@mantine/core';
+import { Container } from '@mantine/core';
 import classes from './VideoPopup.module.css';
-import Script from 'next/script';
+import LazyLoadVideo from '@/components/LazyLoadVideo/LazyLoadVideo';
 
-export function VideoPopup() {
+export function VideoPopup({ videoSrc }: { videoSrc: string }) {
   return (
-    <>
-      <Container size="xl">
-        <iframe
-          src="https://link.stonesystems.io/widget/booking/hUF685Mpy55WxvsB3UV1"
-          style={{ width: '100%', height: '100%', border: 'none', overflow: 'hidden' }}
-          scrolling="no"
-          id="hUF685Mpy55WxvsB3UV1_1723761228001"
-        />
-        <Script src="https://api.ezclick.io/js/form_embed.js" type="text/javascript"/>
+      <Container className={classes.popup} size="xl">
+        <LazyLoadVideo src={videoSrc} type="video/mp4" width="100%" height="auto" />
       </Container>
-    </>
   );
 }

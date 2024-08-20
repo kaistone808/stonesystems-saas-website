@@ -59,7 +59,7 @@ export function Feature5() {
               See 30 Second Demo
             </Button>
             <Modal opened={opened} onClose={close} size="xl">
-              <VideoPopup />
+            <VideoPopup videoSrc="/videos/Adam.mov" />
             </Modal>
           </div>
         </div>

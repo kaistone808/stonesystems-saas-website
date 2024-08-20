@@ -67,7 +67,7 @@ export function Feature2() {
             See 30 Second Demo
           </Button>
           <Modal opened={opened} onClose={close} size="xl">
-            <VideoPopup />
+          <VideoPopup videoSrc="/videos/Adam.mov" />
           </Modal>
         </div>
         <Image alt="website animation" src={PhoneImage} className={classes.image} />
