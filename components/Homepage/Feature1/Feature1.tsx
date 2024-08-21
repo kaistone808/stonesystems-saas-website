@@ -7,7 +7,7 @@ import Image from 'next/image';
 import dynamic from 'next/dynamic';
 import classes from './Feature1.module.css';
 
-import PhoneImage from '@/public/images/phone-right.png';
+import PhoneImage from '@/public/animations/FUNCTIONAL_WEBSITE.gif';
 
 const VideoPopup = dynamic(() => import('@/components/Popups/VideoPopup/VideoPopup').then(mod => mod.VideoPopup));
 
