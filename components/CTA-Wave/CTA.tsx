@@ -5,7 +5,9 @@ import Image from 'next/image';
 import dynamic from 'next/dynamic';
 import classes from './CTA.module.css';
 
-const CalendarPopup = dynamic(() => import('@/components/Popups/CalendarPopup/CalendarPopup').then(mod => mod.CalendarPopup));
+const CalendarPopup = dynamic(() =>
+  import('@/components/Popups/CalendarPopup/CalendarPopup').then((mod) => mod.CalendarPopup)
+);
 
 export function CTA() {
   const [opened, { close, open }] = useDisclosure(false);
@@ -29,7 +31,7 @@ export function CTA() {
         <Image
           width={1080}
           height={1080}
-          src="/images/replacethis.png"
+          src="/images/cta-stoneman.png"
           alt="cta image"
           className={classes.image}
         />

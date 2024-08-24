@@ -51,6 +51,11 @@ const data = [
     title: 'Graphic Designer',
     imageSrc: '/images/people/munzi.jpeg',
   },
+  {
+    name: 'Jhon',
+    title: 'Web Developer',
+    imageSrc: '/images/people/jhon.jpeg',
+  },
 ];
 
 export function EmployeeSection() {

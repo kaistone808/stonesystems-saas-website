@@ -28,7 +28,7 @@ export function CTANoWave() {
         <Image
           width={1080}
           height={1080}
-          src="/images/replacethis.png"
+          src="/images/cta-stoneman.png"
           alt="cta image"
           className={classes.image}
         />
