@@ -6,7 +6,7 @@ import { useDisclosure } from '@mantine/hooks';
 import dynamic from 'next/dynamic';
 import Image from 'next/image';
 import classes from './Feature3.module.css';
-import PhoneImage from '@/public/images/phone-right.png';
+import PhoneImage from '@/public/animations/MISSED_CALL_TEXT_BACK.gif';
 
 const VideoPopup = dynamic(() =>
   import('@/components/Popups/VideoPopup/VideoPopup').then((mod) => mod.VideoPopup)
@@ -48,7 +48,7 @@ export function Feature3() {
   ));
 
   return (
-    <Container size="lg">
+    <Container size="xl">
       <div className={classes.inner}>
         <Image alt="website animation" src={PhoneImage} className={classes.image} />
 
@@ -64,8 +64,15 @@ export function Feature3() {
           <Button onClick={open} size="xl" bg="var(--yellow)" className={classes.control}>
             See 30 Second Demo
           </Button>
-          <Modal opened={opened} onClose={close} size="xl">
-          <VideoPopup videoSrc="/videos/Adam.mov" />
+          <Modal
+            closeButtonProps={{
+              size: 'xl',
+            }}
+            opened={opened}
+            onClose={close}
+            size="xl"
+          >
+            <VideoPopup videoSrc="/videos/Adam.mov" title='Missed Call Text Back' />
           </Modal>
         </div>
       </div>

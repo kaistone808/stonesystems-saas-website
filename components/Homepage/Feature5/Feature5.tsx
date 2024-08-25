@@ -6,7 +6,7 @@ import { IconRosetteDiscountCheckFilled } from '@tabler/icons-react';
 import { useDisclosure } from '@mantine/hooks';
 import dynamic from 'next/dynamic';
 import classes from './Feature5.module.css';
-import PhoneImage from '@/public/images/phone-right.png';
+import PhoneImage from '@/public/animations/LOCAL_SEO.gif';
 
 const VideoPopup = dynamic(() =>
   import('@/components/Popups/VideoPopup/VideoPopup').then((mod) => mod.VideoPopup)
@@ -41,29 +41,33 @@ export function Feature5() {
   ));
 
   return (
-    <div className={classes.outer}>
-      <Container size="lg">
-        <div className={classes.inner}>
-          <Image alt="website animation" src={PhoneImage} className={classes.image} />
-
-          <div className={classes.content}>
-            <Title className={classes.title}>Local SEO</Title>
-            <Text className={classes.description} mt="md">
-              "Rank number one on Google in a week!"
-              <br /> Just kidding, SEO takes time...
-            </Text>
-            <Flex mt="lg" direction="column">
-              {items}
-            </Flex>
-            <Button onClick={open} size="xl" bg="var(--yellow)" className={classes.control}>
-              See 30 Second Demo
-            </Button>
-            <Modal opened={opened} onClose={close} size="xl">
-            <VideoPopup videoSrc="/videos/Adam.mov" />
-            </Modal>
-          </div>
+    <Container size="xl">
+      <div className={classes.inner}>
+        <div className={classes.content}>
+          <Title className={classes.title}>Local SEO</Title>
+          <Text className={classes.description} mt="md">
+            "Rank number one on Google in a week!"
+            <br /> Just kidding, SEO takes time...
+          </Text>
+          <Flex mt="lg" direction="column">
+            {items}
+          </Flex>
+          <Button onClick={open} size="xl" bg="var(--yellow)" className={classes.control}>
+            See 30 Second Demo
+          </Button>
+          <Modal
+            closeButtonProps={{
+              size: 'xl',
+            }}
+            opened={opened}
+            onClose={close}
+            size="xl"
+          >
+            <VideoPopup videoSrc="/videos/Adam.mov" title="Local SEO" />
+          </Modal>
         </div>
-      </Container>
-    </div>
+        <Image alt="website animation" src={PhoneImage} className={classes.image} />
+      </div>
+    </Container>
   );
 }

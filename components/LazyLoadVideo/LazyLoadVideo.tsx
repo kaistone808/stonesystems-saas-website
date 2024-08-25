@@ -16,7 +16,7 @@ const LazyLoadVideo: React.FC<LazyLoadVideoProps> = ({ src, poster, type, ...pro
 
   useEffect(() => {
     if (inView && videoRef.current) {
-      videoRef.current.src = src;
+      videoRef.current.src = src; // Set the video source when it comes into view
       videoRef.current.load(); // Start loading the video
     }
   }, [inView, src]);
@@ -25,11 +25,11 @@ const LazyLoadVideo: React.FC<LazyLoadVideoProps> = ({ src, poster, type, ...pro
     <div ref={ref} style={{ minHeight: '200px' }}>
       <video
         ref={videoRef}
-        poster={poster}
+        poster={poster || ''} // Load the poster (thumbnail)
         controls
         {...props}
       >
-        <source src="" type={type} />
+        <source type={type} />
         Your browser does not support the video tag.
       </video>
     </div>

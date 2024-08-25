@@ -24,7 +24,14 @@ export function CTA() {
           <Button onClick={open} size="xl" bg="var(--yellow)" className={classes.control}>
             Book A Call
           </Button>
-          <Modal opened={opened} onClose={close} size="xl">
+          <Modal
+            closeButtonProps={{
+              size: 'xl',
+            }}
+            opened={opened}
+            onClose={close}
+            size="xl"
+          >
             <CalendarPopup />
           </Modal>
         </div>

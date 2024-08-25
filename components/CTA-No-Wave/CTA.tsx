@@ -5,7 +5,9 @@ import Image from 'next/image';
 import dynamic from 'next/dynamic';
 import classes from './CTA.module.css';
 
-const CalendarPopup = dynamic(() => import('@/components/Popups/CalendarPopup/CalendarPopup').then(mod => mod.CalendarPopup));
+const CalendarPopup = dynamic(() =>
+  import('@/components/Popups/CalendarPopup/CalendarPopup').then((mod) => mod.CalendarPopup)
+);
 
 export function CTANoWave() {
   const [opened, { close, open }] = useDisclosure(false);
@@ -19,11 +21,18 @@ export function CTANoWave() {
             let us do it for you.
           </Text>
           <Button onClick={open} size="xl" bg="var(--yellow)" className={classes.control}>
-              Book A Call
+            Book A Call
           </Button>
-            <Modal opened={opened} onClose={close} size="xl">
+          <Modal
+            closeButtonProps={{
+              size: 'xl',
+            }}
+            opened={opened}
+            onClose={close}
+            size="xl"
+          >
             <CalendarPopup />
-            </Modal>
+          </Modal>
         </div>
         <Image
           width={1080}

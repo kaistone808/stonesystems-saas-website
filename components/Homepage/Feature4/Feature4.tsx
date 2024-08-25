@@ -6,9 +6,11 @@ import { IconRosetteDiscountCheckFilled } from '@tabler/icons-react';
 import { useDisclosure } from '@mantine/hooks';
 import dynamic from 'next/dynamic';
 import classes from './Feature4.module.css';
-import PhoneImage from '@/public/images/phone-left.png';
+import PhoneImage from '@/public/animations/ONE_CLICK_MARKETING_CAMPAIGNS.gif';
 
-const VideoPopup = dynamic(() => import('@/components/Popups/VideoPopup/VideoPopup').then(mod => mod.VideoPopup));
+const VideoPopup = dynamic(() =>
+  import('@/components/Popups/VideoPopup/VideoPopup').then((mod) => mod.VideoPopup)
+);
 
 const features = [
   {
@@ -47,26 +49,34 @@ export function Feature4() {
 
   return (
     <div className={classes.outer}>
-    <Container size="lg">
-      <div className={classes.inner}>
-        <div className={classes.content}>
-          <Title className={classes.title}>One-Click Marketing Campaigns</Title>
-          <Text className={classes.description} mt="md">
-          You know it, and we know it… Referrals and repeat customers are the best. Let’s get you both!
-          </Text>
-          <Flex mt="lg" direction="column">
-            {items}
-          </Flex>
-          <Button onClick={open} size="xl" bg="var(--yellow)" className={classes.control}>
-            See 30 Second Demo
-          </Button>
-          <Modal opened={opened} onClose={close} size="xl">
-          <VideoPopup videoSrc="/videos/Adam.mov" />
-          </Modal>
+      <Container size="xl">
+        <div className={classes.inner}>
+          <div className={classes.content}>
+            <Title className={classes.title}>One-Click Marketing Campaigns</Title>
+            <Text className={classes.description} mt="md">
+              You know it, and we know it… Referrals and repeat customers are the best. Let’s get
+              you both!
+            </Text>
+            <Flex mt="lg" direction="column">
+              {items}
+            </Flex>
+            <Button onClick={open} size="xl" bg="var(--yellow)" className={classes.control}>
+              See 30 Second Demo
+            </Button>
+            <Modal
+              closeButtonProps={{
+                size: 'xl',
+              }}
+              opened={opened}
+              onClose={close}
+              size="xl"
+            >
+              <VideoPopup videoSrc="/videos/Adam.mov" title='One-Click Marketing Campaigns'/>
+            </Modal>
+          </div>
+          <Image alt="website animation" src={PhoneImage} className={classes.image} />
         </div>
-        <Image  alt="website animation" src={PhoneImage} className={classes.image} />
-      </div>
-    </Container>
+      </Container>
     </div>
   );
 }

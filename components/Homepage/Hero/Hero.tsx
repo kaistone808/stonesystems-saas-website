@@ -70,7 +70,14 @@ export function Hero() {
                 <Button size="xl" onClick={open} className={classes.control}>
                   Book A Call
                 </Button>
-                <Modal opened={opened} onClose={close} size="xl">
+                <Modal
+                  closeButtonProps={{
+                    size: 'xl',
+                  }}
+                  opened={opened}
+                  onClose={close}
+                  size="xl"
+                >
                   <CalendarPopup />
                 </Modal>
               </div>

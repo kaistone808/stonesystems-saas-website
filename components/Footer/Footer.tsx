@@ -101,7 +101,14 @@ export function Footer() {
             <Button onClick={open} className={classes.button} size="md">
               Book A Call
             </Button>
-            <Modal opened={opened} onClose={close} size="xl">
+            <Modal
+              closeButtonProps={{
+                size: 'xl',
+              }}
+              opened={opened}
+              onClose={close}
+              size="xl"
+            >
               <CalendarPopup />
             </Modal>
           </Flex>
@@ -114,7 +121,14 @@ export function Footer() {
           <Button onClick={open} className={classes.button} mt="1rem" size="xl">
             Book A Call
           </Button>
-          <Modal opened={opened} onClose={close} size="xl">
+          <Modal
+            closeButtonProps={{
+              size: 'xl',
+            }}
+            opened={opened}
+            onClose={close}
+            size="xl"
+          >
             <CalendarPopup />
           </Modal>
         </div>

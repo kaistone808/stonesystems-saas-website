@@ -1,21 +1,16 @@
 'use client';
 
-import {
-  Container,
-  Title,
-  Button,
-  Text,
-  Flex,
-  Modal,
-} from '@mantine/core';
+import { Container, Title, Button, Text, Flex, Modal } from '@mantine/core';
 import Image from 'next/image';
 import { IconRosetteDiscountCheckFilled } from '@tabler/icons-react';
 import { useDisclosure } from '@mantine/hooks';
 import dynamic from 'next/dynamic';
 import classes from './Feature2.module.css';
-import PhoneImage from '@/public/images/phone-left.png';
+import PhoneImage from '@/public/animations/5_STAR_FUNNEL.gif';
 
-const VideoPopup = dynamic(() => import('@/components/Popups/VideoPopup/VideoPopup').then(mod => mod.VideoPopup));
+const VideoPopup = dynamic(() =>
+  import('@/components/Popups/VideoPopup/VideoPopup').then((mod) => mod.VideoPopup)
+);
 
 const features = [
   {
@@ -25,7 +20,8 @@ const features = [
   },
   {
     title: 'Automatic Follow-Up Reminders',
-    description: '"Sure I\'ll leave you a review", but the truth is people forget. We’ll \'gently\' reminder them for a few weeks until they remember.',
+    description:
+      "\"Sure I'll leave you a review\", but the truth is people forget. We’ll 'gently' reminder them for a few weeks until they remember.",
   },
   {
     title: 'Ask For Reviews In One Click',
@@ -52,8 +48,9 @@ export function Feature2() {
   ));
 
   return (
-    <Container size="lg">
-      <div className={classes.inner}>
+    <div className={classes.outer}>
+    <Container size="xl">
+      <div className={classes.inner}><Image alt="website animation" src={PhoneImage} className={classes.image} />
         <div className={classes.content}>
           <Title className={classes.title}>5-Star Magic Funnel</Title>
           <Text className={classes.description} mt="md">
@@ -66,12 +63,20 @@ export function Feature2() {
           <Button onClick={open} size="xl" bg="var(--yellow)" className={classes.control}>
             See 30 Second Demo
           </Button>
-          <Modal opened={opened} onClose={close} size="xl">
-          <VideoPopup videoSrc="/videos/Adam.mov" />
+          <Modal
+            closeButtonProps={{
+              size: 'xl',
+            }}
+            opened={opened}
+            onClose={close}
+            size="xl"
+          >
+            <VideoPopup videoSrc="/videos/Adam.mov" title='5 Star Magic Funnel' />
           </Modal>
         </div>
-        <Image alt="website animation" src={PhoneImage} className={classes.image} />
+        
       </div>
     </Container>
+    </div>
   );
 }

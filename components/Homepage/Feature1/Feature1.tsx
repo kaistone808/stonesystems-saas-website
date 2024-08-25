@@ -7,7 +7,7 @@ import Image from 'next/image';
 import dynamic from 'next/dynamic';
 import classes from './Feature1.module.css';
 
-import PhoneImage from '@/public/images/FUNCTIONAL_WEBSITE.gif';
+import PhoneImage from '@/public/animations/FUNCTIONAL_WEBSITE.gif';
 
 const VideoPopup = dynamic(() => import('@/components/Popups/VideoPopup/VideoPopup').then(mod => mod.VideoPopup));
 
@@ -47,7 +47,7 @@ export function Feature1() {
   ));
 
   return (
-    <Container size="lg">
+    <Container size="xl">
       <Title className={classes.mainTitle}>
         Simple systems that actually work <br /> No degrees required, just a hard hat
       </Title>
@@ -65,8 +65,10 @@ export function Feature1() {
           <Button onClick={open} size="xl" bg="var(--yellow)" className={classes.control}>
             See 30 Second Demo
           </Button>
-          <Modal opened={opened} onClose={close} size="xl">
-            <VideoPopup videoSrc="/videos/Adam.mov" />
+          <Modal closeButtonProps={{
+          size: 'xl',
+        }} opened={opened} onClose={close} size="xl">
+            <VideoPopup videoSrc="/videos/Adam.mov" title='Functional Website' />
           </Modal>
         </div>
       </div>

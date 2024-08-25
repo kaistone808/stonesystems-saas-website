@@ -104,7 +104,7 @@ export const PriceContainer = () => {
                   <Stack w={'100%'} align={'center'} p={20}>
                     <Flex>
                       <Text fw={900} fz={'24'}>
-                        Contractor Basic
+                        Contractor Essentials
                       </Text>
                       {!monthly && <Text className={classes.discount}>17% off</Text>}
                     </Flex>
@@ -182,7 +182,7 @@ export const PriceContainer = () => {
                     <Stack w={'100%'} align="center" p={10}>
                       <Divider w={'100%'} opacity={0.6} />
                       <Text c={'var(--blue)'} fs={'italic'} ta={'center'} fz={'md'} fw={900}>
-                        Everything in Contractor Basic +
+                        Everything in Contractor Essentials +
                       </Text>
                       <Divider w={'100%'} opacity={0.6} />
                       <Flex className={classes.featureDiv}>
@@ -317,7 +317,7 @@ export const PriceContainer = () => {
           {!mobile && (
             <SimpleGrid cols={3}>
               <div className={classes.header}>
-                <Text className={classes.planTitle}>Contractor Basic </Text>
+                <Text className={classes.planTitle}>Contractor Essentials </Text>
               </div>
               <div className={classes.header}>
                 <Text className={classes.planTitle}>Contractor Advanced </Text>
@@ -330,7 +330,7 @@ export const PriceContainer = () => {
           <SimpleGrid cols={mobile ? 1 : 3} className={classes.content}>
             {mobile && (
               <div className={classes.header}>
-                <Text className={classes.planTitle}>Contractor Basic </Text>
+                <Text className={classes.planTitle}>Contractor Essentials </Text>
               </div>
             )}
             <Accordion variant="separated">
@@ -480,10 +480,10 @@ export const PriceContainer = () => {
             )}
             <Accordion variant="separated">
               <Accordion.Item value="everything1">
-                <Accordion.Control className={classes.everythingControl}>Everything From Contractor Basic +</Accordion.Control>
+                <Accordion.Control className={classes.everythingControl}>Everything From Contractor Essentials +</Accordion.Control>
                 <Accordion.Panel>
                   <Text className={classes.contentTitle}>
-                    Contractor Advanced also includes everything from Contractor Basic
+                    Contractor Advanced also includes everything from Contractor Essentials
                   </Text>
                 </Accordion.Panel>
               </Accordion.Item>
@@ -598,7 +598,7 @@ export const PriceContainer = () => {
                 <Accordion.Control className={classes.everythingControl}>Everything From Contractor Advanced +</Accordion.Control>
                 <Accordion.Panel>
                   <Text className={classes.contentTitle}>
-                    Contractor Supreme also includes everything from Contractor Basic and Contractor
+                    Contractor Supreme also includes everything from Contractor Essentials and Contractor
                     Advanced
                   </Text>
                 </Accordion.Panel>

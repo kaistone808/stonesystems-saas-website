@@ -30,7 +30,7 @@
   font-size: 26px;
   color: var(--blue);
   @media (max-width: 30em) {
-    font-size: 18px;
+    font-size: 19px;
   }
   > * {
     font-weight: 600 !important;

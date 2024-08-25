@@ -1,7 +1,20 @@
-.popup{
-    video{
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
-    }
+.popup {
+  video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+}
+
+.title,
+.title2 {
+  font-size: var(--title-font-size);
+  text-align: center;
+  @media (max-width: 756px) {
+    font-size: 26px;
+  }
+}
+
+.title2 {
+  padding-bottom: 20px;
 }
