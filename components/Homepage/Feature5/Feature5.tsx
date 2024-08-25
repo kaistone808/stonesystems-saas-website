@@ -66,7 +66,7 @@ export function Feature5() {
             <VideoPopup videoSrc="/videos/Adam.mov" title="Local SEO" />
           </Modal>
         </div>
-        <Image alt="website animation" src={PhoneImage} className={classes.image} />
+        <Image alt="website animation" unoptimized={true} src={PhoneImage} className={classes.image} />
       </div>
     </Container>
   );

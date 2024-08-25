@@ -50,7 +50,7 @@ export function Feature2() {
   return (
     <div className={classes.outer}>
     <Container size="xl">
-      <div className={classes.inner}><Image alt="website animation" src={PhoneImage} className={classes.image} />
+      <div className={classes.inner}><Image unoptimized={true} alt="website animation" src={PhoneImage} className={classes.image} />
         <div className={classes.content}>
           <Title className={classes.title}>5-Star Magic Funnel</Title>
           <Text className={classes.description} mt="md">

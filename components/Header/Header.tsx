@@ -192,7 +192,7 @@ export function Header() {
                 <a href="#" className={classes.link}>
                   <Center inline>
                     <Box component="span" ml="sm" mr={5}>
-                      Product
+                      Products
                     </Box>
                     <IconChevronDown style={{ width: rem(16), height: rem(16) }} color="#000000" />
                   </Center>
@@ -309,7 +309,7 @@ export function Header() {
           <UnstyledButton onClick={toggleProductLinks}>
             <Center inline>
               <Box className={classes.link} component="span" mr={5}>
-                Product
+                Products
               </Box>
               <IconChevronDown style={{ width: rem(16), height: rem(16) }} color="#000000" />
             </Center>

@@ -74,7 +74,7 @@ export function Feature4() {
               <VideoPopup videoSrc="/videos/Adam.mov" title='One-Click Marketing Campaigns'/>
             </Modal>
           </div>
-          <Image alt="website animation" src={PhoneImage} className={classes.image} />
+          <Image alt="website animation" unoptimized={true} src={PhoneImage} className={classes.image} />
         </div>
       </Container>
     </div>

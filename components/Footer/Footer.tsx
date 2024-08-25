@@ -42,7 +42,7 @@ const data = [
     ],
   },
   {
-    title: 'Product',
+    title: 'Products',
     links: [
       { label: 'Functional Website', link: '/features/functional-website' },
       { label: 'Missed Call Text Back', link: '/features/missed-call-text-back' },
