@@ -163,7 +163,18 @@ export const PriceContainer = () => {
                       </Flex>
                       <Divider w={'100%'} opacity={0.7} />
                     </Stack>
-                    <Button className={classes.button1} bg={'var(--yellow)'} w="75%">
+                    <Button
+                      component="a"
+                      target='_blank'
+                      href={
+                        monthly
+                          ? 'https://essential.stonesystems.io/essential-6483-8947'
+                          : 'https://essential.stonesystems.io/essential-6483-8947-6749'
+                      }
+                      className={classes.button1}
+                      bg={'var(--yellow)'}
+                      w="75%"
+                    >
                       START NOW
                     </Button>
                   </Stack>
@@ -224,6 +235,13 @@ export const PriceContainer = () => {
                     </Stack>
                     <Button
                       className={classes.button2}
+                      component='a'
+                      target='_blank'
+                      href={
+                        monthly
+                          ? 'https://professional.stonesystems.io/professional-6506-6315'
+                          : 'https://professional.stonesystems.io/professional-6506-6315-1246'
+                      }
                       c={'var(--blue)'}
                       bg={'var(--white)'}
                       w="75%"
@@ -302,7 +320,14 @@ export const PriceContainer = () => {
                       </Flex>
                       <Divider w={'100%'} opacity={0.7} />
                     </Stack>
-                    <Button className={classes.button1} bg={'var(--yellow)'} w="75%">
+                    <Button component='a'
+                      target='_blank'
+                      href={
+                        monthly
+                          ? 'https://premium.stonesystems.io/professional-6506-8970-8451'
+                          : 'https://premium.stonesystems.io/professional-6506-8970-8451-9290'
+                      }
+                      className={classes.button1} bg={'var(--yellow)'} w="75%">
                       START NOW
                     </Button>
                   </Stack>
@@ -460,7 +485,9 @@ export const PriceContainer = () => {
               </Accordion.Item>
 
               <Accordion.Item value="bcards" ref={basicRefs.bcards}>
-                <Accordion.Control bg={'var(--white)'}>500 Branded Business Cards</Accordion.Control>
+                <Accordion.Control bg={'var(--white)'}>
+                  500 Branded Business Cards
+                </Accordion.Control>
                 <Accordion.Panel>
                   <Text className={classes.contentTitle}>
                     Honestly, if you don't have any of these yet, I don't know what you're waiting
@@ -480,7 +507,9 @@ export const PriceContainer = () => {
             )}
             <Accordion variant="separated">
               <Accordion.Item value="everything1">
-                <Accordion.Control className={classes.everythingControl}>Everything From Contractor Essentials +</Accordion.Control>
+                <Accordion.Control className={classes.everythingControl}>
+                  Everything From Contractor Essentials +
+                </Accordion.Control>
                 <Accordion.Panel>
                   <Text className={classes.contentTitle}>
                     Contractor Advanced also includes everything from Contractor Essentials
@@ -489,7 +518,9 @@ export const PriceContainer = () => {
               </Accordion.Item>
 
               <Accordion.Item value="websiteseo" ref={advancedRefs.websiteseo}>
-                <Accordion.Control bg={'var(--white)'}>Full Website SEO Optimizations</Accordion.Control>
+                <Accordion.Control bg={'var(--white)'}>
+                  Full Website SEO Optimizations
+                </Accordion.Control>
                 <Accordion.Panel>
                   <Text className={classes.contentTitle}>
                     Okay, let’s see how much we can confuse you… Some nerdy tech mumbo jumbo with a
@@ -595,11 +626,13 @@ export const PriceContainer = () => {
             )}
             <Accordion variant="separated">
               <Accordion.Item value="everything2">
-                <Accordion.Control className={classes.everythingControl}>Everything From Contractor Advanced +</Accordion.Control>
+                <Accordion.Control className={classes.everythingControl}>
+                  Everything From Contractor Advanced +
+                </Accordion.Control>
                 <Accordion.Panel>
                   <Text className={classes.contentTitle}>
-                    Contractor Supreme also includes everything from Contractor Essentials and Contractor
-                    Advanced
+                    Contractor Supreme also includes everything from Contractor Essentials and
+                    Contractor Advanced
                   </Text>
                 </Accordion.Panel>
               </Accordion.Item>
@@ -678,7 +711,9 @@ export const PriceContainer = () => {
               </Accordion.Item>
 
               <Accordion.Item value="gmbopt" ref={supremeRefs.gmbopt}>
-                <Accordion.Control bg={'var(--white)'}>Google My Business Optimizations</Accordion.Control>
+                <Accordion.Control bg={'var(--white)'}>
+                  Google My Business Optimizations
+                </Accordion.Control>
                 <Accordion.Panel>
                   <Text className={classes.contentTitle}>
                     Because your business needs more than just a pin on the map
@@ -692,7 +727,9 @@ export const PriceContainer = () => {
               </Accordion.Item>
 
               <Accordion.Item value="reports" ref={supremeRefs.reports}>
-                <Accordion.Control bg={'var(--white)'}>Monthly SEO Reports Sent To You</Accordion.Control>
+                <Accordion.Control bg={'var(--white)'}>
+                  Monthly SEO Reports Sent To You
+                </Accordion.Control>
                 <Accordion.Panel>
                   <Text className={classes.contentTitle}>
                     Because who doesn't enjoy a fresh batch of SEO data to look at every month
