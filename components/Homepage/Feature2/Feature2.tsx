@@ -6,7 +6,7 @@ import { IconRosetteDiscountCheckFilled } from '@tabler/icons-react';
 import { useDisclosure } from '@mantine/hooks';
 import dynamic from 'next/dynamic';
 import classes from './Feature2.module.css';
-import PhoneImage from '@/public/animations/5_STAR_FUNNEL.gif';
+import PhoneImage from '@/public/animations/5_STAR_FUNNEL2.gif';
 
 const VideoPopup = dynamic(() =>
   import('@/components/Popups/VideoPopup/VideoPopup').then((mod) => mod.VideoPopup)

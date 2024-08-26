@@ -1,13 +1,13 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 
 interface LazyLoadVideoProps extends React.VideoHTMLAttributes<HTMLVideoElement> {
   src: string;
-  poster?: string;
+  thumbnail: string;  // Server-generated thumbnail
   type: string;
 }
 
-const LazyLoadVideo: React.FC<LazyLoadVideoProps> = ({ src, poster, type, ...props }) => {
+const LazyLoadVideo: React.FC<LazyLoadVideoProps> = ({ src, thumbnail, type, ...props }) => {
   const videoRef = useRef<HTMLVideoElement>(null);
   const { ref, inView } = useInView({
     triggerOnce: true, // Load the video only once
@@ -16,7 +16,8 @@ const LazyLoadVideo: React.FC<LazyLoadVideoProps> = ({ src, poster, type, ...pro
 
   useEffect(() => {
     if (inView && videoRef.current) {
-      videoRef.current.src = src; // Set the video source when it comes into view
+      videoRef.current.preload = 'auto'; // Preload video when it comes into view
+      videoRef.current.src = src; // Set the video source
       videoRef.current.load(); // Start loading the video
     }
   }, [inView, src]);
@@ -25,11 +26,12 @@ const LazyLoadVideo: React.FC<LazyLoadVideoProps> = ({ src, poster, type, ...pro
     <div ref={ref} style={{ minHeight: '200px' }}>
       <video
         ref={videoRef}
-        poster={poster || ''} // Load the poster (thumbnail)
+        poster={thumbnail} // Use server-generated thumbnail
+        preload="metadata" // Initially load only metadata
         controls
         {...props}
       >
-        <source type={type} />
+        <source src={src} type={type} />
         Your browser does not support the video tag.
       </video>
     </div>
