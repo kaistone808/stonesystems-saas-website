@@ -3,11 +3,11 @@ import { useInView } from 'react-intersection-observer';
 
 interface LazyLoadVideoProps extends React.VideoHTMLAttributes<HTMLVideoElement> {
   src: string;
-  thumbnail: string;  // Server-generated thumbnail
+/*   thumbnail: string;  // Server-generated thumbnail */
   type: string;
 }
 
-const LazyLoadVideo: React.FC<LazyLoadVideoProps> = ({ src, thumbnail, type, ...props }) => {
+const LazyLoadVideo: React.FC<LazyLoadVideoProps> = ({ src, /* thumbnail, */ type, ...props }) => {
   const videoRef = useRef<HTMLVideoElement>(null);
   const { ref, inView } = useInView({
     triggerOnce: true, // Load the video only once
@@ -26,7 +26,7 @@ const LazyLoadVideo: React.FC<LazyLoadVideoProps> = ({ src, thumbnail, type, ...
     <div ref={ref} style={{ minHeight: '200px' }}>
       <video
         ref={videoRef}
-        poster={thumbnail} // Use server-generated thumbnail
+        poster={'/images/trades/carpet.png'} // Use server-generated thumbnail
         preload="metadata" // Initially load only metadata
         controls
         {...props}
