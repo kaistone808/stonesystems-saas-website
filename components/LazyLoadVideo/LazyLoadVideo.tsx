@@ -26,7 +26,7 @@ const LazyLoadVideo: React.FC<LazyLoadVideoProps> = ({ src, poster, alt, type, w
         }
       },
       {
-        rootMargin: '200px 0px',
+        rootMargin: '0px',
         threshold: 0.1,
       }
     );

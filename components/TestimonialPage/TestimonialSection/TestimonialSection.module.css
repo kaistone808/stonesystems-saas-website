@@ -49,6 +49,12 @@
     height: auto;
     display: block;
   }
+  @media (max-width: 30em) {
+    video,
+    img {
+      min-width: 100%;
+    }
+  }
   .star {
     width: rem(22px);
     height: rem(22px);
