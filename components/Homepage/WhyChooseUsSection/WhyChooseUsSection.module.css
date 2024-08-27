@@ -25,8 +25,8 @@
 .mainTitle {
   color: var(--blue);
   font-size: var(--title-font-size) !important;
-  line-height: 1.2;
-  font-weight: 900;
+  line-height: 1.2 !important;
+  font-weight: 900 !important;
   text-align: center;
   padding: calc(var(--space-40) * 2) 0;
 
