@@ -9,7 +9,9 @@ import classes from './Feature1.module.css';
 
 import PhoneImage from '@/public/animations/FUNCTIONAL_WEBSITE.gif';
 
-const VideoPopup = dynamic(() => import('@/components/Popups/VideoPopup/VideoPopup').then(mod => mod.VideoPopup));
+const VideoPopup = dynamic(() =>
+  import('@/components/Popups/VideoPopup/VideoPopup').then((mod) => mod.VideoPopup)
+);
 
 const features = [
   {
@@ -52,7 +54,12 @@ export function Feature1() {
         Simple systems that actually work <br /> No degrees required, just a hard hat
       </Title>
       <div className={classes.inner}>
-      <Image alt="website animation" unoptimized={true} src={PhoneImage} className={classes.image} />
+        <Image
+          alt="website animation"
+          unoptimized={true}
+          src={PhoneImage}
+          className={classes.image}
+        />
         <div className={classes.content}>
           <Title className={classes.title}>Functional Website</Title>
           <Text className={classes.description} mt="md">
@@ -65,10 +72,19 @@ export function Feature1() {
           <Button onClick={open} size="xl" bg="var(--yellow)" className={classes.control}>
             See 30 Second Demo
           </Button>
-          <Modal closeButtonProps={{
-          size: 'xl',
-        }} opened={opened} onClose={close} size="xl">
-            <VideoPopup videoThumbnail='/images/thumbnails/Adam.jpg' videoSrc="/videos/Adam.mov" title='Functional Website' />
+          <Modal
+            closeButtonProps={{
+              size: 'xl',
+            }}
+            opened={opened}
+            onClose={close}
+            size="xl"
+          >
+            <VideoPopup
+              videoThumbnail="/images/thumbnails/Adam.jpg"
+              videoSrc="/videos/Adam.mov#t=0.1"
+              title="Functional Website"
+            />
           </Modal>
         </div>
       </div>

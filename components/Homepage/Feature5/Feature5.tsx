@@ -42,34 +42,43 @@ export function Feature5() {
 
   return (
     <div className={classes.outer}>
-    <Container size="xl">
-      <div className={classes.inner}><Image alt="website animation" unoptimized={true} src={PhoneImage} className={classes.image} />
-        <div className={classes.content}>
-          <Title className={classes.title}>Local SEO</Title>
-          <Text className={classes.description} mt="md">
-            "Rank number one on Google in a week!"
-            <br /> Just kidding, SEO takes time...
-          </Text>
-          <Flex mt="lg" direction="column">
-            {items}
-          </Flex>
-          <Button onClick={open} size="xl" bg="var(--yellow)" className={classes.control}>
-            See 30 Second Demo
-          </Button>
-          <Modal
-            closeButtonProps={{
-              size: 'xl',
-            }}
-            opened={opened}
-            onClose={close}
-            size="xl"
-          >
-            <VideoPopup videoThumbnail='/images/thumbnails/Adam.jpg' videoSrc="/videos/Adam.mov" title="Local SEO" />
-          </Modal>
+      <Container size="xl">
+        <div className={classes.inner}>
+          <Image
+            alt="website animation"
+            unoptimized={true}
+            src={PhoneImage}
+            className={classes.image}
+          />
+          <div className={classes.content}>
+            <Title className={classes.title}>Local SEO</Title>
+            <Text className={classes.description} mt="md">
+              "Rank number one on Google in a week!"
+              <br /> Just kidding, SEO takes time...
+            </Text>
+            <Flex mt="lg" direction="column">
+              {items}
+            </Flex>
+            <Button onClick={open} size="xl" bg="var(--yellow)" className={classes.control}>
+              See 30 Second Demo
+            </Button>
+            <Modal
+              closeButtonProps={{
+                size: 'xl',
+              }}
+              opened={opened}
+              onClose={close}
+              size="xl"
+            >
+              <VideoPopup
+                videoThumbnail="/images/thumbnails/Adam.jpg"
+                videoSrc="/videos/Adam.mov#t=0.1"
+                title="Local SEO"
+              />
+            </Modal>
+          </div>
         </div>
-        
-      </div>
-    </Container>
+      </Container>
     </div>
   );
 }

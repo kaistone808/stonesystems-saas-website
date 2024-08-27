@@ -50,7 +50,12 @@ export function Feature3() {
   return (
     <Container size="xl">
       <div className={classes.inner}>
-        <Image alt="website animation" unoptimized={true} src={PhoneImage} className={classes.image} />
+        <Image
+          alt="website animation"
+          unoptimized={true}
+          src={PhoneImage}
+          className={classes.image}
+        />
 
         <div className={classes.content}>
           <Title className={classes.title}>Missed Call Text Back</Title>
@@ -72,7 +77,11 @@ export function Feature3() {
             onClose={close}
             size="xl"
           >
-            <VideoPopup videoThumbnail='/images/thumbnails/Adam.jpg' videoSrc="/videos/Adam.mov" title='Missed Call Text Back' />
+            <VideoPopup
+              videoThumbnail="/images/thumbnails/Adam.jpg"
+              videoSrc="/videos/Adam.mov#t=0.1"
+              title="Missed Call Text Back"
+            />
           </Modal>
         </div>
       </div>

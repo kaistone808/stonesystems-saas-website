@@ -49,34 +49,43 @@ export function Feature2() {
 
   return (
     <div className={classes.outer}>
-    <Container size="xl">
-      <div className={classes.inner}>
-        <div className={classes.content}>
-          <Title className={classes.title}>5-Star Magic Funnel</Title>
-          <Text className={classes.description} mt="md">
-            "Sure I'll leave you a review", but the truth is people forget. We’ll 'gently' remind
-            them for a few weeks until they remember.
-          </Text>
-          <Flex mt="lg" direction="column">
-            {items}
-          </Flex>
-          <Button onClick={open} size="xl" bg="var(--yellow)" className={classes.control}>
-            See 30 Second Demo
-          </Button>
-          <Modal
-            closeButtonProps={{
-              size: 'xl',
-            }}
-            opened={opened}
-            onClose={close}
-            size="xl"
-          >
-            <VideoPopup videoThumbnail='/images/thumbnails/Adam.jpg' videoSrc="/videos/Adam.mov" title='5 Star Magic Funnel' />
-          </Modal>
+      <Container size="xl">
+        <div className={classes.inner}>
+          <div className={classes.content}>
+            <Title className={classes.title}>5-Star Magic Funnel</Title>
+            <Text className={classes.description} mt="md">
+              "Sure I'll leave you a review", but the truth is people forget. We’ll 'gently' remind
+              them for a few weeks until they remember.
+            </Text>
+            <Flex mt="lg" direction="column">
+              {items}
+            </Flex>
+            <Button onClick={open} size="xl" bg="var(--yellow)" className={classes.control}>
+              See 30 Second Demo
+            </Button>
+            <Modal
+              closeButtonProps={{
+                size: 'xl',
+              }}
+              opened={opened}
+              onClose={close}
+              size="xl"
+            >
+              <VideoPopup
+                videoThumbnail="/images/thumbnails/Adam.jpg"
+                videoSrc="/videos/Adam.mov#t=0.1"
+                title="5 Star Magic Funnel"
+              />
+            </Modal>
+          </div>
+          <Image
+            unoptimized={true}
+            alt="website animation"
+            src={PhoneImage}
+            className={classes.image}
+          />
         </div>
-        <Image unoptimized={true} alt="website animation" src={PhoneImage} className={classes.image} />
-      </div>
-    </Container>
+      </Container>
     </div>
   );
 }
