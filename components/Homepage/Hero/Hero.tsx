@@ -1,16 +1,11 @@
 'use client';
 
-import { Container, Title, Button, Text, Flex, Divider, Modal } from '@mantine/core';
+import { Container, Title, Button, Text, Flex, Divider } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import Image from 'next/image';
 import React from 'react';
-import dynamic from 'next/dynamic';
 import classes from './Hero.module.css';
 import StoneManImage from '@/public/images/new.png';
-
-const CalendarPopup = dynamic(() =>
-  import('@/components/Popups/CalendarPopup/CalendarPopup').then((mod) => mod.CalendarPopup)
-);
 
 export function Hero() {
   const [opened, { close, open }] = useDisclosure(false);
@@ -67,19 +62,15 @@ export function Hero() {
                     src="/images/people/astridsmall.jpeg"
                   />
                 </Flex>
-                <Button size="xl" onClick={open} className={classes.control}>
+                <Button
+                  component="a"
+                  href="/contact-us"
+                  size="xl"
+                  onClick={open}
+                  className={classes.control}
+                >
                   Book A Call
                 </Button>
-                <Modal
-                  closeButtonProps={{
-                    size: 'xl',
-                  }}
-                  opened={opened}
-                  onClose={close}
-                  size="xl"
-                >
-                  <CalendarPopup />
-                </Modal>
               </div>
             </Flex>
             <Flex className={classes.creditDiv}>

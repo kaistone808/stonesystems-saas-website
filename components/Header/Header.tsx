@@ -17,7 +17,6 @@ import {
   ScrollArea,
   rem,
   useMantineTheme,
-  Modal,
 } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import {
@@ -38,12 +37,7 @@ import {
   IconX,
 } from '@tabler/icons-react';
 import Image from 'next/image';
-import dynamic from 'next/dynamic';
 import classes from './Header.module.css';
-
-const CalendarPopup = dynamic(() =>
-  import('../Popups/CalendarPopup/CalendarPopup').then((mod) => mod.CalendarPopup)
-);
 
 const productData = [
   {
@@ -254,6 +248,8 @@ export function Header() {
               Log In
             </Button>
             <Button
+              component="a"
+              href="/contact-us"
               className={classes.button}
               onClick={open}
               size="xl"
@@ -262,16 +258,6 @@ export function Header() {
             >
               Book A Call
             </Button>
-            <Modal
-              closeButtonProps={{
-                size: 'xl',
-              }}
-              opened={opened}
-              onClose={close}
-              size="xl"
-            >
-              <CalendarPopup />
-            </Modal>
           </Group>
           <Image
             loading="eager"
@@ -337,19 +323,9 @@ export function Header() {
           <a href="https://app.stonesystems.io" className={classes.linkLogin}>
             Log in
           </a>
-          <a onClick={open} className={classes.linkModal}>
+          <a href="/contact-us" className={classes.linkModal}>
             Book A Call
           </a>
-          <Modal
-            closeButtonProps={{
-              size: 'xl',
-            }}
-            opened={opened}
-            onClose={close}
-            size="xl"
-          >
-            <CalendarPopup />
-          </Modal>
         </ScrollArea>
       </Drawer>
     </Box>

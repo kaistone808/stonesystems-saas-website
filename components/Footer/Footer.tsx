@@ -1,25 +1,10 @@
 'use client';
 
-import {
-  Text,
-  Container,
-  ActionIcon,
-  Group,
-  rem,
-  Flex,
-  Divider,
-  Button,
-  Modal,
-} from '@mantine/core';
+import { Text, Container, ActionIcon, Group, rem, Flex, Divider, Button } from '@mantine/core';
 import { IconBrandYoutube, IconBrandInstagram, IconBrandGoogle } from '@tabler/icons-react';
 import { useDisclosure } from '@mantine/hooks';
-import dynamic from 'next/dynamic';
 import Image from 'next/image';
 import classes from './Footer.module.css';
-
-const CalendarPopup = dynamic(() =>
-  import('@/components/Popups/CalendarPopup/CalendarPopup').then((mod) => mod.CalendarPopup)
-);
 
 const data = [
   {
@@ -98,19 +83,15 @@ export function Footer() {
 
           <Flex className={classes.ctaDiv} align="center">
             <Text className={classes.cta}>Ready to get started?</Text>
-            <Button onClick={open} className={classes.button} size="md">
+            <Button
+              component="a"
+              href="/contact-us"
+              onClick={open}
+              className={classes.button}
+              size="md"
+            >
               Book A Call
             </Button>
-            <Modal
-              closeButtonProps={{
-                size: 'xl',
-              }}
-              opened={opened}
-              onClose={close}
-              size="xl"
-            >
-              <CalendarPopup />
-            </Modal>
           </Flex>
         </Flex>
         <Divider my="2.5rem" color="var(--border-color)" />
@@ -118,19 +99,16 @@ export function Footer() {
       <Container size="lg" className={classes.inner}>
         <div className={classes.bigCta}>
           <Text className={classes.description}>Want to learn more about how we can help?</Text>
-          <Button onClick={open} className={classes.button} mt="1rem" size="xl">
-            Book A Call
-          </Button>
-          <Modal
-            closeButtonProps={{
-              size: 'xl',
-            }}
-            opened={opened}
-            onClose={close}
+          <Button
+            component="a"
+            href="/contact-us"
+            onClick={open}
+            className={classes.button}
+            mt="1rem"
             size="xl"
           >
-            <CalendarPopup />
-          </Modal>
+            Book A Call
+          </Button>
         </div>
         <div className={classes.groups}>{groups}</div>
       </Container>

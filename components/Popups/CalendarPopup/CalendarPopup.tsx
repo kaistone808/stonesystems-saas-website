@@ -13,7 +13,7 @@ export function CalendarPopup() {
           scrolling="no"
           id="hUF685Mpy55WxvsB3UV1_1723761228001"
         />
-        <Script src="https://api.ezclick.io/js/form_embed.js" type="text/javascript"/>
+        <Script strategy='beforeInteractive' src="https://api.ezclick.io/js/form_embed.js" type="text/javascript"/>
       </Container>
     </>
   );

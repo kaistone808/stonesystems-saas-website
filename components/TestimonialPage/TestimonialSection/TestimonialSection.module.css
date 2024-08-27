@@ -39,6 +39,24 @@
     width: 100%;
     background-color: black;
   }
+  img {
+    border-radius: 10px;
+    min-width: 386px;
+    max-height: 217px;
+    background: black;
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .star {
+    width: rem(22px);
+    height: rem(22px);
+    min-width: auto;
+    max-height: auto;
+    border-radius: 0;
+    background-color: transparent;
+  }
 }
 
 .testimonial {
