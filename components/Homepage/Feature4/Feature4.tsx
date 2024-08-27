@@ -71,7 +71,7 @@ export function Feature4() {
               onClose={close}
               size="xl"
             >
-              <VideoPopup videoSrc="/videos/Adam.mov" title='One-Click Marketing Campaigns'/>
+              <VideoPopup videoThumbnail='/images/thumbnails/Adam.jpg' videoSrc="/videos/Adam.mov" title='One-Click Marketing Campaigns'/>
             </Modal>
           </div>
           <Image alt="website animation" unoptimized={true} src={PhoneImage} className={classes.image} />

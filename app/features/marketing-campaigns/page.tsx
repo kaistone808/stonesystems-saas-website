@@ -56,6 +56,7 @@ export default function MarketingCampaignsPage() {
         title="Marketing Campaigns"
         title2="Why do I need marketing campaigns?"
         videoSrc="https://www.youtube.com/embed/9bZkp7q19f0"
+                videoThumbnail='/images/thumbnails/adam.jpg'
       />
     </>
   );

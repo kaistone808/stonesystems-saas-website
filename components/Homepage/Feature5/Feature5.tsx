@@ -41,8 +41,9 @@ export function Feature5() {
   ));
 
   return (
+    <div className={classes.outer}>
     <Container size="xl">
-      <div className={classes.inner}>
+      <div className={classes.inner}><Image alt="website animation" unoptimized={true} src={PhoneImage} className={classes.image} />
         <div className={classes.content}>
           <Title className={classes.title}>Local SEO</Title>
           <Text className={classes.description} mt="md">
@@ -63,11 +64,12 @@ export function Feature5() {
             onClose={close}
             size="xl"
           >
-            <VideoPopup videoSrc="/videos/Adam.mov" title="Local SEO" />
+            <VideoPopup videoThumbnail='/images/thumbnails/Adam.jpg' videoSrc="/videos/Adam.mov" title="Local SEO" />
           </Modal>
         </div>
-        <Image alt="website animation" unoptimized={true} src={PhoneImage} className={classes.image} />
+        
       </div>
     </Container>
+    </div>
   );
 }

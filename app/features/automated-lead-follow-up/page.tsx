@@ -56,6 +56,7 @@ export default function AutomatedSMSLeadFollowUpPage() {
         title="Automated SMS Lead Follow-Up"
         title2="What is automated SMS lead follow-up?"
         videoSrc="https://www.youtube.com/embed/9bZkp7q19f0"
+                videoThumbnail='/images/thumbnails/adam.jpg'
       />
     </>
   );

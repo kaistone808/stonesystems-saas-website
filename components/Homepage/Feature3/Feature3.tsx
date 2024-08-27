@@ -72,7 +72,7 @@ export function Feature3() {
             onClose={close}
             size="xl"
           >
-            <VideoPopup videoSrc="/videos/Adam.mov" title='Missed Call Text Back' />
+            <VideoPopup videoThumbnail='/images/thumbnails/Adam.jpg' videoSrc="/videos/Adam.mov" title='Missed Call Text Back' />
           </Modal>
         </div>
       </div>

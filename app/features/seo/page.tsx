@@ -65,6 +65,7 @@ export default function SEOPage() {
         title="Local SEO"
         title2="What is local SEO?"
         videoSrc="https://www.youtube.com/embed/9bZkp7q19f0"
+                videoThumbnail='/images/thumbnails/adam.jpg'
       />
     </>
   );

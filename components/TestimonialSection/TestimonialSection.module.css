@@ -69,17 +69,30 @@
     max-height: 210px;
     background: black;
   }
+  img {
+    border-radius: 10px;
+    min-width: 250px;
+    max-height: 210px;
+    background: black;
+    object-fit: contain;
+    width: auto;
+    height: 100%;
+    display: block;
+  }
+  .star {
+    width: rem(22px);
+    height: rem(22px);
+    min-width: auto;
+    max-height: auto;
+    border-radius: 0;
+    background-color: transparent;
+  }
 }
 
 .stars {
   padding-left: 1rem;
   display: flex;
   align-items: center;
-}
-
-.star {
-  width: rem(22px);
-  height: rem(22px);
 }
 
 .root {

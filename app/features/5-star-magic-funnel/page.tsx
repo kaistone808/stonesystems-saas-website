@@ -57,6 +57,7 @@ export default function StarMagicFunnelPage() {
         title="5-Star Magic Funnel"
         title2="What is the 5-star magic funnel?"
         videoSrc="https://www.youtube.com/embed/9bZkp7q19f0"
+        videoThumbnail='/images/thumbnails/adam.jpg'
       />
     </>
   );

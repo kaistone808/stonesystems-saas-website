@@ -21,9 +21,10 @@ interface FeatureProps {
   title: string;
   title2: string;
   videoSrc: string;
+  videoThumbnail: string;
 }
 
-export function IntroSection({ statistics, benefits, title, title2, videoSrc }: FeatureProps) {
+export function IntroSection({ statistics, benefits, title, title2, videoSrc, videoThumbnail }: FeatureProps) {
   const theme = useMantineTheme();
   const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
   const benefitsContent = benefits.map((benefit) => (
@@ -62,7 +63,7 @@ export function IntroSection({ statistics, benefits, title, title2, videoSrc }: 
                 <Title order={2} className={classes.videoTitle}>
                   See a 30 sec demo below
                 </Title>
-                <LazyLoadVideo src={videoSrc} type="video/mp4" width="100%" height="auto" />
+                <LazyLoadVideo poster={videoThumbnail} alt={title} src={videoSrc} type="video/mp4" width="100%" height="auto" />
               </Paper>
             </Grid.Col>
           </Grid>

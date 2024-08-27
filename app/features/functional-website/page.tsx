@@ -56,6 +56,7 @@ export default function FunctionalWebsitePage() {
         title="Functional Website"
         title2="What is the functional website?"
         videoSrc="https://www.youtube.com/embed/9bZkp7q19f0"
+                videoThumbnail='/images/thumbnails/adam.jpg'
       />
     </>
   );

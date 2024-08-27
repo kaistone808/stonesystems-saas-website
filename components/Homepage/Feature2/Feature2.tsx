@@ -6,7 +6,7 @@ import { IconRosetteDiscountCheckFilled } from '@tabler/icons-react';
 import { useDisclosure } from '@mantine/hooks';
 import dynamic from 'next/dynamic';
 import classes from './Feature2.module.css';
-import PhoneImage from '@/public/animations/5_STAR_FUNNEL2.gif';
+import PhoneImage from '@/public/animations/5_STAR_FUNNEL.gif';
 
 const VideoPopup = dynamic(() =>
   import('@/components/Popups/VideoPopup/VideoPopup').then((mod) => mod.VideoPopup)
@@ -50,7 +50,7 @@ export function Feature2() {
   return (
     <div className={classes.outer}>
     <Container size="xl">
-      <div className={classes.inner}><Image unoptimized={true} alt="website animation" src={PhoneImage} className={classes.image} />
+      <div className={classes.inner}>
         <div className={classes.content}>
           <Title className={classes.title}>5-Star Magic Funnel</Title>
           <Text className={classes.description} mt="md">
@@ -71,10 +71,10 @@ export function Feature2() {
             onClose={close}
             size="xl"
           >
-            <VideoPopup videoSrc="/videos/Adam.mov" title='5 Star Magic Funnel' />
+            <VideoPopup videoThumbnail='/images/thumbnails/Adam.jpg' videoSrc="/videos/Adam.mov" title='5 Star Magic Funnel' />
           </Modal>
         </div>
-        
+        <Image unoptimized={true} alt="website animation" src={PhoneImage} className={classes.image} />
       </div>
     </Container>
     </div>

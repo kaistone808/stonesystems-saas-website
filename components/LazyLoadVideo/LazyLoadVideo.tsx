@@ -1,39 +1,102 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { useInView } from 'react-intersection-observer';
+import Image from 'next/image';
+import React, { useState, useEffect, useRef } from 'react';
+import classes from './LazyLoadVideo.module.css';
 
-interface LazyLoadVideoProps extends React.VideoHTMLAttributes<HTMLVideoElement> {
+interface LazyLoadVideoProps {
   src: string;
-/*   thumbnail: string;  // Server-generated thumbnail */
+  poster: string;
+  alt: string;
   type: string;
+  width: string;
+  height: string;
 }
 
-const LazyLoadVideo: React.FC<LazyLoadVideoProps> = ({ src, /* thumbnail, */ type, ...props }) => {
-  const videoRef = useRef<HTMLVideoElement>(null);
-  const { ref, inView } = useInView({
-    triggerOnce: true, // Load the video only once
-    threshold: 0.5, // 50% of the video needs to be visible to load
-  });
+const LazyLoadVideo: React.FC<LazyLoadVideoProps> = ({ src, poster, alt, type, width, height }) => {
+  const [isIntersecting, setIsIntersecting] = useState<boolean>(false);
+  const [isLoaded, setIsLoaded] = useState<boolean>(false);
+  const videoRef = useRef<HTMLVideoElement | null>(null);
+  const thumbnailRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    if (inView && videoRef.current) {
-      videoRef.current.preload = 'auto'; // Preload video when it comes into view
-      videoRef.current.src = src; // Set the video source
-      videoRef.current.load(); // Start loading the video
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsIntersecting(true);
+          observer.disconnect(); 
+        }
+      },
+      {
+        rootMargin: '200px 0px',
+        threshold: 0.1,
+      }
+    );
+
+    if (thumbnailRef.current) {
+      observer.observe(thumbnailRef.current);
     }
-  }, [inView, src]);
+
+    return () => {
+      if (thumbnailRef.current) {
+        observer.unobserve(thumbnailRef.current);
+      }
+    };
+  }, []);
+
+  useEffect(() => {
+    if (isIntersecting && videoRef.current) {
+      const handleLoadedData = () => {
+        setIsLoaded(true);
+      };
+
+      videoRef.current.addEventListener('loadeddata', handleLoadedData);
+
+      return () => {
+        if (videoRef.current) {
+          videoRef.current.removeEventListener('loadeddata', handleLoadedData);
+        }
+      };
+    }
+  }, [isIntersecting]);
 
   return (
-    <div ref={ref} style={{ minHeight: '200px' }}>
-      <video
-        ref={videoRef}
-        poster={'/images/trades/carpet.png'} // Use server-generated thumbnail
-        preload="metadata" // Initially load only metadata
-        controls
-        {...props}
-      >
-        <source src={src} type={type} />
-        Your browser does not support the video tag.
-      </video>
+    <div ref={thumbnailRef} className={classes.videoContainer}>
+      {isIntersecting ? (
+        <>
+          {!isLoaded && (
+            <Image
+              className={classes.image}
+              width={100}
+              height={100}
+              loading="eager"
+              src={poster}
+              alt={alt}
+            />
+          )}
+          <video
+            width={width}
+            height={height}
+            ref={videoRef}
+            src={src}
+            poster={poster}
+            controls={isLoaded} 
+            preload="metadata" 
+            style={{ display: isLoaded ? 'block' : 'none' }} 
+            className={classes.video}
+          >
+            <source src={src} type={type} />
+            Your browser does not support the video tag.
+          </video>
+        </>
+      ) : (
+        <Image
+          className={classes.image}
+          width={100}
+          height={100}
+          loading="eager"
+          src={poster}
+          alt={alt}
+        />
+      )}
     </div>
   );
 };

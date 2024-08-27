@@ -51,6 +51,7 @@ export default function MissedCallTextBackPage() {
         title="Missed Call Text Back"
         title2="What is missed call text back?"
         videoSrc="https://www.youtube.com/embed/9bZkp7q19f0"
+                videoThumbnail='/images/thumbnails/adam.jpg'
       />
     </>
   );

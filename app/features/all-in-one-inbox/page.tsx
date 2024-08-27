@@ -41,6 +41,7 @@ export default function AllInOneInboxPage() {
         title="All In One Inbox"
         title2="What is the all in one inbox?"
         videoSrc="https://www.youtube.com/embed/9bZkp7q19f0"
+                videoThumbnail='/images/thumbnails/adam.jpg'
       />
     </>
   );

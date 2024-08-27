@@ -54,6 +54,7 @@ export default function BusinessPhonePage() {
         title="Blog Posts"
         title2="Why do i need a business phone?"
         videoSrc="https://www.youtube.com/embed/9bZkp7q19f0"
+                videoThumbnail='/images/thumbnails/adam.jpg'
       />
     </>
   );

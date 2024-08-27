@@ -68,7 +68,7 @@ export function Feature1() {
           <Modal closeButtonProps={{
           size: 'xl',
         }} opened={opened} onClose={close} size="xl">
-            <VideoPopup videoSrc="/videos/Adam.mov" title='Functional Website' />
+            <VideoPopup videoThumbnail='/images/thumbnails/Adam.jpg' videoSrc="/videos/Adam.mov" title='Functional Website' />
           </Modal>
         </div>
       </div>

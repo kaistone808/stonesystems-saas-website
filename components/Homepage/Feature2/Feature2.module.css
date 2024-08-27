@@ -1,14 +1,4 @@
-.outer {
-  background-image: url('/images/bg_white.svg');
-  background-position: 50% 100%;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  padding-bottom: 148px;
-  margin-bottom: -1px !important;
-  @media (max-width: 30em) {
-    padding-bottom: 75px;
-  }
-}
+
 
 .inner {
   display: flex;
@@ -78,11 +68,11 @@
   max-width: 45%;
   height: auto;
   clip-path: inset(2px);
-  margin-right: calc(var(--mantine-spacing-xl) * 3);
+  margin-left: calc(var(--mantine-spacing-xl) * 3);
   object-fit: contain;
 
   @media (max-width: 62em) {
-    margin-right: 0;
+    margin-left: 0;
     max-width: 100%;
   }
 }

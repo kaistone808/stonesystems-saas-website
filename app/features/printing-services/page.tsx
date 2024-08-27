@@ -47,6 +47,7 @@ export default function PrintingServicesPage() {
         title="Printing Services"
         title2="What do I need printing services for?"
         videoSrc="https://www.youtube.com/embed/9bZkp7q19f0"
+                videoThumbnail='/images/thumbnails/adam.jpg'
       />
     </>
   );
