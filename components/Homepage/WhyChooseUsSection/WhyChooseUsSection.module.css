@@ -19,7 +19,7 @@
   background-size: cover;
   background-position: center;
   padding: 1rem;
-  background-color: var(--blue);
+  background-color: var(--blue) !important;
 }
 
 .mainTitle {
@@ -58,7 +58,7 @@
 .cardDescription {
   font-size: 16px;
   margin-bottom: 10px;
-  color: var(--white);
+  color: var(--white) !important;
   a {
     color: var(--yellow);
     text-decoration: none;

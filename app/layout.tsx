@@ -16,7 +16,6 @@ const APP_DESCRIPTION = 'Contractors trust us to transform their business with m
 
 export const metadata: Metadata = {
   applicationName: APP_NAME,
-  manifest: '/manifest.json',
   appleWebApp: {
     capable: true,
     statusBarStyle: 'default',
