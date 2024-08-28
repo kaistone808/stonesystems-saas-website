@@ -64,8 +64,8 @@ export default function SEOPage() {
         benefits={benefits as [{ title: string; description: string; icon: string }]}
         title="Local SEO"
         title2="What is local SEO?"
-        videoSrc="https://www.youtube.com/embed/9bZkp7q19f0"
-                videoThumbnail='/images/thumbnails/adam.jpg'
+        videoSrc="/videos/psy.mp4#t=0.1"
+        videoThumbnail="/images/thumbnails/psy.jpg"
       />
     </>
   );

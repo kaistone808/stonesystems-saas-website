@@ -13,21 +13,18 @@ export default function BusinessPhonePage() {
       title: 'Legal Business Phone Number',
       description:
         'When clients call your business, they’ll reach a dedicated legal phone number that clearly represents your firm. This helps build trust and professionalism, showing that you’re serious about handling their legal matters. Plus, you’ll get notifications for every call so you can respond promptly and stay organized.',
-        icon: '/images/features/device-mobile.svg'
-
+      icon: '/images/features/device-mobile.svg',
     },
     {
       title: 'Call Tracking',
       description:
         'With call tracking, every call to your business is monitored and recorded, giving you valuable insights into how customers are reaching you. This helps you understand which marketing efforts are working, improves your response strategy, and ensures you never miss an important call.',
-        icon: '/images/features/chart-histogram.svg'
-
+      icon: '/images/features/chart-histogram.svg',
     },
     {
       title: 'Separate Personal and Business',
       description: `By using separate phone numbers for personal and business calls, you keep your professional interactions organized and ensure privacy. This helps you maintain a clear boundary between work and personal life, improves your response time for business calls, and presents a professional image to clients.`,
-      icon: '/images/features/divide.svg'
-
+      icon: '/images/features/divide.svg',
     },
   ];
 
@@ -53,8 +50,8 @@ export default function BusinessPhonePage() {
         benefits={benefits as [{ title: string; description: string; icon: string }]}
         title="Blog Posts"
         title2="Why do i need a business phone?"
-        videoSrc="https://www.youtube.com/embed/9bZkp7q19f0"
-                videoThumbnail='/images/thumbnails/adam.jpg'
+        videoSrc="/videos/psy.mp4#t=0.1"
+        videoThumbnail="/images/thumbnails/psy.jpg"
       />
     </>
   );

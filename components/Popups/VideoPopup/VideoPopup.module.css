@@ -6,15 +6,11 @@
   }
 }
 
-.title,
-.title2 {
+.title {
   font-size: var(--title-font-size);
   text-align: center;
+  padding-bottom: 20px;
   @media (max-width: 756px) {
     font-size: 26px;
   }
-}
-
-.title2 {
-  padding-bottom: 20px;
 }

@@ -13,23 +13,23 @@ export default function MarketingCampaignsPage() {
       title: 'Contractor Lead Revival',
       description:
         "Give us a list of at least 150 of your past customers and or leads you haven't been able to close. We will run a campaign to get them through the door again.",
-        icon: '/images/features/circuit-battery.svg'
+      icon: '/images/features/circuit-battery.svg',
     },
     {
       title: 'Contractor 5-Star Review Injector',
       description:
         'Provide us with a list of at least 150 past customers. We’ll launch a review campaign offering a $50 gift card or something similar to encourage them to leave feedback and come back.',
-        icon: '/images/features/vaccine.svg'
+      icon: '/images/features/vaccine.svg',
     },
     {
       title: 'Contractor Holiday Promos',
       description: `Share a list of at least 150 past customers or leads, and we’ll run a holiday promo campaign to bring them back. We’ll offer special discounts or incentives to rekindle their interest and boost your seasonal sales.`,
-      icon: '/images/features/christmas-ball.svg'
+      icon: '/images/features/christmas-ball.svg',
     },
     {
       title: 'Contractor Customer Nurture',
       description: `Give us a list of at least 150 past clients or leads, and we’ll run a customer nurture campaign to re-engage them. We’ll send personalized follow-ups and offers to keep your services top-of-mind and encourage repeat business.`,
-      icon: '/images/features/calendar-clock.svg'
+      icon: '/images/features/calendar-clock.svg',
     },
   ];
 
@@ -55,8 +55,8 @@ export default function MarketingCampaignsPage() {
         benefits={benefits as [{ title: string; description: string; icon: string }]}
         title="Marketing Campaigns"
         title2="Why do I need marketing campaigns?"
-        videoSrc="https://www.youtube.com/embed/9bZkp7q19f0"
-                videoThumbnail='/images/thumbnails/adam.jpg'
+        videoSrc="/videos/psy.mp4#t=0.1"
+        videoThumbnail="/images/thumbnails/psy.jpg"
       />
     </>
   );

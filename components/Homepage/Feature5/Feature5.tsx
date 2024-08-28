@@ -1,9 +1,9 @@
 'use client';
 
-import { Container, Title, Button, Text, Flex, Modal } from '@mantine/core';
+import { Container, Title, Button, Text, Flex, Modal, useMantineTheme } from '@mantine/core';
 import Image from 'next/image';
 import { IconRosetteDiscountCheckFilled } from '@tabler/icons-react';
-import { useDisclosure } from '@mantine/hooks';
+import { useDisclosure, useMediaQuery } from '@mantine/hooks';
 import dynamic from 'next/dynamic';
 import classes from './Feature5.module.css';
 import PhoneImage from '@/public/animations/LOCAL_SEO.gif';
@@ -29,6 +29,8 @@ const features = [
 ];
 
 export function Feature5() {
+  const theme = useMantineTheme();
+  const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
   const [opened, { close, open }] = useDisclosure(false);
   const items = features.map((feature) => (
     <div key={feature.title}>
@@ -66,13 +68,14 @@ export function Feature5() {
               closeButtonProps={{
                 size: 'xl',
               }}
+              title={mobile ? "Local SEO" : ''}
               opened={opened}
               onClose={close}
               size="xl"
             >
               <VideoPopup
-                videoThumbnail="/images/thumbnails/Adam.jpg"
-                videoSrc="/videos/Adam.mov#t=0.1"
+                videoSrc="/videos/psy.mp4#t=0.1"
+                videoThumbnail="/images/thumbnails/psy.jpg"
                 title="Local SEO"
               />
             </Modal>

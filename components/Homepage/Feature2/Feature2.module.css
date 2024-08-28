@@ -5,7 +5,7 @@
   justify-content: space-between;
   margin-top: calc(var(--space-40) * 2);
   @media (max-width: 62em) {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 }
 

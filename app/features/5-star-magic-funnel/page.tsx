@@ -56,8 +56,8 @@ export default function StarMagicFunnelPage() {
         benefits={benefits as [{ title: string; description: string; icon: string }]}
         title="5-Star Magic Funnel"
         title2="What is the 5-star magic funnel?"
-        videoSrc="https://www.youtube.com/embed/9bZkp7q19f0"
-        videoThumbnail='/images/thumbnails/adam.jpg'
+        videoSrc="/videos/psy.mp4#t=0.1"
+        videoThumbnail='/images/thumbnails/psy.jpg'
       />
     </>
   );
