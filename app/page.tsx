@@ -13,7 +13,7 @@ import { WhoWeServeSection } from '@/components/Homepage/WhoWeServeSection/WhoWe
 import { WhyChooseUsSection } from '@/components/Homepage/WhyChooseUsSection/WhyChooseUsSection';
 
 export const metadata: Metadata = {
-  title: 'Stone Systems - Website Design & Marketing Systems For Contractors!',
+  title: 'Stone Systems - Website Design & Marketing Systems For Contractors! ',
   description:
     'Contractors trust us to transform their business with marketing systems, website design, reputation management and automation. And we do all of that at an affordable price!',
 };
