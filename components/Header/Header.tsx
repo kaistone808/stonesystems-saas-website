@@ -179,7 +179,7 @@ export function Header() {
         <Group justify="space-between" w="83em" h="100%">
           <Group h="100%" gap={0} visibleFrom="sm">
             <a href="/" className={classes.link}>
-              <Image loading="eager" src="/images/newlogo.png" alt="logo" width={200} height={81} />
+              <Image  loading="eager" src="/images/newlogo.png" alt="logo" width={200} height={81} />
             </a>
             <HoverCard width={1000} position="bottom" radius="md" shadow="md" withinPortal>
               <HoverCard.Target>
@@ -259,6 +259,7 @@ export function Header() {
               Book A Call
             </Button>
           </Group>
+          <a href="/" >
           <Image
             loading="eager"
             className={classes.logoImage}
@@ -267,6 +268,7 @@ export function Header() {
             width={200}
             height={81}
           />
+          </a>
           <Burger size={'lg'} opened={drawerOpened} onClick={toggleDrawer} hiddenFrom="sm" />
         </Group>
       </header>
