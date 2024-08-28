@@ -47,9 +47,9 @@ const data = [
     imageSrc: '/images/people/kevin.jpeg',
   },
   {
-    name: 'Munzi',
-    title: 'Graphic Designer',
-    imageSrc: '/images/people/munzi.jpeg',
+    name: 'Stone Systems Man',
+    title: 'Commander & Chief',
+    imageSrc: '/favicon.svg',
   },
   {
     name: 'Jhon',

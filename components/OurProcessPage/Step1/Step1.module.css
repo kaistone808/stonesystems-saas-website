@@ -67,6 +67,9 @@
   transform: rotate(34deg);
   left: 270px;
   width: 550px;
+  @media (max-width: 30em) {
+    display: none;
+  }
 }
 
 .image {
