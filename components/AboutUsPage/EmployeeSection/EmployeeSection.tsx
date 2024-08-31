@@ -49,7 +49,7 @@ const data = [
   {
     name: 'Stone Systems Man',
     title: 'Commander & Chief',
-    imageSrc: '/favicon.svg',
+    imageSrc: '/images/people/stoneman.jpeg',
   },
   {
     name: 'Jhon',
