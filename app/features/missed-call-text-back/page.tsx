@@ -50,7 +50,7 @@ export default function MissedCallTextBackPage() {
         benefits={benefits as [{ title: string; description: string; icon: string }]}
         title="Missed Call Text Back"
         title2="What is missed call text back?"
-        videoSrc="/videos/psy.mp4#t=0.1"
+        videoSrc="/videos/ps.mp4#t=0.1"
         videoThumbnail="/images/thumbnails/psy.jpg"
       />
     </>

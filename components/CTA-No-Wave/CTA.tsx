@@ -17,7 +17,7 @@ export function CTANoWave() {
           </Text>
           <Button
             component="a"
-            href="/contact-us"
+            href="/contact"
             onClick={open}
             size="xl"
             bg="var(--yellow)"

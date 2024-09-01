@@ -64,7 +64,7 @@ export function Hero() {
                 </Flex>
                 <Button
                   component="a"
-                  href="/contact-us"
+                  href="/contact"
                   size="xl"
                   onClick={open}
                   className={classes.control}

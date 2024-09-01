@@ -61,7 +61,7 @@ export function Feature5() {
             <Flex mt="lg" direction="column">
               {items}
             </Flex>
-            <Button onClick={open} size="xl" bg="var(--yellow)" className={classes.control}>
+            <Button  onClick={open}  size="xl" bg="var(--yellow)" className={classes.control}>
               See 30 Second Demo
             </Button>
             <Modal
@@ -74,7 +74,7 @@ export function Feature5() {
               size="xl"
             >
               <VideoPopup
-                videoSrc="/videos/psy.mp4#t=0.1"
+                videoSrc="/videos/ps.mp4#t=0.1"
                 videoThumbnail="/images/thumbnails/psy.jpg"
                 title="Local SEO"
               />

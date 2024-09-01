@@ -23,7 +23,7 @@ const data = [
       { label: 'Our Process', link: '/our-process' },
       { label: 'Careers', link: '/careers' },
       { label: 'Partners', link: '/partners' },
-      { label: 'Contact', link: '/contact-us' },
+      { label: 'Contact', link: '/contact' },
     ],
   },
   {
@@ -85,7 +85,7 @@ export function Footer() {
             <Text className={classes.cta}>Ready to get started?</Text>
             <Button
               component="a"
-              href="/contact-us"
+              href="/contact"
               onClick={open}
               className={classes.button}
               size="md"
@@ -101,7 +101,7 @@ export function Footer() {
           <Text className={classes.description}>Want to learn more about how we can help?</Text>
           <Button
             component="a"
-            href="/contact-us"
+            href="/contact"
             onClick={open}
             className={classes.button}
             mt="1rem"

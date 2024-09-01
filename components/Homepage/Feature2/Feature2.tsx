@@ -69,13 +69,13 @@ export function Feature2() {
               closeButtonProps={{
                 size: 'xl',
               }}
-              title={mobile ? "5 Star Magic Funnel" : ''}
+              title={mobile ? '5 Star Magic Funnel' : ''}
               opened={opened}
               onClose={close}
               size="xl"
             >
               <VideoPopup
-                videoSrc="/videos/psy.mp4#t=0.1"
+                videoSrc="/videos/ps.mp4#t=0.1"
                 videoThumbnail="/images/thumbnails/psy.jpg"
                 title="5 Star Magic Funnel"
               />

@@ -78,13 +78,13 @@ export function Feature1() {
             closeButtonProps={{
               size: 'xl',
             }}
-            title={mobile ? "Functional Website" : ''}
+            title={mobile ? 'Functional Website' : ''}
             opened={opened}
             onClose={close}
             size="xl"
           >
             <VideoPopup
-              videoSrc="/videos/psy.mp4#t=0.1"
+              videoSrc="/videos/ps.mp4#t=0.1"
               videoThumbnail="/images/thumbnails/psy.jpg"
               title="Functional Website"
             />

@@ -75,14 +75,14 @@ export function Feature3() {
             closeButtonProps={{
               size: 'xl',
             }}
-            title={mobile ? "Missed Call Text Back" : ''}
+            title={mobile ? 'Missed Call Text Back' : ''}
             opened={opened}
             onClose={close}
             size="xl"
           >
             <VideoPopup
-                videoSrc="/videos/psy.mp4#t=0.1"
-                videoThumbnail="/images/thumbnails/psy.jpg"
+              videoSrc="/videos/ps.mp4#t=0.1"
+              videoThumbnail="/images/thumbnails/psy.jpg"
               title="Missed Call Text Back"
             />
           </Modal>
