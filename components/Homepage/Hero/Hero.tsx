@@ -5,7 +5,7 @@ import { useDisclosure } from '@mantine/hooks';
 import Image from 'next/image';
 import React from 'react';
 import classes from './Hero.module.css';
-import StoneManImage from '@/public/images/new.png';
+import StoneManImage from '@/public/images/new1.png';
 
 export function Hero() {
   const [opened, { close, open }] = useDisclosure(false);
@@ -121,6 +121,8 @@ export function Hero() {
           <Image
             loading="eager"
             alt="stone systems man"
+            height={700}
+            width={350}
             src={StoneManImage}
             className={classes.image}
           />
