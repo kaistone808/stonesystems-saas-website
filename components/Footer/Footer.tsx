@@ -118,8 +118,7 @@ export function Footer() {
             className={classes.specialLink}
             component="a"
             mr="3rem"
-            href="/terms-and-conditions"
-            onClick={(event) => event.preventDefault()}
+            href="/terms"
           >
             Terms & Conditions
           </Text>
@@ -127,7 +126,6 @@ export function Footer() {
             className={classes.specialLink}
             component="a"
             href="/privacy-policy"
-            onClick={(event) => event.preventDefault()}
           >
             Privacy Policy
           </Text>

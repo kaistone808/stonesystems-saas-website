@@ -48,7 +48,7 @@ export default function BusinessPhonePage() {
       <IntroSection
         statistics={statistics as [{ stat: string; description: string }]}
         benefits={benefits as [{ title: string; description: string; icon: string }]}
-        title="Blog Posts"
+        title="Business Phone"
         title2="Why do i need a business phone?"
         videoSrc="/videos/ps.mp4#t=0.1"
         videoThumbnail="/images/thumbnails/psy.jpg"

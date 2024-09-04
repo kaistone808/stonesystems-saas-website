@@ -23,7 +23,7 @@ export function ValuesSection() {
                   className={classes.numberIcon}
                   width={80}
                   height={80}
-                  src="/images/one.webp"
+                  src="/images/1.png"
                   alt="1"
                 />
                 <div>
@@ -40,7 +40,7 @@ export function ValuesSection() {
                   className={classes.numberIcon}
                   width={80}
                   height={55}
-                  src="/images/icon2.webp"
+                  src="/images/2.png"
                   alt="2"
                 />
                 <div>
@@ -58,7 +58,7 @@ export function ValuesSection() {
                   className={classes.numberIcon}
                   width={80}
                   height={55}
-                  src="/images/icon3.webp"
+                  src="/images/3.png"
                   alt="3"
                 />
                 <div>
@@ -75,7 +75,7 @@ export function ValuesSection() {
                   className={classes.numberIcon}
                   width={80}
                   height={55}
-                  src="/images/icon4.webp"
+                  src="/images/4.png"
                   alt="4"
                 />
                 <div>
@@ -93,7 +93,7 @@ export function ValuesSection() {
                   className={classes.numberIcon}
                   width={80}
                   height={55}
-                  src="/images/icon5.webp"
+                  src="/images/5.png"
                   alt="5"
                 />
                 <div>

@@ -24,9 +24,16 @@ export const PriceContainer = () => {
   const theme = useMantineTheme();
   const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
   const [monthly, setMonthly] = useState(true);
+  const [isFading, setIsFading] = useState(false);
+  const [showDiscount, setShowDiscount] = useState(!monthly); 
 
   const handleChange = () => {
-    setMonthly(!monthly);
+    setIsFading(true);
+    setTimeout(() => {
+      setMonthly(!monthly);
+      setShowDiscount(!showDiscount); 
+      setIsFading(false);
+    }, 300); 
   };
 
   type RefObjectMap = {
@@ -83,8 +90,8 @@ export const PriceContainer = () => {
                   uncheckedIcon={false}
                   width={45}
                   height={25}
-                  onColor={'#E8A743'}
-                  offColor={'#E8A743'}
+                  onColor={'#5adbff'}
+                  offColor={'#5adbff'}
                   handleDiameter={18}
                 />
                 <Text ml={'md'} fz={'md'}>
@@ -102,15 +109,19 @@ export const PriceContainer = () => {
               >
                 <Paper shadow={'md'} className={classes.cardBox1}>
                   <Stack w={'100%'} align={'center'} p={20}>
-                    <Flex>
-                      <Text fw={900} fz={'24'}>
-                        Contractor Essentials
-                      </Text>
-                      {!monthly && <Text className={classes.discount}>17% off</Text>}
+                    <Text fw={900} fz={'24'}>
+                      Contractor Essentials
+                    </Text>
+                    <Flex
+                      className={`${classes.discountBox} ${isFading ? classes.fadeOut : classes.fadeIn}`}
+                    >
+                      <Title order={2} className={classes.moneyTitle}>
+                        {monthly ? '$197/mo' : '$165/mo'}
+                      </Title>
+                      {!monthly && !isFading && (
+                        <Text className={classes.discount}>17% off</Text>
+                      )}
                     </Flex>
-                    <Title order={2} className={classes.moneyTitle}>
-                      {monthly ? '$197/mo' : '$165/mo'}
-                    </Title>
                     <Stack w={'100%'} align="center" p={10}>
                       <Divider w={'100%'} opacity={0.7} />
                       <Flex className={classes.featureDiv}>
@@ -158,18 +169,18 @@ export const PriceContainer = () => {
                       <Divider w={'100%'} opacity={0.7} />
                       <Flex className={classes.featureDiv}>
                         <Text ta={'center'} fz={'md'} fw={700} className={classes.featureName}>
-                          500 Branded Business Cards
+                          250 Branded Business Cards
                         </Text>
                       </Flex>
                       <Divider w={'100%'} opacity={0.7} />
                     </Stack>
                     <Button
                       component="a"
-                      target='_blank'
+                      target="_blank"
                       href={
                         monthly
-                          ? 'https://essential.stonesystems.io/essential-6483-8947'
-                          : 'https://essential.stonesystems.io/essential-6483-8947-6749'
+                          ? 'https://buy.stripe.com/00g8xNa0ogPYb9CcMN'
+                          : 'https://buy.stripe.com/9AQ29pa0o43c3Ha4gi'
                       }
                       className={classes.button1}
                       bg={'var(--yellow)'}
@@ -181,15 +192,19 @@ export const PriceContainer = () => {
                 </Paper>
                 <Paper shadow={'md'} className={classes.cardBox2}>
                   <Stack w={'100%'} align={'center'} p={20}>
-                    <Flex>
-                      <Text fw={900} fz={'24'}>
-                        Contractor Advanced
-                      </Text>
-                      {!monthly && <Text className={classes.discount}>17% off</Text>}
+                    <Text fw={900} fz={'24'}>
+                      Contractor Advanced
+                    </Text>
+                    <Flex
+                      className={`${classes.discountBox} ${isFading ? classes.fadeOut : classes.fadeIn}`}
+                    >
+                      <Title order={2} className={classes.moneyTitle}>
+                        {monthly ? '$297/mo' : '$249/mo'}
+                      </Title>
+                      {!monthly && !isFading && (
+                        <Text className={classes.discount}>17% off</Text>
+                      )}
                     </Flex>
-                    <Title order={2} className={classes.moneyTitle}>
-                      {monthly ? '$297/mo' : '$249/mo'}
-                    </Title>
                     <Stack w={'100%'} align="center" p={10}>
                       <Divider w={'100%'} opacity={0.6} />
                       <Text c={'var(--blue)'} fs={'italic'} ta={'center'} fz={'md'} fw={900}>
@@ -235,12 +250,12 @@ export const PriceContainer = () => {
                     </Stack>
                     <Button
                       className={classes.button2}
-                      component='a'
-                      target='_blank'
+                      component="a"
+                      target="_blank"
                       href={
                         monthly
-                          ? 'https://professional.stonesystems.io/professional-6506-6315'
-                          : 'https://professional.stonesystems.io/professional-6506-6315-1246'
+                          ? 'https://buy.stripe.com/7sIbJZc8wczIfpScMP'
+                          : 'https://buy.stripe.com/7sI29p4G42Z83HabIM'
                       }
                       c={'var(--blue)'}
                       bg={'var(--white)'}
@@ -252,15 +267,19 @@ export const PriceContainer = () => {
                 </Paper>
                 <Paper shadow={'md'} className={classes.cardBox3}>
                   <Stack w={'100%'} align={'center'} p={20}>
-                    <Flex>
-                      <Text fw={900} fz={'24'}>
-                        Contractor Supreme
-                      </Text>
-                      {!monthly && <Text className={classes.discount}>17% off</Text>}
+                    <Text fw={900} fz={'24'}>
+                      Contractor Supreme
+                    </Text>
+                    <Flex
+                      className={`${classes.discountBox} ${isFading ? classes.fadeOut : classes.fadeIn}`}
+                    >
+                      <Title order={2} className={classes.moneyTitle}>
+                        {monthly ? '$997/mo' : '$833/mo'}
+                      </Title>
+                      {!monthly && !isFading && (
+                        <Text className={classes.discount}>17% off</Text>
+                      )}
                     </Flex>
-                    <Title order={2} className={classes.moneyTitle}>
-                      {monthly ? '$997/mo' : '$833/mo'}
-                    </Title>
                     <Stack w={'100%'} align="center" p={10}>
                       <Divider w={'100%'} opacity={0.7} />
                       <Text c={'var(--yellow)'} fs={'italic'} ta={'center'} fz={'md'} fw={900}>
@@ -303,7 +322,7 @@ export const PriceContainer = () => {
                       <Divider w={'100%'} opacity={0.7} />
                       <Flex className={classes.featureDiv}>
                         <Text ta={'center'} fz={'md'} fw={700} className={classes.featureName}>
-                          Monthly SEO Reports Sent To You
+                          Monthly SEO Reports
                         </Text>
                       </Flex>
                       <Divider w={'100%'} opacity={0.7} />
@@ -320,14 +339,18 @@ export const PriceContainer = () => {
                       </Flex>
                       <Divider w={'100%'} opacity={0.7} />
                     </Stack>
-                    <Button component='a'
-                      target='_blank'
+                    <Button
+                      component="a"
+                      target="_blank"
                       href={
                         monthly
-                          ? 'https://premium.stonesystems.io/professional-6506-8970-8451'
-                          : 'https://premium.stonesystems.io/professional-6506-8970-8451-9290'
+                          ? 'https://buy.stripe.com/7sI29p4G42Z83HabIM'
+                          : 'https://buy.stripe.com/cN2aFVdcA1V44LedQW'
                       }
-                      className={classes.button1} bg={'var(--yellow)'} w="75%">
+                      className={classes.button1}
+                      bg={'var(--yellow)'}
+                      w="75%"
+                    >
                       START NOW
                     </Button>
                   </Stack>
