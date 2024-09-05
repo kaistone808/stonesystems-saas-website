@@ -1,11 +1,11 @@
 'use client';
 
+import { useState, useRef, useEffect } from 'react';
 import { Carousel } from '@mantine/carousel';
 import Autoplay from 'embla-carousel-autoplay';
-import { Paper, Text, Container, Image, Title, Flex } from '@mantine/core';
+import { Paper, Text, Container, Title, Image, Flex } from '@mantine/core';
+import LazyLoadVideo from '@/components/LazyLoadVideo/LazyLoadVideo';
 import classes from './TestimonialSection.module.css';
-import { useRef } from 'react';
-import LazyLoadVideo from '../LazyLoadVideo/LazyLoadVideo';
 import { IconArrowRight } from '@tabler/icons-react';
 
 interface CardProps {
@@ -13,9 +13,12 @@ interface CardProps {
   videoSrc: string;
   videoThumbnail: string;
   personName: string;
+  onPlay?: () => void;
+  onPause?: () => void;
+  onFullscreenChange?: (isFullscreen: boolean) => void;
 }
 
-function Card({ personName, testimonial, videoSrc, videoThumbnail }: CardProps) {
+function Card({ personName, testimonial, videoSrc, videoThumbnail, onPause, onPlay, onFullscreenChange }: CardProps) {
   return (
     <Paper radius="md" className={classes.testimonialCard}>
       <LazyLoadVideo
@@ -25,8 +28,10 @@ function Card({ personName, testimonial, videoSrc, videoThumbnail }: CardProps) 
         type="video/mp4"
         width="100%"
         height="auto"
+        onPlay={onPlay}
+        onPause={onPause}
+        onFullscreenChange={onFullscreenChange}
       />
-
       <div>
         <div className={classes.stars}>
           <Image src="/images/star.png" className={classes.star} />
@@ -165,44 +170,87 @@ const data = [
     personName: '-Zach',
   },
 ];
-
 export function TestimonialSection() {
   const autoplay = useRef(Autoplay({ delay: 2800 }));
+  const autoplayControl = autoplay.current;
+
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [isFullscreen, setIsFullscreen] = useState(false);
+
+  const stopAutoplay = () => {
+    if (autoplayControl) {
+      autoplayControl.stop(); // Stop autoplay
+    }
+  };
+
+  const resetAutoplay = () => {
+    if (!isPlaying && !isFullscreen) {
+      if (autoplayControl) {
+        autoplayControl.reset(); // Resume autoplay only if neither condition is active
+      }
+    }
+  };
+
+  const handleVideoPlay = () => {
+    setIsPlaying(true);
+    stopAutoplay(); // Stop autoplay when video starts playing
+  };
+
+  const handleVideoPause = () => {
+    setIsPlaying(false);
+    resetAutoplay(); // Resume autoplay if fullscreen is also false
+  };
+
+  const handleFullscreenChange = (fullscreen: boolean) => {
+    setIsFullscreen(fullscreen);
+    if (fullscreen) {
+      stopAutoplay(); // Stop autoplay if video enters fullscreen
+    } else {
+      resetAutoplay(); // Check if it should resume when exiting fullscreen
+    }
+  };
+
+  // Make sure autoplay state updates when exiting fullscreen or pausing the video
+  useEffect(() => {
+    resetAutoplay();
+  }, [isPlaying, isFullscreen]);
 
   const slides = data.map((item) => (
     <Carousel.Slide key={item.videoSrc}>
-      <Card {...item} />
+      <Card
+        {...item}
+        onPause={handleVideoPause}
+        onPlay={handleVideoPlay}
+        onFullscreenChange={handleFullscreenChange}
+      />
     </Carousel.Slide>
   ));
 
   return (
-    <>
-      <div className={classes.outer}>
-        <Container size="lg">
-          <Title className={classes.mainTitle}>
-            Don't just take our word for it <br />
-            See what our clients have to say...
-          </Title>
-        </Container>
-        <Container size="responsive">
-          <Carousel
-            slideSize={{ base: '100%', sm: '50%' }}
-            slideGap={{ base: 'xl', sm: 'xl' }}
-            align="start"
-            loop
-            dragFree
-            slidesToScroll={1}
-            plugins={[autoplay.current]}
-            classNames={{
-              control: classes.control,
-              controls: classes.controls,
-              root: classes.root,
-            }}
-          >
-            {slides}
-          </Carousel>
-        </Container>
-      </div>
-    </>
+    <div className={classes.outer}>
+      <Container size="lg">
+        <Title className={classes.mainTitle}>
+          The proof is in the pudding... <br /> Let's see what our clients have to say
+        </Title>
+      </Container>
+      <Container size="responsive">
+        <Carousel
+          slideSize={{ base: '100%', sm: '50%' }}
+          slideGap={{ base: 'xl', sm: 'xl' }}
+          align="start"
+          loop
+          dragFree
+          slidesToScroll={1}
+          plugins={[autoplay.current]}
+          classNames={{
+            control: classes.control,
+            controls: classes.controls,
+            root: classes.root,
+          }}
+        >
+          {slides}
+        </Carousel>
+      </Container>
+    </div>
   );
 }
