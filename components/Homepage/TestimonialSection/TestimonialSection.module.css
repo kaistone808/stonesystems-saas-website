@@ -59,7 +59,7 @@
 }
 
 .testimonialCard {
-  display: flex;
+  display: flex !important;
   padding: 20px;
   max-height: 250px;
   height: 100%;
@@ -76,6 +76,9 @@
     min-width: 250px;
     max-height: 210px;
     background: black;
+    @media (min-width: 30em) {
+      max-width: 250px;
+    }
   }
   img {
     border-radius: 10px;
