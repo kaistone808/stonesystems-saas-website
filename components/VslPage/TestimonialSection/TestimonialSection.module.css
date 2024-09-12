@@ -1,0 +1,84 @@
+.outer {
+  background-color: var(--gray);
+  padding-bottom: calc(var(--space-40) * 2);
+}
+
+.personName {
+  font-family:
+    Greycliff CF,
+    sans-serif;
+  font-weight: 900;
+  color: var(--mantine-color-black);
+  line-height: 1.2;
+  font-size: rem(16px);
+  margin-left: 1rem;
+  padding-bottom: 1rem;
+}
+
+.mainTitle {
+  color: var(--blue);
+  font-size: var(--title-font-size);
+  line-height: 1.2;
+  font-weight: 900;
+  text-align: center;
+  padding: var(--space-40) 0 var(--space-40) 0;
+
+  @media (max-width: 30em) {
+    font-size: rem(28px);
+    padding: var(--space-40) 0 calc(var(--space-40) / 2) 0;
+  }
+}
+
+.video {
+  width: 100%;
+  padding: 1rem 1rem 0 1rem;
+  video {
+    min-width: 386px;
+    max-height: 217px;
+    border-radius: 10px;
+    width: 100%;
+    background-color: black;
+  }
+  img {
+    border-radius: 10px;
+    min-width: 386px;
+    max-height: 217px;
+    background: black;
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  @media (max-width: 30em) {
+    video,
+    img {
+      min-width: 100%;
+    }
+  }
+  .star {
+    width: rem(22px);
+    height: rem(22px);
+    min-width: auto;
+    max-height: auto;
+    border-radius: 0;
+    background-color: transparent;
+  }
+}
+
+.testimonial {
+  padding: 0 1rem;
+  margin: 1rem 0;
+  font-size: 18px;
+}
+
+.stars {
+  padding-left: 1rem;
+  padding-top: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.star {
+  width: rem(22px);
+  height: rem(22px);
+}
