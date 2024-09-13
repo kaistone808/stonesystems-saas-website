@@ -90,8 +90,8 @@ export const PriceContainer = () => {
                   uncheckedIcon={false}
                   width={45}
                   height={25}
-                  onColor={'#5adbff'}
-                  offColor={'#5adbff'}
+                  onColor={'#e8a743'}
+                  offColor={'#e8a743'}
                   handleDiameter={18}
                 />
                 <Text ml={'md'} fz={'md'}>
@@ -179,8 +179,8 @@ export const PriceContainer = () => {
                       target="_blank"
                       href={
                         monthly
-                          ? 'https://buy.stripe.com/00g8xNa0ogPYb9CcMN'
-                          : 'https://buy.stripe.com/9AQ29pa0o43c3Ha4gi'
+                          ? 'hhttps://essential.stonesystems.io/essential-6483-8947'
+                          : 'https://essential.stonesystems.io/essentials-8140-7496-8715-1943'
                       }
                       className={classes.button1}
                       bg={'var(--yellow)'}
@@ -254,8 +254,8 @@ export const PriceContainer = () => {
                       target="_blank"
                       href={
                         monthly
-                          ? 'https://buy.stripe.com/7sIbJZc8wczIfpScMP'
-                          : 'https://buy.stripe.com/7sI29p4G42Z83HabIM'
+                          ? 'https://professional.stonesystems.io/professional-6506-6315'
+                          : 'https://professional.stonesystems.io/professional-6506-6315-1246'
                       }
                       c={'var(--blue)'}
                       bg={'var(--white)'}
@@ -344,8 +344,8 @@ export const PriceContainer = () => {
                       target="_blank"
                       href={
                         monthly
-                          ? 'https://buy.stripe.com/7sI29p4G42Z83HabIM'
-                          : 'https://buy.stripe.com/cN2aFVdcA1V44LedQW'
+                          ? 'https://premium.stonesystems.io/essentials-8140-7496-7641-6879-5626'
+                          : 'https://premium.stonesystems.io/essentials-8140-7496-7641-6879-5626-9351'
                       }
                       className={classes.button1}
                       bg={'var(--yellow)'}
