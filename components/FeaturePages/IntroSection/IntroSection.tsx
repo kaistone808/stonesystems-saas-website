@@ -61,7 +61,7 @@ export function IntroSection({ statistics, benefits, title, title2, videoSrc, vi
             <Grid.Col span={mobile ? 18 : 12}>
               <Paper className={classes.video} radius="md">
                 <Title order={2} className={classes.videoTitle}>
-                  See a 30 sec demo below
+                  See a short demo below
                 </Title>
                 <LazyLoadVideo poster={videoThumbnail} alt={title} src={videoSrc} type="video/mp4" width="100%" height="auto" />
               </Paper>
