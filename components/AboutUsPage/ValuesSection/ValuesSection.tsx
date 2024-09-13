@@ -110,7 +110,7 @@ export function ValuesSection() {
               className={classes.stoneMan}
               width={505}
               height={907}
-              src="/images/new.png"
+              src="/images/new1.png"
               alt="stone systems guy"
             />
           </SimpleGrid>

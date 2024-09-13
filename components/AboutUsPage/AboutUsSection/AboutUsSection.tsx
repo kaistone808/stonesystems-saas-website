@@ -94,7 +94,7 @@ export function AboutUsSection() {
           <Image
             width={500}
             height={570}
-            src="/images/people/kai.jpeg"
+            src="/images/people/bigkai.jpg"
             alt="About Us"
             className={classes.image}
           />}
