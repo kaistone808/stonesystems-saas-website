@@ -47,6 +47,16 @@ const data = [
     imageSrc: '/images/people/kevin.jpeg',
   },
   {
+    name: 'Paola',
+    title: 'Web Developer / Customer Success',
+    imageSrc: '/images/people/paola.jpeg',
+  },
+  {
+    name: 'Camila',
+    title: 'Customer Success Consultant',
+    imageSrc: '/images/people/camila.jpeg',
+  },
+  {
     name: 'Stone Systems Man',
     title: 'Commander & Chief',
     imageSrc: '/images/people/stoneman.jpeg',
