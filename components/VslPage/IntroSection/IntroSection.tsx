@@ -14,7 +14,7 @@ export function IntroSection() {
         <LazyLoadVideo
           poster={'/images/thumbnails/vsl.jpeg'}
           alt={'vsl'}
-          src={'/videos/vsl.mp4'}
+          src={'/videos/vsl.mp4#t=0.1'}
           type="video/mp4"
           width="100%"
           height="auto"
