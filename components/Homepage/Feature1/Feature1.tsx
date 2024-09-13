@@ -84,8 +84,8 @@ export function Feature1() {
             size="xl"
           >
             <VideoPopup
-              videoSrc="/videos/ps.mp4#t=0.1"
-              videoThumbnail="/images/thumbnails/psy.jpg"
+              videoSrc="/videos/functional-website.mp4#t=0.1"
+              videoThumbnail="/images/thumbnails/functional-website.jpg"
               title="Functional Website"
             />
           </Modal>

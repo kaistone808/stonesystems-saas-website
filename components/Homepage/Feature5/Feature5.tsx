@@ -74,8 +74,8 @@ export function Feature5() {
               size="xl"
             >
               <VideoPopup
-                videoSrc="/videos/ps.mp4#t=0.1"
-                videoThumbnail="/images/thumbnails/psy.jpg"
+                videoSrc="/videos/local-seo.mp4#t=0.1"
+                videoThumbnail="/images/thumbnails/local-seo.jpg"
                 title="Local SEO"
               />
             </Modal>

@@ -2,6 +2,7 @@
   video {
     width: 100%;
     height: auto;
+    border: 10px solid var(--blue);
     border-radius: 10px;
   }
 }

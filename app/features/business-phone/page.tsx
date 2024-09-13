@@ -50,8 +50,8 @@ export default function BusinessPhonePage() {
         benefits={benefits as [{ title: string; description: string; icon: string }]}
         title="Business Phone"
         title2="Why do i need a business phone?"
-        videoSrc="/videos/ps.mp4#t=0.1"
-        videoThumbnail="/images/thumbnails/psy.jpg"
+        videoSrc="/videos/business-phone.mp4#t=0.1"
+        videoThumbnail="/images/thumbnails/business-phone.jpg"
       />
     </>
   );

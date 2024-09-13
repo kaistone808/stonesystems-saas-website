@@ -55,8 +55,8 @@ export default function AutomatedSMSLeadFollowUpPage() {
         benefits={benefits as [{ title: string; description: string; icon: string }]}
         title="Automated SMS Lead Follow-Up"
         title2="What is automated SMS lead follow-up?"
-        videoSrc="/videos/ps.mp4#t=0.1"
-        videoThumbnail="/images/thumbnails/psy.jpg"
+        videoSrc="/videos/followup.mp4#t=0.1"
+        videoThumbnail="/images/thumbnails/followup.jpg"
       />
     </>
   );

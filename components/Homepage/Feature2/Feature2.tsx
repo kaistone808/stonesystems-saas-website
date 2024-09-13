@@ -75,8 +75,8 @@ export function Feature2() {
               size="xl"
             >
               <VideoPopup
-                videoSrc="/videos/ps.mp4#t=0.1"
-                videoThumbnail="/images/thumbnails/psy.jpg"
+                videoSrc="/videos/magic-funnel.mp4#t=0.1"
+                videoThumbnail="/images/thumbnails/magic-funnel.jpg"
                 title="5 Star Magic Funnel"
               />
             </Modal>

@@ -51,11 +51,6 @@ const data = [
     title: 'Commander & Chief',
     imageSrc: '/images/people/stoneman.jpeg',
   },
-  {
-    name: 'Jhon',
-    title: 'Web Developer',
-    imageSrc: '/images/people/jhon.jpeg',
-  },
 ];
 
 export function EmployeeSection() {

@@ -45,8 +45,8 @@ export default function PrintingServicesPage() {
         benefits={benefits as [{ title: string; description: string; icon: string }]}
         title="Printing Services"
         title2="What do I need printing services for?"
-        videoSrc="/videos/ps.mp4#t=0.1"
-        videoThumbnail="/images/thumbnails/psy.jpg"
+        videoSrc="/videos/print-services.mp4#t=0.1"
+        videoThumbnail="/images/thumbnails/print-services.jpg"
       />
     </>
   );

@@ -75,8 +75,8 @@ export function Feature4() {
               size="xl"
             >
               <VideoPopup
-                videoSrc="/videos/ps.mp4#t=0.1"
-                videoThumbnail="/images/thumbnails/psy.jpg"
+                videoSrc="/videos/marketing-campaigns.mp4#t=0.1"
+                videoThumbnail="/images/thumbnails/marketing-campaigns.jpg"
                 title="One-Click Marketing Campaigns"
               />
             </Modal>

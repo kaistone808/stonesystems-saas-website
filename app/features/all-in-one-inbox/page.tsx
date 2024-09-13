@@ -39,8 +39,8 @@ export default function AllInOneInboxPage() {
         benefits={benefits as [{ title: string; description: string; icon: string }]}
         title="All In One Inbox"
         title2="What is the all in one inbox?"
-        videoSrc="/videos/ps.mp4#t=0.1"
-        videoThumbnail="/images/thumbnails/psy.jpg"
+        videoSrc="/videos/unified-inbox.mp4#t=0.1"
+        videoThumbnail="/images/thumbnails/unified-inbox.jpg"
       />
     </>
   );

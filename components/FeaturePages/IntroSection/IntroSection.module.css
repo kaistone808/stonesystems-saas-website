@@ -55,6 +55,8 @@
   padding: 15px 20px;
   video, img {
     border-radius: 10px;
+    border: 10px solid var(--blue);
+
   }
   @media (max-width: 30em) {
     padding: 15px 10px;

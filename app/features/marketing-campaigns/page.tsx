@@ -55,8 +55,8 @@ export default function MarketingCampaignsPage() {
         benefits={benefits as [{ title: string; description: string; icon: string }]}
         title="Marketing Campaigns"
         title2="Why do I need marketing campaigns?"
-        videoSrc="/videos/ps.mp4#t=0.1"
-        videoThumbnail="/images/thumbnails/psy.jpg"
+        videoSrc="/videos/marketing-campaigns.mp4#t=0.1"
+        videoThumbnail="/images/thumbnails/marketing-campaigns.jpg"
       />
     </>
   );
