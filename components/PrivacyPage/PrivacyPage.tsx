@@ -30,7 +30,7 @@ export function PrivacyPage() {
           <Text className={classes.text}>For the purposes of this Privacy Policy:</Text>
           <Text className={classes.text}>
             Company (referred to as either "the Company", "We", "Us" or "Our" in this Agreement)
-            refers to Ezclick.
+            refers to StoneSystems.
           </Text>
           <Text className={classes.text}>
             Device means any device that can access the Service such as a computer, a cellphone or a
@@ -198,7 +198,7 @@ export function PrivacyPage() {
           <Title order={2} className={classes.secondaryTitle}>Contact Us</Title>
           <Text className={classes.text}>
             If you have any questions about this Privacy Policy, You can contact us via email at
-            support@ezclick.io
+            support@stonesystems.io
           </Text>
         </div>
       </Container>

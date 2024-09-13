@@ -31,7 +31,7 @@ export function AboutUsSection() {
           />}
           <div>
             <Text className={classes.text}>
-              At Ezclick, our mission is simple: cut out the complexity and nonsense (aka the
+              At StoneSystems, our mission is simple: cut out the complexity and nonsense (aka the
               bullsh*t) from marketing. We’ve seen too many agencies drown contractors in buzzwords
               and nerdy technical terms that make the basics seem like rocket science. Marketing
               doesn’t need to be complicated, and it definitely shouldn’t come with a hefty price
@@ -40,12 +40,12 @@ export function AboutUsSection() {
               <br />
             </Text>
             <Text className={classes.text}>
-            Ezclick was built to offer
+            StoneSystems was built to offer
               affordable, no-nonsense systems for contractors who want to grow their business and
               online presence the right way—not the overpriced, overcomplicated way. Just like every
               building needs a solid foundation, your business does too. Without it, even the best
               designs won’t hold up. You just need something that works—a strong base to build your
-              company on. That’s why we built Ezclick. Let us be the foundation you need while
+              company on. That’s why we built StoneSystems. Let us be the foundation you need while
               you focus on what you do best: building your business.
             </Text>
             <Group
@@ -68,7 +68,7 @@ export function AboutUsSection() {
               </ActionIcon>
               <ActionIcon
                 component="a"
-                href="https://www.youtube.com/@ezclickllc"
+                href="https://www.youtube.com/@StoneSystemsGMB"
                 className={classes.icon}
                 size="xl"
                 mx={10}
@@ -79,7 +79,7 @@ export function AboutUsSection() {
               </ActionIcon>
               <ActionIcon
                 component="a"
-                href="https://www.instagram.com/ezclickco"
+                href="https://www.instagram.com/stonesystems.io"
                 className={classes.icon}
                 size="xl"
                 mx={10}
