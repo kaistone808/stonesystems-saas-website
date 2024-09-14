@@ -57,17 +57,6 @@ export function AboutUsSection() {
             >
               <ActionIcon
                 component="a"
-                href="https://www.google.com/search?sca_esv=77e9856747e8aa3f&hl=en-GB&authuser=1&biw=1633&bih=924&q=Stone%20Systems&stick=H4sIAAAAAAAAAONgU1I1qDBJsjA2MjC0TDJKtkhONk6zMqhITEw1M0wxT7EwSzE1MExJXsTKG1ySn5eqEFxZXJKaWwwAgVnOcDkAAAA&mat=CRq79qeqTJVL&ved=2ahUKEwj9_5WunP-HAxWJxAIHHRvBNKkQrMcEegQIExAD"
-                className={classes.icon}
-                size="xl"
-                mr={10}
-                color="var(--blue)"
-                variant="subtle"
-              >
-                <IconBrandGoogle style={{ width: rem(60), height: rem(60) }} stroke={1.5} />
-              </ActionIcon>
-              <ActionIcon
-                component="a"
                 href="https://www.youtube.com/@StoneSystemsGMB"
                 className={classes.icon}
                 size="xl"

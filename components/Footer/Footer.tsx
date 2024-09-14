@@ -133,16 +133,6 @@ export function Footer() {
         <Group gap={0} className={classes.social} justify="flex-end" wrap="nowrap">
           <ActionIcon
             component="a"
-            href="https://www.google.com/search?sca_esv=77e9856747e8aa3f&hl=en-GB&authuser=1&biw=1633&bih=924&q=Stone%20Systems&stick=H4sIAAAAAAAAAONgU1I1qDBJsjA2MjC0TDJKtkhONk6zMqhITEw1M0wxT7EwSzE1MExJXsTKG1ySn5eqEFxZXJKaWwwAgVnOcDkAAAA&mat=CRq79qeqTJVL&ved=2ahUKEwj9_5WunP-HAxWJxAIHHRvBNKkQrMcEegQIExAD"
-            size="lg"
-            mx={10}
-            color="white"
-            variant="subtle"
-          >
-            <IconBrandGoogle style={{ width: rem(24), height: rem(24) }} stroke={2} />
-          </ActionIcon>
-          <ActionIcon
-            component="a"
             href="https://www.youtube.com/@StoneSystemsGMB"
             size="lg"
             mx={10}
