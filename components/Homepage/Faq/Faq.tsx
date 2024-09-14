@@ -75,8 +75,7 @@ export function Faq() {
             </Accordion.Control>
             <Accordion.Panel className={classes.itemDescription}>
               We'll be extremely sad to see you go, but after a good cry we'll bounce back. However,
-              you will lose access to all the features we set up for you. BUT we will continue to
-              pay for your domain name until we can transfer it over to you.
+              you will lose access to all the features we set up for you. 
             </Accordion.Panel>
           </Accordion.Item>
 
