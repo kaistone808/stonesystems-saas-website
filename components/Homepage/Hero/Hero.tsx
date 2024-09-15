@@ -61,6 +61,14 @@ export function Hero() {
                     alt="picture of astrid"
                     src="/images/people/astridsmall.jpeg"
                   />
+                  <Image
+                    loading="eager"
+                    width={38}
+                    height={38}
+                    className={classes.avatar}
+                    alt="picture of astrid"
+                    src="/images/people/paolasmall.jpeg"
+                  />
                 </Flex>
                 <Button
                   component="a"

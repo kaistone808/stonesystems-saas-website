@@ -119,7 +119,7 @@ export const PriceContainer = () => {
                         {monthly ? '$197/mo' : '$165/mo'}
                       </Title>
                       {!monthly && !isFading && (
-                        <Text className={classes.discount}>17% off</Text>
+                        <Text className={classes.discount}>$400 off</Text>
                       )}
                     </Flex>
                     <Stack w={'100%'} align="center" p={10}>
@@ -202,7 +202,7 @@ export const PriceContainer = () => {
                         {monthly ? '$297/mo' : '$249/mo'}
                       </Title>
                       {!monthly && !isFading && (
-                        <Text className={classes.discount}>17% off</Text>
+                        <Text className={classes.discount}>$600 off</Text>
                       )}
                     </Flex>
                     <Stack w={'100%'} align="center" p={10}>
@@ -277,7 +277,7 @@ export const PriceContainer = () => {
                         {monthly ? '$997/mo' : '$833/mo'}
                       </Title>
                       {!monthly && !isFading && (
-                        <Text className={classes.discount}>17% off</Text>
+                        <Text className={classes.discount}>$2000 off</Text>
                       )}
                     </Flex>
                     <Stack w={'100%'} align="center" p={10}>
