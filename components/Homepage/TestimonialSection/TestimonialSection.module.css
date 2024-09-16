@@ -21,7 +21,7 @@
 
 .mainTitle {
   color: var(--blue);
-  font-size: var(--title-font-size);
+  font-size: var(--title-font-size) !important;
   line-height: 1.2;
   font-weight: 900;
   text-align: center;
