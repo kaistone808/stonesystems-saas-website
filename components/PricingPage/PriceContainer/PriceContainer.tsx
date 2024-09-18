@@ -179,7 +179,7 @@ export const PriceContainer = () => {
                       target="_blank"
                       href={
                         monthly
-                          ? 'hhttps://essential.stonesystems.io/essential-6483-8947'
+                          ? 'https://essential.stonesystems.io/essential-6483-8947'
                           : 'https://essential.stonesystems.io/essentials-8140-7496-8715-1943'
                       }
                       className={classes.button1}
