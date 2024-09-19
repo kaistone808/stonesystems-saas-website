@@ -53,22 +53,10 @@ const productData = [
     href: '/features/missed-call-text-back',
   },
   {
-    icon: IconStarFilled,
-    title: '5-Star Magic Funnel',
-    description: 'Get more 5 star reviews and prevent bad ones',
-    href: '/features/5-star-magic-funnel',
-  },
-  {
     icon: IconPrinter,
     title: 'Printing Services',
     description: 'Put your business out there both on and offline',
     href: '/features/printing-services',
-  },
-  {
-    icon: IconFileAnalytics,
-    title: 'Marketing Campaigns',
-    description: 'Keep your customers thinking about you',
-    href: '/features/marketing-campaigns',
   },
   {
     icon: IconFileAnalytics,
@@ -87,6 +75,18 @@ const productData = [
     title: 'Local SEO',
     description: 'Actually get found on Google',
     href: '/features/seo',
+  },
+  {
+    icon: IconStarFilled,
+    title: '5-Star Magic Review Funnel',
+    description: 'Get more 5 star reviews and prevent bad ones',
+    href: '/features/5-star-magic-funnel',
+  },
+  {
+    icon: IconFileAnalytics,
+    title: 'One-Click Marketing Campaigns',
+    description: 'Keep your customers thinking about you',
+    href: '/features/marketing-campaigns',
   },
   {
     icon: IconReport,

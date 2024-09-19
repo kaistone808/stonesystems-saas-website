@@ -40,21 +40,8 @@ function Card({ personName, testimonial, videoSrc, videoThumbnail }: CardProps) 
 
 const data = [
   {
-    testimonial: `"They took our website to basic to very high end, and made getting 5 star google reviews easy with their 5 star google review funnel!. I can't say anymore good things about these guys, thank you!"`,
-    videoSrc: '/videos/Leader.mov#t=0.1',
-    videoThumbnail: '/images/thumbnails/Leader.jpg',
-    personName: '-Ben',
-  },
-  {
     testimonial:
-      '"Nothing but professional and awesome in every way, they are absolutely great to work with"',
-    videoSrc: '/videos/Netane.mov#t=0.1',
-    videoThumbnail: '/images/thumbnails/Netane.jpg',
-    personName: '-Netane',
-  },
-  {
-    testimonial:
-      '"I would highly recommend going with Stone Systems, my business has ramped up, literally overnight and their prices are very affordable. Feel free to reach out to me personally with any questions about them, thank you!"',
+    '"I would highly recommend going with Stone Systems, my business has ramped up, literally overnight and their prices are very affordable. Feel free to reach out to me personally with any questions about them, thank you!"',
     videoSrc: '/videos/Frank.mp4#t=0.1',
     videoThumbnail: '/images/thumbnails/Frank.jpg',
     personName: '-Frank',
@@ -76,6 +63,19 @@ const data = [
     videoSrc: '/videos/Cody.mp4#t=0.1',
     videoThumbnail: '/images/thumbnails/Cody.jpg',
     personName: '-Cody',
+  },
+  {
+    testimonial:
+    '"Nothing but professional and awesome in every way, they are absolutely great to work with"',
+    videoSrc: '/videos/Netane.mov#t=0.1',
+    videoThumbnail: '/images/thumbnails/Netane.jpg',
+    personName: '-Netane',
+  },
+  {
+    testimonial: `"They took our website to basic to very high end, and made getting 5 star google reviews easy with their 5 star google review funnel!. I can't say anymore good things about these guys, thank you!"`,
+    videoSrc: '/videos/Leader.mov#t=0.1',
+    videoThumbnail: '/images/thumbnails/Leader.jpg',
+    personName: '-Ben',
   },
   {
     testimonial:

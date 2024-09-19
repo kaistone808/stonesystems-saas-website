@@ -54,7 +54,7 @@ export function Feature2() {
       <Container size="xl">
         <div className={classes.inner}>
           <div className={classes.content}>
-            <Title className={classes.title}>5-Star Magic Funnel</Title>
+            <Title className={classes.title}>5-Star Magic Review Funnel</Title>
             <Text className={classes.description} mt="md">
               "Sure I'll leave you a review", but the truth is people forget. We’ll 'gently' remind
               them for a few weeks until they remember.

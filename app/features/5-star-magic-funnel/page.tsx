@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import { IntroSection } from '@/components/FeaturePages/IntroSection/IntroSection';
 
 export const metadata: Metadata = {
-  title: 'Stone Systems - 5 Star Magic Funnel',
+  title: 'Stone Systems - 5 Star Magic Review Funnel',
   description:
     'Contractors trust us to transform their business with marketing systems, website design, reputation management and automation. And we do all of that at an affordable price!',
 };
@@ -53,8 +53,8 @@ export default function StarMagicFunnelPage() {
       <IntroSection
         statistics={statistics as [{ stat: string; description: string }]}
         benefits={benefits as [{ title: string; description: string; icon: string }]}
-        title="5-Star Magic Funnel"
-        title2="What is the 5-star magic funnel?"
+        title="5-Star Magic Review Funnel"
+        title2="What is the 5-star magic review funnel?"
         videoSrc="/videos/magic-funnel.mp4#t=0.1"
         videoThumbnail="/images/thumbnails/magic-funnel.jpg"
       />

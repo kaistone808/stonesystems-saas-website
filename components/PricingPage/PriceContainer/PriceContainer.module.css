@@ -158,7 +158,7 @@
 .discount {
   font-weight: 900;
   margin-left: 0.5rem;
-  color: red;
+  color: #b22222;
   margin-top: 0.25rem;
   font-size: 20px;
   transition: all 0.3s;
@@ -214,4 +214,10 @@
 .fadeOut {
   opacity: 0;
   transform: translateX(-100%);
+}
+
+.popular{
+  margin-bottom: -.5rem;
+  border-bottom: 3px solid #b22222;
+  color: #b22222;
 }

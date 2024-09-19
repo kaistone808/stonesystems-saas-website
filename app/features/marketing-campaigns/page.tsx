@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import { IntroSection } from '@/components/FeaturePages/IntroSection/IntroSection';
 
 export const metadata: Metadata = {
-  title: 'Stone Systems - Marketing Campaigns',
+  title: 'Stone Systems - One-Click Marketing Campaigns',
   description:
     'Contractors trust us to transform their business with marketing systems, website design, reputation management and automation. And we do all of that at an affordable price!',
 };
@@ -53,7 +53,7 @@ export default function MarketingCampaignsPage() {
       <IntroSection
         statistics={statistics as [{ stat: string; description: string }]}
         benefits={benefits as [{ title: string; description: string; icon: string }]}
-        title="Marketing Campaigns"
+        title="One-Click Marketing Campaigns"
         title2="Why do I need marketing campaigns?"
         videoSrc="/videos/marketing-campaigns.mp4#t=0.1"
         videoThumbnail="/images/thumbnails/marketing-campaigns.jpg"

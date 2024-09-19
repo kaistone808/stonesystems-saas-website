@@ -38,7 +38,7 @@ const data = [
   {
     links: [
       { label: 'Automated Lead Follow Up', link: '/features/automated-lead-follow-up' },
-      { label: 'Marketing Campaigns', link: '/features/marketing-campaigns' },
+      { label: 'One-Click Marketing Campaigns', link: '/features/marketing-campaigns' },
       { label: 'All-In-One Inbox', link: '/features/all-in-one-inbox' },
       { label: 'Business Phone', link: '/features/business-phone' },
       { label: 'Local SEO', link: '/features/seo' },
@@ -114,19 +114,10 @@ export function Footer() {
       </Container>
       <Container size="lg" className={classes.afterFooter}>
         <Flex>
-          <Text
-            className={classes.specialLink}
-            component="a"
-            mr="3rem"
-            href="/terms"
-          >
+          <Text className={classes.specialLink} component="a" mr="3rem" href="/terms">
             Terms & Conditions
           </Text>
-          <Text<'a'>
-            className={classes.specialLink}
-            component="a"
-            href="/privacy-policy"
-          >
+          <Text<'a'> className={classes.specialLink} component="a" href="/privacy-policy">
             Privacy Policy
           </Text>
         </Flex>
