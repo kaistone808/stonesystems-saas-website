@@ -2,7 +2,6 @@
 
 import { Container, Title } from '@mantine/core';
 import classes from './IntroSection.module.css';
-import LazyLoadVideo from '@/components/LazyLoadVideo/LazyLoadVideo';
 
 export function IntroSection() {
   return (
@@ -11,7 +10,7 @@ export function IntroSection() {
         <Title className={classes.mainTitle} order={1}>
           How Frank Added $20,000 of Profit To His Business While Paying Us $197/month
         </Title>
-        <script src="https://fast.wistia.com/embed/medias/p2owb2d47y.jsonpp" async></script>
+        <script src="https://fast.wistia.com/embed/medias/p2owb2d47y.jsonp" async></script>
         <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
         <div className="wistia_responsive_padding" style={{padding:'64.79% 0 0 0',position:'relative'}}>
           <div
@@ -19,7 +18,7 @@ export function IntroSection() {
             style={{height:'100%',left:0,position:'absolute',top:0,width:'100%'}}
           >
             <div
-              className="wistia_embed wistia_async_pi68bszxff seo=true videoFoam=true"
+              className="wistia_embed wistia_async_p2owb2d47y seo=true videoFoam=true"
               style={{height:'100%',position:'relative',width:'100%'}}
             >
               <div
