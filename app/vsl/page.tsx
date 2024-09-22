@@ -1,5 +1,4 @@
 import { Metadata } from 'next';
-import { TestimonialSection } from '@/components/VslPage/TestimonialSection/TestimonialSection';
 import { IntroSection } from '@/components/VslPage/IntroSection/IntroSection';
 
 export const metadata: Metadata = {
@@ -12,7 +11,6 @@ export default function VSLPage() {
   return (
     <>
       <IntroSection />
-      <TestimonialSection />{' '}
     </>
   );
 }

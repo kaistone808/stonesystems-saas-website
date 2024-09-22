@@ -20,13 +20,19 @@ export const LayoutWrapper: React.FC<{ children: React.ReactNode }> = ({ childre
     '/',
   ].includes(pathname);
 
+  const showNothing = ['/vsl'].includes(pathname);
+
   return (
     <>
       <Header />
       {children}
-      {shouldShowOurProcessSection ? <CTA /> : <CTANoWave />}
-      {shouldShowOurProcessSection && <OurProcessSection />}
-      <TestimonialSection />
+      {!showNothing && (
+        <>
+          {shouldShowOurProcessSection ? <CTA /> : <CTANoWave />}
+          {shouldShowOurProcessSection && <OurProcessSection />}
+          <TestimonialSection />
+        </>
+      )}
       <Footer />
     </>
   );
