@@ -35,6 +35,7 @@ import {
   IconUsers,
   IconDeviceMobile,
   IconX,
+  IconTools,
 } from '@tabler/icons-react';
 import Image from 'next/image';
 import classes from './Header.module.css';
@@ -108,6 +109,12 @@ const aboutData = [
     title: 'Our Process',
     description: 'Discover how we work',
     href: '/our-process',
+  },
+  {
+    icon: IconTools,
+    title: 'Trades We Serve',
+    description: 'Who we work with',
+    href: '/trades-we-serve',
   },
   {
     icon: IconNotebook,
@@ -210,8 +217,8 @@ export function Header() {
             <a href="/testimonials" className={classes.link}>
               Testimonials
             </a>
-            <a href="/trades-we-serve" className={classes.link}>
-              Trades We Serve
+            <a href="/our-work" className={classes.link}>
+              Our Work
             </a>
             <HoverCard width={350} position="bottom" radius="md" shadow="md" withinPortal>
               <HoverCard.Target>
@@ -309,9 +316,9 @@ export function Header() {
           <a href="/testimonials" className={classes.link}>
             Testimonials
           </a>
-          <a href="/trades-we-serve" className={classes.link}>
-            Trades We Serve
-          </a>
+          <a href="/our-work" className={classes.link}>
+              Our Work
+            </a>
           <UnstyledButton onClick={toggleAboutLinks}>
             <Center inline>
               <Box className={classes.link} component="span" mr={5}>

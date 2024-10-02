@@ -12,15 +12,15 @@ const data = [
     links: [
       { label: 'Pricing', link: '/pricing' },
       { label: 'Testimonials', link: '/testimonials' },
-      { label: 'Trades We Serve', link: '/trades-we-serve' },
+      { label: 'Our Work', link: '/our-work' },
       { label: 'Log in', link: 'https://app.stonesystems.io' },
     ],
   },
   {
     title: 'About',
     links: [
-      { label: 'About Us', link: '/about-us' },
       { label: 'Our Process', link: '/our-process' },
+      { label: 'Trades We Serve', link: '/trades-we-serve' },
       { label: 'Careers', link: '/careers' },
       { label: 'Partners', link: '/partners' },
       { label: 'Contact', link: '/contact' },
