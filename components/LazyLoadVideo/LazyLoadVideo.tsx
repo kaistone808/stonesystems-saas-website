@@ -103,14 +103,17 @@ const LazyLoadVideo: React.FC<LazyLoadVideoProps> = ({
       {isIntersecting ? (
         <>
           {!isLoaded && (
-            <Image
-              className={classes.image}
-              width={100}
-              height={100}
-              loading="eager"
-              src={poster}
-              alt={alt}
-            />
+            <>
+              <div className={classes.spinner}></div>
+              <Image
+                className={classes.image}
+                width={100}
+                height={100}
+                loading="eager"
+                src={poster}
+                alt={alt}
+              />
+            </>
           )}
           <video
             width={width}
