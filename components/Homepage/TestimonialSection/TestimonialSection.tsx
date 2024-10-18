@@ -80,12 +80,6 @@ const data = [
     personName: '-Manny',
   },
   {
-    testimonial: `"They took our website to basic to very high end, and made getting 5 star google reviews easy with their 5 star google review funnel!. I can't say anymore good things about these guys, thank you!"`,
-    videoSrc: '/videos/Leader.mov#t=0.1',
-    videoThumbnail: '/images/thumbnails/Leader.jpg',
-    personName: '-Ben',
-  },
-  {
     testimonial:
       '"Getting 5 star reviews has always given me anxiety, Kai and his team have taken all that away and I have seen a significant increase in business since I started working with them. I would recommend them to anyone!"',
     videoSrc: '/videos/Wendy.mov#t=0.1',

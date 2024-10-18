@@ -40,30 +40,22 @@ export const PriceContainer = () => {
     [key: string]: MutableRefObject<HTMLDivElement | null>;
   };
 
-  const basicRefs: RefObjectMap = {
-    website: createRef<HTMLDivElement>(),
-    hosting: createRef<HTMLDivElement>(),
-    inbox: createRef<HTMLDivElement>(),
-    bphone: createRef<HTMLDivElement>(),
-    chat: createRef<HTMLDivElement>(),
-    bcards: createRef<HTMLDivElement>(),
-  };
-
   const advancedRefs: RefObjectMap = {
+    website: createRef<HTMLDivElement>(),
     websiteseo: createRef<HTMLDivElement>(),
     leadconf: createRef<HTMLDivElement>(),
     mctb: createRef<HTMLDivElement>(),
     reviews: createRef<HTMLDivElement>(),
     marketing: createRef<HTMLDivElement>(),
-    blogs: createRef<HTMLDivElement>(),
+    bcards: createRef<HTMLDivElement>(),
   };
-
+  
   const supremeRefs: RefObjectMap = {
     /* gmb: createRef<HTMLDivElement>(), */
     onsite: createRef<HTMLDivElement>(),
-
     gmbopt: createRef<HTMLDivElement>(),
     reports: createRef<HTMLDivElement>(),
+    blogs: createRef<HTMLDivElement>(),
   };
 
   return (
@@ -102,80 +94,11 @@ export const PriceContainer = () => {
                 align={'center'}
                 direction={{ base: 'column', sm: 'row' }}
                 color={'hsl(232, 13%, 33%)'}
-                gap={{ base: '1.5rem', sm: 0 }}
+                gap={{ base: '1.5rem', sm: '1.5rem' }}
               >
-                <Paper shadow={'md'} className={classes.cardBox1}>
-                  <Stack w={'100%'} align={'center'} p={20}>
-                    <Text fw={900} fz={'24'}>
-                      Contractor Essentials
-                    </Text>
-                    <Flex
-                      className={`${classes.discountBox} ${isFading ? classes.fadeOut : classes.fadeIn}`}
-                    >
-                      <Title order={2} className={classes.moneyTitle}>
-                        {monthly ? '$197/mo' : '$1970/yr'}
-                      </Title>
-                      {!monthly && !isFading && <Text className={classes.discount}>$400 off</Text>}
-                    </Flex>
-                    <Stack w={'100%'} align="center" p={10}>
-                      <Divider w={'100%'} opacity={0.7} />
-                      <Flex className={classes.featureDiv}>
-                        <Text ta={'center'} fz={'md'} fw={700} className={classes.featureName}>
-                          Functional Website
-                        </Text>
-                      </Flex>
-                      <Divider w={'100%'} opacity={0.7} />
-                      <Flex className={classes.featureDiv}>
-                        <Text ta={'center'} fz={'md'} fw={700} className={classes.featureName}>
-                          Web Hosting & Security
-                        </Text>
-                      </Flex>
-                      <Divider w={'100%'} opacity={0.7} />
-                      <Flex className={classes.featureDiv}>
-                        <Text ta={'center'} fz={'md'} fw={700} className={classes.featureName}>
-                          All In One Inbox
-                        </Text>
-                      </Flex>
-
-                      <Divider w={'100%'} opacity={0.7} />
-                      <Flex className={classes.featureDiv}>
-                        <Text ta={'center'} fz={'md'} fw={700} className={classes.featureName}>
-                          Business Phone
-                        </Text>
-                      </Flex>
-                      <Divider w={'100%'} opacity={0.6} />
-                      <Flex className={classes.featureDiv}>
-                        <Text ta={'center'} fz={'md'} fw={700} className={classes.featureName}>
-                          Live Website Chat
-                        </Text>
-                      </Flex>
-                      <Divider w={'100%'} opacity={0.7} />
-                      <Flex className={classes.featureDiv}>
-                        <Text ta={'center'} fz={'md'} fw={700} className={classes.featureName}>
-                          Scannable Google Review Cards
-                        </Text>
-                      </Flex>
-                      <Divider w={'100%'} opacity={0.7} />
-                    </Stack>
-                    <Button
-                      component="a"
-                      target="_blank"
-                      href={
-                        monthly
-                          ? 'https://essential.stonesystems.io/essential-6483-8947'
-                          : 'https://essential.stonesystems.io/essentials-8140-7496-8715-1943'
-                      }
-                      className={classes.button1}
-                      bg={'var(--yellow)'}
-                      w="75%"
-                    >
-                      START NOW
-                    </Button>
-                  </Stack>
-                </Paper>
                 <Paper shadow={'md'} className={classes.cardBox2}>
                   <Stack w={'100%'} align={'center'} p={20}>
-                  <Text className={classes.popular} fw={900} fz={'24'}>
+                    <Text className={classes.popular} fw={900} fz={'24'}>
                       MOST POPULAR
                     </Text>
                     <Text fw={900} fz={mobile ? '24' : '30'}>
@@ -191,46 +114,45 @@ export const PriceContainer = () => {
                     </Flex>
                     <Stack w={'100%'} align="center" p={10}>
                       <Divider w={'100%'} opacity={0.6} />
-                      <Text c={'var(--blue)'} fs={'italic'} ta={'center'} fz={'md'} fw={900}>
-                        Everything in Contractor Essentials +
+                      <Text ta={'center'} fz={'lg'} fw={700} className={classes.featureName}>
+                        Functional Website
                       </Text>
                       <Divider w={'100%'} opacity={0.6} />
                       <Flex className={classes.featureDiv}>
-                        <Text ta={'center'} fz={'md'} fw={700} className={classes.featureName}>
+                        <Text ta={'center'} fz={'lg'} fw={700} className={classes.featureName}>
                           Automated Lead Follow Up
                         </Text>
                       </Flex>
-                      <Divider w={'100%'} opacity={0.6} />
+                      <Divider w={'100%'} opacity={0.7} />
                       <Flex className={classes.featureDiv}>
-                        <Text ta={'center'} fz={'md'} fw={700} className={classes.featureName}>
+                        <Text ta={'center'} fz={'lg'} fw={700} className={classes.featureName}>
                           Missed Call Text Back
                         </Text>
                       </Flex>
                       <Divider w={'100%'} opacity={0.6} />
                       <Flex className={classes.featureDiv}>
-                        <Text ta={'center'} fz={'md'} fw={700} className={classes.featureName}>
+                        <Text ta={'center'} fz={'lg'} fw={700} className={classes.featureName}>
                           5-Star Magic Review Funnel
                         </Text>
                       </Flex>
                       <Divider w={'100%'} opacity={0.6} />
                       <Flex className={classes.featureDiv}>
-                        <Text ta={'center'} fz={'md'} fw={700} className={classes.featureName}>
+                        <Text ta={'center'} fz={'lg'} fw={700} className={classes.featureName}>
                           One-Click Marketing Campaigns
                         </Text>
                       </Flex>
                       <Divider w={'100%'} opacity={0.6} />
                       <Flex className={classes.featureDiv}>
-                        <Text ta={'center'} fz={'md'} fw={700} className={classes.featureName}>
-                          Shotgun SEO
+                        <Text ta={'center'} fz={'lg'} fw={700} className={classes.featureName}>
+                          Scannable Google Review Cards
                         </Text>
                       </Flex>
                       <Divider w={'100%'} opacity={0.6} />
                       <Flex className={classes.featureDiv}>
-                        <Text ta={'center'} fz={'md'} fw={700} className={classes.featureName}>
-                          Blog Posts
+                        <Text ta={'center'} fz={'lg'} fw={700} className={classes.featureName}>
+                          Shotgun SEO
                         </Text>
                       </Flex>
-                      <Divider w={'100%'} opacity={0.6} />
                     </Stack>
                     <Button
                       className={classes.button2}
@@ -251,7 +173,7 @@ export const PriceContainer = () => {
                 </Paper>
                 <Paper shadow={'md'} className={classes.cardBox3}>
                   <Stack w={'100%'} align={'center'} p={20}>
-                    <Text fw={900} fz={'24'}>
+                    <Text fw={900} fz={'24'} mt={mobile ? 0 : '3.75rem'}>
                       Contractor Supreme
                     </Text>
                     <Flex
@@ -268,46 +190,41 @@ export const PriceContainer = () => {
                         Everything in Contractor Advanced +
                       </Text>
                       <Divider w={'100%'} opacity={0.7} />
-                      {/*                     <Text
-                        ta={'center'}
-                        fz={'md'}
-                        fw={700}
-                        className={classes.featureName}
-                        onClick={() => openAccordionItem('supreme', 'gmb')}
-                      >
-                        GMB Posts
-                      </Text>
-                      <Divider w={'100%'} opacity={0.7} /> */}
                       <Flex className={classes.featureDiv}>
-                        <Text ta={'center'} fz={'md'} fw={700} className={classes.featureName}>
+                        <Text ta={'center'} fz={'lg'} fw={700} className={classes.featureName}>
                           Sniper SEO
                         </Text>
                       </Flex>
                       <Divider w={'100%'} opacity={0.7} />
                       <Flex className={classes.featureDiv}>
-                        <Text ta={'center'} fz={'md'} fw={700} className={classes.featureName}>
+                        <Text ta={'center'} fz={'lg'} fw={700} className={classes.featureName}>
                           Google My Business Optimizations
                         </Text>
                       </Flex>
                       <Divider w={'100%'} opacity={0.7} />
                       <Flex className={classes.featureDiv}>
-                        <Text ta={'center'} fz={'md'} fw={700} className={classes.featureName}>
+                        <Text ta={'center'} fz={'lg'} fw={700} className={classes.featureName}>
                           Monthly SEO Reports
                         </Text>
                       </Flex>
                       <Divider w={'100%'} opacity={0.7} />
                       <Flex className={classes.featureDiv}>
-                        <Text ta={'center'} fz={'md'} fw={700} className={classes.featureName}>
+                        <Text ta={'center'} fz={'lg'} fw={700} className={classes.featureName}>
                           Keyword Optimizations
                         </Text>
                       </Flex>
                       <Divider w={'100%'} opacity={0.7} />
                       <Flex className={classes.featureDiv}>
-                        <Text ta={'center'} fz={'md'} fw={700} className={classes.featureName}>
+                        <Text ta={'center'} fz={'lg'} fw={700} className={classes.featureName}>
                           Voice Search
                         </Text>
                       </Flex>
                       <Divider w={'100%'} opacity={0.7} />
+                      <Flex className={classes.featureDiv}>
+                        <Text ta={'center'} fz={'lg'} fw={700} className={classes.featureName}>
+                          Blog Posts
+                        </Text>
+                      </Flex>
                     </Stack>
                     <Button
                       component="a"
@@ -333,10 +250,7 @@ export const PriceContainer = () => {
       <div className={classes.outer2}>
         <Container className={classes.container} size={'xl'}>
           {!mobile && (
-            <SimpleGrid cols={3}>
-              <div className={classes.header}>
-                <Text className={classes.planTitle}>Contractor Essentials </Text>
-              </div>
+            <SimpleGrid cols={2}>
               <div className={classes.header}>
                 <Text className={classes.planTitle}>Contractor Advanced </Text>
               </div>
@@ -345,14 +259,14 @@ export const PriceContainer = () => {
               </div>
             </SimpleGrid>
           )}
-          <SimpleGrid cols={mobile ? 1 : 3} className={classes.content}>
+          <SimpleGrid cols={mobile ? 1 : 2} className={classes.content}>
             {mobile && (
               <div className={classes.header}>
-                <Text className={classes.planTitle}>Contractor Essentials </Text>
+                <Text className={classes.planTitle}>Contractor Advanced </Text>
               </div>
             )}
             <Accordion variant="separated">
-              <Accordion.Item value="website" ref={basicRefs.website}>
+              <Accordion.Item value="website" ref={advancedRefs.website}>
                 <Accordion.Control bg={'var(--white)'}>Functional Website</Accordion.Control>
                 <Accordion.Panel>
                   <Text className={classes.contentTitle}>
@@ -374,100 +288,6 @@ export const PriceContainer = () => {
                       you over text, never email.
                     </List.Item>
                   </List>
-                </Accordion.Panel>
-              </Accordion.Item>
-
-              <Accordion.Item value="hosting" ref={basicRefs.hosting}>
-                <Accordion.Control bg={'var(--white)'}>Web Hosting & Security</Accordion.Control>
-                <Accordion.Panel>
-                  <Text className={classes.contentTitle}>
-                    Don’t be an idiot… you don’t want your website to be slow, and definitely don’t
-                    want it to get hacked.
-                  </Text>
-                  <List>
-                    <List.Item>SSL certificate </List.Item>
-                    <List.Item>Superhosting </List.Item>
-                    <List.Item>Indexed for google SEO & Pagespeed </List.Item>
-                    <List.Item>99.95% SLA </List.Item>
-                  </List>
-                </Accordion.Panel>
-              </Accordion.Item>
-
-              <Accordion.Item value="inbox" ref={basicRefs.inbox}>
-                <Accordion.Control bg={'var(--white)'}>All In One Inbox</Accordion.Control>
-                <Accordion.Panel>
-                  <Text className={classes.contentTitle}>
-                    No offense mr contractor… most of you guys are notorious for not getting back to
-                    people. Let’s not make it more difficult for you.
-                  </Text>
-                  <List>
-                    <List.Item>
-                      Use our 4 in 1 inbox to respond to all your messages in one place. (Instagram,
-                      Facebook, Email & SMS)
-                    </List.Item>
-                  </List>
-                </Accordion.Panel>
-              </Accordion.Item>
-
-              <Accordion.Item value="bphone" ref={basicRefs.bphone}>
-                <Accordion.Control bg={'var(--white)'}>Business Phone</Accordion.Control>
-                <Accordion.Panel>
-                  <Text className={classes.contentTitle}>
-                    You're not actually going to buy a second phone are you? Just use our app on
-                    your personal phone.
-                  </Text>
-                  <List>
-                    <List.Item>Separate business phone number</List.Item>
-                    <List.Item>Split business from personal </List.Item>
-                  </List>
-                </Accordion.Panel>
-              </Accordion.Item>
-
-              <Accordion.Item value="chat" ref={basicRefs.chat}>
-                <Accordion.Control bg={'var(--white)'}>Live Website Chat</Accordion.Control>
-                <Accordion.Panel>
-                  <Text className={classes.contentTitle}>
-                    Don’t leave your leads hanging… Let them text you directly from your website and
-                    get back them them instantly on autopilot
-                  </Text>
-                  <List>
-                    <List.Item>Turn a website lead into a text conversation </List.Item>
-                  </List>
-                </Accordion.Panel>
-              </Accordion.Item>
-
-              <Accordion.Item value="bcards" ref={basicRefs.bcards}>
-                <Accordion.Control bg={'var(--white)'}>
-                  Scannable Google Review Cards
-                </Accordion.Control>
-                <Accordion.Panel>
-                  <Text className={classes.contentTitle}>
-                    Honestly, if you don't have any of these yet, I don't know what you're waiting
-                    for...
-                  </Text>
-                  <List>
-                    <List.Item>QR codes for Goole reviews </List.Item>
-                    <List.Item>Easy to scan and never expire </List.Item>
-                    <List.Item>Branded business cards with all business info on </List.Item>
-                    <List.Item>Review QR code on the back of the business card </List.Item>
-                  </List>
-                </Accordion.Panel>
-              </Accordion.Item>
-            </Accordion>
-            {mobile && (
-              <div className={classes.header}>
-                <Text className={classes.planTitle}>Contractor Advanced </Text>
-              </div>
-            )}
-            <Accordion variant="separated">
-              <Accordion.Item value="everything1">
-                <Accordion.Control className={classes.everythingControl}>
-                  Everything From Contractor Essentials +
-                </Accordion.Control>
-                <Accordion.Panel>
-                  <Text className={classes.contentTitle}>
-                    Contractor Advanced also includes everything from Contractor Essentials
-                  </Text>
                 </Accordion.Panel>
               </Accordion.Item>
 
@@ -549,6 +369,23 @@ export const PriceContainer = () => {
                 </Accordion.Panel>
               </Accordion.Item>
 
+              <Accordion.Item value="bcards" ref={advancedRefs.bcards}>
+                <Accordion.Control bg={'var(--white)'}>
+                  Scannable Google Review Cards
+                </Accordion.Control>
+                <Accordion.Panel>
+                  <Text className={classes.contentTitle}>
+                    Honestly, if you don't have any of these yet, I don't know what you're waiting
+                    for...
+                  </Text>
+                  <List>
+                    <List.Item>QR codes for Google reviews </List.Item>
+                    <List.Item>Easy to scan and never expire </List.Item>
+                    <List.Item>Branded business cards with all business info on </List.Item>
+                    <List.Item>Review QR code on the back of the business card </List.Item>
+                  </List>
+                </Accordion.Panel>
+              </Accordion.Item>
               <Accordion.Item value="websiteseo" ref={advancedRefs.websiteseo}>
                 <Accordion.Control bg={'var(--white)'}>Shotgun SEO</Accordion.Control>
                 <Accordion.Panel>
@@ -565,25 +402,6 @@ export const PriceContainer = () => {
                 </Accordion.Panel>
               </Accordion.Item>
 
-              <Accordion.Item value="blogs" ref={advancedRefs.blogs}>
-                <Accordion.Control bg={'var(--white)'}>Blog Posts</Accordion.Control>
-                <Accordion.Panel>
-                  <Text className={classes.contentTitle}>
-                    Let’s be honest, nobody reads these… They’re good for SEO though and make you
-                    rank higher on google
-                  </Text>
-                  <List>
-                    <List.Item>
-                      We create meaningful blog posts on your website to give visitors something to
-                      read
-                    </List.Item>
-                    <List.Item>
-                      Blog posts are packed with keywords and fully SEO optimized to make you rank
-                      higher on google
-                    </List.Item>
-                  </List>
-                </Accordion.Panel>
-              </Accordion.Item>
             </Accordion>
             {mobile && (
               <div className={classes.header}>
@@ -602,28 +420,6 @@ export const PriceContainer = () => {
                   </Text>
                 </Accordion.Panel>
               </Accordion.Item>
-
-              {/*               <Accordion.Item value="gmb" ref={supremeRefs.gmb}>
-                <Accordion.Control onClick={() => toggleAccordion('supreme', 'gmb')}>
-                  GMB Posts
-                </Accordion.Control>
-                <Accordion.Panel>
-                  <Text className={classes.contentTitle}>
-                    You can never do too much marketing… We’ll keep your Google page active so
-                    people don’t ignore you
-                  </Text>
-                  <List>
-                    <List.Item>
-                      We create meaningful GMB posts on your google page to give incentives to click
-                      on your page
-                    </List.Item>
-                    <List.Item>
-                      GMB posts are packed with keywords and fully SEO optimized to make you rank
-                      higher on google
-                    </List.Item>
-                  </List>
-                </Accordion.Panel>
-              </Accordion.Item> */}
 
               <Accordion.Item value="onsite" ref={supremeRefs.onsite}>
                 <Accordion.Control bg={'var(--white)'}>Sniper SEO</Accordion.Control>
@@ -707,6 +503,25 @@ export const PriceContainer = () => {
                       Ask Siri or Alexa for a business near you and have your business come up
                     </List.Item>
                     <List.Item>Join the future of online search</List.Item>
+                  </List>
+                </Accordion.Panel>
+              </Accordion.Item>
+              <Accordion.Item value="blogs" ref={supremeRefs.blogs}>
+                <Accordion.Control bg={'var(--white)'}>Blog Posts</Accordion.Control>
+                <Accordion.Panel>
+                  <Text className={classes.contentTitle}>
+                    Let’s be honest, nobody reads these… They’re good for SEO though and make you
+                    rank higher on google
+                  </Text>
+                  <List>
+                    <List.Item>
+                      We create meaningful blog posts on your website to give visitors something to
+                      read
+                    </List.Item>
+                    <List.Item>
+                      Blog posts are packed with keywords and fully SEO optimized to make you rank
+                      higher on google
+                    </List.Item>
                   </List>
                 </Accordion.Panel>
               </Accordion.Item>

@@ -40,12 +40,6 @@ function Card({ personName, testimonial, videoSrc, videoThumbnail }: CardProps) 
 
 const data = [
   {
-    testimonial: `"They took our website to basic to very high end, and made getting 5 star google reviews easy with their 5 star google review funnel!. I can't say anymore good things about these guys, thank you!"`,
-    videoSrc: '/videos/Leader.mov#t=0.1',
-    videoThumbnail: '/images/thumbnails/Leader.jpg',
-    personName: '-Ben',
-  },
-  {
     testimonial:
       '"Nothing but professional and awesome in every way, they are absolutely great to work with"',
     videoSrc: '/videos/Netane.mov#t=0.1',
