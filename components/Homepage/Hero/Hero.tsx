@@ -67,7 +67,7 @@ export function Hero() {
                     height={38}
                     className={classes.avatar}
                     alt="picture of astrid"
-                    src="/images/people/paolasmall.jpeg"
+                    src="/images/people/valeriasmall.jpeg"
                   />
                 </Flex>
                 <Button
