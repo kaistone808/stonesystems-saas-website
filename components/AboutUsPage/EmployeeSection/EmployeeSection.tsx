@@ -53,7 +53,7 @@ const data = [
   },
   {
     name: 'Ruth',
-    title: 'Customer Success Manager',
+    title: 'Social Media Manager',
     imageSrc: '/images/people/ruth.jpeg',
   },
   {
