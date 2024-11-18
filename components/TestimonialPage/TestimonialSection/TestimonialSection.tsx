@@ -176,21 +176,21 @@ const data = [
   },
   {
     testimonial:
-      `"Shoutout to Kai from Stone Systems. If you're looking to take your business to the next loadEnvFile, definitely reach out theme. They're great!"`,
+      `"Shoutout to Kai from Stone Systems! If you're looking to take your business to the next level, definitely reach out to them. They're great!"`,
     videoSrc: '/videos/Andrew1.mov#t=0.1',
     videoThumbnail: '/images/thumbnails/Andrew1.jpg',
     personName: '-Andrew',
   },
   {
     testimonial:
-      `"Shoutout to Kai . If you're looking for someone to help your business grow, this is the guy I'm getting like 10 times the value of what i'm spending."`,
+      `"Shoutout to Kai! If you're looking for someone to help your business grow, this is the guy. I'm getting about 10 times the value of what I'm spending!"`,
     videoSrc: '/videos/Tom.mov#t=0.1',
     videoThumbnail: '/images/thumbnails/Tom.jpg',
     personName: '-Tom',
   },
   {
     testimonial:
-      `"I was impressed and shocked of what he included whilst only charging me so little. He's gone above and beyond and i would highly recommend him!"`,
+      `"I was impressed and shocked by what he included while only charging me so little. He's gone above and beyond, and I would highly recommend him!"`,
     videoSrc: '/videos/Tommy.mp4#t=0.1',
     videoThumbnail: '/images/thumbnails/Tommy.jpg',
     personName: '-Tommy',
