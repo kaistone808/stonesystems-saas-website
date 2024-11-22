@@ -42,11 +42,6 @@ const data = [
     imageSrc: '/images/people/astrid.jpeg',
   },
   {
-    name: 'Kevin',
-    title: 'Performance Marketer',
-    imageSrc: '/images/people/kevin.jpeg',
-  },
-  {
     name: 'Amanda',
     title: 'Web Developer',
     imageSrc: '/images/people/amanda.jpeg',
@@ -58,7 +53,7 @@ const data = [
   },
   {
     name: 'Valeria',
-    title: 'Customer Success Manager',
+    title: 'Social Media Strategist',
     imageSrc: '/images/people/valeria.jpeg',
   },
   {
