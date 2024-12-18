@@ -32,11 +32,6 @@ const data = [
     imageSrc: '/images/people/kai.jpeg',
   },
   {
-    name: 'Michael',
-    title: 'Systems Engineer',
-    imageSrc: '/images/people/michael.jpg',
-  },
-  {
     name: 'Astrid',
     title: 'Web Developer',
     imageSrc: '/images/people/astrid.jpeg',
