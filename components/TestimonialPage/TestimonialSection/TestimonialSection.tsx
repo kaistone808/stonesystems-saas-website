@@ -195,6 +195,27 @@ const data = [
     videoThumbnail: '/images/thumbnails/Tommy.jpg',
     personName: '-Tommy',
   },
+  {
+    testimonial:
+      `"I've been through the ringer with these companies man, trying to find a legit company. I can tell you... these guys are the truth, spot on, communication is amazing, give these guys a try"`,
+    videoSrc: '/videos/SteveBlack.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/SteveBlack.jpg',
+    personName: '-Steve',
+  },
+  {
+    testimonial:
+      `"Shout out to Kai over at StoneSystems, they did a great job on our website. The website makes it super easy for our customers to leave us their information. If you need a good website hit up Kai and StoneSystems"`,
+    videoSrc: '/videos/JasonTheorner.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/JasonTheorner.jpg',
+    personName: '-Jason',
+  },
+  {
+    testimonial:
+      `"They re-did our website, they are AMAZING at getting you 5 star Google reviews. If you're looking to get your business found on google you need to give StoneSystems a try. We got 5 google reviews within the last 22 hours!. That's amazing, give them a call."`,
+    videoSrc: '/videos/Jeslin.mov#t=0.1',
+    videoThumbnail: '/images/thumbnails/Jeslin.jpg',
+    personName: '-Jeslin',
+  },
 ];
 
 export function TestimonialSection() {
