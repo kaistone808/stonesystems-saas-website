@@ -8,11 +8,13 @@ import { theme } from '../theme';
 import '@mantine/carousel/styles.css';
 import '../globals.css';
 import { LayoutWrapper } from '@/components/LayoutWrapper/LayoutWrapper';
+import Script from 'next/script';
 
 const APP_NAME = 'Stone Systems';
 const APP_DEFAULT_TITLE = 'Stone Systems - Website Design & Marketing Systems For Contractors!';
 const APP_TITLE_TEMPLATE = 'Stone Systems - Website Design & Marketing Systems For Contractors!';
-const APP_DESCRIPTION = 'Contractors trust us to transform their business with marketing systems, website design, reputation management and automation. And we do all of that at an affordable price!';
+const APP_DESCRIPTION =
+  'Contractors trust us to transform their business with marketing systems, website design, reputation management and automation. And we do all of that at an affordable price!';
 
 export const metadata: Metadata = {
   applicationName: APP_NAME,
@@ -58,13 +60,23 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={sora.variable}>
       <head>
-        <link rel="shortcut icon" href="/favicon.ico" sizes='any' />
-        <meta
-          name="viewport"
-          content="minimum-scale=1, initial-scale=1, width=device-width"
-        />
+        <link rel="shortcut icon" href="/favicon.ico" sizes="any" />
+        <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
       </head>
       <body>
+        {/* Google Ads Global Site Tag */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-16633753107"
+          strategy="afterInteractive"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-16633753107');
+          `}
+        </Script>
         <MantineProvider theme={theme}>
           <LayoutWrapper>{children}</LayoutWrapper>
         </MantineProvider>
