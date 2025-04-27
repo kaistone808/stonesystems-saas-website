@@ -104,6 +104,142 @@ export function TermsPage() {
           </Text>
 
           <Title order={2} className={classes.secondaryTitle}>
+            Subscription Plans and Billing
+          </Title>
+          <Text className={classes.text}>
+            Stonesystems LLC offers two primary subscription plans: <br />
+            <br />
+            $297/month: Includes a fully built website, access to the Stonesystems platform (web and
+            mobile app), a business phone number for texting and calling, CRM access, automations,
+            remarketing, and customer review tools. <br />
+            <br />
+            $750/month: Includes all features from the $297 plan plus full management and
+            optimization of Google Local Service Ads. <br />
+            <br />
+            Subscriptions are available on a month-to-month basis or a prepaid 3-month commitment,
+            the latter including a complimentary Google My Business optimization (valued at $400).
+          </Text>
+
+          <Title order={2} className={classes.secondaryTitle}>
+            Advance Payment & Auto-Renewal
+          </Title>
+          <Text className={classes.text}>
+            All subscription fees are billed in advance of the service period and are automatically
+            renewed until canceled. Payment is collected via credit/debit card through our secure
+            Stripe processor.
+          </Text>
+
+          <Title order={2} className={classes.secondaryTitle}>
+            Usage-Based Charges (Rebillable Costs)
+          </Title>
+          <Text className={classes.text}>
+            Clients will incur additional charges based on phone number usage, SMS/MMS messaging,
+            voice calls, and number intelligence services. Rates include:
+            <br />
+            <br />
+            Phone Numbers: Local: $1.15/month | Toll-Free: $2.15/month
+            <br />
+            SMS (US/Canada): $0.0079/segment (inbound/outbound)
+            <br />
+            MMS (US/Canada): $0.02 outbound | $0.01–$0.02 inbound
+            <br />
+            Voice Calls: $0.0180/min outbound | $0.0085–$0.0220/min inbound
+            <br />
+            Number Intelligence: $0.005–$0.01 per function
+            <br />
+            <br />A detailed breakdown can be found within our documentation and this TOS.
+          </Text>
+
+          <Title order={2} className={classes.secondaryTitle}>
+            Usage-Based Charges (Rebillable Costs)
+          </Title>
+          <Text className={classes.text}>
+            Clients maintain a digital wallet balance for rebillable usage charges. When wallet
+            funds run low, clients are automatically billed based on their selected auto-top-up
+            preference.
+          </Text>
+
+          <Title order={2} className={classes.secondaryTitle}>
+            No Refund Policy
+          </Title>
+          <Text className={classes.text}>
+            All payments made to Stonesystems LLC are final and non-refundable, including subscription
+            fees and usage charges. By signing up for our service, you acknowledge that our products
+            are custom-built, immediately initiated, and non-reversible once delivery begins.
+          </Text>
+
+          <Title order={2} className={classes.secondaryTitle}>
+            Chargebacks Are Not Permitted
+          </Title>
+          <Text className={classes.text}>
+            You agree not to initiate a chargeback or dispute for services rendered. Doing so
+            constitutes a violation of this agreement. We reserve the right to submit evidence of
+            contract acceptance, platform usage, and delivery documentation in response to all
+            disputes.
+            <br />
+            If a chargeback is filed fraudulently, Stonesystems LLC may pursue recovery for the amount
+            owed plus any associated legal or collection fees.
+          </Text>
+
+          <Title order={2} className={classes.secondaryTitle}>
+            Cancellation Terms
+          </Title>
+          <Text className={classes.text}>
+            You may cancel your subscription at any time. Cancellation becomes effective on the next
+            billing cycle, and no future charges will be made beyond that point. Early cancellation
+            does not result in a refund for the unused portion of a prepaid term.
+          </Text>
+
+          <Title order={2} className={classes.secondaryTitle}>
+            Delivery of Services
+          </Title>
+          <Text className={classes.text}>
+            Services are considered rendered and fulfilled once:
+            <br />
+            <br />
+            The client’s website has been completed and delivered
+            <br />
+            Platform and automation setup is finalized
+            <br />
+            <br />
+            Login assistance and onboarding support may be provided but are not a prerequisite for
+            fulfillment.
+          </Text>
+
+          <Title order={2} className={classes.secondaryTitle}>
+            Free Trials and Promotions
+          </Title>
+          <Text className={classes.text}>
+            From time to time, Stonesystems LLC may offer free trials or discounts. During a trial,
+            limited setup may occur for information gathering purposes. Full services are only
+            rendered once billing begins. Any discounts do not modify the terms of this agreement.
+          </Text>
+
+          <Title order={2} className={classes.secondaryTitle}>
+            Payment Failures and Service Suspension
+          </Title>
+          <Text className={classes.text}>
+            If a payment fails, we will attempt to process the payment 4 times over 3 weeks. If
+            unpaid within 48 hours of the first failed attempt, your account and platform access
+            will be suspended until the balance is paid.
+          </Text>
+
+          <Title order={2} className={classes.secondaryTitle}>
+            Consent and Agreement
+          </Title>
+          <Text className={classes.text}>
+            By purchasing any services from Stonesystems LLC or checking the agreement box at checkout,
+            you confirm that:
+            <br />
+            <br />
+            You have read, understood, and agree to these Terms of Service
+            <br />
+            You accept our No Refund policy
+            <br />
+            You waive the right to initiate chargebacks for services rendered
+          </Text>
+
+          <Title order={2} className={classes.secondaryTitle}>
             Changes to Terms and Conditions
           </Title>
           <Text className={classes.text}>
