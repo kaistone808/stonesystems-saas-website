@@ -160,8 +160,8 @@ export const PriceContainer = () => {
                       target="_blank"
                       href={
                         monthly
-                          ? 'https://professional.stonesystems.io/professional-6506-6315'
-                          : 'https://professional.stonesystems.io/professional-6506-6315-1246'
+                          ? 'https://buy.stripe.com/9AQg1IeUz3LrcDK4h7'
+                          : 'https://buy.stripe.com/9AQg1IeUz3LrcDK4h7'
                       }
                       c={'var(--blue)'}
                       bg={'var(--white)'}
@@ -180,9 +180,9 @@ export const PriceContainer = () => {
                       className={`${classes.discountBox} ${isFading ? classes.fadeOut : classes.fadeIn}`}
                     >
                       <Title order={2} className={classes.moneyTitle}>
-                        {monthly ? '$997/mo' : '$9970/yr'}
+                        {monthly ? '$750/mo' : '$7500/yr'}
                       </Title>
-                      {!monthly && !isFading && <Text className={classes.discount}>$2000 off</Text>}
+                      {!monthly && !isFading && <Text className={classes.discount}>$1600 off</Text>}
                     </Flex>
                     <Stack w={'100%'} align="center" p={10}>
                       <Divider w={'100%'} opacity={0.7} />
@@ -192,31 +192,25 @@ export const PriceContainer = () => {
                       <Divider w={'100%'} opacity={0.7} />
                       <Flex className={classes.featureDiv}>
                         <Text ta={'center'} fz={'lg'} fw={700} className={classes.featureName}>
-                          Sniper SEO
+                          Unlimited Leads & Appointments
+                        </Text>
+                      </Flex>
+                      <Divider w={'100%'} opacity={0.7} />
+                      <Flex className={classes.featureDiv}>
+                        <Text ta={'center'} fz={'lg'} fw={700} className={classes.featureName}>
+                          AI Business Systems
+                        </Text>
+                      </Flex>
+                      <Divider w={'100%'} opacity={0.7} />
+                      <Flex className={classes.featureDiv}>
+                        <Text ta={'center'} fz={'lg'} fw={700} className={classes.featureName}>
+                          Google Ads
                         </Text>
                       </Flex>
                       <Divider w={'100%'} opacity={0.7} />
                       <Flex className={classes.featureDiv}>
                         <Text ta={'center'} fz={'lg'} fw={700} className={classes.featureName}>
                           Google My Business Optimizations
-                        </Text>
-                      </Flex>
-                      <Divider w={'100%'} opacity={0.7} />
-                      <Flex className={classes.featureDiv}>
-                        <Text ta={'center'} fz={'lg'} fw={700} className={classes.featureName}>
-                          Monthly SEO Reports
-                        </Text>
-                      </Flex>
-                      <Divider w={'100%'} opacity={0.7} />
-                      <Flex className={classes.featureDiv}>
-                        <Text ta={'center'} fz={'lg'} fw={700} className={classes.featureName}>
-                          Keyword Optimizations
-                        </Text>
-                      </Flex>
-                      <Divider w={'100%'} opacity={0.7} />
-                      <Flex className={classes.featureDiv}>
-                        <Text ta={'center'} fz={'lg'} fw={700} className={classes.featureName}>
-                          Voice Search
                         </Text>
                       </Flex>
                       <Divider w={'100%'} opacity={0.7} />
@@ -231,8 +225,8 @@ export const PriceContainer = () => {
                       target="_blank"
                       href={
                         monthly
-                          ? 'https://premium.stonesystems.io/essentials-8140-7496-7641-6879-5626'
-                          : 'https://premium.stonesystems.io/essentials-8140-7496-7641-6879-5626-9351'
+                          ? 'https://buy.stripe.com/9AQcPw7s7dm18nu9Bs'
+                          : 'https://buy.stripe.com/9AQcPw7s7dm18nu9Bs'
                       }
                       className={classes.button1}
                       bg={'var(--yellow)'}
@@ -415,37 +409,8 @@ export const PriceContainer = () => {
                 </Accordion.Control>
                 <Accordion.Panel>
                   <Text className={classes.contentTitle}>
-                    Contractor Supreme also includes everything from Contractor Essentials and
-                    Contractor Advanced
+                    Contractor Supreme also includes everything from Contractor Advanced
                   </Text>
-                </Accordion.Panel>
-              </Accordion.Item>
-
-              <Accordion.Item value="onsite" ref={supremeRefs.onsite}>
-                <Accordion.Control bg={'var(--white)'}>Sniper SEO</Accordion.Control>
-                <Accordion.Panel>
-                  <Text className={classes.contentTitle}>
-                    We're making sure that not only your website but also everything else on the
-                    internet is optimized to bring people to your website and keep them there
-                  </Text>
-                  <List>
-                    <List.Item>Content Optimization Effectiveness Evaluation</List.Item>
-                    <List.Item>Search Engine Visibility Evaluation</List.Item>
-                    <List.Item>Keyword Volume Check</List.Item>
-                    <List.Item>Google Search Algorithm Evaluation</List.Item>
-                    <List.Item>Keyword Targeting Evaluation</List.Item>
-                    <List.Item>Nurturing up-and-coming rankings</List.Item>
-                    <List.Item>Google My Business Live Listing</List.Item>
-                    <List.Item>Review Inbound Link Volume</List.Item>
-                    <List.Item>Geographic Targeting Review</List.Item>
-                    <List.Item>Inbound Link Health Check</List.Item>
-                    <List.Item>Search Engine Crawling</List.Item>
-                    <List.Item>Optimize website pagespeed, SSL, mobile & redirects</List.Item>
-                    <List.Item>Create website sitemap and submit to google</List.Item>
-                    <List.Item>Search Console GoobleBot Fetch Evaluation</List.Item>
-                    <List.Item>Search Console Site Traffic & Ranking Evaluation</List.Item>
-                    <List.Item>Add JSON-LD Schema to website</List.Item>
-                  </List>
                 </Accordion.Panel>
               </Accordion.Item>
 
@@ -467,42 +432,41 @@ export const PriceContainer = () => {
 
               <Accordion.Item value="reports" ref={supremeRefs.reports}>
                 <Accordion.Control bg={'var(--white)'}>
-                  Monthly SEO Reports Sent To You
+                  Unlimited Leads & Appointments
                 </Accordion.Control>
                 <Accordion.Panel>
                   <Text className={classes.contentTitle}>
-                    Because who doesn't enjoy a fresh batch of SEO data to look at every month
+                    Because who doesn't enjoy a fresh batch of appointments every day
                   </Text>
                   <List>
-                    <List.Item>Get monthly SEO reports to track your progress</List.Item>
-                    <List.Item>See exactly where your site ranks for what keywords</List.Item>
+                    <List.Item>Get unlimited leads and appointments for your business</List.Item>
                   </List>
                 </Accordion.Panel>
               </Accordion.Item>
               <Accordion.Item value="keyword" ref={supremeRefs.reports}>
-                <Accordion.Control bg={'var(--white)'}>Keyword Optimization</Accordion.Control>
+                <Accordion.Control bg={'var(--white)'}>Google Ads</Accordion.Control>
                 <Accordion.Panel>
                   <Text className={classes.contentTitle}>
-                    So that people don't just find your website, but they find it for the right
+                    So that people don't just find your business, but they find it for the right
                     reasons
                   </Text>
                   <List>
-                    <List.Item>Off-Site Keyword Optimizations</List.Item>
-                    <List.Item>On-Site Keyword Optimizations</List.Item>
+                    <List.Item>PPC Ads</List.Item>
+                    <List.Item>LSA Ads</List.Item>
                   </List>
                 </Accordion.Panel>
               </Accordion.Item>
               <Accordion.Item value="voicesearch" ref={supremeRefs.reports}>
-                <Accordion.Control bg={'var(--white)'}>Voice Search</Accordion.Control>
+                <Accordion.Control bg={'var(--white)'}>AI Business Systems</Accordion.Control>
                 <Accordion.Panel>
                   <Text className={classes.contentTitle}>
-                    Literally the future of search... and we're making sure you're ready for it
+                    Literally the future... and we're making sure you're ready for it
                   </Text>
                   <List>
                     <List.Item>
-                      Ask Siri or Alexa for a business near you and have your business come up
+                      AI optimized ads so that you're constantly improving
                     </List.Item>
-                    <List.Item>Join the future of online search</List.Item>
+                    <List.Item>AI Chat bots</List.Item>
                   </List>
                 </Accordion.Panel>
               </Accordion.Item>
