@@ -25,7 +25,7 @@ export function AboutUsSection() {
           <Image
             width={500}
             height={570}
-            src="/images/people/kai.jpeg"
+            src="/images/people/theboys.jpg"
             alt="About Us"
             className={classes.image}
           />}
@@ -83,7 +83,7 @@ export function AboutUsSection() {
           <Image
             width={500}
             height={570}
-            src="/images/people/bigkai.jpg"
+            src="/images/people/theboys.jpg"
             alt="About Us"
             className={classes.image}
           />}

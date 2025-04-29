@@ -115,7 +115,7 @@ export const PriceContainer = () => {
                     <Stack w={'100%'} align="center" p={10}>
                       <Divider w={'100%'} opacity={0.6} />
                       <Text ta={'center'} fz={'lg'} fw={700} className={classes.featureName}>
-                        Functional Website
+                        Functional Website (10-20 pages)
                       </Text>
                       <Divider w={'100%'} opacity={0.6} />
                       <Flex className={classes.featureDiv}>
@@ -150,7 +150,7 @@ export const PriceContainer = () => {
                       <Divider w={'100%'} opacity={0.6} />
                       <Flex className={classes.featureDiv}>
                         <Text ta={'center'} fz={'lg'} fw={700} className={classes.featureName}>
-                          Shotgun SEO
+                          On-Site SEO
                         </Text>
                       </Flex>
                     </Stack>
@@ -192,7 +192,7 @@ export const PriceContainer = () => {
                       <Divider w={'100%'} opacity={0.7} />
                       <Flex className={classes.featureDiv}>
                         <Text ta={'center'} fz={'lg'} fw={700} className={classes.featureName}>
-                          Unlimited Leads & Appointments
+                          Qualified Leads & Appointments
                         </Text>
                       </Flex>
                       <Divider w={'100%'} opacity={0.7} />
@@ -261,7 +261,7 @@ export const PriceContainer = () => {
             )}
             <Accordion variant="separated">
               <Accordion.Item value="website" ref={advancedRefs.website}>
-                <Accordion.Control bg={'var(--white)'}>Functional Website</Accordion.Control>
+                <Accordion.Control bg={'var(--white)'}>Functional Website (10-20 pages)</Accordion.Control>
                 <Accordion.Panel>
                   <Text className={classes.contentTitle}>
                     No customer wants to go back and forth over email… Get a website that turns
@@ -381,7 +381,7 @@ export const PriceContainer = () => {
                 </Accordion.Panel>
               </Accordion.Item>
               <Accordion.Item value="websiteseo" ref={advancedRefs.websiteseo}>
-                <Accordion.Control bg={'var(--white)'}>Shotgun SEO</Accordion.Control>
+                <Accordion.Control bg={'var(--white)'}>On-Site SEO</Accordion.Control>
                 <Accordion.Panel>
                   <Text className={classes.contentTitle}>
                     Okay, let’s see how much we can confuse you… Some nerdy tech mumbo jumbo with a
@@ -432,14 +432,14 @@ export const PriceContainer = () => {
 
               <Accordion.Item value="reports" ref={supremeRefs.reports}>
                 <Accordion.Control bg={'var(--white)'}>
-                  Unlimited Leads & Appointments
+                  Qualified Leads & Appointments
                 </Accordion.Control>
                 <Accordion.Panel>
                   <Text className={classes.contentTitle}>
                     Because who doesn't enjoy a fresh batch of appointments every day
                   </Text>
                   <List>
-                    <List.Item>Get unlimited leads and appointments for your business</List.Item>
+                    <List.Item>Get qualified leads and appointments for your business</List.Item>
                   </List>
                 </Accordion.Panel>
               </Accordion.Item>

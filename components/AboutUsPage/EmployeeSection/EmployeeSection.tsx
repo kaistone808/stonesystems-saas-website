@@ -32,6 +32,16 @@ const data = [
     imageSrc: '/images/people/kai.jpeg',
   },
   {
+    name: 'Michael',
+    title: 'COO / Co-Founder',
+    imageSrc: '/images/people/michael.jpg',
+  },
+  {
+    name: 'Remy',
+    title: 'Head of Customer Success',
+    imageSrc: '/images/people/remy.jpg',
+  },
+  {
     name: 'Astrid',
     title: 'Web Developer',
     imageSrc: '/images/people/astrid.jpeg',
@@ -42,19 +52,19 @@ const data = [
     imageSrc: '/images/people/amanda.jpeg',
   },
   {
+    name: 'Camila',
+    title: 'Web Developer',
+    imageSrc: '/images/people/camila.jpeg',
+  },
+  {
+    name: 'Raheem',
+    title: 'Sales Representative',
+    imageSrc: '/images/people/raheem.png',
+  },
+  {
     name: 'Ruth',
     title: 'Social Media Manager',
     imageSrc: '/images/people/ruth.jpeg',
-  },
-  {
-    name: 'Valeria',
-    title: 'Social Media Strategist',
-    imageSrc: '/images/people/valeria.jpeg',
-  },
-  {
-    name: 'Camila',
-    title: 'Video Editor',
-    imageSrc: '/images/people/camila.jpeg',
   },
   {
     name: 'Stone Systems Man',
