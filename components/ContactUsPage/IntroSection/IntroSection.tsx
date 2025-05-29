@@ -11,7 +11,7 @@ export function IntroSection() {
         <Container className={classes.calendarSection} size="lg">
           <iframe
             src="https://link.stonesystems.io/widget/booking/4APjYC2WFZGvExeA9wq6"
-            style={{ width: '100%', height: '800px', border: 'none', overflow: 'scroll' }}
+            style={{ width: '100%', height: '900px', border: 'none', overflow: 'scroll' }}
             id="calendar-iframe"
             loading="eager"
           ></iframe>
