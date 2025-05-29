@@ -12,7 +12,6 @@ export function IntroSection() {
           <iframe
             src="https://link.stonesystems.io/widget/booking/4APjYC2WFZGvExeA9wq6"
             style={{ width: '100%', height: '800px', border: 'none', overflow: 'hidden' }}
-            scrolling="no"
             id="calendar-iframe"
             loading="lazy"
           ></iframe>
