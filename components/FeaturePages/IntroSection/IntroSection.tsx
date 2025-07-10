@@ -26,7 +26,7 @@ interface FeatureProps {
 
 export function IntroSection({ statistics, benefits, title, title2, videoSrc, videoThumbnail }: FeatureProps) {
   const theme = useMantineTheme();
-  const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
+  const mobile = useMediaQuery(`(max-width: 600px)`);
   const benefitsContent = benefits.map((benefit) => (
     <Paper className={classes.featureInfo} radius="md" key={benefit.title}>
       <Flex align={'center'} mb={'sm'}>
