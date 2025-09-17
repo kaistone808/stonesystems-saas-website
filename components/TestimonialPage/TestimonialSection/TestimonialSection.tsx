@@ -4,6 +4,7 @@ import { useMediaQuery } from '@mantine/hooks';
 import { Paper, Text, Title, useMantineTheme, Container, SimpleGrid, Image } from '@mantine/core';
 import classes from './TestimonialSection.module.css';
 import LazyLoadVideo from '@/components/LazyLoadVideo/LazyLoadVideo';
+import Script from 'next/script';
 
 interface CardProps {
   testimonial: string;
@@ -40,29 +41,26 @@ function Card({ personName, testimonial, videoSrc, videoThumbnail }: CardProps) 
 
 const data = [
   {
-    testimonial:
-      `"Highly recommended, they are here to help us contractors that don't like to deal with the website stuff. It feels like you have partner looking out for you that's actually helping you succeed."`,
+    testimonial: `"Highly recommended, they are here to help us contractors that don't like to deal with the website stuff. It feels like you have partner looking out for you that's actually helping you succeed."`,
     videoSrc: '/videos/Adam1.mp4#t=0.1',
     videoThumbnail: '/images/thumbnails/Adam1.png',
     personName: '-Adam',
   },
   {
-    testimonial:
-      `"I've been working with stonesystems for the last few months and it's been absolutely amazing. If you're out there and you need someone that's gonna be there for you... we love working with stonesystems"`,
+    testimonial: `"I've been working with stonesystems for the last few months and it's been absolutely amazing. If you're out there and you need someone that's gonna be there for you... we love working with stonesystems"`,
     videoSrc: '/videos/Dale.mp4#t=0.1',
     videoThumbnail: '/images/thumbnails/Dale.png',
     personName: '-Dale',
   },
   {
-    testimonial:
-      `"Shoutout to Kai and Remy for an amazing job that they did doing my website. I've been a pain in the butt every now and then but they did it right. Check them out, you won't be dissapointed."`,
+    testimonial: `"Shoutout to Kai and Remy for an amazing job that they did doing my website. I've been a pain in the butt every now and then but they did it right. Check them out, you won't be dissapointed."`,
     videoSrc: '/videos/George.mp4#t=0.1',
     videoThumbnail: '/images/thumbnails/George.png',
     personName: '-George',
   },
   {
     testimonial:
-    '"I would highly recommend going with Stone Systems, my business has ramped up, literally overnight and their prices are very affordable. Feel free to reach out to me personally with any questions about them, thank you!"',
+      '"I would highly recommend going with Stone Systems, my business has ramped up, literally overnight and their prices are very affordable. Feel free to reach out to me personally with any questions about them, thank you!"',
     videoSrc: '/videos/Frank.mp4#t=0.1',
     videoThumbnail: '/images/thumbnails/Frank.jpg',
     personName: '-Frank',
@@ -87,7 +85,7 @@ const data = [
   },
   {
     testimonial:
-    '"Nothing but professional and awesome in every way, they are absolutely great to work with"',
+      '"Nothing but professional and awesome in every way, they are absolutely great to work with"',
     videoSrc: '/videos/Netane.mov#t=0.1',
     videoThumbnail: '/images/thumbnails/Netane.jpg',
     personName: '-Netane',
@@ -196,43 +194,37 @@ const data = [
     personName: '-Zach',
   },
   {
-    testimonial:
-      `"Shoutout to Kai from Stone Systems! If you're looking to take your business to the next level, definitely reach out to them. They're great!"`,
+    testimonial: `"Shoutout to Kai from Stone Systems! If you're looking to take your business to the next level, definitely reach out to them. They're great!"`,
     videoSrc: '/videos/Andrew1.mov#t=0.1',
     videoThumbnail: '/images/thumbnails/Andrew1.jpg',
     personName: '-Andrew',
   },
   {
-    testimonial:
-      `"Shoutout to Kai! If you're looking for someone to help your business grow, this is the guy. I'm getting about 10 times the value of what I'm spending!"`,
+    testimonial: `"Shoutout to Kai! If you're looking for someone to help your business grow, this is the guy. I'm getting about 10 times the value of what I'm spending!"`,
     videoSrc: '/videos/Tom.mov#t=0.1',
     videoThumbnail: '/images/thumbnails/Tom.jpg',
     personName: '-Tom',
   },
   {
-    testimonial:
-      `"I was impressed and shocked by what he included while only charging me so little. He's gone above and beyond, and I would highly recommend him!"`,
+    testimonial: `"I was impressed and shocked by what he included while only charging me so little. He's gone above and beyond, and I would highly recommend him!"`,
     videoSrc: '/videos/Tommy.mp4#t=0.1',
     videoThumbnail: '/images/thumbnails/Tommy.jpg',
     personName: '-Tommy',
   },
   {
-    testimonial:
-      `"I've been through the ringer with these companies man, trying to find a legit company. I can tell you... these guys are the truth, spot on, communication is amazing, give these guys a try"`,
+    testimonial: `"I've been through the ringer with these companies man, trying to find a legit company. I can tell you... these guys are the truth, spot on, communication is amazing, give these guys a try"`,
     videoSrc: '/videos/SteveBlack.mp4#t=0.1',
     videoThumbnail: '/images/thumbnails/SteveBlack.jpg',
     personName: '-Steve',
   },
   {
-    testimonial:
-      `"Shout out to Kai over at StoneSystems, they did a great job on our website. The website makes it super easy for our customers to leave us their information. If you need a good website hit up Kai and StoneSystems"`,
+    testimonial: `"Shout out to Kai over at StoneSystems, they did a great job on our website. The website makes it super easy for our customers to leave us their information. If you need a good website hit up Kai and StoneSystems"`,
     videoSrc: '/videos/JasonTheorner.mp4#t=0.1',
     videoThumbnail: '/images/thumbnails/JasonTheorner.jpg',
     personName: '-Jason',
   },
   {
-    testimonial:
-      `"They re-did our website, they are AMAZING at getting you 5 star Google reviews. If you're looking to get your business found on google you need to give StoneSystems a try. We got 5 google reviews within the last 22 hours!. That's amazing, give them a call."`,
+    testimonial: `"They re-did our website, they are AMAZING at getting you 5 star Google reviews. If you're looking to get your business found on google you need to give StoneSystems a try. We got 5 google reviews within the last 22 hours!. That's amazing, give them a call."`,
     videoSrc: '/videos/Jeslin.mov#t=0.1',
     videoThumbnail: '/images/thumbnails/Jeslin.jpg',
     personName: '-Jeslin',
@@ -254,6 +246,17 @@ export function TestimonialSection() {
       <Container size="xl">
         <SimpleGrid cols={mobile ? 1 : 3}>{slides}</SimpleGrid>
       </Container>
+        <Script
+          src="https://links.stonesystems.io/reputation/assets/review-widget.js"
+          strategy="afterInteractive"
+        />
+        <iframe
+          className="lc_reviews_widget"
+          src="https://links.stonesystems.io/reputation/widgets/review_widget/8wzvpSrP8kH1ViALeGlE"
+          frameBorder="0"
+          scrolling="no"
+          style={{ minWidth: '100%', width: '100%' }}
+        />
     </div>
   );
 }

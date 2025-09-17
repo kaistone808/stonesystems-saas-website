@@ -37,19 +37,39 @@ const data = [
     imageSrc: '/images/people/michael.jpg',
   },
   {
-    name: 'Remy',
-    title: 'Head of Customer Success',
-    imageSrc: '/images/people/remy.jpg',
+    name: 'Ben',
+    title: 'Customer Success Manager',
+    imageSrc: '/images/people/ben.jpeg',
+  },
+    {
+    name: 'Ryan',
+    title: 'Customer Success Manager',
+    imageSrc: '/images/people/ryan.jpeg',
+  },
+    {
+    name: 'Fabio',
+    title: 'Customer Success Manager',
+    imageSrc: '/images/people/fabio.png',
+  },
+    {
+    name: 'Nicolas',
+    title: 'Customer Success Manager',
+    imageSrc: '/images/people/nicolas.jpeg',
+  },
+      {
+    name: 'Dale',
+    title: 'Account Executive',
+    imageSrc: '/images/people/dale.jpeg',
+  },
+      {
+    name: 'Jonathan',
+    title: 'Account Executive',
+    imageSrc: '/images/people/jonathan.jpeg',
   },
   {
     name: 'Astrid',
     title: 'Web Developer',
     imageSrc: '/images/people/astrid.jpeg',
-  },
-  {
-    name: 'Amanda',
-    title: 'Web Developer',
-    imageSrc: '/images/people/amanda.jpeg',
   },
   {
     name: 'Camila',
