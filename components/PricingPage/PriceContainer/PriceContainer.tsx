@@ -144,7 +144,7 @@ export const PriceContainer = () => {
                       <Divider w={'100%'} opacity={0.6} />
                       <Flex className={classes.featureDiv}>
                         <Text ta={'center'} fz={'lg'} fw={700} className={classes.featureName}>
-                          Scannable Google Review Cards
+                          Blog Posts
                         </Text>
                       </Flex>
                       <Divider w={'100%'} opacity={0.6} />
@@ -192,18 +192,6 @@ export const PriceContainer = () => {
                       <Divider w={'100%'} opacity={0.7} />
                       <Flex className={classes.featureDiv}>
                         <Text ta={'center'} fz={'lg'} fw={700} className={classes.featureName}>
-                          Qualified Leads & Appointments
-                        </Text>
-                      </Flex>
-                      <Divider w={'100%'} opacity={0.7} />
-                      <Flex className={classes.featureDiv}>
-                        <Text ta={'center'} fz={'lg'} fw={700} className={classes.featureName}>
-                          AI Business Systems
-                        </Text>
-                      </Flex>
-                      <Divider w={'100%'} opacity={0.7} />
-                      <Flex className={classes.featureDiv}>
-                        <Text ta={'center'} fz={'lg'} fw={700} className={classes.featureName}>
                           Google Ads
                         </Text>
                       </Flex>
@@ -211,12 +199,6 @@ export const PriceContainer = () => {
                       <Flex className={classes.featureDiv}>
                         <Text ta={'center'} fz={'lg'} fw={700} className={classes.featureName}>
                           Google My Business Optimizations
-                        </Text>
-                      </Flex>
-                      <Divider w={'100%'} opacity={0.7} />
-                      <Flex className={classes.featureDiv}>
-                        <Text ta={'center'} fz={'lg'} fw={700} className={classes.featureName}>
-                          Blog Posts
                         </Text>
                       </Flex>
                     </Stack>
@@ -362,21 +344,22 @@ export const PriceContainer = () => {
                   </List>
                 </Accordion.Panel>
               </Accordion.Item>
-
-              <Accordion.Item value="bcards" ref={advancedRefs.bcards}>
-                <Accordion.Control bg={'var(--white)'}>
-                  Scannable Google Review Cards
-                </Accordion.Control>
+              <Accordion.Item value="blogs" ref={supremeRefs.blogs}>
+                <Accordion.Control bg={'var(--white)'}>Blog Posts</Accordion.Control>
                 <Accordion.Panel>
                   <Text className={classes.contentTitle}>
-                    Honestly, if you don't have any of these yet, I don't know what you're waiting
-                    for...
+                    Let’s be honest, nobody reads these… They’re good for SEO though and make you
+                    rank higher on google
                   </Text>
                   <List>
-                    <List.Item>QR codes for Google reviews </List.Item>
-                    <List.Item>Easy to scan and never expire </List.Item>
-                    <List.Item>Branded business cards with all business info on </List.Item>
-                    <List.Item>Review QR code on the back of the business card </List.Item>
+                    <List.Item>
+                      We create meaningful blog posts on your website to give visitors something to
+                      read
+                    </List.Item>
+                    <List.Item>
+                      Blog posts are packed with keywords and fully SEO optimized to make you rank
+                      higher on google
+                    </List.Item>
                   </List>
                 </Accordion.Panel>
               </Accordion.Item>
@@ -430,19 +413,6 @@ export const PriceContainer = () => {
                 </Accordion.Panel>
               </Accordion.Item>
 
-              <Accordion.Item value="reports" ref={supremeRefs.reports}>
-                <Accordion.Control bg={'var(--white)'}>
-                  Qualified Leads & Appointments
-                </Accordion.Control>
-                <Accordion.Panel>
-                  <Text className={classes.contentTitle}>
-                    Because who doesn't enjoy a fresh batch of appointments every day
-                  </Text>
-                  <List>
-                    <List.Item>Get qualified leads and appointments for your business</List.Item>
-                  </List>
-                </Accordion.Panel>
-              </Accordion.Item>
               <Accordion.Item value="keyword" ref={supremeRefs.reports}>
                 <Accordion.Control bg={'var(--white)'}>Google Ads</Accordion.Control>
                 <Accordion.Panel>
@@ -453,39 +423,6 @@ export const PriceContainer = () => {
                   <List>
                     <List.Item>PPC Ads</List.Item>
                     <List.Item>LSA Ads</List.Item>
-                  </List>
-                </Accordion.Panel>
-              </Accordion.Item>
-              <Accordion.Item value="voicesearch" ref={supremeRefs.reports}>
-                <Accordion.Control bg={'var(--white)'}>AI Business Systems</Accordion.Control>
-                <Accordion.Panel>
-                  <Text className={classes.contentTitle}>
-                    Literally the future... and we're making sure you're ready for it
-                  </Text>
-                  <List>
-                    <List.Item>
-                      AI optimized ads so that you're constantly improving
-                    </List.Item>
-                    <List.Item>AI Chat bots</List.Item>
-                  </List>
-                </Accordion.Panel>
-              </Accordion.Item>
-              <Accordion.Item value="blogs" ref={supremeRefs.blogs}>
-                <Accordion.Control bg={'var(--white)'}>Blog Posts</Accordion.Control>
-                <Accordion.Panel>
-                  <Text className={classes.contentTitle}>
-                    Let’s be honest, nobody reads these… They’re good for SEO though and make you
-                    rank higher on google
-                  </Text>
-                  <List>
-                    <List.Item>
-                      We create meaningful blog posts on your website to give visitors something to
-                      read
-                    </List.Item>
-                    <List.Item>
-                      Blog posts are packed with keywords and fully SEO optimized to make you rank
-                      higher on google
-                    </List.Item>
                   </List>
                 </Accordion.Panel>
               </Accordion.Item>

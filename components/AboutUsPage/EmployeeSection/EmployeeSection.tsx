@@ -14,7 +14,7 @@ interface CardProps {
 function Card({ name, title, imageSrc }: CardProps) {
   return (
     <Paper py={'lg'} radius="md" bg="var(--white)">
-      <Image className={classes.avatar} src={imageSrc} width={200} height={200} alt={name}/>
+      <Image className={classes.avatar} src={imageSrc} width={200} height={200} alt={name} />
       <Text className={classes.name} ta="center" mt="md">
         {name}
       </Text>
@@ -37,38 +37,8 @@ const data = [
     imageSrc: '/images/people/michael.jpg',
   },
   {
-    name: 'Ben',
-    title: 'Customer Success Manager',
-    imageSrc: '/images/people/ben.jpeg',
-  },
-    {
-    name: 'Ryan',
-    title: 'Customer Success Manager',
-    imageSrc: '/images/people/ryan.jpeg',
-  },
-    {
-    name: 'Fabio',
-    title: 'Customer Success Manager',
-    imageSrc: '/images/people/fabio.png',
-  },
-    {
-    name: 'Nicolas',
-    title: 'Customer Success Manager',
-    imageSrc: '/images/people/nicolas.jpeg',
-  },
-      {
-    name: 'Dale',
-    title: 'Account Executive',
-    imageSrc: '/images/people/dale.jpeg',
-  },
-      {
-    name: 'Jonathan',
-    title: 'Account Executive',
-    imageSrc: '/images/people/jonathan.jpeg',
-  },
-  {
     name: 'Astrid',
-    title: 'Web Developer',
+    title: 'Head Web Developer',
     imageSrc: '/images/people/astrid.jpeg',
   },
   {
@@ -77,14 +47,89 @@ const data = [
     imageSrc: '/images/people/camila.jpeg',
   },
   {
-    name: 'Raheem',
-    title: 'Sales Representative',
-    imageSrc: '/images/people/raheem.png',
-  },
-  {
     name: 'Ruth',
     title: 'Social Media Manager',
     imageSrc: '/images/people/ruth.jpeg',
+  },
+  {
+    name: 'Alejandra',
+    title: 'Web Developer',
+    imageSrc: '/images/people/alejandra.jpeg',
+  },
+  {
+    name: 'Umer',
+    title: 'Software Engineer',
+    imageSrc: '/images/people/umer.jpg',
+  },
+  {
+    name: 'Jonathan',
+    title: 'Account Executive',
+    imageSrc: '/images/people/jonathan.jpeg',
+  },
+  {
+    name: 'Javier',
+    title: 'Sales Representative',
+    imageSrc: '/images/people/javier.png',
+  },
+    {
+    name: 'Ryan',
+    title: 'Customer Success Manager',
+    imageSrc: '/images/people/ryan.jpeg',
+  },
+  {
+    name: 'Ben',
+    title: 'Customer Success Manager',
+    imageSrc: '/images/people/ben.jpeg',
+  },
+  {
+    name: 'John',
+    title: 'Sales Representative',
+    imageSrc: '/images/people/john.jpeg',
+  },
+  {
+    name: 'Daniel',
+    title: 'Account Executive',
+    imageSrc: '/images/people/daniel.jpeg',
+  },
+  {
+    name: 'Juan',
+    title: 'Sales Representative',
+    imageSrc: '/images/people/juan.jpeg',
+  },
+  {
+    name: 'Yennifer',
+    title: 'Web Developer',
+    imageSrc: '/images/people/yennifer.jpg',
+  },
+  {
+    name: 'Fabio',
+    title: 'Customer Success Manager',
+    imageSrc: '/images/people/fabio.png',
+  },
+  {
+    name: 'Nicolas',
+    title: 'Customer Success Manager',
+    imageSrc: '/images/people/nicolas.jpeg',
+  },
+  {
+    name: 'Dale',
+    title: 'Account Executive',
+    imageSrc: '/images/people/dale.jpeg',
+  },
+  {
+    name: 'Jhovany',
+    title: 'Account Executive',
+    imageSrc: '/images/people/jhovany.png',
+  },
+  {
+    name: 'Agustin',
+    title: 'Sales Representative',
+    imageSrc: '/images/people/stoneman.jpeg',
+  },
+  {
+    name: 'Henry',
+    title: 'SEO Specialist',
+    imageSrc: '/images/people/stoneman.jpeg',
   },
   {
     name: 'Stone Systems Man',
