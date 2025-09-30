@@ -51,7 +51,7 @@ export function Hero() {
                     height={38}
                     className={classes.avatar}
                     alt="picture of kevin"
-                    src="/images/people/kevinsmall.jpeg"
+                    src="/images/people/camilasmall.jpeg"
                   />
                   <Image
                     loading="eager"
@@ -67,7 +67,7 @@ export function Hero() {
                     height={38}
                     className={classes.avatar}
                     alt="picture of astrid"
-                    src="/images/people/valeriasmall.jpeg"
+                    src="/images/people/elizabethsmall.jpg"
                   />
                 </Flex>
                 <Button

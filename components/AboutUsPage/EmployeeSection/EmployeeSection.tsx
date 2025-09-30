@@ -97,9 +97,9 @@ const data = [
     imageSrc: '/images/people/juan.jpeg',
   },
   {
-    name: 'Yennifer',
+    name: 'Elizabeth',
     title: 'Web Developer',
-    imageSrc: '/images/people/yennifer.jpg',
+    imageSrc: '/images/people/elizabeth.jpg',
   },
   {
     name: 'Fabio',
@@ -124,12 +124,12 @@ const data = [
   {
     name: 'Agustin',
     title: 'Sales Representative',
-    imageSrc: '/images/people/stoneman.jpeg',
+    imageSrc: '/images/people/agustin.png',
   },
   {
     name: 'Henry',
     title: 'SEO Specialist',
-    imageSrc: '/images/people/stoneman.jpeg',
+    imageSrc: '/images/people/henry.jpeg',
   },
   {
     name: 'Stone Systems Man',
