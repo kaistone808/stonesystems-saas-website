@@ -144,12 +144,6 @@ export const PriceContainer = () => {
                       <Divider w={'100%'} opacity={0.6} />
                       <Flex className={classes.featureDiv}>
                         <Text ta={'center'} fz={'lg'} fw={700} className={classes.featureName}>
-                          Blog Posts
-                        </Text>
-                      </Flex>
-                      <Divider w={'100%'} opacity={0.6} />
-                      <Flex className={classes.featureDiv}>
-                        <Text ta={'center'} fz={'lg'} fw={700} className={classes.featureName}>
                           On-Site SEO
                         </Text>
                       </Flex>
@@ -340,25 +334,6 @@ export const PriceContainer = () => {
                     <List.Item>
                       We'll design marketing campaigns to automatically send discount offers to your
                       past customers and request referrals at the same time
-                    </List.Item>
-                  </List>
-                </Accordion.Panel>
-              </Accordion.Item>
-              <Accordion.Item value="blogs" ref={supremeRefs.blogs}>
-                <Accordion.Control bg={'var(--white)'}>Blog Posts</Accordion.Control>
-                <Accordion.Panel>
-                  <Text className={classes.contentTitle}>
-                    Let’s be honest, nobody reads these… They’re good for SEO though and make you
-                    rank higher on google
-                  </Text>
-                  <List>
-                    <List.Item>
-                      We create meaningful blog posts on your website to give visitors something to
-                      read
-                    </List.Item>
-                    <List.Item>
-                      Blog posts are packed with keywords and fully SEO optimized to make you rank
-                      higher on google
                     </List.Item>
                   </List>
                 </Accordion.Panel>
