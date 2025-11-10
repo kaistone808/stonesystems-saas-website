@@ -154,8 +154,8 @@ export const PriceContainer = () => {
                       target="_blank"
                       href={
                         monthly
-                          ? 'https://buy.stripe.com/9AQg1IeUz3LrcDK4h7'
-                          : 'https://buy.stripe.com/9AQg1IeUz3LrcDK4h7'
+                          ? 'https://buy.stripe.com/9B6bJ217N5PveFhbtf6AM15'
+                          : 'https://buy.stripe.com/9B6bJ217N5PveFhbtf6AM15'
                       }
                       c={'var(--blue)'}
                       bg={'var(--white)'}
@@ -165,7 +165,7 @@ export const PriceContainer = () => {
                     </Button>
                   </Stack>
                 </Paper>
-                <Paper shadow={'md'} className={classes.cardBox3}>
+                {/* <Paper shadow={'md'} className={classes.cardBox3}>
                   <Stack w={'100%'} align={'center'} p={20}>
                     <Text fw={900} fz={'24'} mt={mobile ? 0 : '3.75rem'}>
                       Contractor Supreme
@@ -211,7 +211,7 @@ export const PriceContainer = () => {
                       START NOW
                     </Button>
                   </Stack>
-                </Paper>
+                </Paper> */}
               </Flex>
             </Group>
           </Stack>
@@ -224,9 +224,9 @@ export const PriceContainer = () => {
               <div className={classes.header}>
                 <Text className={classes.planTitle}>Contractor Advanced </Text>
               </div>
-              <div className={classes.header}>
+{/*               <div className={classes.header}>
                 <Text className={classes.planTitle}>Contractor Supreme </Text>
-              </div>
+              </div> */}
             </SimpleGrid>
           )}
           <SimpleGrid cols={mobile ? 1 : 2} className={classes.content}>
@@ -355,12 +355,12 @@ export const PriceContainer = () => {
               </Accordion.Item>
 
             </Accordion>
-            {mobile && (
+{/*             {mobile && (
               <div className={classes.header}>
                 <Text className={classes.planTitle}>Contractor Supreme </Text>
               </div>
-            )}
-            <Accordion variant="separated">
+            )} */}
+{/*             <Accordion variant="separated">
               <Accordion.Item value="everything2">
                 <Accordion.Control className={classes.everythingControl}>
                   Everything From Contractor Advanced +
@@ -401,7 +401,7 @@ export const PriceContainer = () => {
                   </List>
                 </Accordion.Panel>
               </Accordion.Item>
-            </Accordion>
+            </Accordion> */}
           </SimpleGrid>
         </Container>
       </div>
