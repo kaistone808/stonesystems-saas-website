@@ -51,7 +51,7 @@ export const PriceContainer = () => {
   };
   
   const supremeRefs: RefObjectMap = {
-    /* gmb: createRef<HTMLDivElement>(), */
+    advancedseo: createRef<HTMLDivElement>(), 
     onsite: createRef<HTMLDivElement>(),
     gmbopt: createRef<HTMLDivElement>(),
     reports: createRef<HTMLDivElement>(),
@@ -152,16 +152,12 @@ export const PriceContainer = () => {
                       className={classes.button2}
                       component="a"
                       target="_blank"
-                      href={
-                        monthly
-                          ? 'https://buy.stripe.com/9B6bJ217N5PveFhbtf6AM15'
-                          : 'https://buy.stripe.com/9B6bJ217N5PveFhbtf6AM15'
-                      }
+                      href={"http://localhost:3000/contact"}
                       c={'var(--blue)'}
                       bg={'var(--white)'}
                       w="75%"
                     >
-                      START NOW
+                      BOOK A CALL
                     </Button>
                   </Stack>
                 </Paper>
@@ -224,9 +220,9 @@ export const PriceContainer = () => {
               <div className={classes.header}>
                 <Text className={classes.planTitle}>Contractor Advanced </Text>
               </div>
-{/*               <div className={classes.header}>
-                <Text className={classes.planTitle}>Contractor Supreme </Text>
-              </div> */}
+               <div className={classes.header}>
+                <Text className={classes.planTitle}>Other Services </Text>
+              </div> 
             </SimpleGrid>
           )}
           <SimpleGrid cols={mobile ? 1 : 2} className={classes.content}>
@@ -355,22 +351,12 @@ export const PriceContainer = () => {
               </Accordion.Item>
 
             </Accordion>
-{/*             {mobile && (
+           {mobile && (
               <div className={classes.header}>
-                <Text className={classes.planTitle}>Contractor Supreme </Text>
+                <Text className={classes.planTitle}>Other Services </Text>
               </div>
-            )} */}
-{/*             <Accordion variant="separated">
-              <Accordion.Item value="everything2">
-                <Accordion.Control className={classes.everythingControl}>
-                  Everything From Contractor Advanced +
-                </Accordion.Control>
-                <Accordion.Panel>
-                  <Text className={classes.contentTitle}>
-                    Contractor Supreme also includes everything from Contractor Advanced
-                  </Text>
-                </Accordion.Panel>
-              </Accordion.Item>
+            )} 
+            <Accordion variant="separated">
 
               <Accordion.Item value="gmbopt" ref={supremeRefs.gmbopt}>
                 <Accordion.Control bg={'var(--white)'}>
@@ -388,6 +374,25 @@ export const PriceContainer = () => {
                 </Accordion.Panel>
               </Accordion.Item>
 
+                            <Accordion.Item value="advancedseo" ref={supremeRefs.advancedseo}>
+                <Accordion.Control bg={'var(--white)'}>
+                  Advanced SEO
+                </Accordion.Control>
+                <Accordion.Panel>
+                  <Text className={classes.contentTitle}>
+                    The real deal when it comes from getting your website to the top of google.
+                  </Text>
+                  <List>
+                    <List.Item>Backlinks</List.Item>
+                    <List.Item>Directories</List.Item>
+                    <List.Item>Cloudstacks</List.Item>
+                    <List.Item>Press Releases</List.Item>
+                    <List.Item>Heavy Keyword Research</List.Item>
+                    <List.Item>Consistent Blogposts & New Content</List.Item>
+                  </List>
+                </Accordion.Panel>
+              </Accordion.Item>
+
               <Accordion.Item value="keyword" ref={supremeRefs.reports}>
                 <Accordion.Control bg={'var(--white)'}>Google Ads</Accordion.Control>
                 <Accordion.Panel>
@@ -401,7 +406,7 @@ export const PriceContainer = () => {
                   </List>
                 </Accordion.Panel>
               </Accordion.Item>
-            </Accordion> */}
+            </Accordion> 
           </SimpleGrid>
         </Container>
       </div>

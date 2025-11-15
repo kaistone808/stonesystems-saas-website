@@ -56,6 +56,10 @@ const sora = Sora({
   variable: '--sora',
 });
 
+const src =
+    "https://t.stonesystems.io/v1/lst/universal-script?ph=d1ff03e6e535f28b0c70ca61588c134793a4ebf07f29a5b37494572df508bc86&tag=!clicked&ref_url=" +
+    encodeURIComponent(typeof window !== "undefined" ? window.location.href : "");
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={sora.variable}>
@@ -69,12 +73,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           src="https://www.googletagmanager.com/gtag/js?id=AW-16633753107"
           strategy="afterInteractive"
         />
-        <script>
-          var head = document.head; var script = document.createElement('script'); script.type =
-          'text/javascript'; script.src =
-          "https://t.stonesystems.io/v1/lst/universal-script?ph=d1ff03e6e535f28b0c70ca61588c134793a4ebf07f29a5b37494572df508bc86&tag=!clicked&ref_url="
-          + encodeURI(document.URL) ; head.appendChild(script);
-        </script>
+              <Script
+        src={src}
+        strategy="afterInteractive"
+      />
         <Script id="gtag-init" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
