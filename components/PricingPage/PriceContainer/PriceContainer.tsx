@@ -152,7 +152,7 @@ export const PriceContainer = () => {
                       className={classes.button2}
                       component="a"
                       target="_blank"
-                      href={"http://localhost:3000/contact"}
+                      href={"http://stonesystems.io/contact"}
                       c={'var(--blue)'}
                       bg={'var(--white)'}
                       w="75%"
