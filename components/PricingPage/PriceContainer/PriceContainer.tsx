@@ -108,9 +108,9 @@ export const PriceContainer = () => {
                       className={`${classes.discountBox} ${isFading ? classes.fadeOut : classes.fadeIn}`}
                     >
                       <Title order={2} className={classes.moneyTitle}>
-                        {monthly ? '$297/mo' : '$2970/yr'}
+                        {monthly ? '$297/mo' : '$3597/yr'}
                       </Title>
-                      {!monthly && !isFading && <Text className={classes.discount}>$600 off</Text>}
+                      {!monthly && !isFading && <Text className={classes.discount}>+12 weeks FREE</Text>}
                     </Flex>
                     <Stack w={'100%'} align="center" p={10}>
                       <Divider w={'100%'} opacity={0.6} />
