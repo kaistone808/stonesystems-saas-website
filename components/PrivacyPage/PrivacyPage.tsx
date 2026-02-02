@@ -110,7 +110,7 @@ export function PrivacyPage() {
           <Title order={2} className={classes.secondaryTitle}>Contact Us</Title>
           <Text className={classes.text}>
             If you have any questions about this Privacy Policy, You can contact us via email at
-            support@Stonesystems.io
+            ben@stonesystems.io
           </Text>
         </div>
       </Container>

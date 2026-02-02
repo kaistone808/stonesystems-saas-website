@@ -252,7 +252,7 @@ export function TermsPage() {
           </Title>
           <Text className={classes.text}>
             For any queries or concerns regarding these Terms and Conditions, please contact Stonesystems
-            LLC at support@Stonesystems.io
+            LLC at ben@stonesystems.io
           </Text>
         </div>
       </Container>
