@@ -117,7 +117,7 @@ const data = [
     imageSrc: '/images/people/dale.jpeg',
   },
   {
-    name: 'Jhovany',
+    name: 'Jay',
     title: 'Account Executive',
     imageSrc: '/images/people/jhovany.png',
   },
