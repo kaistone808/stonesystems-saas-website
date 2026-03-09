@@ -11,6 +11,7 @@ import { PartnersSection } from '@/components/Homepage/PartnersSection/PartnersS
 import { TestimonialSection } from '@/components/Homepage/TestimonialSection/TestimonialSection';
 import { WhoWeServeSection } from '@/components/Homepage/WhoWeServeSection/WhoWeServeSection';
 import { WhyChooseUsSection } from '@/components/Homepage/WhyChooseUsSection/WhyChooseUsSection';
+import { BlogSection } from '@/components/Blog/BlogSection/BlogSection';
 
 export const metadata: Metadata = {
   title: 'Stone Systems - Website Design & Marketing Systems For Contractors! ',
@@ -31,6 +32,7 @@ export default function HomePage() {
       <WhoWeServeSection />
       <OurProcessSection />
       <WhyChooseUsSection />
+      <BlogSection />
       <PartnersSection />
       <Faq />
     </>
