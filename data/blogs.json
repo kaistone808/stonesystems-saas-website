@@ -1,0 +1,99 @@
+[
+  {
+    "id": "1",
+    "slug": "contractor-growth-made-simple",
+    "title": "Contractor Growth Made Simple",
+    "excerpt": "Interview with Kai Stone on innovation strategy and contractor marketing.",
+    "imageUrl": "https://cdn.trendhunterstatic.com/phpthumbnails/589/589678/589678_1_800.jpeg",
+    "externalUrl": "https://www.innovationstrategy.com/interview/kai-stone",
+    "source": "Innovation Strategy",
+    "category": "Press",
+    "date": "2025-11-17",
+    "featured": true
+  },
+  {
+    "id": "2",
+    "slug": "meet-kai-stone",
+    "title": "Meet Kai Stone",
+    "excerpt": "CanvasRebel magazine interview featuring entrepreneur Kai Stone.",
+    "imageUrl": "https://cdn.canvasrebel.com/wp-content/uploads/2025/12/c-1764100552803-1764100552327_kai_stone_image0-3.jpeg",
+    "externalUrl": "https://canvasrebel.com/meet-kai-stone/",
+    "source": "CanvasRebel",
+    "category": "Press",
+    "date": "2025-12-03",
+    "featured": false
+  },
+  {
+    "id": "4",
+    "slug": "startup-savvy-kai-stone",
+    "title": "Startup Savvy: Kai Stone of StoneSystems.io",
+    "excerpt": "Authority Magazine interview about building and scaling a startup.",
+    "imageUrl": "https://miro.medium.com/v2/resize:fit:720/format:webp/1*xZCP_FGWnxwrz7EwTZuIfw.png",
+    "externalUrl": "https://medium.com/authority-magazine/startup-savvy-kai-stone-of-stonesystems-io-shares-their-secrets-to-rapid-growth-and-success-ca907ba632cb",
+    "source": "Authority Magazine",
+    "category": "Press",
+    "date": "2025-12-18",
+    "featured": true
+  },
+  {
+    "id": "5",
+    "slug": "kai-stone-michael-vanhoutte-partnership",
+    "title": "Kai Stone and Michael Vanhoutte Partnership",
+    "excerpt": "NY Weekly story on the founders behind a multi-million-dollar software startup.",
+    "imageUrl": "https://nyweekly.com/wp-content/uploads/2025/10/Kai-Stone-and-Michael-Vanhoutte-The-Partnership-behind-a-Multi-Million-Dollar-Software-Start-up.jpg",
+    "externalUrl": "https://nyweekly.com/entrepreneur/kai-stone-and-michael-vanhoutte-the-partnership-behind-a-multi-million-dollar-software-start-up/",
+    "source": "NY Weekly",
+    "category": "Press",
+    "date": "2025-10-20",
+    "featured": false
+  },
+  {
+    "id": "6",
+    "slug": "two-bros-one-software-startup",
+    "title": "Two Bros, One Software Startup",
+    "excerpt": "CEO Official Magazine feature on the growth of StoneSystems.",
+    "imageUrl": "https://ceofficialmag.com/wp-content/uploads/2025/06/Image-Edit.png",
+    "externalUrl": "https://ceofficialmag.com/two-bros-one-software-startup-stonesystems/",
+    "source": "CEO Official Magazine",
+    "category": "Press",
+    "date": "",
+    "featured": false
+  },
+  {
+    "id": "7",
+    "slug": "kai-stone-michael-vanhoutte-software-debut",
+    "title": "Kai Stone & Michael Vanhoutte Announce Software Debut",
+    "excerpt": "Yahoo Finance coverage of the multi-million-dollar software launch.",
+    "imageUrl": "https://app.accessnewswire.com/imagelibrary/e8be2ea5-79ab-4323-9b81-a0d3d5de4326/image.jpeg",
+    "externalUrl": "https://finance.yahoo.com/news/kai-stone-michael-vanhoutte-announce-190500380.html",
+    "source": "Yahoo Finance",
+    "category": "Press",
+    "date": "2025-12-08",
+    "featured": true
+  },
+  {
+    "id": "8",
+    "slug": "kai-stone-reality-tv-mental-toll",
+    "title": "Kai Stone on Reality TV and Mental Toll",
+    "excerpt": "The Blast interview discussing entrepreneurship and public life.",
+    "imageUrl": "https://theblast.prod.media.wordpress.mattersmedia.io/brand-img/123/1280x590/2026/01/03154149/kai-stone.jpg?",
+    "externalUrl": "https://theblast.com/758787/kai-stone-pulls-back-curtain-reality-tv-mental-toll/",
+    "source": "The Blast",
+    "category": "Press",
+    "date": "2026-01-03",
+    "featured": false
+  },
+  
+  {
+    "id": "9",
+    "slug": "kai-stone-unfiltered-approach",
+    "title": "Kai Stone's Unfiltered Approach to Life and Business",
+    "excerpt": "Millennium Magazine feature on values-driven entrepreneurship.",
+    "imageUrl": "https://millenniummagazine.com/wp-content/uploads/2025/12/image-768x1153.jpeg",
+    "externalUrl": "https://millenniummagazine.com/business/kai-stones-unfiltered-approach-to-life-and-building-a-values-driven-business/",
+    "source": "Millennium Magazine",
+    "category": "Press",
+    "date": "",
+    "featured": true
+  }
+]

@@ -1,0 +1,123 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+  text-decoration: none;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  height: 100%;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.14);
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background-color: var(--blue);
+  flex-shrink: 0;
+}
+
+.image {
+  object-fit: cover;
+  object-position: top;
+}
+
+.imageFallback {
+  width: 100%;
+  height: 100%;
+  background-color: var(--blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fallbackLogo {
+  opacity: 0.6;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 1.25rem;
+}
+
+.badge {
+  background-color: var(--yellow) !important;
+  color: var(--blue) !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.date {
+  font-size: 13px !important;
+  color: #888 !important;
+}
+
+.title {
+  font-size: 17px !important;
+  font-weight: 700 !important;
+  color: var(--blue) !important;
+  line-height: 1.35 !important;
+  margin-bottom: 0.6rem !important;
+}
+
+.excerpt {
+  font-size: 14px !important;
+  color: #555 !important;
+  line-height: 1.6 !important;
+  margin-bottom: 1rem !important;
+}
+
+.footer {
+  margin-top: auto;
+  border-top: 1px solid #eee;
+  padding-top: 0.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.source {
+  flex-shrink: 0;
+}
+
+.sourceIcon {
+  color: #aaa;
+  flex-shrink: 0;
+}
+
+.sourceText {
+  font-size: 12px !important;
+  color: #999 !important;
+  font-weight: 500 !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 120px;
+}
+
+.readMore {
+  flex-shrink: 0;
+}
+
+.readMoreText {
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  color: var(--yellow) !important;
+}
+
+.externalIcon {
+  color: var(--yellow);
+  flex-shrink: 0;
+}

@@ -13,6 +13,7 @@ const data = [
       { label: 'Pricing', link: '/pricing' },
       { label: 'Testimonials', link: '/testimonials' },
       { label: 'Our Work', link: '/our-work' },
+      { label: 'Press', link: '/press' },
       { label: 'Log in', link: 'https://app.stonesystems.io' },
     ],
   },

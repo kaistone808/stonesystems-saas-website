@@ -220,6 +220,9 @@ export function Header() {
             <a href="/our-work" className={classes.link}>
               Our Work
             </a>
+            <a href="/press" className={classes.link}>
+              Press
+            </a>
             <HoverCard width={350} position="bottom" radius="md" shadow="md" withinPortal>
               <HoverCard.Target>
                 <a href="#" className={classes.link}>
@@ -319,6 +322,9 @@ export function Header() {
           <a href="/our-work" className={classes.link}>
               Our Work
             </a>
+          <a href="/press" className={classes.link}>
+            Press
+          </a>
           <UnstyledButton onClick={toggleAboutLinks}>
             <Center inline>
               <Box className={classes.link} component="span" mr={5}>
