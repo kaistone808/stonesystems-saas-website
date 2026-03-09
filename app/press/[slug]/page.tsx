@@ -1,8 +1,8 @@
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 import Image from 'next/image';
-import { Badge, Button } from '@mantine/core';
-import { IconExternalLink, IconArrowLeft } from '@tabler/icons-react';
+import { Badge, Button, Group } from '@mantine/core';
+import { IconExternalLink, IconArrowLeft, IconUser } from '@tabler/icons-react';
 import { getPostBySlug } from '@/lib/markdown';
 import blogs from '@/data/blogs.json';
 import classes from './post.module.css';
@@ -31,6 +31,7 @@ export default async function PressPostPage({ params }: PageProps) {
   const blogEntry = blogs.find((b) => b.slug === params.slug);
   const imageUrl = blogEntry?.imageUrl ?? '';
   const externalUrl = blogEntry?.externalUrl ?? '';
+  const author = (blogEntry as any)?.author ?? '';
 
   const formatDate = (dateStr: string) => {
     if (!dateStr) return '';
@@ -61,7 +62,17 @@ export default async function PressPostPage({ params }: PageProps) {
           {post.date && <p className={classes.date}>{formatDate(post.date)}</p>}
           <h1 className={classes.title}>{post.title}</h1>
           {post.excerpt && <p className={classes.excerpt}>{post.excerpt}</p>}
-          {post.source && <p className={classes.source}>As featured in {post.source}</p>}
+          <Group justify="center" gap="xl" className={classes.meta}>
+            {post.source && (
+              <p className={classes.source}>As featured in <strong>{post.source}</strong></p>
+            )}
+            {author && (
+              <Group gap={6} className={classes.authorGroup}>
+                <IconUser size={15} className={classes.authorIcon} />
+                <p className={classes.authorName}>By {author}</p>
+              </Group>
+            )}
+          </Group>
         </div>
       </div>
 

@@ -89,12 +89,37 @@
   }
 }
 
+.meta {
+  margin-top: 0.75rem;
+  flex-wrap: wrap;
+}
+
 .source {
   font-size: 14px;
+  color: var(--text-gray);
+  letter-spacing: 0.3px;
+  margin: 0;
+}
+
+.source strong {
   color: var(--yellow);
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+}
+
+.authorGroup {
+  display: flex;
+  align-items: center;
+}
+
+.authorIcon {
+  color: var(--text-gray);
+  flex-shrink: 0;
+}
+
+.authorName {
+  font-size: 14px;
+  color: var(--text-gray);
+  font-style: italic;
+  margin: 0;
 }
 
 .container {

@@ -44,6 +44,7 @@
     "imageUrl": "https://nyweekly.com/wp-content/uploads/2025/10/Kai-Stone-and-Michael-Vanhoutte-The-Partnership-behind-a-Multi-Million-Dollar-Software-Start-up.jpg",
     "externalUrl": "https://nyweekly.com/entrepreneur/kai-stone-and-michael-vanhoutte-the-partnership-behind-a-multi-million-dollar-software-start-up/",
     "source": "NY Weekly",
+    "author":"Matt Emma",
     "category": "Press",
     "date": "2025-10-20",
     "featured": false
@@ -56,6 +57,7 @@
     "imageUrl": "https://ceofficialmag.com/wp-content/uploads/2025/06/Image-Edit.png",
     "externalUrl": "https://ceofficialmag.com/two-bros-one-software-startup-stonesystems/",
     "source": "CEO Official Magazine",
+    "author":"Jordan French",
     "category": "Press",
     "date": "",
     "featured": false
@@ -81,6 +83,7 @@
     "externalUrl": "https://theblast.com/758787/kai-stone-pulls-back-curtain-reality-tv-mental-toll/",
     "source": "The Blast",
     "category": "Press",
+    "author":"Kelly Coffey-Behrens",
     "date": "2026-01-03",
     "featured": false
   },

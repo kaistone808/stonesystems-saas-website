@@ -71,6 +71,22 @@
   margin-bottom: 0.6rem !important;
 }
 
+.author {
+  margin-bottom: 0.4rem;
+}
+
+.authorIcon {
+  color: #aaa;
+  flex-shrink: 0;
+}
+
+.authorText {
+  font-size: 12px !important;
+  color: #888 !important;
+  font-weight: 500 !important;
+  font-style: italic;
+}
+
 .excerpt {
   font-size: 14px !important;
   color: #555 !important;

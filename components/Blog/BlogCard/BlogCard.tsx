@@ -1,5 +1,5 @@
 import { Text, Badge, Group } from '@mantine/core';
-import { IconArrowRight, IconNews } from '@tabler/icons-react';
+import { IconArrowRight, IconNews, IconUser } from '@tabler/icons-react';
 import Image from 'next/image';
 import classes from './BlogCard.module.css';
 
@@ -11,6 +11,7 @@ export interface BlogPost {
   imageUrl: string;
   externalUrl: string;
   source: string;
+  author?: string;
   category: string;
   date: string;
   featured: boolean;
@@ -67,6 +68,13 @@ export function BlogCard({ post }: BlogCardProps) {
         </Group>
 
         <Text className={classes.title}>{post.title}</Text>
+
+        {post.author && (
+          <Group gap={5} className={classes.author}>
+            <IconUser size={13} className={classes.authorIcon} />
+            <Text className={classes.authorText}>By {post.author}</Text>
+          </Group>
+        )}
 
         {post.excerpt && (
           <Text className={classes.excerpt}>{post.excerpt}</Text>
