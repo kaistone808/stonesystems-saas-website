@@ -7,6 +7,7 @@ source: "NY Weekly"
 ---
 
 ## The Chaos and the Control
+![partnership](https://nyweekly.com/wp-content/uploads/2025/10/Kai-Stone-and-Michael-Vanhoutte-The-Partnership-behind-a-Multi-Million-Dollar-Software-Start-up.jpg)
 
 In all my years of interviewing entrepreneurs, I've never sat down with two individuals quite like Kai Stone and Michael Vanhoutte.
 

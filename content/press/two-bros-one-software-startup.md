@@ -7,7 +7,7 @@ source: "CEO Official Magazine"
 ---
 
 When Kai Stone and Michael Vanhoutte launched their software startup just over a year ago, they didn't have MBAs, mentors, or Silicon Valley connections. They had no investors, no funding — just raw ambition and a willingness to figure it out as they went. Fast-forward 18 months, and their company, StoneSystems, has scaled to over seven figures in revenue, redefining what's possible for first-time founders doing things on their own terms.
-
+![kai](https://ceofficialmag.com/wp-content/uploads/2025/06/Image-Edit.png)
 Kai Stone, the CEO, is the face of the company — a charismatic frontman who's fast-talking, brutally honest, laser-focused on growth, and seemingly a little reckless at times. He drives the brand with a no-nonsense marketing style that cuts through the fluff, especially in an industry saturated with overpriced, overpromised solutions.
 
 Michael Vanhoutte, the COO, is the silent operator. He is intensely calculated, highly analytical, and known for his obsessive attention to detail. He ensures the back end of the business runs like clockwork, translating Kai's high-speed vision into structured, scalable systems. Kai sets the fire. Michael contains it and builds around it.
@@ -45,6 +45,7 @@ Their definition of success might surprise those steeped in startup culture — 
 > "Our goal is a few million dollars a year each in profit, living freely, and building something we're proud of. Neither of us believes more money will make us happier. The process and pride in what we've built is the real goal." — Kai Stone
 
 ## Freedom Over Fame
+![Michael](https://ceofficialmag.com/wp-content/uploads/2025/06/Image-Edit-1-1024x576.png)
 
 As they look toward the future, Kai and Michael aren't chasing unicorn status. They're building a sustainable business that serves clients well while giving them the freedom to live life on their own terms — perhaps the ultimate measure of entrepreneurial success.
 

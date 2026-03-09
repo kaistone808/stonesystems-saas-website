@@ -6,6 +6,8 @@ category: "Press"
 source: "The Blast"
 ---
 
+
+![metal-toll](https://theblast.prod.media.wordpress.mattersmedia.io/brand-img/123/1280x590/2026/01/03154149/kai-stone.jpg?)
 Kai Stone doesn't play by anyone else's rules, and that's exactly why people can't stop talking about him. The Hawaii-born surfer, multi–seven-figure entrepreneur, and founder of StoneSystems.io has built one of the fastest-growing software platforms for contractors in the country, all while remaining unapologetically himself. Now, with an upcoming reality TV debut on the horizon, Stone is stepping into a new spotlight — one he admits he never planned for, but ultimately couldn't resist.
 
 ## How Kai Stone Built a Multi-Seven-Figure Business from Hawaii

@@ -6,6 +6,8 @@ category: "Press"
 source: "Yahoo Finance"
 ---
 
+
+![software-debut](https://nyweekly.com/wp-content/uploads/2025/10/Kai-Stone-and-Michael-Vanhoutte-The-Partnership-behind-a-Multi-Million-Dollar-Software-Start-up.jpg)
 While many startups are built for investors, StoneSystems was built for the people who actually work. The company's all-in-one platform simplifies communication, scheduling, and customer reviews for contractors and service teams — eliminating the need for multiple disconnected apps.
 
 In less than a year, the bootstrapped startup has expanded to a 22-person team and achieved a seven-figure run rate, driven entirely by customer adoption. With its customer-first approach and focus on real-world efficiency, StoneSystems is positioning itself as a practical alternative to the investor-driven software models dominating the industry.
