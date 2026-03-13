@@ -15,6 +15,10 @@ export interface BlogPost {
   category: string;
   date: string;
   featured: boolean;
+  imageStyle?: {
+    objectFit?: 'cover' | 'contain' | 'fill' | 'none';
+    objectPosition?: string;
+  };
 }
 
 interface BlogCardProps {
@@ -43,6 +47,10 @@ export function BlogCard({ post }: BlogCardProps) {
             fill
             sizes="(max-width: 768px) 100vw, 33vw"
             className={classes.image}
+            style={post.imageStyle ? {
+              objectFit: post.imageStyle.objectFit,
+              objectPosition: post.imageStyle.objectPosition,
+            } : undefined}
           />
         ) : (
           <div className={classes.imageFallback}>

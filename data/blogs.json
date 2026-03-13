@@ -79,7 +79,7 @@
     "slug": "kai-stone-reality-tv-mental-toll",
     "title": "Kai Stone on Reality TV and Mental Toll",
     "excerpt": "The Blast interview discussing entrepreneurship and public life.",
-    "imageUrl": "https://theblast.prod.media.wordpress.mattersmedia.io/brand-img/123/1280x590/2026/01/03154149/kai-stone.jpg?",
+    "imageUrl": "https://media.theblast.com/cdn-cgi/image/width=1024,height=473,fit=crop,quality=90,gravity=auto,sharpen=1,metadata=none,format=auto,onerror=redirect/wp-content/uploads/2026/01/kai-stone-1024x473.jpg",
     "externalUrl": "https://theblast.com/758787/kai-stone-pulls-back-curtain-reality-tv-mental-toll/",
     "source": "The Blast",
     "category": "Press",
@@ -98,6 +98,10 @@
     "source": "Millennium Magazine",
     "category": "Press",
     "date": "",
-    "featured": true
+    "featured": true,
+    "imageStyle": {
+      "objectFit": "cover",
+      "objectPosition": "center"
+    }
   }
 ]
