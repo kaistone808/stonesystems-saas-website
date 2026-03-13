@@ -4,7 +4,7 @@ import blogs from '@/data/blogs.json';
 import classes from './BlogSection.module.css';
 
 export function BlogSection() {
-  const featuredPosts = (blogs as BlogPost[]).filter((post) => post.featured).slice(0, 3);
+  const featuredPosts = (blogs as BlogPost[]).filter((post) => post.featured).slice(0, 4);
 
   return (
     <div className={classes.outer}>
