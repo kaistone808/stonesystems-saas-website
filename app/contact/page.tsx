@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
-import { IntroSection } from '@/components/ContactUsPage/IntroSection/IntroSection';
+import { redirect } from 'next/navigation';
+import { BOOKING_URL } from '@/lib/site';
 
 export const metadata: Metadata = {
   title: 'Stone Systems - Contact Us',
@@ -8,9 +9,5 @@ export const metadata: Metadata = {
 };
 
 export default function ContactUsPage() {
-  return (
-    <>
-      <IntroSection />
-    </>
-  );
+  redirect(BOOKING_URL);
 }

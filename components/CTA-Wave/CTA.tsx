@@ -1,11 +1,10 @@
 import { Text, Title, Button, Container } from '@mantine/core';
-import { useDisclosure } from '@mantine/hooks';
 import Image from 'next/image';
 
+import { BOOKING_URL } from '@/lib/site';
 import classes from './CTA.module.css';
 
 export function CTA() {
-  const [opened, { close, open }] = useDisclosure(false);
   return (
     <div className={classes.outer}>
       <Container size="lg" className={classes.wrapper}>
@@ -18,8 +17,9 @@ export function CTA() {
 
           <Button
             component="a"
-            href="/contact"
-            onClick={open}
+            href={BOOKING_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             size="xl"
             bg="var(--yellow)"
             className={classes.control}

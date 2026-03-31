@@ -2,8 +2,8 @@
 
 import { Text, Container, ActionIcon, Group, rem, Flex, Divider, Button } from '@mantine/core';
 import { IconBrandYoutube, IconBrandInstagram, IconBrandGoogle } from '@tabler/icons-react';
-import { useDisclosure } from '@mantine/hooks';
 import Image from 'next/image';
+import { BOOKING_URL } from '@/lib/site';
 import classes from './Footer.module.css';
 
 const data = [
@@ -48,7 +48,6 @@ const data = [
 ];
 
 export function Footer() {
-  const [opened, { close, open }] = useDisclosure(false);
   const groups = data.map((group, groupIndex) => {
     const links = group.links.map((linkItem) => (
       <Text
@@ -86,8 +85,9 @@ export function Footer() {
             <Text className={classes.cta}>Ready to get started?</Text>
             <Button
               component="a"
-              href="/contact"
-              onClick={open}
+              href={BOOKING_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className={classes.button}
               size="md"
             >
@@ -102,8 +102,9 @@ export function Footer() {
           <Text className={classes.description}>Want to learn more about how we can help?</Text>
           <Button
             component="a"
-            href="/contact"
-            onClick={open}
+            href={BOOKING_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className={classes.button}
             mt="1rem"
             size="xl"

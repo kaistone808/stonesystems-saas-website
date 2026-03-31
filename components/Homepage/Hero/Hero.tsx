@@ -1,15 +1,13 @@
 'use client';
 
 import { Container, Title, Button, Text, Flex, Divider } from '@mantine/core';
-import { useDisclosure } from '@mantine/hooks';
 import Image from 'next/image';
 import React from 'react';
+import { BOOKING_URL } from '@/lib/site';
 import classes from './Hero.module.css';
 import StoneManImage from '@/public/images/new1.png';
 
 export function Hero() {
-  const [opened, { close, open }] = useDisclosure(false);
-
   return (
     <div className={classes.outer}>
       <Container size="xl">
@@ -72,9 +70,10 @@ export function Hero() {
                 </Flex>
                 <Button
                   component="a"
-                  href="/contact"
+                  href={BOOKING_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   size="xl"
-                  onClick={open}
                   className={classes.control}
                 >
                   Book A Call

@@ -38,6 +38,7 @@ import {
   IconTools,
 } from '@tabler/icons-react';
 import Image from 'next/image';
+import { BOOKING_URL } from '@/lib/site';
 import classes from './Header.module.css';
 
 const productData = [
@@ -173,7 +174,6 @@ export function Header() {
   const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] = useDisclosure(false);
   const [productLinksOpened, { toggle: toggleProductLinks }] = useDisclosure(false);
   const [aboutLinksOpened, { toggle: toggleAboutLinks }] = useDisclosure(false);
-  const [opened, { open, close }] = useDisclosure(false);
   const theme = useMantineTheme();
 
   const productLinks = productData.map((item) => <LinkButton key={item.title} {...item} />);
@@ -259,9 +259,10 @@ export function Header() {
             </Button>
             <Button
               component="a"
-              href="/contact"
+              href={BOOKING_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className={classes.button}
-              onClick={open}
               size="xl"
               bg="var(--yellow)"
               color="var(--gray)"
@@ -338,7 +339,12 @@ export function Header() {
           <a href="https://app.stonesystems.io" className={classes.linkLogin}>
             Log in
           </a>
-          <a href="/contact" className={classes.linkModal}>
+          <a
+            href={BOOKING_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={classes.linkModal}
+          >
             Book A Call
           </a>
         </ScrollArea>
