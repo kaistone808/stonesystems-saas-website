@@ -25,7 +25,9 @@ function Card({ name, title, imageSrc }: CardProps) {
   );
 }
 
+// NOTE: People marked with placeholder.jpg need headshots uploaded to /public/images/people/
 const data = [
+  // ── Executive ──────────────────────────────────────────────────────────────
   {
     name: 'Kai',
     title: 'CEO / Founder',
@@ -37,19 +39,107 @@ const data = [
     imageSrc: '/images/people/michael.jpg',
   },
   {
+    name: 'Chelsea',
+    title: 'Executive Assistant',
+    imageSrc: '/images/people/chelsea.jpg', // NEEDS HEADSHOT
+  },
+
+  // ── Engineering ────────────────────────────────────────────────────────────
+  {
+    name: 'Umer',
+    title: 'Senior Software Engineer',
+    imageSrc: '/images/people/umer.jpg',
+  },
+  {
+    name: 'Hussain',
+    title: 'Software Engineer',
+    imageSrc: '/images/people/hussain.jpg', // NEEDS HEADSHOT
+  },
+  {
+    name: 'Shahzeb',
+    title: 'Software Engineer',
+    imageSrc: '/images/people/shahzeb.jpg', // NEEDS HEADSHOT
+  },
+
+  // ── Customer Success ───────────────────────────────────────────────────────
+  {
+    name: 'Eric',
+    title: 'Head of Customer Success',
+    imageSrc: '/images/people/eric.jpg', // NEEDS HEADSHOT
+  },
+  {
+    name: 'Ryan',
+    title: 'CSM Team Lead',
+    imageSrc: '/images/people/ryan.jpeg',
+  },
+  {
+    name: 'Ben',
+    title: 'CSM Team Lead',
+    imageSrc: '/images/people/ben.jpeg',
+  },
+  {
+    name: 'Fabio',
+    title: 'GMB Expert',
+    imageSrc: '/images/people/fabio.png',
+  },
+  {
+    name: 'Henry',
+    title: 'GMB Expert',
+    imageSrc: '/images/people/henry.jpeg',
+  },
+
+  // ── Sales ──────────────────────────────────────────────────────────────────
+  {
+    name: 'Dale',
+    title: 'Sales Manager',
+    imageSrc: '/images/people/dale.jpeg',
+  },
+  {
+    name: 'Jay',
+    title: 'Closer',
+    imageSrc: '/images/people/jhovany.png',
+  },
+  {
+    name: 'Daniel',
+    title: 'Closer',
+    imageSrc: '/images/people/daniel.jpeg',
+  },
+  {
+    name: 'Allan',
+    title: 'Closer',
+    imageSrc: '/images/people/allan.jpg', // NEEDS HEADSHOT
+  },
+  {
+    name: 'Martin',
+    title: 'Closer',
+    imageSrc: '/images/people/martin.jpg', // NEEDS HEADSHOT
+  },
+  {
+    name: 'Carlos',
+    title: 'Closer',
+    imageSrc: '/images/people/carlos.jpg', // NEEDS HEADSHOT
+  },
+  {
+    name: 'Alex',
+    title: 'Closer',
+    imageSrc: '/images/people/alex.jpg', // NEEDS HEADSHOT
+  },
+  {
+    name: 'Juan',
+    title: 'Setter',
+    imageSrc: '/images/people/juan.jpeg',
+  },
+  {
+    name: 'Natalia',
+    title: 'Setter',
+    imageSrc: '/images/people/natalia.jpg', // NEEDS HEADSHOT
+  },
+
+  // ── Service Delivery ───────────────────────────────────────────────────────
+  {
     name: 'Astrid',
-    title: 'Head Web Developer',
+    title: 'VA Team Lead',
     imageSrc: '/images/people/astrid.jpeg',
-  },
-  {
-    name: 'Camila',
-    title: 'Web Developer',
-    imageSrc: '/images/people/camila.jpeg',
-  },
-  {
-    name: 'Ruth',
-    title: 'Social Media Manager',
-    imageSrc: '/images/people/ruth.jpeg',
   },
   {
     name: 'Alejandra',
@@ -57,80 +147,34 @@ const data = [
     imageSrc: '/images/people/alejandra.jpeg',
   },
   {
-    name: 'Umer',
-    title: 'Software Engineer',
-    imageSrc: '/images/people/umer.jpg',
-  },
-  {
-    name: 'Jonathan',
-    title: 'Account Executive',
-    imageSrc: '/images/people/jonathan.jpeg',
-  },
-  {
-    name: 'Javier',
-    title: 'Sales Representative',
-    imageSrc: '/images/people/javier.png',
-  },
-    {
-    name: 'Ryan',
-    title: 'Customer Success Manager',
-    imageSrc: '/images/people/ryan.jpeg',
-  },
-  {
-    name: 'Ben',
-    title: 'Customer Success Manager',
-    imageSrc: '/images/people/ben.jpeg',
-  },
-  {
-    name: 'John',
-    title: 'Sales Representative',
-    imageSrc: '/images/people/john.jpeg',
-  },
-  {
-    name: 'Daniel',
-    title: 'Account Executive',
-    imageSrc: '/images/people/daniel.jpeg',
-  },
-  {
-    name: 'Juan',
-    title: 'Sales Representative',
-    imageSrc: '/images/people/juan.jpeg',
-  },
-  {
-    name: 'Elizabeth',
+    name: 'Camila',
     title: 'Web Developer',
-    imageSrc: '/images/people/elizabeth.jpg',
+    imageSrc: '/images/people/camila.jpeg',
   },
   {
-    name: 'Fabio',
-    title: 'Customer Success Manager',
-    imageSrc: '/images/people/fabio.png',
+    name: 'Oriana',
+    title: 'Web Developer',
+    imageSrc: '/images/people/oriana.jpg', // NEEDS HEADSHOT
   },
   {
-    name: 'Nicolas',
-    title: 'Customer Success Manager',
-    imageSrc: '/images/people/nicolas.jpeg',
+    name: 'Saray',
+    title: 'Web Developer',
+    imageSrc: '/images/people/saray.jpg', // NEEDS HEADSHOT
   },
   {
-    name: 'Dale',
-    title: 'Account Executive',
-    imageSrc: '/images/people/dale.jpeg',
+    name: 'Victor',
+    title: 'Web Developer',
+    imageSrc: '/images/people/victor.jpg', // NEEDS HEADSHOT
   },
+
+  // ── HR ─────────────────────────────────────────────────────────────────────
   {
-    name: 'Jay',
-    title: 'Account Executive',
-    imageSrc: '/images/people/jhovany.png',
+    name: 'Laura',
+    title: 'HR / Recruiter',
+    imageSrc: '/images/people/laura.jpg', // NEEDS HEADSHOT
   },
-  {
-    name: 'Agustin',
-    title: 'Sales Representative',
-    imageSrc: '/images/people/agustin.png',
-  },
-  {
-    name: 'Henry',
-    title: 'SEO Specialist',
-    imageSrc: '/images/people/henry.jpeg',
-  },
+
+  // ── Mascot ─────────────────────────────────────────────────────────────────
   {
     name: 'Stone Systems Man',
     title: 'Commander & Chief',
