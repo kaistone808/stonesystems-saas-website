@@ -105,11 +105,6 @@ const data = [
     imageSrc: '/images/people/daniel.jpeg',
   },
   {
-    name: 'Allan',
-    title: 'Closer',
-    imageSrc: '/images/people/allan.jpg', // NEEDS HEADSHOT
-  },
-  {
     name: 'Martin',
     title: 'Closer',
     imageSrc: '/images/people/martin.jpg', // NEEDS HEADSHOT
@@ -127,7 +122,7 @@ const data = [
   {
     name: 'Juan',
     title: 'Setter',
-    imageSrc: '/images/people/juan.jpeg',
+    imageSrc: '/images/people/juan_saldivar.jpg',
   },
   {
     name: 'Natalia',
