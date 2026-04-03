@@ -168,6 +168,98 @@ const data = [
     title: 'HR / Recruiter',
     imageSrc: '/images/people/laura.jpg', // NEEDS HEADSHOT
   },
+
+  // ── Customer Success (continued) ─────────────────────────────────────────
+  {
+    name: 'Andres',
+    title: 'Customer Success Manager',
+    imageSrc: '/images/people/andres.jpg',
+  },
+  {
+    name: 'Charlie',
+    title: 'Customer Success Manager',
+    imageSrc: '/images/people/charlie.jpg',
+  },
+  {
+    name: 'Adrian',
+    title: 'Customer Success Manager',
+    imageSrc: '/images/people/adrian.jpg',
+  },
+  {
+    name: 'Glen',
+    title: 'Customer Success Manager',
+    imageSrc: '/images/people/glen.jpg',
+  },
+  {
+    name: 'Sebastian',
+    title: 'Customer Success Manager',
+    imageSrc: '/images/people/sebastian.jpg',
+  },
+  {
+    name: 'Brian',
+    title: 'Customer Success Manager',
+    imageSrc: '/images/people/brian.jpg',
+  },
+  {
+    name: 'Maria',
+    title: 'Customer Success Manager',
+    imageSrc: '/images/people/maria.jpg',
+  },
+  {
+    name: 'Sergio',
+    title: 'Customer Success Manager',
+    imageSrc: '/images/people/sergio.jpg',
+  },
+  {
+    name: 'Ashley',
+    title: 'Customer Success Manager',
+    imageSrc: '/images/people/ashley.jpg',
+  },
+  {
+    name: 'Michael S.',
+    title: 'Customer Success Manager',
+    imageSrc: '/images/people/michael_scott.jpg',
+  },
+  {
+    name: 'Jose',
+    title: 'Customer Success Manager',
+    imageSrc: '/images/people/jose.jpg',
+  },
+  {
+    name: 'Oscar',
+    title: 'Customer Success Manager',
+    imageSrc: '/images/people/oscar.jpg',
+  },
+  {
+    name: 'Yusef',
+    title: 'Customer Success Manager',
+    imageSrc: '/images/people/yusef.jpg',
+  },
+  {
+    name: 'Manuel',
+    title: 'Customer Success Manager',
+    imageSrc: '/images/people/manuel.jpg',
+  },
+  {
+    name: 'Andy',
+    title: 'Customer Success Manager',
+    imageSrc: '/images/people/andy.jpg',
+  },
+  {
+    name: 'James',
+    title: 'Customer Success Manager',
+    imageSrc: '/images/people/james.jpg',
+  },
+  {
+    name: 'Esteban',
+    title: 'Customer Success Manager',
+    imageSrc: '/images/people/esteban.jpg',
+  },
+  {
+    name: 'Juan L.',
+    title: 'Customer Success Manager',
+    imageSrc: '/images/people/juan_lopez.jpg',
+  },
   // ── Sales (continued) ────────────────────────────────────────────────────
   {
     name: 'Allan',
