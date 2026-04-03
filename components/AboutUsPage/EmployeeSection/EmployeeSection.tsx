@@ -168,13 +168,6 @@ const data = [
     title: 'HR / Recruiter',
     imageSrc: '/images/people/laura.jpg', // NEEDS HEADSHOT
   },
-
-  // ── Mascot ─────────────────────────────────────────────────────────────────
-  {
-    name: 'Stone Systems Man',
-    title: 'Commander & Chief',
-    imageSrc: '/images/people/stoneman.jpeg',
-  },
 ];
 
 export function EmployeeSection() {
