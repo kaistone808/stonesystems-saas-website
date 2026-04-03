@@ -168,6 +168,12 @@ const data = [
     title: 'HR / Recruiter',
     imageSrc: '/images/people/laura.jpg', // NEEDS HEADSHOT
   },
+  // ── Sales (continued) ────────────────────────────────────────────────────
+  {
+    name: 'Allan',
+    title: 'Closer',
+    imageSrc: '/images/people/stoneman.jpeg',
+  },
 ];
 
 export function EmployeeSection() {
