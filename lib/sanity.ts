@@ -1,5 +1,6 @@
-import { createClient } from 'next-sanity';
+import { createClient } from '@sanity/client';
 import imageUrlBuilder from '@sanity/image-url';
+import type { SanityImageSource } from '@sanity/image-url/lib/types/types';
 
 export const client = createClient({
   projectId: '0797qc4z',
@@ -11,7 +12,7 @@ export const client = createClient({
 
 const builder = imageUrlBuilder(client);
 
-export function urlFor(source: any) {
+export function urlFor(source: SanityImageSource) {
   return builder.image(source);
 }
 
@@ -23,7 +24,7 @@ export interface SanityBlogPost {
   searchIntent?: string;
   author?: string;
   publishDate?: string;
-  featuredImage?: any;
+  featuredImage?: SanityImageSource;
   alternativeText?: string;
   metaTitle?: string;
   metaDescription?: string;
