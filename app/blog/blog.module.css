@@ -1,0 +1,56 @@
+.outer {
+  background-color: var(--gray);
+  min-height: 60vh;
+  padding-bottom: 80px;
+}
+
+.hero {
+  background-color: var(--blue);
+  padding: 80px 0 60px;
+  text-align: center;
+  margin-bottom: 60px;
+
+  @media (max-width: 30em) {
+    padding: 50px 0 40px;
+    margin-bottom: 40px;
+  }
+}
+
+.eyebrow {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--yellow);
+  margin: 0 0 1rem;
+}
+
+.heroTitle {
+  font-size: 52px !important;
+  font-weight: 900 !important;
+  color: var(--white) !important;
+  line-height: 1.1 !important;
+  margin-bottom: 1.25rem !important;
+
+  @media (max-width: 30em) {
+    font-size: 34px !important;
+  }
+}
+
+.heroSub {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 620px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.content {
+  padding-bottom: 2rem;
+}
+
+.empty {
+  text-align: center;
+  padding: 5rem 1rem;
+  color: #777;
+}
