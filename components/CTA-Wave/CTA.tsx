@@ -1,7 +1,7 @@
 import { Text, Title, Button, Container } from '@mantine/core';
 import Image from 'next/image';
 
-import { BOOKING_URL } from '@/lib/site';
+import { bookingUrl } from '@/lib/site';
 import classes from './CTA.module.css';
 
 export function CTA() {
@@ -17,7 +17,7 @@ export function CTA() {
 
           <Button
             component="a"
-            href={BOOKING_URL}
+            href={bookingUrl('cta-wave')}
             target="_blank"
             rel="noopener noreferrer"
             size="xl"
