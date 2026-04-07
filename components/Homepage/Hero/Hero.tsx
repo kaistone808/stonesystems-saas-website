@@ -3,7 +3,7 @@
 import { Container, Title, Button, Text, Flex, Divider } from '@mantine/core';
 import Image from 'next/image';
 import React from 'react';
-import { BOOKING_URL } from '@/lib/site';
+import { bookingUrl } from '@/lib/site';
 import classes from './Hero.module.css';
 import StoneManImage from '@/public/images/new1.png';
 
@@ -70,7 +70,7 @@ export function Hero() {
                 </Flex>
                 <Button
                   component="a"
-                  href={BOOKING_URL}
+                  href={bookingUrl('homepage-hero')}
                   target="_blank"
                   rel="noopener noreferrer"
                   size="xl"
