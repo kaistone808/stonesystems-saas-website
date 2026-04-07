@@ -1,0 +1,156 @@
+.outer {
+  background-color: var(--gray);
+  padding-bottom: 80px;
+}
+
+.heroImageWrapper {
+  position: relative;
+  width: 100%;
+  height: 420px;
+  background-color: var(--blue);
+
+  @media (max-width: 30em) {
+    height: 240px;
+  }
+}
+
+.heroImage {
+  object-fit: cover;
+  object-position: center;
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.15), rgba(0,0,0,0.4));
+}
+
+.container {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.metaBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.badge {
+  background-color: var(--yellow) !important;
+  color: var(--blue) !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.metaIcon {
+  color: #999;
+  flex-shrink: 0;
+}
+
+.metaText {
+  font-size: 13px !important;
+  color: #777 !important;
+}
+
+.title {
+  font-size: 42px !important;
+  font-weight: 900 !important;
+  color: var(--blue) !important;
+  line-height: 1.2 !important;
+  margin-bottom: 1.25rem !important;
+
+  @media (max-width: 30em) {
+    font-size: 28px !important;
+  }
+}
+
+.excerpt {
+  font-size: 20px !important;
+  color: #555 !important;
+  line-height: 1.7 !important;
+  margin-bottom: 2rem !important;
+  font-style: italic;
+  border-left: 4px solid var(--yellow);
+  padding-left: 1.25rem;
+}
+
+.content {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #333;
+}
+
+.content h1, .content h2, .content h3, .content h4 {
+  color: var(--blue);
+  font-weight: 800;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.content h2 { font-size: 30px; }
+.content h3 { font-size: 24px; }
+.content h4 { font-size: 20px; }
+
+.content p {
+  margin-bottom: 1.4rem;
+}
+
+.content ul, .content ol {
+  margin-bottom: 1.4rem;
+  padding-left: 1.75rem;
+}
+
+.content li {
+  margin-bottom: 0.5rem;
+}
+
+.content strong {
+  color: var(--blue);
+  font-weight: 700;
+}
+
+.content blockquote {
+  border-left: 4px solid var(--yellow);
+  padding-left: 1.25rem;
+  margin: 1.5rem 0;
+  color: #555;
+  font-style: italic;
+}
+
+.contentImage {
+  margin: 2rem 0;
+}
+
+.link {
+  color: var(--yellow);
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.link:hover {
+  color: var(--blue);
+}
+
+.backWrapper {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #ddd;
+}
+
+.backLink {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--blue);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.backLink:hover {
+  color: var(--yellow);
+}

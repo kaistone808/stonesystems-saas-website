@@ -19,7 +19,7 @@ import { MutableRefObject, createRef, useState } from 'react';
 import Switch from 'react-switch';
 import classes from './PriceContainer.module.css';
 import { useMediaQuery } from '@mantine/hooks';
-import { BOOKING_URL } from '@/lib/site';
+import { bookingUrl } from '@/lib/site';
 
 export const PriceContainer = () => {
   const theme = useMantineTheme();
@@ -154,7 +154,7 @@ export const PriceContainer = () => {
                       component="a"
                       target="_blank"
                       rel="noopener noreferrer"
-                      href={BOOKING_URL}
+                      href={bookingUrl('pricing-page')}
                       c={'var(--blue)'}
                       bg={'var(--white)'}
                       w="75%"

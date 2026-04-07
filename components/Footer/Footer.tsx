@@ -3,7 +3,7 @@
 import { Text, Container, ActionIcon, Group, rem, Flex, Divider, Button } from '@mantine/core';
 import { IconBrandYoutube, IconBrandInstagram, IconBrandGoogle } from '@tabler/icons-react';
 import Image from 'next/image';
-import { BOOKING_URL } from '@/lib/site';
+import { bookingUrl } from '@/lib/site';
 import classes from './Footer.module.css';
 
 const data = [
@@ -85,7 +85,7 @@ export function Footer() {
             <Text className={classes.cta}>Ready to get started?</Text>
             <Button
               component="a"
-              href={BOOKING_URL}
+              href={bookingUrl('footer-top')}
               target="_blank"
               rel="noopener noreferrer"
               className={classes.button}
@@ -102,7 +102,7 @@ export function Footer() {
           <Text className={classes.description}>Want to learn more about how we can help?</Text>
           <Button
             component="a"
-            href={BOOKING_URL}
+            href={bookingUrl('footer-bottom')}
             target="_blank"
             rel="noopener noreferrer"
             className={classes.button}

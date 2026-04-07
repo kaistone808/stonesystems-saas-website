@@ -38,7 +38,7 @@ import {
   IconTools,
 } from '@tabler/icons-react';
 import Image from 'next/image';
-import { BOOKING_URL } from '@/lib/site';
+import { bookingUrl } from '@/lib/site';
 import classes from './Header.module.css';
 
 const productData = [
@@ -135,6 +135,12 @@ const aboutData = [
     description: 'Chat with us',
     href: '/contact',
   },
+  {
+    icon: IconNotebook,
+    title: 'Press',
+    description: 'Stone Systems in the news',
+    href: '/press',
+  },
 ];
 
 interface LinkProps {
@@ -220,8 +226,8 @@ export function Header() {
             <a href="/our-work" className={classes.link}>
               Our Work
             </a>
-            <a href="/press" className={classes.link}>
-              Press
+            <a href="/blog" className={classes.link}>
+              Blog
             </a>
             <HoverCard width={350} position="bottom" radius="md" shadow="md" withinPortal>
               <HoverCard.Target>
@@ -259,7 +265,7 @@ export function Header() {
             </Button>
             <Button
               component="a"
-              href={BOOKING_URL}
+              href={bookingUrl('header-nav')}
               target="_blank"
               rel="noopener noreferrer"
               className={classes.button}
@@ -323,8 +329,8 @@ export function Header() {
           <a href="/our-work" className={classes.link}>
               Our Work
             </a>
-          <a href="/press" className={classes.link}>
-            Press
+          <a href="/blog" className={classes.link}>
+            Blog
           </a>
           <UnstyledButton onClick={toggleAboutLinks}>
             <Center inline>
@@ -340,7 +346,7 @@ export function Header() {
             Log in
           </a>
           <a
-            href={BOOKING_URL}
+            href={bookingUrl('header-nav')}
             target="_blank"
             rel="noopener noreferrer"
             className={classes.linkModal}

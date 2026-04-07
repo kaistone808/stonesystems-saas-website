@@ -1,7 +1,7 @@
 import { Text, Title, Button, Container } from '@mantine/core';
 import Image from 'next/image';
 
-import { BOOKING_URL } from '@/lib/site';
+import { bookingUrl } from '@/lib/site';
 import classes from './CTA.module.css';
 
 export function CTANoWave() {
@@ -16,7 +16,7 @@ export function CTANoWave() {
           </Text>
           <Button
             component="a"
-            href={BOOKING_URL}
+            href={bookingUrl('cta-no-wave')}
             target="_blank"
             rel="noopener noreferrer"
             size="xl"
