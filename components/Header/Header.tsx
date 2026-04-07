@@ -38,7 +38,7 @@ import {
   IconTools,
 } from '@tabler/icons-react';
 import Image from 'next/image';
-import { BOOKING_URL } from '@/lib/site';
+import { bookingUrl } from '@/lib/site';
 import classes from './Header.module.css';
 
 const productData = [
@@ -265,7 +265,7 @@ export function Header() {
             </Button>
             <Button
               component="a"
-              href={BOOKING_URL}
+              href={bookingUrl('header-nav')}
               target="_blank"
               rel="noopener noreferrer"
               className={classes.button}
@@ -346,7 +346,7 @@ export function Header() {
             Log in
           </a>
           <a
-            href={BOOKING_URL}
+            href={bookingUrl('header-nav')}
             target="_blank"
             rel="noopener noreferrer"
             className={classes.linkModal}
