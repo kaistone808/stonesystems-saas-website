@@ -135,6 +135,12 @@ const aboutData = [
     description: 'Chat with us',
     href: '/contact',
   },
+  {
+    icon: IconNotebook,
+    title: 'Press',
+    description: 'Stone Systems in the news',
+    href: '/press',
+  },
 ];
 
 interface LinkProps {
@@ -219,9 +225,6 @@ export function Header() {
             </a>
             <a href="/our-work" className={classes.link}>
               Our Work
-            </a>
-            <a href="/press" className={classes.link}>
-              Press
             </a>
             <a href="/blog" className={classes.link}>
               Blog
@@ -326,9 +329,6 @@ export function Header() {
           <a href="/our-work" className={classes.link}>
               Our Work
             </a>
-          <a href="/press" className={classes.link}>
-            Press
-          </a>
           <a href="/blog" className={classes.link}>
             Blog
           </a>
