@@ -1,7 +1,7 @@
 'use client';
 
 import { Text, Container, ActionIcon, Group, rem, Flex, Divider, Button } from '@mantine/core';
-import { IconBrandYoutube, IconBrandInstagram, IconBrandGoogle } from '@tabler/icons-react';
+import { IconBrandYoutube, IconBrandInstagram, IconPhone } from '@tabler/icons-react';
 import Image from 'next/image';
 import { bookingUrl } from '@/lib/site';
 import classes from './Footer.module.css';
@@ -115,12 +115,33 @@ export function Footer() {
         <div className={classes.groups}>{groups}</div>
       </Container>
       <Container size="lg" className={classes.afterFooter}>
-        <Flex>
+        <Flex align="center" gap="xl" wrap="wrap">
           <Text className={classes.specialLink} component="a" mr="3rem" href="/terms">
             Terms & Conditions
           </Text>
           <Text<'a'> className={classes.specialLink} component="a" href="/privacy-policy">
             Privacy Policy
+          </Text>
+          <Text
+            component="a"
+            href="tel:+18086454509"
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: '6px',
+              color: '#fff',
+              fontWeight: 600,
+              fontSize: '1rem',
+              textDecoration: 'none',
+              backgroundColor: 'rgba(255,255,255,0.08)',
+              border: '1px solid rgba(255,255,255,0.18)',
+              borderRadius: '6px',
+              padding: '6px 14px',
+              transition: 'background 0.2s',
+            }}
+          >
+            <IconPhone size={16} stroke={2} />
+            (808) 645-4509
           </Text>
         </Flex>
         <Group gap={0} className={classes.social} justify="flex-end" wrap="nowrap">
