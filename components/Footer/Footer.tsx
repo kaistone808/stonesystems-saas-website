@@ -115,33 +115,59 @@ export function Footer() {
         <div className={classes.groups}>{groups}</div>
       </Container>
       <Container size="lg" className={classes.afterFooter}>
-        <Flex align="center" gap="xl" wrap="wrap">
-          <Text className={classes.specialLink} component="a" mr="3rem" href="/terms">
+        <Flex className={classes.complianceLinks}>
+          <Text className={classes.specialLink} component="a" href="/terms">
             Terms & Conditions
           </Text>
           <Text<'a'> className={classes.specialLink} component="a" href="/privacy-policy">
             Privacy Policy
           </Text>
+          <Text<'a'> className={classes.specialLink} component="a" href="/dpa">
+            DPA
+          </Text>
+          <Text<'a'> className={classes.specialLink} component="a" href="/do-not-sell">
+            <span className={classes.privacyChoicesLink}>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 30 14"
+                width="30"
+                height="14"
+                aria-hidden="true"
+                className={classes.privacyChoicesIcon}
+              >
+                <path
+                  d="M7.4 12.8h6.8l3.1-11.6H7.4C4.2 1.2 1.6 3.8 1.6 7s2.6 5.8 5.8 5.8z"
+                  fill="#fff"
+                />
+                <path
+                  d="M22.6 0H7.4c-3.9 0-7 3.1-7 7s3.1 7 7 7h15.2c3.9 0 7-3.1 7-7s-3.2-7-7-7zm-21 7c0-3.2 2.6-5.8 5.8-5.8h9.9L11.2 12.8H7.4c-3.2 0-5.8-2.6-5.8-5.8z"
+                  fill="#06f"
+                />
+                <path
+                  d="M24.6 4c.2.2.2.6 0 .8L22.5 7l2.2 2.2c.2.2.2.6 0 .8-.2.2-.6.2-.8 0L21.7 7.8l-2.2 2.2c-.2.2-.6.2-.8 0-.2-.2-.2-.6 0-.8L20.9 7l-2.2-2.2c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0l2.2 2.2L23.8 4c.2-.2.6-.2.8 0z"
+                  fill="#06f"
+                />
+                <path
+                  d="M12.7 4.1c.2.2.3.6.1.8L8.6 9.8c-.1.1-.2.2-.3.2-.2.1-.5 0-.7-.1L5.4 7.7c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0L8 8.6l3.8-4.5c.2-.2.6-.2.9 0z"
+                  fill="#fff"
+                />
+              </svg>
+              Your Privacy Choices
+            </span>
+          </Text>
+          <Text<'a'> className={classes.specialLink} component="a" href="/privacy-request">
+            Privacy Request
+          </Text>
           <Text
+            className={classes.specialLink}
             component="a"
-            href="tel:+18086454509"
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              gap: '6px',
-              color: '#fff',
-              fontWeight: 600,
-              fontSize: '1rem',
-              textDecoration: 'none',
-              backgroundColor: 'rgba(255,255,255,0.08)',
-              border: '1px solid rgba(255,255,255,0.18)',
-              borderRadius: '6px',
-              padding: '6px 14px',
-              transition: 'background 0.2s',
+            href="#"
+            onClick={(e) => {
+              e.preventDefault();
+              (window as { StoneConsent?: { show?: () => void } }).StoneConsent?.show?.();
             }}
           >
-            <IconPhone size={16} stroke={2} />
-            (808) 645-4509
+            Cookie Settings
           </Text>
         </Flex>
         <Group gap={0} className={classes.social} justify="flex-end" wrap="nowrap">

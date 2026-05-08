@@ -327,8 +327,8 @@ export function Header() {
             Testimonials
           </a>
           <a href="/our-work" className={classes.link}>
-              Our Work
-            </a>
+            Our Work
+          </a>
           <a href="/blog" className={classes.link}>
             Blog
           </a>

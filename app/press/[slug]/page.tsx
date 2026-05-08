@@ -64,7 +64,9 @@ export default async function PressPostPage({ params }: PageProps) {
           {post.excerpt && <p className={classes.excerpt}>{post.excerpt}</p>}
           <Group justify="center" gap="xl" className={classes.meta}>
             {post.source && (
-              <p className={classes.source}>As featured in <strong>{post.source}</strong></p>
+              <p className={classes.source}>
+                As featured in <strong>{post.source}</strong>
+              </p>
             )}
             {author && (
               <Group gap={6} className={classes.authorGroup}>
@@ -83,10 +85,7 @@ export default async function PressPostPage({ params }: PageProps) {
         </a>
 
         {post.contentHtml.replace(/<[^>]*>/g, '').trim() ? (
-          <div
-            className={classes.content}
-            dangerouslySetInnerHTML={{ __html: post.contentHtml }}
-          />
+          <div className={classes.content} dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
         ) : (
           <div className={classes.emptyState}>
             <p>Content coming soon.</p>

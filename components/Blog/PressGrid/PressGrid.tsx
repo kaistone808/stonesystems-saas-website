@@ -46,11 +46,7 @@ export function PressGrid({ posts }: PressGridProps) {
           leftSection={<IconSearch size={16} />}
           rightSection={
             query ? (
-              <IconX
-                size={16}
-                className={classes.clearIcon}
-                onClick={() => handleSearch('')}
-              />
+              <IconX size={16} className={classes.clearIcon} onClick={() => handleSearch('')} />
             ) : null
           }
           size="md"

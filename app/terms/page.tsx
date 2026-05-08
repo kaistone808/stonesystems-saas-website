@@ -2,15 +2,15 @@ import { Metadata } from 'next';
 import { TermsPage } from '@/components/TermsPage/TermsPage';
 
 export const metadata: Metadata = {
-  title: 'Stone Systems - Terms & Conditions',
+  title: 'Stone Systems - Terms of Service',
   description:
-    'Contractors trust us to transform their business with marketing systems, website design, reputation management and automation. And we do all of that at an affordable price!',
+    'Terms of Service for Stone Systems marketing technology, websites, automation, and related services for home service businesses.',
 };
 
 export default function TermsConditionsPage() {
   return (
     <>
-      <TermsPage />{' '}
+      <TermsPage />
     </>
   );
 }

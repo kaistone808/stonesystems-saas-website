@@ -23,13 +23,20 @@ const data = [
 export function OurWorkSection() {
   const theme = useMantineTheme();
   const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
-  const slides = data.map((item) => <Image className={classes.image} width={1000} height={576} key={item} src={item} alt="website example" />);
+  const slides = data.map((item) => (
+    <Image
+      className={classes.image}
+      width={1000}
+      height={576}
+      key={item}
+      src={item}
+      alt="website example"
+    />
+  ));
 
   return (
     <div className={classes.outer}>
-      <Title className={classes.mainTitle}>
-        Look at what we've done for other contractors
-      </Title>
+      <Title className={classes.mainTitle}>Look at what we've done for other contractors</Title>
       <Container size="xl">
         <SimpleGrid cols={mobile ? 1 : 2}>{slides}</SimpleGrid>
       </Container>

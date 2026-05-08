@@ -1,14 +1,7 @@
 'use client';
 
 import { useMediaQuery } from '@mantine/hooks';
-import {
-  Paper,
-  Text,
-  Title,
-  useMantineTheme,
-  Container,
-  SimpleGrid,
-} from '@mantine/core';
+import { Paper, Text, Title, useMantineTheme, Container, SimpleGrid } from '@mantine/core';
 import classes from './MainTradesSection.module.css';
 import Image from 'next/image';
 

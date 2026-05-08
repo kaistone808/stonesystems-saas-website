@@ -10,8 +10,8 @@ export function Step2() {
   return (
     <div className={classes.outer}>
       <Container size="lg">
-      <SimpleGrid pb={mobile ? 'sm' : 'xl'} cols={mobile ? 1 :2}>
-      {mobile && <Image src="/images/2.svg" className={classes.image} />}
+        <SimpleGrid pb={mobile ? 'sm' : 'xl'} cols={mobile ? 1 : 2}>
+          {mobile && <Image src="/images/2.svg" className={classes.image} />}
           <div className={classes.content}>
             <Title className={classes.title}>Buildout</Title>
             <Text mt="md" className={classes.description}>

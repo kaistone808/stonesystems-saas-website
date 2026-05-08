@@ -90,7 +90,8 @@ export const blogPost = {
       type: 'text',
       rows: 3,
       description: 'Max 160 characters recommended',
-      validation: (Rule: any) => Rule.required().max(160).warning('Keep under 160 characters for best SEO'),
+      validation: (Rule: any) =>
+        Rule.required().max(160).warning('Keep under 160 characters for best SEO'),
     },
     {
       name: 'excerpt',

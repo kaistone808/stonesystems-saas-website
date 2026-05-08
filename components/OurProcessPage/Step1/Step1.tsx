@@ -11,7 +11,7 @@ export function Step1() {
   return (
     <div className={classes.outer}>
       <Container size="lg">
-        <SimpleGrid pb={mobile ? 'sm' : 'xl'} cols={mobile ? 1 :2}>
+        <SimpleGrid pb={mobile ? 'sm' : 'xl'} cols={mobile ? 1 : 2}>
           <Image src="/images/1.svg" className={classes.image} />
           <div className={classes.content}>
             <Title className={classes.title}>Consultation Call</Title>

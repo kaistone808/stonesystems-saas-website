@@ -1,24 +1,24 @@
-import { Metadata } from "next";
-import { Container, Title } from "@mantine/core";
-import { client, ALL_POSTS_QUERY, SanityBlogPost } from "@/lib/sanity";
-import { BlogGrid } from "@/components/Blog/BlogGrid/BlogGrid";
-import classes from "./blog.module.css";
+import { Metadata } from 'next';
+import { Container, Title } from '@mantine/core';
+import { client, ALL_POSTS_QUERY, SanityBlogPost } from '@/lib/sanity';
+import { BlogGrid } from '@/components/Blog/BlogGrid/BlogGrid';
+import classes from './blog.module.css';
 
 export const revalidate = 60;
 
 export const metadata: Metadata = {
-  title: "Blog | Stone Systems - Marketing & Website Tips for Contractors",
+  title: 'Blog | Stone Systems - Marketing & Website Tips for Contractors',
   description:
-    "Expert advice on contractor marketing, website design, reputation management, and business automation. Grow your home service business with Stone Systems.",
+    'Expert advice on contractor marketing, website design, reputation management, and business automation. Grow your home service business with Stone Systems.',
   openGraph: {
-    title: "Blog | Stone Systems",
-    description: "Expert contractor marketing tips and growth strategies.",
-    url: "https://stonesystems.io/blog",
-    siteName: "Stone Systems",
-    type: "website",
+    title: 'Blog | Stone Systems',
+    description: 'Expert contractor marketing tips and growth strategies.',
+    url: 'https://stonesystems.io/blog',
+    siteName: 'Stone Systems',
+    type: 'website',
   },
   alternates: {
-    canonical: "https://stonesystems.io/blog",
+    canonical: 'https://stonesystems.io/blog',
   },
 };
 

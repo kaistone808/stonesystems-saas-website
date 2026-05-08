@@ -67,7 +67,7 @@ export function PartnersSection() {
   return (
     <div className={classes.outer}>
       <Container size="lg">
-        <SimpleGrid cols={mobile ? 2 :4}>{partners}</SimpleGrid>
+        <SimpleGrid cols={mobile ? 2 : 4}>{partners}</SimpleGrid>
       </Container>
     </div>
   );

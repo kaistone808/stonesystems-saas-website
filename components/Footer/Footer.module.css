@@ -71,14 +71,43 @@
 
 .specialLink {
   color: var(--text-gray) !important;
-  font-size: 18px !important;
+  font-size: 16px !important;
 
   &:hover {
     text-decoration: underline;
   }
   @media (max-width: 48em) {
-    font-size: 14px !important;
+    font-size: 13px !important;
   }
+}
+
+.complianceLinks {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: nowrap;
+
+  @media (max-width: 48em) {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+  }
+}
+
+.privacyChoicesLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: inherit;
+}
+
+.privacyChoicesIcon {
+  display: block;
+  flex-shrink: 0;
+}
+
+.specialLink:hover .privacyChoicesLink {
+  text-decoration: underline;
 }
 
 .title {

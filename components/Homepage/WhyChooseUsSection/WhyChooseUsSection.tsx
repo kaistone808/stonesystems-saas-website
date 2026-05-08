@@ -29,7 +29,8 @@ function Card({ cardTitle, cardDescription, imageSrc }: CardProps) {
 const data = [
   {
     cardTitle: 'Simple To Use',
-    cardDescription: 'We built Stone Systems with the core concept of being simple to use, so everything is made to be exactly that.',
+    cardDescription:
+      'We built Stone Systems with the core concept of being simple to use, so everything is made to be exactly that.',
     imageSrc: '/images/why/easy.png',
   },
   {
@@ -52,7 +53,8 @@ const data = [
   },
   {
     cardTitle: 'We Have Proof',
-    cardDescription: 'We already know what\'s working and have all the <a href=\'/testimonials\'>reviews & testimonials</a> to back it up.',
+    cardDescription:
+      "We already know what's working and have all the <a href='/testimonials'>reviews & testimonials</a> to back it up.",
     imageSrc: '/images/why/shield.svg',
   },
   {

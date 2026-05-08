@@ -1,11 +1,11 @@
-"use client";
+'use client';
 
-import { useState, useMemo } from "react";
-import { TextInput, Group, Text, Button } from "@mantine/core";
-import { IconSearch, IconChevronLeft, IconChevronRight, IconX } from "@tabler/icons-react";
-import { SanityBlogCard } from "@/components/Blog/SanityBlogCard/SanityBlogCard";
-import { SanityBlogPost } from "@/lib/sanity";
-import classes from "./BlogGrid.module.css";
+import { useState, useMemo } from 'react';
+import { TextInput, Group, Text, Button } from '@mantine/core';
+import { IconSearch, IconChevronLeft, IconChevronRight, IconX } from '@tabler/icons-react';
+import { SanityBlogCard } from '@/components/Blog/SanityBlogCard/SanityBlogCard';
+import { SanityBlogPost } from '@/lib/sanity';
+import classes from './BlogGrid.module.css';
 
 const PAGE_SIZE = 9;
 
@@ -14,7 +14,7 @@ interface BlogGridProps {
 }
 
 export function BlogGrid({ posts }: BlogGridProps) {
-  const [query, setQuery] = useState("");
+  const [query, setQuery] = useState('');
   const [page, setPage] = useState(1);
 
   const filtered = useMemo(() => {
@@ -23,9 +23,9 @@ export function BlogGrid({ posts }: BlogGridProps) {
     return posts.filter(
       (p) =>
         p.title.toLowerCase().includes(q) ||
-        (p.excerpt || "").toLowerCase().includes(q) ||
-        (p.author || "").toLowerCase().includes(q) ||
-        (p.targetKeyword || "").toLowerCase().includes(q)
+        (p.excerpt || '').toLowerCase().includes(q) ||
+        (p.author || '').toLowerCase().includes(q) ||
+        (p.targetKeyword || '').toLowerCase().includes(q)
     );
   }, [posts, query]);
 
@@ -48,14 +48,14 @@ export function BlogGrid({ posts }: BlogGridProps) {
           leftSection={<IconSearch size={16} />}
           rightSection={
             query ? (
-              <IconX size={16} className={classes.clearIcon} onClick={() => handleSearch("")} />
+              <IconX size={16} className={classes.clearIcon} onClick={() => handleSearch('')} />
             ) : null
           }
           size="md"
         />
         {query && (
           <Text className={classes.resultCount}>
-            {filtered.length} result{filtered.length !== 1 ? "s" : ""} for &ldquo;{query}&rdquo;
+            {filtered.length} result{filtered.length !== 1 ? 's' : ''} for &ldquo;{query}&rdquo;
           </Text>
         )}
       </div>
@@ -68,7 +68,7 @@ export function BlogGrid({ posts }: BlogGridProps) {
         </div>
       ) : (
         <div className={classes.empty}>
-          <Text>No articles found{query ? ` matching "${query}"` : ""}.</Text>
+          <Text>No articles found{query ? ` matching "${query}"` : ''}.</Text>
         </div>
       )}
 
@@ -89,7 +89,7 @@ export function BlogGrid({ posts }: BlogGridProps) {
               <button
                 key={n}
                 onClick={() => setPage(n)}
-                className={`${classes.pageNumber} ${n === page ? classes.pageNumberActive : ""}`}
+                className={`${classes.pageNumber} ${n === page ? classes.pageNumberActive : ''}`}
               >
                 {n}
               </button>

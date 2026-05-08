@@ -21,7 +21,7 @@ export function CallUsSection() {
               <IconPhone width={40} height={40} />
             </ThemeIcon>
             <Text className={classes.description} ta="center" mt="md">
-              <a href='tel:+18055000186'> (805) 500-0186</a>
+              <a href="tel:+18055000186"> (805) 500-0186</a>
             </Text>
           </div>
           <div className={classes.contactBox}>

@@ -10,7 +10,7 @@ export function Step3() {
   return (
     <div className={classes.outer}>
       <Container size="lg">
-      <SimpleGrid pb={mobile ? 'sm' : 'xl'} cols={mobile ? 1 :2}>
+        <SimpleGrid pb={mobile ? 'sm' : 'xl'} cols={mobile ? 1 : 2}>
           <Image src="/images/3.svg" className={classes.image} />
           <div className={classes.content}>
             <Title className={classes.title}>Launch</Title>

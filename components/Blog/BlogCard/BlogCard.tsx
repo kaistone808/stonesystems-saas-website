@@ -47,10 +47,14 @@ export function BlogCard({ post }: BlogCardProps) {
             fill
             sizes="(max-width: 768px) 100vw, 33vw"
             className={classes.image}
-            style={post.imageStyle ? {
-              objectFit: post.imageStyle.objectFit,
-              objectPosition: post.imageStyle.objectPosition,
-            } : undefined}
+            style={
+              post.imageStyle
+                ? {
+                    objectFit: post.imageStyle.objectFit,
+                    objectPosition: post.imageStyle.objectPosition,
+                  }
+                : undefined
+            }
           />
         ) : (
           <div className={classes.imageFallback}>
@@ -70,9 +74,7 @@ export function BlogCard({ post }: BlogCardProps) {
           <Badge className={classes.badge} variant="filled">
             {post.category}
           </Badge>
-          {post.date && (
-            <Text className={classes.date}>{formatDate(post.date)}</Text>
-          )}
+          {post.date && <Text className={classes.date}>{formatDate(post.date)}</Text>}
         </Group>
 
         <Text className={classes.title}>{post.title}</Text>
@@ -84,9 +86,7 @@ export function BlogCard({ post }: BlogCardProps) {
           </Group>
         )}
 
-        {post.excerpt && (
-          <Text className={classes.excerpt}>{post.excerpt}</Text>
-        )}
+        {post.excerpt && <Text className={classes.excerpt}>{post.excerpt}</Text>}
 
         <div className={classes.footer}>
           {post.source && (
