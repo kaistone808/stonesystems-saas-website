@@ -120,56 +120,50 @@ async function checkRateLimit(ip: string) {
   return current.count <= 5;
 }
 
-class AirtableAdapter implements TrackingAdapter {
-  private readonly apiKey: string;
-  private readonly baseId: string;
-  private readonly tableName: string;
+function createAirtableAdapter(): TrackingAdapter {
+  const apiKey = process.env.AIRTABLE_API_KEY;
+  const baseId = process.env.AIRTABLE_BASE_ID;
+  const tableName = process.env.AIRTABLE_TABLE_NAME || 'DSARs';
 
-  constructor() {
-    const apiKey = process.env.AIRTABLE_API_KEY;
-    const baseId = process.env.AIRTABLE_BASE_ID;
-    const tableName = process.env.AIRTABLE_TABLE_NAME || 'DSARs';
-
-    if (!apiKey || !baseId) {
-      throw new Error('Airtable configuration missing');
-    }
-
-    this.apiKey = apiKey;
-    this.baseId = baseId;
-    this.tableName = tableName;
+  if (!apiKey || !baseId) {
+    throw new Error('Airtable configuration missing');
   }
 
-  async append(record: TrackingRecord) {
-    const endpoint = `https://api.airtable.com/v0/${this.baseId}/${encodeURIComponent(this.tableName)}`;
-    const response = await fetch(endpoint, {
-      method: 'POST',
-      headers: {
-        Authorization: `Bearer ${this.apiKey}`,
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ records: [{ fields: record }] }),
-      cache: 'no-store',
-    });
+  return {
+    async append(record: TrackingRecord) {
+      const endpoint = `https://api.airtable.com/v0/${baseId}/${encodeURIComponent(tableName)}`;
+      const response = await fetch(endpoint, {
+        method: 'POST',
+        headers: {
+          Authorization: `Bearer ${apiKey}`,
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ records: [{ fields: record }] }),
+        cache: 'no-store',
+      });
 
-    if (!response.ok) {
-      const message = await response.text();
-      throw new Error(`Airtable write failed: ${message}`);
-    }
-  }
+      if (!response.ok) {
+        const message = await response.text();
+        throw new Error(`Airtable write failed: ${message}`);
+      }
+    },
+  };
 }
 
-class GoogleSheetsAdapter implements TrackingAdapter {
-  async append(_record: TrackingRecord) {
-    throw new Error('Google Sheets adapter is not implemented yet');
-  }
+function createGoogleSheetsAdapter(): TrackingAdapter {
+  return {
+    async append() {
+      throw new Error('Google Sheets adapter is not implemented yet');
+    },
+  };
 }
 
 function createTrackingAdapter(): TrackingAdapter {
   const adapter = (process.env.DSAR_TRACKING_ADAPTER || 'airtable').toLowerCase();
   if (adapter === 'google-sheets') {
-    return new GoogleSheetsAdapter();
+    return createGoogleSheetsAdapter();
   }
-  return new AirtableAdapter();
+  return createAirtableAdapter();
 }
 
 function normalizeRequestType(input: string): RequestType | '' {
@@ -244,15 +238,7 @@ function parseAndValidatePayload(raw: unknown): { data?: IntakePayload; error?: 
   };
 }
 
-async function sendEmail({
-  to,
-  subject,
-  text,
-}: {
-  to: string;
-  subject: string;
-  text: string;
-}) {
+async function sendEmail({ to, subject, text }: { to: string; subject: string; text: string }) {
   const apiKey = process.env.RESEND_API_KEY;
   const from = process.env.FROM_EMAIL || 'noreply@stonesystems.io';
 

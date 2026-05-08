@@ -148,7 +148,11 @@ export function PrivacyRequestForm() {
         body: JSON.stringify(values),
       });
 
-      const data = (await response.json()) as { success?: boolean; referenceId?: string; error?: string };
+      const data = (await response.json()) as {
+        success?: boolean;
+        referenceId?: string;
+        error?: string;
+      };
 
       if (!response.ok || !data.success) {
         setFormError(data.error || 'Unable to submit request. Please try again.');
@@ -172,7 +176,8 @@ export function PrivacyRequestForm() {
       <div className={classes.container}>
         <h1 className={classes.title}>Your Privacy Rights</h1>
         <p className={classes.subtitle}>
-          Submit a privacy request to access, correct, delete, or otherwise manage your personal data.
+          Submit a privacy request to access, correct, delete, or otherwise manage your personal
+          data.
         </p>
         <form className={classes.card} onSubmit={handleSubmit} noValidate>
           {successMessage && (
@@ -295,7 +300,9 @@ export function PrivacyRequestForm() {
                 id="additionalDetails"
                 className={classes.textarea}
                 value={values.additionalDetails}
-                onChange={(e) => setValues((prev) => ({ ...prev, additionalDetails: e.target.value }))}
+                onChange={(e) =>
+                  setValues((prev) => ({ ...prev, additionalDetails: e.target.value }))
+                }
               />
             </div>
 

@@ -1,14 +1,13 @@
 import '@mantine/core/styles.css';
-import React from 'react';
-import { MantineProvider } from '@mantine/core';
-import { Sora } from 'next/font/google';
-import type { Metadata, Viewport } from 'next';
-import { theme } from '../theme';
-
 import '@mantine/carousel/styles.css';
 import '../globals.css';
-import { LayoutWrapper } from '@/components/LayoutWrapper/LayoutWrapper';
+import React from 'react';
+import { MantineProvider } from '@mantine/core';
+import type { Metadata, Viewport } from 'next';
+import { Sora } from 'next/font/google';
 import Script from 'next/script';
+import { theme } from '../theme';
+import { LayoutWrapper } from '@/components/LayoutWrapper/LayoutWrapper';
 import { ConsentTracking } from '@/components/Tracking/ConsentTracking';
 
 const APP_NAME = 'Stone Systems';
@@ -66,10 +65,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body>
         <Script src="/cookie-consent.js" strategy="beforeInteractive" />
-        <Script
-          async
-          src="https://app.usecortana.ai/api/widgets/cmhapx2wt000hjy04gs3ipqjf.js"
-        ></Script>
+        <Script async src="https://app.usecortana.ai/api/widgets/cmhapx2wt000hjy04gs3ipqjf.js" />
         <MantineProvider theme={theme}>
           <ConsentTracking />
           <LayoutWrapper>{children}</LayoutWrapper>

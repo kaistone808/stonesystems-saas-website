@@ -8,7 +8,8 @@ export type SubprocessorRow = {
 export const SUBPROCESSORS: SubprocessorRow[] = [
   {
     name: 'HighLevel LLC (GoHighLevel)',
-    serviceProvided: 'CRM, SMS/MMS, marketing automation, client portal, and related platform services',
+    serviceProvided:
+      'CRM, SMS/MMS, marketing automation, client portal, and related platform services',
     location: 'United States',
   },
   {

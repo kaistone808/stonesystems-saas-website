@@ -63,7 +63,7 @@ export function Feature2() {
               {items}
             </Flex>
             <Button onClick={open} size="xl" bg="var(--yellow)" className={classes.control}>
-            See Short Demo
+              See Short Demo
             </Button>
             <Modal
               closeButtonProps={{

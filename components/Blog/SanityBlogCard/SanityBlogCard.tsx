@@ -16,7 +16,9 @@ function formatDate(dateStr?: string): string {
 }
 
 export function SanityBlogCard({ post }: SanityBlogCardProps) {
-  const imageUrl = post.featuredImage ? urlFor(post.featuredImage).width(600).height(400).url() : null;
+  const imageUrl = post.featuredImage
+    ? urlFor(post.featuredImage).width(600).height(400).url()
+    : null;
 
   return (
     <Link href={`/blog/${post.slug.current}`} className={classes.card}>
@@ -49,9 +51,7 @@ export function SanityBlogCard({ post }: SanityBlogCardProps) {
               {post.searchIntent}
             </Badge>
           )}
-          {post.publishDate && (
-            <Text className={classes.date}>{formatDate(post.publishDate)}</Text>
-          )}
+          {post.publishDate && <Text className={classes.date}>{formatDate(post.publishDate)}</Text>}
         </Group>
 
         <Text className={classes.title}>{post.title}</Text>
@@ -64,7 +64,9 @@ export function SanityBlogCard({ post }: SanityBlogCardProps) {
         )}
 
         {post.excerpt && (
-          <Text className={classes.excerpt} lineClamp={3}>{post.excerpt}</Text>
+          <Text className={classes.excerpt} lineClamp={3}>
+            {post.excerpt}
+          </Text>
         )}
 
         <div className={classes.footer}>

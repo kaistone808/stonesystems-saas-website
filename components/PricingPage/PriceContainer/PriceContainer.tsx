@@ -50,9 +50,9 @@ export const PriceContainer = () => {
     marketing: createRef<HTMLDivElement>(),
     bcards: createRef<HTMLDivElement>(),
   };
-  
+
   const supremeRefs: RefObjectMap = {
-    advancedseo: createRef<HTMLDivElement>(), 
+    advancedseo: createRef<HTMLDivElement>(),
     onsite: createRef<HTMLDivElement>(),
     gmbopt: createRef<HTMLDivElement>(),
     reports: createRef<HTMLDivElement>(),
@@ -111,7 +111,9 @@ export const PriceContainer = () => {
                       <Title order={2} className={classes.moneyTitle}>
                         {monthly ? '$297/mo' : '$3597/yr'}
                       </Title>
-                      {!monthly && !isFading && <Text className={classes.discount}>+12 weeks FREE</Text>}
+                      {!monthly && !isFading && (
+                        <Text className={classes.discount}>+12 weeks FREE</Text>
+                      )}
                     </Flex>
                     <Stack w={'100%'} align="center" p={10}>
                       <Divider w={'100%'} opacity={0.6} />
@@ -222,9 +224,9 @@ export const PriceContainer = () => {
               <div className={classes.header}>
                 <Text className={classes.planTitle}>Contractor Advanced </Text>
               </div>
-               <div className={classes.header}>
+              <div className={classes.header}>
                 <Text className={classes.planTitle}>Other Services </Text>
-              </div> 
+              </div>
             </SimpleGrid>
           )}
           <SimpleGrid cols={mobile ? 1 : 2} className={classes.content}>
@@ -235,7 +237,9 @@ export const PriceContainer = () => {
             )}
             <Accordion variant="separated">
               <Accordion.Item value="website" ref={advancedRefs.website}>
-                <Accordion.Control bg={'var(--white)'}>Functional Website (10-20 pages)</Accordion.Control>
+                <Accordion.Control bg={'var(--white)'}>
+                  Functional Website (10-20 pages)
+                </Accordion.Control>
                 <Accordion.Panel>
                   <Text className={classes.contentTitle}>
                     No customer wants to go back and forth over email… Get a website that turns
@@ -351,15 +355,13 @@ export const PriceContainer = () => {
                   </List>
                 </Accordion.Panel>
               </Accordion.Item>
-
             </Accordion>
-           {mobile && (
+            {mobile && (
               <div className={classes.header}>
                 <Text className={classes.planTitle}>Other Services </Text>
               </div>
-            )} 
+            )}
             <Accordion variant="separated">
-
               <Accordion.Item value="gmbopt" ref={supremeRefs.gmbopt}>
                 <Accordion.Control bg={'var(--white)'}>
                   Google My Business Optimizations
@@ -376,10 +378,8 @@ export const PriceContainer = () => {
                 </Accordion.Panel>
               </Accordion.Item>
 
-                            <Accordion.Item value="advancedseo" ref={supremeRefs.advancedseo}>
-                <Accordion.Control bg={'var(--white)'}>
-                  Advanced SEO
-                </Accordion.Control>
+              <Accordion.Item value="advancedseo" ref={supremeRefs.advancedseo}>
+                <Accordion.Control bg={'var(--white)'}>Advanced SEO</Accordion.Control>
                 <Accordion.Panel>
                   <Text className={classes.contentTitle}>
                     The real deal when it comes from getting your website to the top of google.
@@ -408,7 +408,7 @@ export const PriceContainer = () => {
                   </List>
                 </Accordion.Panel>
               </Accordion.Item>
-            </Accordion> 
+            </Accordion>
           </SimpleGrid>
         </Container>
       </div>

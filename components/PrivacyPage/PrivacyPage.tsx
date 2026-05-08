@@ -28,14 +28,14 @@ export function PrivacyPage() {
             discloses your information when you respond to our advertisements, visit our websites -
             including <strong>stonesystems.io</strong>, <strong>grow.stonesystems.io</strong>, and{' '}
             <strong>app.stonesystems.io</strong> (collectively, the &quot;Sites&quot;) - contact us,
-            or use our products and services (the &quot;Services&quot;). It also tells you about your
-            privacy rights and how the law protects you. By using the Services, you agree to the
-            collection and use of information in accordance with this Privacy Policy.
+            or use our products and services (the &quot;Services&quot;). It also tells you about
+            your privacy rights and how the law protects you. By using the Services, you agree to
+            the collection and use of information in accordance with this Privacy Policy.
           </Text>
           <Text className={classes.text}>
             This Policy includes specific disclosures required by the laws of California, Colorado,
-            Connecticut, Oregon, Texas, Virginia, and other states with comprehensive consumer privacy
-            laws.
+            Connecticut, Oregon, Texas, Virginia, and other states with comprehensive consumer
+            privacy laws.
           </Text>
           <Text className={classes.text}>
             If you have questions, contact us at <strong>privacy@stonesystems.io</strong> or{' '}
@@ -51,7 +51,8 @@ export function PrivacyPage() {
               activity data.
             </li>
             <li className={classes.listItem}>
-              We use it to deliver our Services, market to prospective customers, and run our business.
+              We use it to deliver our Services, market to prospective customers, and run our
+              business.
             </li>
             <li className={classes.listItem}>
               We share it with service providers, advertising partners, and as required by law.
@@ -72,11 +73,11 @@ export function PrivacyPage() {
             2. Mobile Communication Policy
           </Title>
           <Text className={classes.text}>
-            We value your privacy and are committed to protecting your personal information. When you
-            provide your mobile number, you consent to receive SMS messages related to our services,
-            including notifications, account communications, and (if you opt in) marketing offers.
-            Your mobile opt-in <strong>will not</strong> be shared with third parties for marketing
-            purposes.
+            We value your privacy and are committed to protecting your personal information. When
+            you provide your mobile number, you consent to receive SMS messages related to our
+            services, including notifications, account communications, and (if you opt in) marketing
+            offers. Your mobile opt-in <strong>will not</strong> be shared with third parties for
+            marketing purposes.
           </Text>
           <ul className={classes.list}>
             <li className={classes.listItem}>
@@ -87,7 +88,8 @@ export function PrivacyPage() {
               <strong>Help:</strong> Reply <strong>HELP</strong> for support.
             </li>
             <li className={classes.listItem}>
-              <strong>Frequency:</strong> Message frequency varies based on your interactions with us.
+              <strong>Frequency:</strong> Message frequency varies based on your interactions with
+              us.
             </li>
             <li className={classes.listItem}>
               <strong>Cost:</strong> Standard message and data rates apply per your carrier&apos;s
@@ -140,14 +142,17 @@ export function PrivacyPage() {
                     <strong>Internet activity</strong>
                   </td>
                   <td>
-                    Pages visited, links clicked, time on Site, referring URL, device and browser data
+                    Pages visited, links clicked, time on Site, referring URL, device and browser
+                    data
                   </td>
                 </tr>
                 <tr>
                   <td>
                     <strong>Geolocation (approximate)</strong>
                   </td>
-                  <td>City and state derived from IP address - we do not collect precise geolocation</td>
+                  <td>
+                    City and state derived from IP address - we do not collect precise geolocation
+                  </td>
                 </tr>
                 <tr>
                   <td>
@@ -178,8 +183,8 @@ export function PrivacyPage() {
           </div>
           <Text className={classes.text}>
             We do <strong>not</strong> knowingly collect: precise geolocation, racial or ethnic
-            origin, religious beliefs, sexual orientation, immigration status, genetic data, biometric
-            data, health information, or information about children under 16.
+            origin, religious beliefs, sexual orientation, immigration status, genetic data,
+            biometric data, health information, or information about children under 16.
           </Text>
 
           <Title order={2} className={classes.secondaryTitle}>
@@ -187,12 +192,12 @@ export function PrivacyPage() {
           </Title>
           <ul className={classes.list}>
             <li className={classes.listItem}>
-              <strong>Directly from you</strong> - when you fill out a form, book a call, sign up, or
-              contact us.
+              <strong>Directly from you</strong> - when you fill out a form, book a call, sign up,
+              or contact us.
             </li>
             <li className={classes.listItem}>
-              <strong>From your device</strong> - through cookies, pixels, and similar technologies on
-              our Sites.
+              <strong>From your device</strong> - through cookies, pixels, and similar technologies
+              on our Sites.
             </li>
             <li className={classes.listItem}>
               <strong>From advertising partners</strong> - Meta, Google, and other ad platforms that
@@ -203,8 +208,8 @@ export function PrivacyPage() {
               processor (Stripe), and analytics providers.
             </li>
             <li className={classes.listItem}>
-              <strong>From publicly available sources</strong> - business directories, public records,
-              and similar.
+              <strong>From publicly available sources</strong> - business directories, public
+              records, and similar.
             </li>
           </ul>
 
@@ -216,24 +221,26 @@ export function PrivacyPage() {
           </Text>
           <ol className={classes.listOrdered}>
             <li className={classes.listItem}>
-              <strong>Provide and operate the Services</strong> - account creation, billing, customer
-              support, communications about your account.
+              <strong>Provide and operate the Services</strong> - account creation, billing,
+              customer support, communications about your account.
             </li>
             <li className={classes.listItem}>
               <strong>Sales and marketing</strong> - respond to inquiries, follow up on leads, send
-              promotional emails and SMS messages (where consented), retarget on advertising platforms.
+              promotional emails and SMS messages (where consented), retarget on advertising
+              platforms.
             </li>
             <li className={classes.listItem}>
               <strong>Analytics and improvement</strong> - understand how the Sites and Services are
               used, diagnose problems, develop new features.
             </li>
             <li className={classes.listItem}>
-              <strong>Advertising</strong> - measure ad performance, build lookalike audiences, retarget
-              visitors. This is &quot;sharing&quot; under California law - see <strong>Section 7</strong>.
+              <strong>Advertising</strong> - measure ad performance, build lookalike audiences,
+              retarget visitors. This is &quot;sharing&quot; under California law - see{' '}
+              <strong>Section 7</strong>.
             </li>
             <li className={classes.listItem}>
-              <strong>Quality assurance and training</strong> - review and use call recordings to train
-              our team and improve service.
+              <strong>Quality assurance and training</strong> - review and use call recordings to
+              train our team and improve service.
             </li>
             <li className={classes.listItem}>
               <strong>Security and fraud prevention</strong> - detect, investigate, and prevent
@@ -249,8 +256,8 @@ export function PrivacyPage() {
             </li>
           </ol>
           <Text className={classes.text}>
-            We will not use your sensitive personal information for purposes other than those permitted
-            by California law without first offering you a right to limit such use.
+            We will not use your sensitive personal information for purposes other than those
+            permitted by California law without first offering you a right to limit such use.
           </Text>
 
           <Title order={2} className={classes.secondaryTitle}>
@@ -279,13 +286,11 @@ export function PrivacyPage() {
                 </tr>
                 <tr>
                   <td>
-                    <strong>
-                      Advertising partners (e.g., Meta, Google, TikTok, LinkedIn)
-                    </strong>
+                    <strong>Advertising partners (e.g., Meta, Google, TikTok, LinkedIn)</strong>
                   </td>
                   <td>
-                    To deliver and measure advertising - this is &quot;sharing&quot; under California
-                    law
+                    To deliver and measure advertising - this is &quot;sharing&quot; under
+                    California law
                   </td>
                 </tr>
                 <tr>
@@ -310,8 +315,8 @@ export function PrivacyPage() {
             </table>
           </div>
           <Text className={classes.text}>
-            We require service providers to use personal information only for the purposes we authorize
-            and under contractual obligations of confidentiality and security.
+            We require service providers to use personal information only for the purposes we
+            authorize and under contractual obligations of confidentiality and security.
           </Text>
 
           <Title order={2} className={classes.secondaryTitle}>
@@ -333,11 +338,13 @@ export function PrivacyPage() {
             </li>
             <li className={classes.listItem}>Inferences</li>
           </ul>
-          <Text className={classes.text}>You have the right to opt out of this sharing at any time.</Text>
+          <Text className={classes.text}>
+            You have the right to opt out of this sharing at any time.
+          </Text>
           <ol className={classes.listOrdered}>
             <li className={classes.listItem}>
-              Use the <strong>Do Not Sell or Share My Personal Information</strong> link in our website
-              footer (or visit <strong>stonesystems.io/do-not-sell</strong>).
+              Use the <strong>Do Not Sell or Share My Personal Information</strong> link in our
+              website footer (or visit <strong>stonesystems.io/do-not-sell</strong>).
             </li>
             <li className={classes.listItem}>
               Email <strong>privacy@stonesystems.io</strong> with subject line &quot;Opt Out of
@@ -350,7 +357,8 @@ export function PrivacyPage() {
             </li>
           </ol>
           <Text className={classes.text}>
-            We do not knowingly sell or share personal information of consumers under 16 years of age.
+            We do not knowingly sell or share personal information of consumers under 16 years of
+            age.
           </Text>
 
           <Title order={2} className={classes.secondaryTitle}>
@@ -376,15 +384,15 @@ export function PrivacyPage() {
           </Text>
           <ul className={classes.list}>
             <li className={classes.listItem}>
-              <strong>Cookie preference center:</strong> click the &quot;Cookie Settings&quot; link in
-              our footer to accept, reject, or customize cookies.
+              <strong>Cookie preference center:</strong> click the &quot;Cookie Settings&quot; link
+              in our footer to accept, reject, or customize cookies.
             </li>
             <li className={classes.listItem}>
               <strong>Browser settings:</strong> most browsers let you block or delete cookies.
             </li>
             <li className={classes.listItem}>
-              <strong>Global Privacy Control:</strong> enabling GPC in your browser tells us to opt you
-              out of sharing for advertising - we honor this automatically.
+              <strong>Global Privacy Control:</strong> enabling GPC in your browser tells us to opt
+              you out of sharing for advertising - we honor this automatically.
             </li>
             <li className={classes.listItem}>
               <strong>Industry opt-outs:</strong>{' '}
@@ -398,7 +406,9 @@ export function PrivacyPage() {
               .
             </li>
           </ul>
-          <Text className={classes.text}>We do not use session replay technology on our Sites.</Text>
+          <Text className={classes.text}>
+            We do not use session replay technology on our Sites.
+          </Text>
 
           <Title order={2} className={classes.secondaryTitle}>
             9. Call Recording
@@ -406,9 +416,12 @@ export function PrivacyPage() {
           <Text className={classes.text}>
             We record sales, onboarding, and support calls for quality assurance, training,
             recordkeeping, and dispute resolution. At the start of each call, we provide a verbal
-            notice that the call is being recorded. <strong>By continuing the call after this notice,
-            you consent to being recorded.</strong> If you do not wish to be recorded, please tell us
-            at the start of the call and we will end or pause the recording.
+            notice that the call is being recorded.{' '}
+            <strong>
+              By continuing the call after this notice, you consent to being recorded.
+            </strong>{' '}
+            If you do not wish to be recorded, please tell us at the start of the call and we will
+            end or pause the recording.
           </Text>
           <Text className={classes.text}>
             Recordings are stored securely, accessible only to authorized personnel and our service
@@ -419,9 +432,9 @@ export function PrivacyPage() {
             10. Data Retention
           </Title>
           <Text className={classes.text}>
-            We retain personal information for as long as is necessary to provide the Services, fulfill
-            the purposes described in this Policy, comply with our legal and accounting obligations,
-            resolve disputes, and enforce our agreements.
+            We retain personal information for as long as is necessary to provide the Services,
+            fulfill the purposes described in this Policy, comply with our legal and accounting
+            obligations, resolve disputes, and enforce our agreements.
           </Text>
           <Text className={classes.text}>Specifically:</Text>
           <div className={classes.tableWrap}>
@@ -436,9 +449,9 @@ export function PrivacyPage() {
                 <tr>
                   <td>Customer account records</td>
                   <td>
-                    While the account is active, and indefinitely thereafter unless you request deletion
-                    or we determine the data is no longer needed for legal, accounting, or legitimate
-                    business purposes
+                    While the account is active, and indefinitely thereafter unless you request
+                    deletion or we determine the data is no longer needed for legal, accounting, or
+                    legitimate business purposes
                   </td>
                 </tr>
                 <tr>
@@ -520,7 +533,9 @@ export function PrivacyPage() {
                   <td>
                     <strong>Right to opt out of sale/sharing</strong>
                   </td>
-                  <td>Stop us from sharing your information for cross-context behavioral advertising</td>
+                  <td>
+                    Stop us from sharing your information for cross-context behavioral advertising
+                  </td>
                 </tr>
                 <tr>
                   <td>
@@ -533,8 +548,8 @@ export function PrivacyPage() {
                     <strong>Right to non-discrimination</strong>
                   </td>
                   <td>
-                    We will not deny services, charge different prices, or provide a different quality
-                    of service for exercising your rights
+                    We will not deny services, charge different prices, or provide a different
+                    quality of service for exercising your rights
                   </td>
                 </tr>
                 <tr>
@@ -553,7 +568,9 @@ export function PrivacyPage() {
           <Title order={2} className={classes.secondaryTitle}>
             12. How to Exercise Your Rights
           </Title>
-          <Text className={classes.text}>You can submit a request in any of the following ways:</Text>
+          <Text className={classes.text}>
+            You can submit a request in any of the following ways:
+          </Text>
           <ol className={classes.listOrdered}>
             <li className={classes.listItem}>
               <strong>Web form:</strong>{' '}
@@ -574,8 +591,8 @@ export function PrivacyPage() {
               Acknowledge your request within <strong>10 business days</strong>.
             </li>
             <li className={classes.listItem}>
-              Respond within <strong>45 days</strong>. If we need more time, we will notify you and may
-              extend by an additional 45 days.
+              Respond within <strong>45 days</strong>. If we need more time, we will notify you and
+              may extend by an additional 45 days.
             </li>
             <li className={classes.listItem}>
               Provide the first request in any 12-month period at <strong>no charge</strong>.
@@ -583,14 +600,14 @@ export function PrivacyPage() {
           </ul>
           <Text className={classes.text}>
             <strong>Verification.</strong> To protect your information, we will ask you to confirm
-            details we already have on file (such as your email address and the last interaction we had
-            with you). We may ask for additional verification if the request involves sensitive
+            details we already have on file (such as your email address and the last interaction we
+            had with you). We may ask for additional verification if the request involves sensitive
             information.
           </Text>
           <Text className={classes.text}>
-            <strong>Authorized agents.</strong> You may designate an authorized agent to make a request
-            on your behalf. We will require written, signed authorization, and we will verify the
-            identity of the consumer.
+            <strong>Authorized agents.</strong> You may designate an authorized agent to make a
+            request on your behalf. We will require written, signed authorization, and we will
+            verify the identity of the consumer.
           </Text>
           <Text className={classes.text}>
             <strong>Appeals.</strong> If we deny your request and you reside in Virginia, Colorado,
@@ -613,19 +630,19 @@ export function PrivacyPage() {
               <strong>Section 3</strong>.
             </li>
             <li className={classes.listItem}>
-              <strong>Disclosed for a business purpose</strong> to service providers and professional
-              advisors.
+              <strong>Disclosed for a business purpose</strong> to service providers and
+              professional advisors.
             </li>
             <li className={classes.listItem}>
-              <strong>Shared</strong> for cross-context behavioral advertising with advertising partners
-              (see <strong>Section 7</strong>).
+              <strong>Shared</strong> for cross-context behavioral advertising with advertising
+              partners (see <strong>Section 7</strong>).
             </li>
             <li className={classes.listItem}>
               <strong>Not sold</strong> personal information for monetary consideration.
             </li>
             <li className={classes.listItem}>
-              <strong>Not knowingly collected or sold</strong> personal information of consumers under
-              16.
+              <strong>Not knowingly collected or sold</strong> personal information of consumers
+              under 16.
             </li>
           </ul>
           <Text className={classes.text}>
@@ -643,8 +660,9 @@ export function PrivacyPage() {
           </Title>
           <Text className={classes.text}>
             Residents of Colorado, Connecticut, and Oregon have the rights described in{' '}
-            <strong>Section 11</strong>, including the right to opt out of targeted advertising, sale,
-            and certain profiling. We honor Global Privacy Control as a universal opt-out signal.
+            <strong>Section 11</strong>, including the right to opt out of targeted advertising,
+            sale, and certain profiling. We honor Global Privacy Control as a universal opt-out
+            signal.
           </Text>
 
           <Title order={3} className={classes.tercaryTitle}>
@@ -660,28 +678,31 @@ export function PrivacyPage() {
           </Title>
           <Text className={classes.text}>
             Texas residents have the rights described in <strong>Section 11</strong>. As required by
-            Texas law: <strong>We do NOT sell sensitive personal data. We do NOT collect or sell
-            biometric personal data.</strong>
+            Texas law:{' '}
+            <strong>
+              We do NOT sell sensitive personal data. We do NOT collect or sell biometric personal
+              data.
+            </strong>
           </Text>
 
           <Title order={3} className={classes.tercaryTitle}>
             13.5 Other States
           </Title>
           <Text className={classes.text}>
-            Residents of other states with comprehensive privacy laws (including Utah, Iowa, Montana,
-            Tennessee, Indiana, Florida, Delaware, New Jersey, New Hampshire, Kentucky, Maryland,
-            Minnesota, and Rhode Island) have the rights granted by the laws of their state. Contact us
-            as described in <strong>Section 12</strong> to exercise them.
+            Residents of other states with comprehensive privacy laws (including Utah, Iowa,
+            Montana, Tennessee, Indiana, Florida, Delaware, New Jersey, New Hampshire, Kentucky,
+            Maryland, Minnesota, and Rhode Island) have the rights granted by the laws of their
+            state. Contact us as described in <strong>Section 12</strong> to exercise them.
           </Text>
 
           <Title order={2} className={classes.secondaryTitle}>
             14. Children&apos;s Privacy
           </Title>
           <Text className={classes.text}>
-            The Sites and Services are not directed to children under 16. We do not knowingly collect
-            personal information from children under 16. If you believe we have collected information
-            from a child under 16, contact <strong>privacy@stonesystems.io</strong> and we will delete
-            it.
+            The Sites and Services are not directed to children under 16. We do not knowingly
+            collect personal information from children under 16. If you believe we have collected
+            information from a child under 16, contact <strong>privacy@stonesystems.io</strong> and
+            we will delete it.
           </Text>
 
           <Title order={2} className={classes.secondaryTitle}>
@@ -700,9 +721,9 @@ export function PrivacyPage() {
             16. International Users
           </Title>
           <Text className={classes.text}>
-            The Sites are operated from the United States. If you access them from outside the United
-            States, your information will be transferred to and processed in the United States. By
-            using the Sites, you consent to that transfer.
+            The Sites are operated from the United States. If you access them from outside the
+            United States, your information will be transferred to and processed in the United
+            States. By using the Sites, you consent to that transfer.
           </Text>
 
           <Title order={2} className={classes.secondaryTitle}>
@@ -717,10 +738,10 @@ export function PrivacyPage() {
             18. Changes to This Privacy Policy
           </Title>
           <Text className={classes.text}>
-            We may update this Privacy Policy from time to time. The &quot;Last Updated&quot; date at
-            the top reflects the most recent change. If we make material changes, we will notify you by
-            posting a notice on the Sites or by email. We will update this Privacy Policy at least once
-            every 12 months.
+            We may update this Privacy Policy from time to time. The &quot;Last Updated&quot; date
+            at the top reflects the most recent change. If we make material changes, we will notify
+            you by posting a notice on the Sites or by email. We will update this Privacy Policy at
+            least once every 12 months.
           </Text>
 
           <Title order={2} className={classes.secondaryTitle}>
@@ -736,8 +757,8 @@ export function PrivacyPage() {
             Web: stonesystems.io/privacy-request
           </Text>
           <Text className={classes.text}>
-            For privacy-specific questions, please use <strong>privacy@stonesystems.io</strong> rather
-            than general support channels.
+            For privacy-specific questions, please use <strong>privacy@stonesystems.io</strong>{' '}
+            rather than general support channels.
           </Text>
         </div>
       </Container>

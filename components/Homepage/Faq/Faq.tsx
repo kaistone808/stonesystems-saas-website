@@ -53,8 +53,8 @@ export function Faq() {
                 <br />
                 <br />
                 7. Do you believe having these systems in place is important to grow your business?
-                <br /> <br /> If you believe any of those things can grow your business,
-                that's exactly what we can help you with.
+                <br /> <br /> If you believe any of those things can grow your business, that's
+                exactly what we can help you with.
               </strong>
             </Accordion.Panel>
           </Accordion.Item>
@@ -75,7 +75,7 @@ export function Faq() {
             </Accordion.Control>
             <Accordion.Panel className={classes.itemDescription}>
               We'll be extremely sad to see you go, but after a good cry we'll bounce back. However,
-              you will lose access to all the features we set up for you. 
+              you will lose access to all the features we set up for you.
             </Accordion.Panel>
           </Accordion.Item>
 

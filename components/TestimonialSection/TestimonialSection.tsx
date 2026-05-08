@@ -18,7 +18,15 @@ interface CardProps {
   onFullscreenChange?: (isFullscreen: boolean) => void;
 }
 
-function Card({ personName, testimonial, videoSrc, videoThumbnail, onPause, onPlay, onFullscreenChange }: CardProps) {
+function Card({
+  personName,
+  testimonial,
+  videoSrc,
+  videoThumbnail,
+  onPause,
+  onPlay,
+  onFullscreenChange,
+}: CardProps) {
   return (
     <Paper radius="md" className={classes.testimonialCard}>
       <LazyLoadVideo
@@ -55,22 +63,19 @@ function Card({ personName, testimonial, videoSrc, videoThumbnail, onPause, onPl
 
 const data = [
   {
-    testimonial:
-      `"Highly recommended, they are here to help us contractors that don't like to deal with the website stuff. It feels like you have partner looking out for you that's actually helping you succeed."`,
+    testimonial: `"Highly recommended, they are here to help us contractors that don't like to deal with the website stuff. It feels like you have partner looking out for you that's actually helping you succeed."`,
     videoSrc: '/videos/Adam1.mp4#t=0.1',
     videoThumbnail: '/images/thumbnails/Adam1.png',
     personName: '-Adam',
   },
   {
-    testimonial:
-      `"I've been working with stonesystems for the last few months and it's been absolutely amazing. If you're out there and you need someone that's gonna be there for you... we love working with stonesystems"`,
+    testimonial: `"I've been working with stonesystems for the last few months and it's been absolutely amazing. If you're out there and you need someone that's gonna be there for you... we love working with stonesystems"`,
     videoSrc: '/videos/Dale.mp4#t=0.1',
     videoThumbnail: '/images/thumbnails/Dale.png',
     personName: '-Dale',
   },
   {
-    testimonial:
-      `"Shoutout to Kai and Remy for an amazing job that they did doing my website. I've been a pain in the butt every now and then but they did it right. Check them out, you won't be dissapointed."`,
+    testimonial: `"Shoutout to Kai and Remy for an amazing job that they did doing my website. I've been a pain in the butt every now and then but they did it right. Check them out, you won't be dissapointed."`,
     videoSrc: '/videos/George.mp4#t=0.1',
     videoThumbnail: '/images/thumbnails/George.png',
     personName: '-George',

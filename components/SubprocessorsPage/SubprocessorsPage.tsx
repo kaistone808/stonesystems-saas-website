@@ -17,8 +17,8 @@ export function SubprocessorsPage() {
           </Text>
 
           <Text className={classes.text}>
-            We will provide at least 30 days&apos; advance notice of new sub-processors. Subscribe to
-            updates by emailing <strong>privacy@stonesystems.io</strong> with subject{' '}
+            We will provide at least 30 days&apos; advance notice of new sub-processors. Subscribe
+            to updates by emailing <strong>privacy@stonesystems.io</strong> with subject{' '}
             <strong>Subprocessor Updates</strong>.
           </Text>
 

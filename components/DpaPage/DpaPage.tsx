@@ -21,8 +21,8 @@ export function DpaPage() {
 
           <Text className={classes.text}>
             This Data Processing Addendum (&quot;<strong>DPA</strong>&quot;) forms part of the
-            agreement between <strong>Stonesystems LLC</strong> (&quot;<strong>Processor</strong>,&quot;
-            &quot;<strong>we</strong>,&quot; &quot;<strong>us</strong>,&quot; or &quot;
+            agreement between <strong>Stonesystems LLC</strong> (&quot;<strong>Processor</strong>
+            ,&quot; &quot;<strong>we</strong>,&quot; &quot;<strong>us</strong>,&quot; or &quot;
             <strong>our</strong>&quot;) and the business entity using our Services (&quot;
             <strong>Controller</strong>,&quot; &quot;<strong>you</strong>,&quot; or &quot;
             <strong>your</strong>&quot;) and applies where we process personal information on your
@@ -43,8 +43,8 @@ export function DpaPage() {
             </li>
             <li className={classes.listItem}>
               <strong>Personal Information</strong> has the meaning given in Applicable Privacy Laws
-              and includes any information that identifies, relates to, describes, or could reasonably
-              be linked with a consumer or household.
+              and includes any information that identifies, relates to, describes, or could
+              reasonably be linked with a consumer or household.
             </li>
             <li className={classes.listItem}>
               <strong>Process / Processing</strong> means any operation performed on Personal
@@ -53,7 +53,8 @@ export function DpaPage() {
             </li>
             <li className={classes.listItem}>
               <strong>Services</strong> means the products and services we provide to you under our
-              agreement, including the Platform, websites, communications tools, and related support.
+              agreement, including the Platform, websites, communications tools, and related
+              support.
             </li>
           </ul>
 
@@ -73,8 +74,8 @@ export function DpaPage() {
           </Title>
           <ol className={classes.listOrdered}>
             <li className={classes.listItem}>
-              We will Process Personal Information only to provide the Services, comply with law,
-              or as otherwise agreed in writing.
+              We will Process Personal Information only to provide the Services, comply with law, or
+              as otherwise agreed in writing.
             </li>
             <li className={classes.listItem}>
               We will not sell Personal Information or retain, use, or disclose Personal Information
@@ -93,8 +94,8 @@ export function DpaPage() {
           </Title>
           <Text className={classes.text}>
             We ensure that persons authorized to Process Personal Information are subject to
-            appropriate confidentiality obligations (contractual or statutory). We provide training on
-            data protection appropriate to their role.
+            appropriate confidentiality obligations (contractual or statutory). We provide training
+            on data protection appropriate to their role.
           </Text>
 
           <Title order={2} className={classes.secondaryTitle}>
@@ -141,10 +142,10 @@ export function DpaPage() {
           </Title>
           <Text className={classes.text}>
             We will provide you at least <strong>30 days&apos; advance notice</strong> of a new
-            sub-processor or a material change to a sub-processor arrangement, unless we cannot do so
-            due to legal or security reasons (in which case we will notify you as soon as reasonably
-            practicable). If you object on reasonable data-protection grounds, we will work with you
-            in good faith to resolve the objection.
+            sub-processor or a material change to a sub-processor arrangement, unless we cannot do
+            so due to legal or security reasons (in which case we will notify you as soon as
+            reasonably practicable). If you object on reasonable data-protection grounds, we will
+            work with you in good faith to resolve the objection.
           </Text>
 
           <Title order={2} className={classes.secondaryTitle}>
@@ -153,8 +154,9 @@ export function DpaPage() {
           <Text className={classes.text}>
             We implement and maintain appropriate technical and organizational measures designed to
             protect Personal Information against unauthorized access, loss, or alteration, taking
-            into account the nature of processing and the risks involved. Measures may include access
-            controls, encryption in transit, logging, vendor reviews, and incident response procedures.
+            into account the nature of processing and the risks involved. Measures may include
+            access controls, encryption in transit, logging, vendor reviews, and incident response
+            procedures.
           </Text>
 
           <Title order={2} className={classes.secondaryTitle}>
@@ -184,10 +186,10 @@ export function DpaPage() {
           </Title>
           <Text className={classes.text}>
             Upon reasonable written request, we will make available information reasonably necessary
-            to demonstrate compliance with this DPA, including summaries of our security practices or
-            completed questionnaires. Where an on-site audit is required by Applicable Privacy Laws,
-            such audit will be conducted during business hours, with reasonable advance notice, and
-            subject to confidentiality and security controls.
+            to demonstrate compliance with this DPA, including summaries of our security practices
+            or completed questionnaires. Where an on-site audit is required by Applicable Privacy
+            Laws, such audit will be conducted during business hours, with reasonable advance
+            notice, and subject to confidentiality and security controls.
           </Text>
 
           <Title order={2} className={classes.secondaryTitle}>
@@ -195,16 +197,17 @@ export function DpaPage() {
           </Title>
           <Text className={classes.text}>
             Personal Information may be processed in the United States. If we transfer Personal
-            Information across borders where required by law, we will implement appropriate safeguards
-            described in our agreement or as otherwise required by Applicable Privacy Laws.
+            Information across borders where required by law, we will implement appropriate
+            safeguards described in our agreement or as otherwise required by Applicable Privacy
+            Laws.
           </Text>
 
           <Title order={2} className={classes.secondaryTitle}>
             11. Liability
           </Title>
           <Text className={classes.text}>
-            Liability arising from our Processing of Personal Information under this DPA is subject to
-            the limitations and exclusions in your agreement with us, except where prohibited by
+            Liability arising from our Processing of Personal Information under this DPA is subject
+            to the limitations and exclusions in your agreement with us, except where prohibited by
             Applicable Privacy Laws.
           </Text>
 

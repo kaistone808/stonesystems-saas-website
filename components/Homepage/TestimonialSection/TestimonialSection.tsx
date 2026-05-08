@@ -18,7 +18,15 @@ interface CardProps {
   onFullscreenChange?: (isFullscreen: boolean) => void;
 }
 
-function Card({ personName, testimonial, videoSrc, videoThumbnail, onPause, onPlay, onFullscreenChange }: CardProps) {
+function Card({
+  personName,
+  testimonial,
+  videoSrc,
+  videoThumbnail,
+  onPause,
+  onPlay,
+  onFullscreenChange,
+}: CardProps) {
   return (
     <Paper radius="md" className={classes.testimonialCard}>
       <LazyLoadVideo

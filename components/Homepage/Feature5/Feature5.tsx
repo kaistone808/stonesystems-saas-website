@@ -61,14 +61,14 @@ export function Feature5() {
             <Flex mt="lg" direction="column">
               {items}
             </Flex>
-            <Button  onClick={open}  size="xl" bg="var(--yellow)" className={classes.control}>
-            See Short Demo
+            <Button onClick={open} size="xl" bg="var(--yellow)" className={classes.control}>
+              See Short Demo
             </Button>
             <Modal
               closeButtonProps={{
                 size: 'xl',
               }}
-              title={mobile ? "Local SEO" : ''}
+              title={mobile ? 'Local SEO' : ''}
               opened={opened}
               onClose={close}
               size="xl"

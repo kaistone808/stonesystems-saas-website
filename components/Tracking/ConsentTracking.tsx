@@ -33,6 +33,15 @@ let metaPixelLoaded = false;
 let tiktokLoaded = false;
 let posthogConfigured = false;
 
+function createFacebookPixelStub(): (...args: unknown[]) => void {
+  const queue: unknown[] = [];
+  function fbqShim(...args: unknown[]) {
+    queue.push(args);
+  }
+  (fbqShim as unknown as { queue: unknown[] }).queue = queue;
+  return fbqShim as unknown as (...args: unknown[]) => void;
+}
+
 function loadScriptOnce(id: string, src: string, onLoad?: () => void) {
   if (document.getElementById(id)) {
     if (onLoad) onLoad();
@@ -51,16 +60,20 @@ function loadScriptOnce(id: string, src: string, onLoad?: () => void) {
 function initGoogleAds() {
   if (googleAdsLoaded) return;
   googleAdsLoaded = true;
-  loadScriptOnce('stone-google-ads', `https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ADS_ID}`, () => {
-    window.dataLayer = window.dataLayer || [];
-    window.gtag =
-      window.gtag ||
-      function gtag() {
-        window.dataLayer?.push(arguments);
-      };
-    window.gtag('js', new Date());
-    window.gtag('config', GOOGLE_ADS_ID);
-  });
+  loadScriptOnce(
+    'stone-google-ads',
+    `https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ADS_ID}`,
+    () => {
+      window.dataLayer = window.dataLayer || [];
+      window.gtag =
+        window.gtag ||
+        function gtag(...args: unknown[]) {
+          window.dataLayer?.push(args);
+        };
+      window.gtag('js', new Date());
+      window.gtag('config', GOOGLE_ADS_ID);
+    }
+  );
 }
 
 function initUniversalScript() {
@@ -75,11 +88,7 @@ function initMetaPixel() {
   if (!metaPixelId || metaPixelLoaded) return;
   metaPixelLoaded = true;
   if (!window.fbq) {
-    const fbqShim = function (...args: unknown[]) {
-      (fbqShim as unknown as { queue: unknown[] }).queue.push(args);
-    };
-    (fbqShim as unknown as { queue: unknown[] }).queue = [];
-    window.fbq = fbqShim as unknown as (...args: unknown[]) => void;
+    window.fbq = createFacebookPixelStub();
   }
   loadScriptOnce('stone-meta-pixel', 'https://connect.facebook.net/en_US/fbevents.js', () => {
     window.fbq?.('init', metaPixelId);

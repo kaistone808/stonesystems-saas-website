@@ -1,11 +1,11 @@
-import { Metadata } from "next";
-import { notFound } from "next/navigation";
-import { Container, Title, Group, Badge, Text } from "@mantine/core";
-import Image from "next/image";
-import { PortableText } from "@portabletext/react";
-import { IconUser, IconCalendar, IconTarget } from "@tabler/icons-react";
-import { client, SINGLE_POST_QUERY, ALL_SLUGS_QUERY, urlFor, SanityBlogPost } from "@/lib/sanity";
-import classes from "./post.module.css";
+import { Metadata } from 'next';
+import { notFound } from 'next/navigation';
+import { Container, Title, Group, Badge, Text } from '@mantine/core';
+import Image from 'next/image';
+import { PortableText } from '@portabletext/react';
+import { IconUser, IconCalendar, IconTarget } from '@tabler/icons-react';
+import { client, SINGLE_POST_QUERY, ALL_SLUGS_QUERY, urlFor, SanityBlogPost } from '@/lib/sanity';
+import classes from './post.module.css';
 
 export const revalidate = 60;
 
@@ -15,9 +15,11 @@ interface PageProps {
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const post: SanityBlogPost = await client.fetch(SINGLE_POST_QUERY, { slug: params.slug });
-  if (!post) return { title: "Post Not Found | Stone Systems" };
+  if (!post) return { title: 'Post Not Found | Stone Systems' };
 
-  const imageUrl = post.featuredImage ? urlFor(post.featuredImage).width(1200).height(630).url() : undefined;
+  const imageUrl = post.featuredImage
+    ? urlFor(post.featuredImage).width(1200).height(630).url()
+    : undefined;
 
   return {
     title: post.metaTitle || `${post.title} | Stone Systems Blog`,
@@ -26,11 +28,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       title: post.metaTitle || post.title,
       description: post.metaDescription || post.excerpt,
       url: `https://stonesystems.io/blog/${params.slug}`,
-      siteName: "Stone Systems",
-      type: "article",
+      siteName: 'Stone Systems',
+      type: 'article',
       publishedTime: post.publishDate,
       authors: post.author ? [post.author] : undefined,
-      images: imageUrl ? [{ url: imageUrl, width: 1200, height: 630, alt: post.alternativeText || post.title }] : undefined,
+      images: imageUrl
+        ? [{ url: imageUrl, width: 1200, height: 630, alt: post.alternativeText || post.title }]
+        : undefined,
     },
     alternates: {
       canonical: `https://stonesystems.io/blog/${params.slug}`,
@@ -44,8 +48,12 @@ export async function generateStaticParams() {
 }
 
 function formatDate(dateStr?: string): string {
-  if (!dateStr) return "";
-  return new Date(dateStr).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
+  if (!dateStr) return '';
+  return new Date(dateStr).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  });
 }
 
 const portableTextComponents = {
@@ -54,7 +62,13 @@ const portableTextComponents = {
       const url = urlFor(value).width(900).url();
       return (
         <div className={classes.contentImage}>
-          <Image src={url} alt={value.alt || ""} width={900} height={500} style={{ objectFit: "cover", borderRadius: 8 }} />
+          <Image
+            src={url}
+            alt={value.alt || ''}
+            width={900}
+            height={500}
+            style={{ objectFit: 'cover', borderRadius: 8 }}
+          />
         </div>
       );
     },
@@ -72,28 +86,33 @@ export default async function BlogPostPage({ params }: PageProps) {
   const post: SanityBlogPost = await client.fetch(SINGLE_POST_QUERY, { slug: params.slug });
   if (!post) notFound();
 
-  const imageUrl = post.featuredImage ? urlFor(post.featuredImage).width(1200).height(600).url() : null;
+  const imageUrl = post.featuredImage
+    ? urlFor(post.featuredImage).width(1200).height(600).url()
+    : null;
 
   const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
     headline: post.title,
     description: post.metaDescription || post.excerpt,
-    author: { "@type": "Person", name: post.author || "Stone Systems" },
+    author: { '@type': 'Person', name: post.author || 'Stone Systems' },
     datePublished: post.publishDate,
     image: imageUrl || undefined,
     url: `https://stonesystems.io/blog/${params.slug}`,
     publisher: {
-      "@type": "Organization",
-      name: "Stone Systems",
-      logo: { "@type": "ImageObject", url: "https://stonesystems.io/images/newlogo.png" },
+      '@type': 'Organization',
+      name: 'Stone Systems',
+      logo: { '@type': 'ImageObject', url: 'https://stonesystems.io/images/newlogo.png' },
     },
     keywords: post.targetKeyword,
   };
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
 
       <div className={classes.outer}>
         {/* Hero image */}
@@ -114,7 +133,9 @@ export default async function BlogPostPage({ params }: PageProps) {
           {/* Meta bar */}
           <div className={classes.metaBar}>
             {post.searchIntent && (
-              <Badge className={classes.badge} variant="filled">{post.searchIntent}</Badge>
+              <Badge className={classes.badge} variant="filled">
+                {post.searchIntent}
+              </Badge>
             )}
             {post.publishDate && (
               <Group gap={5}>
@@ -137,12 +158,12 @@ export default async function BlogPostPage({ params }: PageProps) {
           </div>
 
           {/* Title */}
-          <Title order={1} className={classes.title}>{post.title}</Title>
+          <Title order={1} className={classes.title}>
+            {post.title}
+          </Title>
 
           {/* Excerpt */}
-          {post.excerpt && (
-            <Text className={classes.excerpt}>{post.excerpt}</Text>
-          )}
+          {post.excerpt && <Text className={classes.excerpt}>{post.excerpt}</Text>}
 
           {/* Content */}
           {post.content && (
@@ -153,7 +174,9 @@ export default async function BlogPostPage({ params }: PageProps) {
 
           {/* Back link */}
           <div className={classes.backWrapper}>
-            <a href="/blog" className={classes.backLink}>← Back to Blog</a>
+            <a href="/blog" className={classes.backLink}>
+              ← Back to Blog
+            </a>
           </div>
         </Container>
       </div>

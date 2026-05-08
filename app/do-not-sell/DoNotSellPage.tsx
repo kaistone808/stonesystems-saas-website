@@ -159,7 +159,11 @@ export function DoNotSellPage() {
         }),
       });
 
-      const data = (await response.json()) as { success?: boolean; referenceId?: string; error?: string };
+      const data = (await response.json()) as {
+        success?: boolean;
+        referenceId?: string;
+        error?: string;
+      };
       if (!response.ok || !data.success) {
         setFormError(data.error || 'Unable to submit request right now. Please try again.');
         return;
