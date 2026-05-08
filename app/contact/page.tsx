@@ -9,5 +9,5 @@ export const metadata: Metadata = {
 };
 
 export default function ContactUsPage() {
-  redirect(BOOKING_URL);
+  redirect(bookingUrl('contact-redirect'));
 }
