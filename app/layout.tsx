@@ -9,6 +9,7 @@ import '@mantine/carousel/styles.css';
 import '../globals.css';
 import { LayoutWrapper } from '@/components/LayoutWrapper/LayoutWrapper';
 import Script from 'next/script';
+import { ConsentTracking } from '@/components/Tracking/ConsentTracking';
 
 const APP_NAME = 'Stone Systems';
 const APP_DEFAULT_TITLE = 'Stone Systems - Website Design & Marketing Systems For Contractors!';
@@ -56,10 +57,6 @@ const sora = Sora({
   variable: '--sora',
 });
 
-const src =
-  'https://t.stonesystems.io/v1/lst/universal-script?ph=d1ff03e6e535f28b0c70ca61588c134793a4ebf07f29a5b37494572df508bc86&tag=!clicked&ref_url=' +
-  encodeURIComponent(typeof window !== 'undefined' ? window.location.href : '');
-
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={sora.variable}>
@@ -68,25 +65,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
       </head>
       <body>
-        {/* Google Ads Global Site Tag */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=AW-16633753107"
-          strategy="afterInteractive"
-        />
-        <Script src={src} strategy="afterInteractive" />
-        <Script id="gtag-init" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'AW-16633753107');
-          `}
-        </Script>
+        <Script src="/cookie-consent.js" strategy="beforeInteractive" />
         <Script
           async
           src="https://app.usecortana.ai/api/widgets/cmhapx2wt000hjy04gs3ipqjf.js"
         ></Script>
         <MantineProvider theme={theme}>
+          <ConsentTracking />
           <LayoutWrapper>{children}</LayoutWrapper>
         </MantineProvider>
       </body>

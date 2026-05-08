@@ -38,3 +38,47 @@
   font-size: 25px;
   margin-bottom: 1rem;
 }
+
+.list {
+  margin-bottom: 1rem;
+  padding-left: 1.35rem;
+  list-style: disc;
+}
+
+.listOrdered {
+  margin-bottom: 1rem;
+  padding-left: 1.35rem;
+  list-style: decimal;
+}
+
+.listItem {
+  margin-bottom: 0.35rem;
+}
+
+.tableWrap {
+  overflow-x: auto;
+  margin-bottom: 1rem;
+}
+
+.dataTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.dataTable th,
+.dataTable td {
+  border: 1px solid var(--border-color);
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.dataTable thead th {
+  background-color: var(--gray);
+  font-weight: 700;
+}
+
+.dataTable tbody tr:nth-of-type(odd) {
+  background-color: rgba(31, 34, 54, 0.04);
+}
