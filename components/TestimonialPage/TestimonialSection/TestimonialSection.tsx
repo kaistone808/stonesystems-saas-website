@@ -229,12 +229,84 @@ const data = [
     videoThumbnail: '/images/thumbnails/Jeslin.jpg',
     personName: '-Jeslin',
   },
+  {
+    testimonial: `"I just wanted to give a shout out to Stone Systems for developing my website. I'm very impressed and will definitely be using their marketing in the future."`,
+    videoSrc: '/videos/Troy.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/Troy.jpg',
+    personName: '-Troy',
+  },
+  {
+    testimonial: `"Since working with Stone Systems, we've actually picked up our lead generation. Our clients find it easy to use — they tell me you've made it really easy to get a hold of you. Simple is scalable. I'd say give it a shot!"`,
+    videoSrc: '/videos/Kirsten.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/Kirsten.jpg',
+    personName: '-Kirsten',
+  },
+  {
+    testimonial: `"Shout out to Sebastian and Stone Systems — great job on our website. Really looking forward to working with them more. Thank you so much!"`,
+    videoSrc: '/videos/Jeremy.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/Jeremy.jpg',
+    personName: '-Jeremy',
+  },
+  {
+    testimonial: `"They've done a ton of work for us building our website and getting our Google profile going. We've secured over $350,000 in sales since we started with them in less than four months. Super stoked to be working with those guys!"`,
+    videoSrc: '/videos/AlaskaClient.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/AlaskaClient.jpg',
+    personName: '-Alaska Contractor',
+  },
+  {
+    testimonial: `"Shout out to Stone Systems and Sebastian for being an amazing partner to Upside Roofing — helping us with our website and all the behind-the-scenes work. Everything looks fabulous."`,
+    videoSrc: '/videos/UpsideRoofing.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/UpsideRoofing.jpg',
+    personName: '-Upside Roofing',
+  },
+  {
+    testimonial: `"I cannot be more satisfied. The phones are ringing and these guys do a sensational job. Brian has been the best to work with — I highly recommend Stone Systems to get your business running."`,
+    videoSrc: '/videos/Junior.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/Junior.jpg',
+    personName: '-Junior',
+  },
+  {
+    testimonial: `"Thank you so much for all the support and guidance launching our website. You are top notch — we could not have done it without you. Upside Roofing is lucky to have you."`,
+    videoSrc: '/videos/UpsideRoofing2.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/UpsideRoofing2.jpg',
+    personName: '-Upside Roofing',
+  },
+  {
+    testimonial: `"Just in our first month with Stone Systems we've gotten several leads. The website is performing wonderfully — we're on the first page of Google. These guys really know what they're doing!"`,
+    videoSrc: '/videos/Brandon.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/Brandon.jpg',
+    personName: '-Brandon',
+  },
+  {
+    testimonial: `"Sebastian was communicative, friendly, and concise. They made me a beautiful website. As a contractor in the modern day, you need these systems in place — it just makes you money at the end of the day."`,
+    videoSrc: '/videos/ContractorClient.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/ContractorClient.jpg',
+    personName: '-Contractor',
+  },
+  {
+    testimonial: `"Shout out to the boys at Stone Systems — killer work, just outstanding. They were professional from the start. I was very skeptical after other businesses did me wrong, and these guys killed it."`,
+    videoSrc: '/videos/Arlan.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/Arlan.jpg',
+    personName: '-Arlan',
+  },
+  {
+    testimonial: `"Sebastian was a great help — they reworked our website, added a chat widget, and we started getting five-star reviews. Customers can text us from the website and we close jobs faster. I would recommend them to anyone."`,
+    videoSrc: '/videos/TomAvery.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/TomAvery.jpg',
+    personName: '-Tom',
+  },
+  {
+    testimonial: `"Thank you Stone Systems and especially Sebastian for helping with our SEO. They were attentive and knowledgeable — we've had great success, lots more reviews, and things are moving along really well."`,
+    videoSrc: '/videos/SEOClient.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/SEOClient.jpg',
+    personName: '-Client',
+  },
 ];
 
 export function TestimonialSection() {
   const theme = useMantineTheme();
   const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
-  const slides = data.map((item) => <Card key={item.personName} {...item} />);
+  const slides = data.map((item) => <Card key={item.videoSrc} {...item} />);
 
   return (
     <div className={classes.outer}>
