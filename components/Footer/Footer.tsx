@@ -192,6 +192,9 @@ export function Footer() {
             <IconBrandInstagram style={{ width: rem(24), height: rem(24) }} stroke={2} />
           </ActionIcon>
         </Group>
+        <Text className={classes.copyright}>
+          © 2026 Stone Systems. Stone Systems is a brand of MVH Management Consultancy LLC.
+        </Text>
       </Container>
     </footer>
   );

@@ -49,6 +49,11 @@ export function AboutUsSection() {
               Let us be the foundation you need while you focus on what you do best: building your
               business.
             </Text>
+            <Text className={classes.text} mt="1rem">
+              Stone Systems is operated by MVH Management Consultancy LLC, a limited liability
+              company registered in Wyoming, United States. All products and services offered under
+              the Stone Systems name are provided by MVH Management Consultancy LLC.
+            </Text>
             <Group
               gap={0}
               className={classes.social}

@@ -23,10 +23,11 @@ export function PrivacyPage() {
           </Text>
 
           <Text className={classes.text}>
-            This Privacy Policy describes how <strong>Stonesystems LLC</strong> (&quot;Stone
-            Systems,&quot; &quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) collects, uses, and
-            discloses your information when you respond to our advertisements, visit our websites -
-            including <strong>stonesystems.io</strong>, <strong>grow.stonesystems.io</strong>, and{' '}
+            This Privacy Policy applies to the Stone Systems website and services, operated by{' '}
+            <strong>MVH Management Consultancy LLC</strong> (&quot;we,&quot; &quot;us,&quot;
+            &quot;our&quot;). It describes how we collect, use, and disclose your information when
+            you respond to our advertisements, visit our websites - including{' '}
+            <strong>stonesystems.io</strong>, <strong>grow.stonesystems.io</strong>, and{' '}
             <strong>app.stonesystems.io</strong> (collectively, the &quot;Sites&quot;) - contact us,
             or use our products and services (the &quot;Services&quot;). It also tells you about
             your privacy rights and how the law protects you. By using the Services, you agree to

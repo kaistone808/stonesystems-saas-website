@@ -23,14 +23,15 @@ export function TermsPage() {
           </Text>
 
           <Text className={classes.text}>
-            These Terms of Service (&quot;<strong>Terms</strong>&quot;) are a binding legal
-            agreement between <strong>Stonesystems LLC</strong>, a limited liability company (&quot;
-            <strong>Stone Systems</strong>,&quot; &quot;<strong>we</strong>,&quot; &quot;
-            <strong>us</strong>,&quot; or &quot;<strong>our</strong>&quot;), and you, the individual
-            or entity using our Services (&quot;<strong>you</strong>,&quot; &quot;
-            <strong>Client</strong>,&quot; or &quot;<strong>your</strong>&quot;). By purchasing,
-            accessing, or using any of our Services — or by checking the agreement box at checkout —
-            you confirm that you have read, understood, and agree to be bound by these Terms and our{' '}
+            These Terms of Service constitute an agreement between you and{' '}
+            <strong>MVH Management Consultancy LLC</strong>, doing business as Stone Systems.
+            These Terms of Service (&quot;<strong>Terms</strong>&quot;) bind Stone Systems
+            (&quot;<strong>we</strong>,&quot; &quot;<strong>us</strong>,&quot; or &quot;
+            <strong>our</strong>&quot;) and you, the individual or entity using our Services
+            (&quot;<strong>you</strong>,&quot; &quot;<strong>Client</strong>,&quot; or &quot;
+            <strong>your</strong>&quot;). By purchasing, accessing, or using any of our Services —
+            or by checking the agreement box at checkout — you confirm that you have read,
+            understood, and agree to be bound by these Terms and our{' '}
             <a href="/privacy-policy">Privacy Policy</a>.
           </Text>
 
